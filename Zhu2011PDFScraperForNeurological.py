@@ -2,10 +2,10 @@ import pdfplumber
 import pandas as pd
 import re
 
-pdfPath = '/home/school/masters/Scripts/sapp (1).pdf'
+pdfPath = '/home/school/masters/Scripts/Zhu2011Supplementary.pdf'
 
 startpg = 13
-endpg = 31
+endpg = 46
 
 table_of_tables = []
 header = None  # will store the real column names from the first table
