@@ -1,0 +1,944 @@
+,Drug name,"Drug
+type",Species origin (family),"Therapeutic class or
+targeted disease",source_page
+0,Aablaquin,S*,Cinchona officinalis (Rubiaceae),Antiparasitic,13
+1,Abraxane,ND,Taxus wallichiana (Taxaceae); Taxus brevifolia (Taxaceae),Oncological disease,13
+2,Acarbose,N,Actinoplanes (Micromonosporaceae),Cardiovascular disease,13
+3,"Acetylcholine
+chloride",N,Homo sapiens (Hominidae),Neurological disease,13
+4,Acetyldigitoxin,ND,Digitalis purpurea (Plantaginaceae),Cardiovascular disease,13
+5,Acheflan,N,Cordia verbenacea (Boraginaceae),"Immunological, inflammatory
+and related disease",13
+6,Acitretin,ND,Daucus carota (Apiaceae),Antipsoriatic,13
+7,Aclarubicin,N,Streptomyces galilaeus (Streptomycetaceae),Oncological disease,13
+8,"Actimmune
+Interferon gamma-
+1b",B,Homo sapiens (Hominidae),Immunostimulant,13
+9,"Activated protein C
+concn",B,Homo sapiens (Hominidae),Deep venous thrombosis,13
+10,Acyclovir,S*,"Streptomyces antibioticus (Streptomycetaceae);
+Streptomyces griseus (Streptomycetaceae); Tethya
+(Tethyidae)",Antiviral,13
+11,Adalimumab,B,Homo sapiens (Hominidae),Antiarthritic,13
+12,Adefovir dipivoxil,S*,"Simplexvirus (Herpesviridae); Hepatitis B virus
+(Hepadnaviridae); Homo sapiens (Hominidae)",Antiviral,13
+13,Adenosine,N,Homo sapiens (Hominidae),Antiarrhythmic,13
+14,Adoniside,N,Adonis vernalis (Ranunculaceae),Cardiovascular disease,13
+15,"Advate Rec-
+antihemophilic
+factor",B,Homo sapiens (Hominidae),Antihemophilia,13
+16,Aescin,N,Aesculus hippocastanum (Hippocastanaceae),Inflammatory disease,13
+17,Agalsidase alfa,B,Homo sapiens (Hominidae),Fabry disease,13
+18,Agalsidase beta,B,Homo sapiens (Hominidae),Fabry disease,13
+19,Agrimophol,N,Agrimonia eupatoria (Rosaceae),Anthelmintic Chemotherapy,13
+20,"Aimmugen
+Hepatitis a vaccine",V,Hepatitis A virus (Picornaviridae),Hepatitis,13
+21,Ajmalicine,N,"Catharanthus roseus (Apocynaceae); Rauvolfia serpentina
+(Apocynaceae)",Circulatory disorders,13
+22,Alacepril,S*/NM,Bothrops jararaca (Viperidae),Cardiovascular disease,13
+23,"Alclometasone
+dipropionate",ND,Homo sapiens (Hominidae),Inflammatory disease,14
+24,Aldesleukin,B,Homo sapiens (Hominidae),Anticancer,14
+25,Alefacept,B,Homo sapiens (Hominidae),Antipsoriatic,14
+26,Alemtuzumab,B,Mus musculus (Muridae),Anticancer,14
+27,"Alfaferone
+Interferon alfa",B,Homo sapiens (Hominidae),Antiviral,14
+28,"Alferon N
+Interferon alfa-n3",B,Homo sapiens (Hominidae),Antiviral,14
+29,Alglucerase,B,Homo sapiens (Hominidae),Type 1 Gaucher's disease,14
+30,Alitretinoin,ND,Daucus carota (Apiaceae),Anticancer,14
+31,Allantoin,N,Symphytum officinale (Nitrariaceae),Vulnerary,14
+32,"Allyl
+isothiocyanate",N,Brassica nigra (Brassicaceae),Rubefacient,14
+33,Alpha-1 antitrypsin,B,Homo sapiens (Hominidae),Antiemphysemic,14
+34,"Alpha-
+acetyldigoxin",ND,"Digitalis lanata (Plantaginaceae); Digitalis purpurea
+(Plantaginaceae)",Cardiovascular disease,14
+35,"AlphaNine Factor
+IX",B,Homo sapiens (Hominidae),Hemophilia,14
+36,Alprostadil,N,"Allium cepa (Amaryllidaceae); Allium sativum
+(Amaryllidaceae); Larix sibirica (Pinaceae); Populus
+balsamifera (Salicaceae)",Erectile dysfunction,14
+37,Alteplase,B,Homo sapiens (Hominidae),Antithrombotic,14
+38,"Ambirix Hepatitis
+vaccine",V,"Hepatitis A virus (Picornaviridae); Hepatitis B virus
+(Hepadnaviridae)",Antiviral,14
+39,Amikacin,ND,Streptomyces kanamyceticus (Streptomycetaceae),Antibacterial,14
+40,Amodiaquine,ND,Cinchona (Rubiaceae); Cinchona officinalis (Rubiaceae),Antiparasitic,14
+41,Amoxicillin,ND,"Aspergillus flavus (Trichocomaceae); Emericella nidulans
+(Trichocomaceae); Penicillium chrysogenum
+(Trichocomaceae)",Antibacterial,14
+42,Amphetamine,N,"Ephedra sinica (Ephedraceae); Acacia rigidula (Fabaceae);
+Senegalia berlandieri (Fabaceae)",Neurological disease,14
+43,Amphotericin,N,Streptomyces nodosus (Streptomycetaceae),Antibacterial,14
+44,Ampicillin,ND,"Aspergillus flavus (Trichocomaceae); Emericella nidulans
+(Trichocomaceae); Penicillium chrysogenum
+(Trichocomaceae)",Antibacterial,14
+45,Amprenavir,S*/NM,"Actinomyces (Actinomycetaceae); Streptomyces testaceus
+(Streptomycetaceae); Streptomyces argenteolus subsp.
+toyonakensis (Streptomycetaceae)",Antiviral,14
+46,Amrubicin HCL,ND,Streptomyces peucetius (Streptomycetaceae),Anticancer,14
+47,Anakinra,B,Homo sapiens (Hominidae),Antiarthritic,14
+48,Andrographolide,N,Andrographis paniculata (Acanthaceae),Antibacterial,14
+49,Anecortave acetate,ND,Homo sapiens (Hominidae),Macular degeneration,14
+50,Angeliq,ND,Homo sapiens (Hominidae),Hormone replacement therapy,14
+51,Angiotensin II,N,Homo sapiens (Hominidae),Anticancer,14
+52,Anidulafungin,ND,"Aspergillus (Trichocomaceae); Emericella rugulosa
+(Trichocomaceae)",Antifungal,14
+53,Anisodamine,N,Anisodus tanguticus (Solanaceae),Anticholinergic,14
+54,Anisodine,N,Anisodus tanguticus (Solanaceae),Anticholinergic,15
+55,Anistreolase,B,"Homo sapiens (Hominidae); Streptococcus
+(Streptococcaceae)",Antithrombotic,15
+56,Antebate,ND,Homo sapiens (Hominidae),Inflammatory disease,15
+57,Antithrombin III,B,Homo sapiens (Hominidae),Anticoagulant,15
+58,Aotal,S*,Homo sapiens (Hominidae),Alcohol deterrent,15
+59,Apalcillin sodium,ND,"Aspergillus flavus (Trichocomaceae); Emericella nidulans
+(Trichocomaceae); Penicillium chrysogenum
+(Trichocomaceae)",Antibacterial,15
+60,"Apidra Insulin
+glulisine",B,Homo sapiens (Hominidae),Antidiabetic,15
+61,"Apomorphine
+hydrochloride",ND,Papaver somniferum (Papaveraceae),Neurological disease,15
+62,Aprotinin,N,Bos taurus (Bovidae),Ischemia,15
+63,Aralast,B,Homo sapiens (Hominidae),Antiemphysemic,15
+64,Arbekacin,ND,Streptomyces kanamyceticus (Streptomycetaceae),Antibacterial,15
+65,Arecoline,N,Areca catechu (Arecaceae),Anthelmintic Chemotherapy,15
+66,Argatroban,S*/NM,Homo sapiens (Hominidae),Antithrombotic,15
+67,Arglabin,N,Artemisia (Asteraceae),Oncological disease,15
+68,Aromasin,ND,Homo sapiens (Hominidae),Anticancer,15
+69,Arteether,ND,Artemisia annua (Asteraceae),Antiparasitic,15
+70,Arteflene,ND,Artabotrys (Annonaceae),Antiparasitic,15
+71,Artemether,ND,Artemisia annua (Asteraceae),Antiparasitic,15
+72,Artemisinin,N,Artemisia annua (Asteraceae),Antiparasitic,15
+73,Artesunate,ND,Artemisia annua (Asteraceae),Antiparasitic,15
+74,Asiaticoside,N,Centella asiatica (Apiaceae),Vulnerary,15
+75,Asparaginase,N,Escherichia coli (Enterobacteriaceae),Oncological disease,15
+76,Aspirin,ND,Salix alba (Salicaceae),Inflammatory disease,15
+77,Aspoxicillin,ND,"Aspergillus flavus (Trichocomaceae); Emericella nidulans
+(Trichocomaceae); Penicillium chrysogenum
+(Trichocomaceae)",Antibacterial,15
+78,Atazanavir,S*/NM,"Actinomyces (Actinomycetaceae); Streptomyces testaceus
+(Streptomycetaceae); Streptomyces argenteolus subsp.
+toyonakensis (Streptomycetaceae)",Antiviral,15
+79,Atenolol,ND,"Ephedra sinica (Ephedraceae); Acacia rigidula (Fabaceae);
+Senegalia berlandieri (Fabaceae)",Cardiovascular disease,15
+80,"Atorvastatin
+calcium",S*/NM,"Pseudonocardia autotrophica (Pseudonocardiaceae);
+Penicillium brevicompactum (Trichocomaceae); Penicillium
+citrinum (Trichocomaceae)",Cardiovascular disease,15
+81,Atosiban,ND,Homo sapiens (Hominidae),Premature birth,15
+82,Atovaquone,S*,Homo sapiens (Hominidae),Antiparasitic,15
+83,Atropine,N,"Atropa belladonna (Solanaceae); Datura stramonium
+(Solanaceae); Mandragora officinarum (Solanaceae)",Anticholinergic,15
+84,Augmentin,ND,"Streptomyces clavuligerus (Streptomycetaceae); Aspergillus
+flavus (Trichocomaceae); Emericella nidulans
+(Trichocomaceae); Penicillium chrysogenum
+(Trichocomaceae)",Antibacterial,15
+85,"Avaxim hepatitis a
+vaccine",V,Hepatitis A virus (Picornaviridae),Hepatitis,16
+86,"Avonex Interferon
+beta-1a",B,Homo sapiens (Hominidae),Multiple sclerosis,16
+87,Azacytidine,S*,Homo sapiens (Hominidae),Anticancer,16
+88,Azithromycin,ND,Saccharopolyspora erythraea (Pseudonocardiaceae),Antibacterial,16
+89,Azlocillin,ND,"Aspergillus flavus (Trichocomaceae); Emericella nidulans
+(Trichocomaceae); Penicillium chrysogenum
+(Trichocomaceae)",Antibacterial,16
+90,Aztreonam,ND,Chromobacterium violaceum (Neisseriaceae),Antibacterial,16
+91,Bacampicillin,ND,"Aspergillus flavus (Trichocomaceae); Emericella nidulans
+(Trichocomaceae); Penicillium chrysogenum
+(Trichocomaceae)",Antibacterial,16
+92,Bacitracin,N,"Bacillus licheniformis (Bacillaceae); Bacillus subtilis
+(Bacillaceae)",Antibacterial,16
+93,Basiliximab,B,Homo sapiens (Hominidae),Immunosuppressant,16
+94,Becaplermin,B,Homo sapiens (Hominidae),Diabetic foot ulcers,16
+95,Befunolol HCL,S*,Homo sapiens (Hominidae),Antiglaucoma,16
+96,Belotecan HCL,ND,"Mappia foetida (Icacinaceae); Camptotheca acuminata
+(Cornaceae); Ophiorrhiza pumila (Rubiaceae)",Oncological disease,16
+97,Bemiparin sodium,ND,Homo sapiens (Hominidae),DVT; anticoagulant,16
+98,"Benazepril
+hydrochloride",S*/NM,Bothrops jararaca (Viperidae),Cardiovascular disease,16
+99,Benefix Factor IX,B,Homo sapiens (Hominidae),Hemophilia,16
+100,Beraprost sodium,ND,Homo sapiens (Hominidae),Platelet aggreg. inhib.,16
+101,Berberine,N,"Berberis vulgaris (Berberidaceae); Thalictrum
+(Ranunculaceae)",Antibacterial,16
+102,Beromun,B,Homo sapiens (Hominidae),Anticancer,16
+103,Beta-acetyldigoxin,ND,"Digitalis lanata (Plantaginaceae); Digitalis purpurea
+(Plantaginaceae)",Cardiovascular disease,16
+104,Betain anhydrous,N,Triticum (Poaceae),Homocystinuria,16
+105,"Betamethasone
+dipropionate",N,Homo sapiens (Hominidae),Anti-inflammatory,16
+106,"Betamethasone
+sodium phosphate",N,Homo sapiens (Hominidae),Anti-inflammatory,16
+107,"Betaseron
+Interferon b-1b",B,Homo sapiens (Hominidae),Multiple sclerosis,16
+108,Betaxolol HCI,S*/NM,"Ephedra sinica (Ephedraceae); Acacia rigidula (Fabaceae);
+Senegalia berlandieri (Fabaceae)",Cardiovascular disease,16
+109,Bevacizumab,B,Mus musculus (Muridae),Anticancer,16
+110,Biapenem,ND,Streptomyces cattleya (Streptomycetaceae),Antibacterial,16
+111,"Biken-HB
+Hepatitis b vaccine",V,Hepatitis B virus (Hepadnaviridae),Hepatitis,16
+112,Bilive,V,"Hepatitis A virus (Picornaviridae); Hepatitis B virus
+(Hepadnaviridae)",Antiviral,16
+113,Bimatoprost,ND,"Allium sativum (Amaryllidaceae); Artemisia dracunculus
+(Asteraceae); Manduca sexta (Sphingidae)",Antiglaucoma,16
+114,"Biogamma
+Interferon gamma-
+1a",B,Homo sapiens (Hominidae),Anticancer,16
+115,"Bio-Hep B
+Hepatitis b vaccine",V,Hepatitis B virus (Hepadnaviridae),Hepatitis,17
+116,Bivalirudin,ND,"Haementeria officinalis (Glossiphoniidae); Hirudo
+medicinalis (Hirudinidae)",Cardiovascular disease,17
+117,Bleomycin,N,Streptomyces verticillus (Streptomycetaceae),Oncological disease,17
+118,Bortezomib,S/NM,Homo sapiens (Hominidae),Anticancer,17
+119,"Brovincamine
+fumarate",ND,Vinca minor (Apocynaceae),"Vasodilator, cerebral",17
+120,Bucillamine,ND,"Aspergillus flavus (Trichocomaceae); Emericella nidulans
+(Trichocomaceae); Penicillium chrysogenum
+(Trichocomaceae)",Immunomodulator,17
+121,"Bucladesine
+sodium",S*/NM,Homo sapiens (Hominidae),Cardiotonic,17
+122,Budesonide,ND,Homo sapiens (Hominidae),Antiasthmatic,17
+123,Buprenorphine,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,17
+124,Buserelin acetate,ND,Homo sapiens (Hominidae),Oncological disease,17
+125,Byetta,ND,Heloderma suspectum (Helodermatidae),Cardiovascular disease,17
+126,Cabazitaxel,ND,"Taxus wallichiana (Taxaceae); Taxus brevifolia (Taxaceae);
+Taxus baccata (Taxaceae); Corylus avellana (Betulaceae);
+Seimatoantlerium tepuiense (Amphisphaeriaceae)",Anticacer,17
+127,Cabergoline,ND,Claviceps (Clavicipitaceae),Antihyperprolactinemia,17
+128,Calcipotriol,ND,Salmonidae (Salmonidae); Agaricus bisporus (Agaricaceae),Antipsoriatic,17
+129,Calfactant,B,Bos primigenius (Bovidae),RDS,17
+130,Calsed,ND,Streptomyces peucetius (Streptomycetaceae),Oncological disease,17
+131,Calusterone,ND,Homo sapiens (Hominidae),Oncological disease,17
+132,Camphor,N,Cinnamomum camphora (Lauraceae),Rubefacient,17
+133,Camptobell,ND,Camptotheca acuminata (Cornaceae),Anticancer,17
+134,Camptothecin,ND,"Mappia foetida (Icacinaceae); Camptotheca acuminata
+(Cornaceae); Ophiorrhiza pumila (Rubiaceae)",Oncological disease,17
+135,"Candesartan
+cilexetil",S/NM,Rattus norvegicus (Muridae),Antihypertensive,17
+136,Candicidin,N,Streptomyces griseus (Streptomycetaceae),Antifungal,17
+137,Capecitabine,S*,Homo sapiens (Hominidae),Anticancer,17
+138,Capreomycin,N,"Saccharothrix mutabilis subsp. Capreolus
+(Actinosynnemataceae)",Antibacterial,17
+139,Capsaicin,N,"Capsicum annuum (Solanaceae); Capsicum frutescens
+(Solanaceae); Zingiber officinale (Zingiberaceae)",Neurological disease,17
+140,Captopril,ND,Bothrops jararaca (Viperidae),Cardiovascular disease,17
+141,Carbenicillin,ND,"Aspergillus flavus (Trichocomaceae); Emericella nidulans
+(Trichocomaceae); Penicillium chrysogenum
+(Trichocomaceae)",Antibacterial,17
+142,Carbenin,ND,Streptomyces cattleya (Streptomycetaceae),Antibacterial,17
+143,Carbenoxolone,ND,Glycyrrhiza glabra (Fabaceae),"Immunological, inflammatory
+and related disease",17
+144,Carindacillin,ND,"Aspergillus flavus (Trichocomaceae); Emericella nidulans
+(Trichocomaceae); Penicillium chrysogenum
+(Trichocomaceae)",Antibacterial,17
+145,Carmofur,S*,Homo sapiens (Hominidae),Anticancer,18
+146,Carperitide,N,Homo sapiens (Hominidae),Congestive heart failure,18
+147,Carumonam,ND,Chromobacterium violaceum (Neisseriaceae),Antibacterial,18
+148,Carzinophilin,N,Streptomyces sahachiroi (Streptomycetaceae),Oncological disease,18
+149,Cefacetrile,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,18
+150,Cefaclor,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,18
+151,Cefadroxil,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,18
+152,Cefalexin,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,18
+153,Cefaloglycin,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,18
+154,Cefalotin sodium,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,18
+155,"Cefamandole
+nafate",ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,18
+156,Cefapirin,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,18
+157,Cefazolin,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,18
+158,"Cefbuperazone
+sodium",ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,18
+159,Cefcapene pivoxil,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,18
+160,Cefdinir,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,18
+161,Cefditoren pivoxil,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,19
+162,Cefepime,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,19
+163,"Cefetamet pivoxil
+HCl",ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,19
+164,Cefixime,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,19
+165,Cefmenoxime HCl,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,19
+166,"Cefmetazole
+sodium",ND,"Amycolatopsis lactamdurans (Pseudonocardiaceae);
+Streptomyces cattleya (Streptomycetaceae); Streptomyces
+clavuligerus (Streptomycetaceae)",Antibacterial,19
+167,Cefminox sodium,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,19
+168,Cefodizime sodium,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,19
+169,Cefonicid sodium,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,19
+170,"Cefoperazone
+sodium",ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,19
+171,Ceforanide,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,19
+172,Cefoselis,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,19
+173,Cefotaxime sodium,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,19
+174,Cefotetan sodium,ND,"Amycolatopsis lactamdurans (Pseudonocardiaceae);
+Streptomyces cattleya (Streptomycetaceae); Streptomyces
+clavuligerus (Streptomycetaceae)",Antibacterial,19
+175,"Cefotiam hexetil
+HCL",ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,20
+176,Cefoxitin sodium,ND,"Amycolatopsis lactamdurans (Pseudonocardiaceae);
+Streptomyces cattleya (Streptomycetaceae); Streptomyces
+clavuligerus (Streptomycetaceae)",Antibacterial,20
+177,Cefozopran HCL,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,20
+178,Cefpimizole,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,20
+179,"Cefpiramide
+sodium",ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,20
+180,Cefpirome sulfate,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,20
+181,"Cefpodoxime
+proxetil",ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,20
+182,Cefprozil,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,20
+183,Cefradine,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,20
+184,Cefroxadine,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,20
+185,Cefsulodin,ND,Acremonium chrysogenum (Acremonium),Antibiotic,20
+186,Ceftaroline fosamil,ND,Acremonium (Acremonium),Antibiotic,20
+187,"Ceftazidime
+pentahydrate",ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,20
+188,Cefteram pivoxil,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,20
+189,Ceftezole,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,20
+190,Ceftibuten,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,21
+191,Ceftiofur,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,21
+192,"Ceftizoxime
+sodium",ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,21
+193,"Ceftobiprole
+medocaril",ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,21
+194,Ceftriaxone sodium,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,21
+195,Cefuroxime axetil,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,21
+196,Cefuzonam sodium,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,21
+197,Celeuk,B,Homo sapiens (Hominidae),Anticancer,21
+198,Celiprolol HCl,S*,Homo sapiens (Hominidae),Antihypertensive,21
+199,Celmoleukin,B,Homo sapiens (Hominidae),Anticancer,21
+200,Centoxin,B,Homo sapiens (Hominidae),Antisepsis,21
+201,Ceprotin Protein C,B,Homo sapiens (Hominidae),Purpura fulminans,21
+202,Certoparin sodium,ND,Homo sapiens (Hominidae),DVT; anticoagulant,21
+203,Cerubidine,N,"Streptomyces coeruleorubidus (Streptomycetaceae);
+Streptomyces peucetius (Streptomycetaceae)",Oncological disease,21
+204,Cetrorelix,ND,Homo sapiens (Hominidae),Fertility enhancer,21
+205,Cetuximab,B,Homo sapiens (Hominidae),Anticancer,21
+206,Chenodiol,N,Homo sapiens (Hominidae),Anticholelithogenic,21
+207,Chloramphenicol,N,Streptomyces venezuelae (Streptomycetaceae),Antibacterial,21
+208,Chloroquine,ND,Cinchona officinalis (Rubiaceae),Antiparasitic,21
+209,Chlorotrianisene,S,Homo sapiens (Hominidae),Anticancer,21
+210,Chlortetracycline,N,Streptomyces aureofaciens (Streptomycetaceae),Antibacterial,21
+211,Choline alfoscerate,N,Homo sapiens (Hominidae),Nootropic,21
+212,"Choriogonadotropi
+n alfa",B,Homo sapiens (Hominidae),Hormone,21
+213,Chromomycin A3,N,Streptomyces griseus (Streptomycetaceae),Oncological disease,21
+214,Ciclesonide,ND,Homo sapiens (Hominidae),Antiasthmatic,21
+215,Cidofovir,S*,Cytomegalovirus (Herpesviridae); Homo sapiens,Antiviral,21
+216,,,(Hominidae),,22
+217,Cilazapril,S*/NM,Bothrops jararaca (Viperidae),Cardiovascular disease,22
+218,"Cimetropium
+bromide",ND,Datura metel (Solanaceae),Antispasmodic,22
+219,"Cisatracurium
+besilate",S*,Leontice leontopetalum (Berberidaceae),Muscle relaxant,22
+220,Cissampeline,N,Cissampelos pareira (Menispermaceae),Skeletal muscle relaxant,22
+221,Cladribine,ND,Homo sapiens (Hominidae),Anticancer,22
+222,Clarithromycin,ND,Saccharopolyspora erythraea (Pseudonocardiaceae),Antibacterial,22
+223,Climara Pro,ND,Homo sapiens (Hominidae),Hormone replacement therapy,22
+224,Clindamycin,ND,Streptomyces lincolnensis (Streptomycetaceae),Antibacterial,22
+225,Clofarabine,S*,Homo sapiens (Hominidae); Homo sapiens (Hominidae),Anticancer,22
+226,Clomocycline,ND,"Streptomyces aureofaciens (Streptomycetaceae);
+Streptomyces viridifaciens (Streptomycetaceae)",Antibacterial,22
+227,Cloxacillin,ND,"Aspergillus flavus (Trichocomaceae); Emericella nidulans
+(Trichocomaceae); Penicillium chrysogenum
+(Trichocomaceae)",Antibacterial,22
+228,Coarsucam,ND,"Artemisia annua (Asteraceae); Cinchona officinalis
+(Rubiaceae)",Antiparasitic,22
+229,Co-artemether,ND,Artemisia annua (Asteraceae),Antiparasitic,22
+230,Cocaine,N,Erythroxylum coca (Erythroxylaceae),Neurological disease,22
+231,Colchiceine amide,N,Colchicum autumnale (Colchicaceae),Oncological disease,22
+232,Colchicine,N,Colchicum autumnale (Colchicaceae),Oncological disease,22
+233,"Colforsin daropate
+HCI",ND,Plectranthus barbatus (Lamiaceae),Cardiovascular disease,22
+234,"Colistimethate
+sodium",ND,Paenibacillus polymyxa (Paenibacillaceae),Pulmonary infections,22
+235,Colistin,N,Paenibacillus polymyxa (Paenibacillaceae),Antibiotic,22
+236,Collagenase,B,Homo sapiens (Hominidae),Enzyme,22
+237,"Conjugated
+estrogens a",ND,Homo sapiens (Hominidae),Hormone replacement therapy,22
+238,"Conjugated
+estrogens b",ND,Homo sapiens (Hominidae),Hormone replacement therapy,22
+239,Convallatoxin,N,Convallaria majalis (Asparagaceae),Cardiovascular disease,22
+240,Cotinine,N,Nicotiana spp. (Solanaceae),Insecticide,22
+241,Crotalidae fab,B,"Ovis aries (Bovidae); Crotalus atrox (Viperidae); Crotalus
+adamanteus (Viperidae); Crotalus scutulatus (Viperidae);
+Agkistrodon piscivorus (Viperidae)",Rattlesnake antivenom,22
+242,Cyclacillin,ND,"Aspergillus flavus (Trichocomaceae); Emericella nidulans
+(Trichocomaceae); Penicillium chrysogenum
+(Trichocomaceae)",Antibiotic,22
+243,Cycloserine,N,Streptomyces garyphalus (Streptomycetaceae),Antibacterial,22
+244,Cyclosporine,N,"Claviceps purpurea (Clavicipitaceae); Tolypocladium
+inflatum (Clavicipitaceae); Cylindrocarpon lucidum
+(Nectriaceae)",Neurological disease,22
+245,Cynarin,N,Cynara scolymus (Asteraceae),Choleretic,22
+246,"Cytarabine
+ocfosfate",S*,"Streptomyces antibioticus (Streptomycetaceae);
+Streptomyces griseus (Streptomycetaceae); Tethya",Oncological disease,22
+247,,,(Tethyidae),,23
+248,"Cytosine
+arabinoside",S*,Tethya (Tethyidae),Oncological disease,23
+249,Dabigatran,S*/NM,Homo sapiens (Hominidae),Antithrombotic,23
+250,Daclizumab,B,Mus musculus (Muridae),Immunosuppressant,23
+251,Dactinomycin,N,"Streptomyces parvulus (Streptomycetaceae); Streptomyces
+sindenensis (Streptomycetaceae)",Oncological disease,23
+252,Dalteparin sodium,ND,Homo sapiens (Hominidae),DVT; anticoagulant,23
+253,Danaparoid sodium,ND,Homo sapiens (Hominidae),DVT; anticoagulant,23
+254,Danthron,N,Cassia (Fabaceae),Laxative,23
+255,Daptomycin,N,Streptomyces filamentosus (Streptomycetaceae),Antibacterial,23
+256,Darbepoietin alfa,B,Homo sapiens (Hominidae),Erythropoiesis,23
+257,Darunavir,S*/NM,"Actinomyces (Actinomycetaceae); Streptomyces testaceus
+(Streptomycetaceae); Streptomyces argenteolus subsp.
+toyonakensis (Streptomycetaceae)",Antiviral,23
+258,Dasatinib,S/NM,"Lentzea albida (Actinosynnemataceae); Lentzea albida
+(Actinosynnemataceae); Lentzea albida
+(Actinosynnemataceae); Lentzea albida
+(Actinosynnemataceae)",Anticancer,23
+259,Daunorubicin HCL,N,Streptomyces peucetius (Streptomycetaceae),Antibiotic,23
+260,Decapeptyl,ND,Homo sapiens (Hominidae),Oncological disease,23
+261,Decitabine,S*,Homo sapiens (Hominidae),Anticancer,23
+262,Defibrotide,B,Bos primigenius (Bovidae); Sus scrofa (Suidae),Antithrombotic,23
+263,Deflazacort,ND,Homo sapiens (Hominidae),Inflammatory disease,23
+264,Delapril,S*/NM,Bothrops jararaca (Viperidae),Cardiovascular disease,23
+265,"Delta-9-
+tetrahydrocannabin
+ol",N,Cannabis sativa (Cannabaceae),Neurological disease,23
+266,Demeclocycline,N,Streptomyces aureofaciens (Streptomycetaceae),Antibacterial,23
+267,Demecolcine,N,Colchicum autumnale (Colchicaceae),Oncological disease,23
+268,Denileukin diftitox,B,Corynebacterium diphtheriae (Corynebacteriaceae),Anticancer,23
+269,Denopamine,S*/NM,Homo sapiens (Hominidae),Cardiotonic,23
+270,Dermatan sulfate,B,Homo sapiens (Hominidae),DVT; anticoagulant,23
+271,Deserpidine,N,Rauwolfia (Apocynaceae),Cardiovascular disease,23
+272,Desirudin,ND,"Haementeria officinalis (Glossiphoniidae); Hirudo
+medicinalis (Hirudinidae)",Deep vein thrombosis,23
+273,Deslanoside,N,Digitalis lanata (Plantaginaceae),Cardiovascular disease,23
+274,Deslorelin,ND,Homo sapiens (Hominidae),Oncological disease,23
+275,Dexamethasone,ND,Homo sapiens (Hominidae),Oncological disease,23
+276,"Dextroamphetamin
+e sulfate",ND,"Ephedra sinica (Ephedraceae); Acacia rigidula (Fabaceae);
+Senegalia berlandieri (Fabaceae)",ADHD; narcolepsy,23
+277,Dextromethorphan,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,23
+278,Diacetylmorphine,ND,Papaver somniferum (Papaveraceae),Neurological disease,23
+279,Dicloxacillin,ND,"Aspergillus flavus (Trichocomaceae); Emericella nidulans
+(Trichocomaceae); Penicillium chrysogenum",Antibacterial,23
+280,,,(Trichocomaceae),,24
+281,Didanosine,S*,"Human immunodeficiency virus 1 (Retroviridae); Homo
+sapiens (Hominidae)",Antiviral,24
+282,Diethylstilbestrol,S,Homo sapiens (Hominidae),Anticancer,24
+283,DigiFab,B,Digitalis purpurea (Plantaginaceae),Digoxin toxicity,24
+284,Digitalin,N,Digitalis purpurea (Plantaginaceae),Cardiovascular disease,24
+285,Digitoxin,N,Digitalis purpurea (Plantaginaceae),Cardiovascular disease,24
+286,Digoxin,N,"Digitalis lanata (Plantaginaceae); Digitalis purpurea
+(Plantaginaceae)",Cardiovascular disease,24
+287,Dihydroartemisinin,ND,Artemisia annua (Asteraceae),Antiparasitic,24
+288,Dipeptiven,ND,Homo sapiens (Hominidae),Mucositis,24
+289,Dirithromycin,ND,Saccharopolyspora erythraea (Pseudonocardiaceae),Antibacterial,24
+290,Docarpamine,ND,Homo sapiens (Hominidae),Cardiotonic,24
+291,Docetaxel,ND,"Taxus wallichiana (Taxaceae); Taxus baccata (Taxaceae);
+Taxus brevifolia (Taxaceae)",Oncological disease,24
+292,"Dopamine
+hydrochloride",N,Homo sapiens (Hominidae),Neurological disease,24
+293,Dopexamine,S*/NM,Homo sapiens (Hominidae),Cardiotonic,24
+294,Doripenem,ND,Streptomyces cattleya (Streptomycetaceae),Antibacterial,24
+295,Dornase alfa,B,Homo sapiens (Hominidae),Cyctic fibrosis,24
+296,Dosmalfate,ND,Homo sapiens (Hominidae),Gastroprotectant,24
+297,"Doxacurium
+chloride",S*,Leontice leontopetalum (Berberidaceae),Muscle relaxant,24
+298,Doxercalciferol,ND,Agaricus bisporus (Agaricaceae),Calcium metabolism,24
+299,Doxifluridine,S*,Homo sapiens (Hominidae),Anticancer,24
+300,Doxofylline,ND,"Theobroma cacao (Malvaceae); Theobroma bicolor
+(Malvaceae); Theobroma angustifolium (Malvaceae);
+Paullinia cupana (Sapindaceae); Camellia sinensis
+(Theaceae); Coffea arabica (Rubiaceae)",Bronchodilator,24
+301,Doxorubicin,N,Streptomyces peucetius (Streptomycetaceae),Oncological disease,24
+302,Doxycycline,ND,Streptomyces rimosus (Streptomycetaceae),Antibacterial,24
+303,Dpt vaccines,V,Corynebacterium diphtheriae (Corynebacteriaceae),DTaP,24
+304,Dromostanolone,ND,Homo sapiens (Hominidae),Oncological disease,24
+305,Dronabinol,N,Cannabis (Cannabaceae),Antinauseant,24
+306,Drospirenone,ND,Homo sapiens (Hominidae),Contraception,24
+307,Drotrecogin alfa,B,Homo sapiens (Hominidae),Antisepsis,24
+308,Droxidopa,S*/NM,Homo sapiens (Hominidae),AntiParkinsonian,24
+309,Dutaseride,ND,Homo sapiens (Hominidae),BPH,24
+310,Duteplase,B,Homo sapiens (Hominidae),Antithrombotic,24
+311,Ecteinascidin,ND,Ecteinascidia turbinata (Perophoridae),Oncological disease,24
+312,Efalizumab,B,Mus musculus (Muridae),Antipsoriatic,24
+313,Elcatonin,ND,Anguilla japonica (Anguillidae),Calcium metabolism,24
+314,Elliptinium acetate,ND,"Aspidosperma (Apocynaceae); Apocynaceae
+(Apocynaceae); Ochrosia elliptica (Apocynaceae);
+Tabernaemontana (Apocynaceae); Strychnos (Loganiaceae)",Oncological disease,24
+315,Emtricitabine,S*,"Human immunodeficiency virus 1 (Retroviridae); Homo
+sapiens (Hominidae)",Antiviral,25
+316,Enalapril maleate,S*/NM,Bothrops jararaca (Viperidae),Cardiovascular disease,25
+317,Enalaprilat,S*/NM,Bothrops jararaca (Viperidae),Cardiovascular disease,25
+318,Enfuvirtide,ND,Human immunodeficiency virus 1 (Retroviridae),Antiviral,25
+319,"Engerix B
+Hepatitis b vaccine",V,Hepatitis B virus (Hepadnaviridae),Hepatitis,25
+320,Enocitabine,S*,Homo sapiens (Hominidae),Anticancer,25
+321,Enoxaparin,ND,Homo sapiens (Hominidae),DVT; anticoagulant,25
+322,Enprostil,ND,"Larix sibirica (Pinaceae); Prunus tomentosa (Rosaceae);
+Populus balsamifera (Salicaceae); Manduca sexta
+(Sphingidae)",Antiulcer,25
+323,Entecavir,S*,"Hepatitis B virus (Hepadnaviridae); Homo sapiens
+(Hominidae)",Antiviral,25
+324,Epervudine,S*,"Varicellovirus (Herpesviridae); Simplexvirus
+(Herpesviridae); Homo sapiens (Hominidae)",Antiviral,25
+325,Ephedrine,N,Ephedra sinica (Ephedraceae),Inflammatory disease,25
+326,Epicillin,ND,"Aspergillus flavus (Trichocomaceae); Emericella nidulans
+(Trichocomaceae); Penicillium chrysogenum
+(Trichocomaceae)",Antibacterial,25
+327,"Epinephrine
+bitartrate",ND,Ephedra sinica (Ephedraceae),Inflammatory disease,25
+328,"Epipodophyllotoxi
+n",ND,"Dysosma pleiantha (Berberidaceae); Podophyllum peltatum
+(Berberidaceae); Sinopodophyllum hexandrum
+(Berberidaceae)",Oncological disease,25
+329,Epirubicin HCI,ND,Streptomyces peucetius (Streptomycetaceae),Oncological disease,25
+330,Epoietin delta,B,Homo sapiens (Hominidae),Hematopoiesis,25
+331,"Epoprostenol
+sodium",N,Homo sapiens (Hominidae),Platelet aggreg,25
+332,Eprosartan,S/NM,Rattus norvegicus (Muridae),Antihypertensive,25
+333,Eptazocine HBr,S*,Papaver somniferum (Papaveraceae),Analgesic,25
+334,Ergotamine,N,Claviceps purpurea (Clavicipitaceae),Neurological disease,25
+335,Eribulin mesylate,ND,Halichondria okadai (Halichondriidae),Oncological disease,25
+336,"Erlotinib
+hydrochloride",S/NM,"Zea mays (Poaceae); Cocos nucifera (Arecaceae); Spinacia
+oleracea (Amaranthaceae); Pisum sativum (Fabaceae)",Anticancer,25
+337,Ertapenem sodium,ND,Streptomyces cattleya (Streptomycetaceae),Antibacterial,25
+338,Erythromycin,N,Saccharopolyspora erythraea (Pseudonocardiaceae),Antibacterial,25
+339,"Erythromycin
+acistrate",ND,Saccharopolyspora erythraea (Pseudonocardiaceae),Antibacterial,25
+340,Erythropoietin alfa,B,Homo sapiens (Hominidae),Erythropoiesis,25
+341,Erythropoietin beta,B,Homo sapiens (Hominidae),Erythropoiesis,25
+342,Estramustine,ND,Homo sapiens (Hominidae),Antineoplastic,25
+343,Etanercept,B,Homo sapiens (Hominidae),Antiarthritic,25
+344,"Ethanolamine
+oleate",S*,Homo sapiens (Hominidae),Sclerosant,25
+345,Ethinyl estradiol,ND,Homo sapiens (Hominidae),Antineoplastic,25
+346,Ethyl icosapentate,ND,"Shewanella pneumatophori (Shewanellaceae); Listonella
+pelagia (Vibrionaceae)",Antithrombotic,25
+347,"Etoposide
+phosphate",ND,"Dysosma pleiantha (Berberidaceae); Podophyllum peltatum
+(Berberidaceae); Sinopodophyllum hexandrum
+(Berberidaceae)",Oncological disease,26
+348,Eupatilin,N,Artemisia argyi (Asteraceae),"Immunological, inflammatory
+and related disease",26
+349,Everolimus,ND,Streptomyces hygroscopicus (Streptomycetaceae),Anticancer,26
+350,Exemestane,ND,Homo sapiens (Hominidae),Anticancer,26
+351,Exenatide,ND,Heloderma suspectum (Helodermatidae),Antidiabetic,26
+352,"Exubera
+Pulmonary insulin",B,Homo sapiens (Hominidae),Antidiabetic,26
+353,Falecalcitrol,ND,Salmonidae (Salmonidae); Agaricus bisporus (Agaricaceae),Sec. hyperthryoidism,26
+354,Famciclovir,S*,Varicellovirus (Herpesviridae); Homo sapiens (Hominidae),Antiviral,26
+355,Farom,ND,Streptomyces cattleya (Streptomycetaceae),Antibacterial,26
+356,Faropenem,ND,"Aspergillus flavus (Trichocomaceae); Emericella nidulans
+(Trichocomaceae); Penicillium chrysogenum
+(Trichocomaceae)",Antibacterial,26
+357,Femodene,ND,Homo sapiens (Hominidae),Contraception,26
+358,"Fendrix Hepatitis B
+vaccine",V,Hepatitis B virus (Hepadnaviridae),Antiviral,26
+359,Fibrinogen,N,Homo sapiens (Hominidae),Deep vein thrombosis,26
+360,Filgrastim,B,Homo sapiens (Hominidae),Immunostimulant,26
+361,Finasteride,ND,Homo sapiens (Hominidae),5 alpha-reductase inhibitor,26
+362,Fingolimod,ND,Isaria (Cordycipitaceae),Multiple sclerosis,26
+363,Flomoxef sodium,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,26
+364,Floxuridine,S*,"Streptomyces antibioticus (Streptomycetaceae);
+Streptomyces griseus (Streptomycetaceae); Tethya
+(Tethyidae)",Oncological disease,26
+365,Flucloxacillin,ND,"Aspergillus flavus (Trichocomaceae); Emericella nidulans
+(Trichocomaceae); Penicillium chrysogenum
+(Trichocomaceae)",Antibacterial,26
+366,"Fludarabine
+phosphate",S*,Homo sapiens (Hominidae),Anticancer,26
+367,"FluMist Influenza
+virus",V,Hepatitis A virus (Picornaviridae),Antiviral,26
+368,Fluorouracil,S*,"Streptomyces antibioticus (Streptomycetaceae);
+Streptomyces griseus (Streptomycetaceae); Tethya
+(Tethyidae)",Oncological disease,26
+369,Fluoxymesterone,ND,Homo sapiens (Hominidae),Oncological disease,26
+370,"Flurithromycin
+ethylsuccinate",ND,Saccharopolyspora erythraea (Pseudonocardiaceae),Antibacterial,26
+371,Flutamide,ND,Homo sapiens (Hominidae),Oncological disease,26
+372,"Fluticasone
+propionate",ND,Homo sapiens (Hominidae),Inflammatory disease,26
+373,"Flutropium
+bromide",ND,"Atropa belladonna (Solanaceae); Datura stramonium
+(Solanaceae); Mandragora officinarum (Solanaceae)",Antitussive,26
+374,Fluvastatin sodium,S*/NM,"Pseudonocardia autotrophica (Pseudonocardiaceae);
+Penicillium brevicompactum (Trichocomaceae); Penicillium",Cardiovascular disease,26
+375,,,citrinum (Trichocomaceae),,27
+376,Follitropin alfa,B,Homo sapiens (Hominidae),Hormone,27
+377,Follitropin beta,B,Homo sapiens (Hominidae),Hormone,27
+378,Fomivirsen sodium,S*/NM,Cytomegalovirus (Herpesviridae),Antiviral,27
+379,"Fondaparinux
+sodium",ND,Homo sapiens (Hominidae),DVT; anticoagulant,27
+380,Formestane,ND,Homo sapiens (Hominidae),Anticancer,27
+381,Forteo,ND,Homo sapiens (Hominidae),Osteoporosis,27
+382,Fosamprenavir,S*/NM,"Actinomyces (Actinomycetaceae); Streptomyces testaceus
+(Streptomycetaceae); Streptomyces argenteolus subsp.
+toyonakensis (Streptomycetaceae)",Antiviral,27
+383,Fosfestrol,ND,Homo sapiens (Hominidae),Anticancer,27
+384,"Fosfomycin
+trometamol",N,Streptomyces fradiae (Streptomycetaceae),Antibacterial,27
+385,Fosfosal,S*,Salix (Salicaceae),Analgesic,27
+386,Fosinopril sodium,S*/NM,Bothrops jararaca (Viperidae),Cardiovascular disease,27
+387,Framycetin,ND,Streptomyces fradiae (Streptomycetaceae),Antibacterial,27
+388,"Frone Interferon
+beta",B,Homo sapiens (Hominidae),Antiviral,27
+389,Fulvestrant,ND,Homo sapiens (Hominidae),Anticancer,27
+390,Fumagillin,N,Aspergillus fumigatus (Trichocomaceae),Antiparasitic,27
+391,Fusafungine,N,Fusarium lateritium (Fusarium),Antibiotic,27
+392,Fusidic acid,N,Fusidium griseum (Nectriaceae),Antibacterial,27
+393,Gabapentin,S*,Homo sapiens (Hominidae),Antiepileptic,27
+394,"Galantamine
+hydrobromide",N,"Galanthus elwesii (Amaryllidaceae); Galanthus nivalis
+(Amaryllidaceae); Galanthus woronowii (Amaryllidaceae);
+Leucojum aestivum (Amaryllidaceae); Lycoris radiata
+(Amaryllidaceae); Lycoris squamigera (Amaryllidaceae);
+Narcissus pseudonarcissus (Amaryllidaceae)",Neurological disease,27
+395,Galsulfase,B,Homo sapiens (Hominidae),Mucopolysaccharidosis,27
+396,Gammagard,B,Homo sapiens (Hominidae),Antiviral,27
+397,Gamolenic acid,N,Homo sapiens (Hominidae),Antiallergic,27
+398,"Gamunex Iv
+human
+immunoglobulin",B,Homo sapiens (Hominidae),Immunomodulator,27
+399,Ganciclovir,S*,"Cytomegalovirus (Herpesviridae); Homo sapiens
+(Hominidae)",Antiviral,27
+400,Ganglioside GM1,N,Homo sapiens (Hominidae),Antithrombotic,27
+401,Ganirelix acetate,ND,Homo sapiens (Hominidae),Ovulationi,27
+402,"Gardasil Hpv
+vaccine",V,Human papillomavirus (Papillomaviridae),Antiviral,27
+403,Gefitinib,S/NM,"Zea mays (Poaceae); Cocos nucifera (Arecaceae); Spinacia
+oleracea (Amaranthaceae); Pisum sativum (Fabaceae)",Anticancer,27
+404,Gemcitabine HCl,S*,Homo sapiens (Hominidae),Anticancer,27
+405,Gemeprost,ND,"Allium cepa (Amaryllidaceae); Allium sativum
+(Amaryllidaceae); Larix sibirica (Pinaceae); Populus
+balsamifera (Salicaceae)",Abortifacient,27
+406,"Gemtuzumab
+ozogamicin",ND,Micromonospora echinospora (Micromonosporaceae),Oncological disease,28
+407,Gentamicin,N,Micromonospora echinospora (Micromonosporaceae),Antibacterial,28
+408,Gentel,B,Homo sapiens (Hominidae),Vulnerary,28
+409,Gestrinone,ND,Homo sapiens (Hominidae),Antiprogestogenic,28
+410,Gitalin,N,Digitalis purpurea (Plantaginaceae),Cardiovascular disease,28
+411,Glatiramer acetate,S*,Homo sapiens (Hominidae),Multiple sclerosis,28
+412,Glaucine,N,Glaucium flavum (Papaveraceae),Antitussive,28
+413,Glaziovine,N,Ocotea cf. glaziovii FS402 (Lauraceae),Antidepressant,28
+414,GlucaGen,B,Homo sapiens (Hominidae),Hormone,28
+415,Glycyrrhizin,N,Glycyrrhiza glabra (Fabaceae),"Sweetener, Addison's disease",28
+416,Goserelin,ND,Homo sapiens (Hominidae),Oncological disease,28
+417,Gramicidin S,ND,Bacillus brevis (Paenibacillaceae),Antibiotic,28
+418,Griseofulvin,N,"Aspergillus lanosus (Trichocomaceae); Penicillium
+persicinum (Trichocomaceae); Penicillium jamesonlandense
+(Trichocomaceae); Penicillium aethiopicum
+(Trichocomaceae); Penicillium canescens (Trichocomaceae);
+Penicillium coprophilum (Trichocomaceae); Penicillium
+griseofulvum (Trichocomaceae); Penicillium dipodomyicola
+(Trichocomaceae); Penicillium janczewskii
+(Trichocomaceae); Penicillium janczewskii
+(Trichocomaceae); Penicillium lanosum (Trichocomaceae);
+Penicillium soppii (Trichocomaceae); Penicillium
+(Trichocomaceae); Penicillium (Trichocomaceae);
+Penicillium (Trichocomaceae); Penicillium raistrickii
+(Trichocomaceae); Penicillium sclerotigenum
+(Trichocomaceae)",Antifungal,28
+419,Guglipid,N,Commiphora wightii (Burseraceae),Lipoprotein disorders,28
+420,"Gusperimus
+trihydrochloride",ND,Brevibacillus laterosporus (Paenibacillaceae),"Immunological, inflammatory
+and related disease",28
+421,H-101,B,Human adenovirus 5 (Adenoviridae),Anticancer,28
+422,"Haemate HS
+insulin zinc
+suspension",B,Homo sapiens (Hominidae),Antidiabetic,28
+423,"Halobetasol
+propionate",ND,Homo sapiens (Hominidae),Inflammatory disease,28
+424,Halometasone,ND,Homo sapiens (Hominidae),Inflammatory disease,28
+425,"Halopredone
+acetate",ND,Homo sapiens (Hominidae),Antiarthritic,28
+426,"Havrix Hepatitis a
+vaccine",V,Hepatitis A virus (Picornaviridae),Hepatitis,28
+427,"Hemoglobin
+glutamer",B,Homo sapiens (Hominidae),Anemia,28
+428,Hemsleyadin,N,Hemsleya (Cucurbitaceae),Antibacterial,28
+429,"Hepacure Hepatitis
+b vaccine",V,Hepatitis B virus (Hepadnaviridae),Hepatitis,28
+430,HepaGam B,V,Hepatitis B virus (Hepadnaviridae),Hepatitis B,28
+431,Heparin sodium,N,Homo sapiens (Hominidae),Anticoagulant,28
+432,Hesperetin,N,Citrus bergamia (Rutaceae); Citrus limon (Rutaceae),Cardiovascular disease,29
+433,Hesperidin,N,Citrus (Rutaceae),Capillary fragility,29
+434,"Hexavac
+Hexavalent vaccine",V,"Corynebacterium diphtheriae (Corynebacteriaceae);
+Hepatitis B virus (Hepadnaviridae); Haemophilus influenzae
+(Pasteurellaceae); Enterovirus (Picornaviridae)",Dpt and others,29
+435,"Hexyl
+aminolevulinate",ND,Homo sapiens (Hominidae),Anticancer,29
+436,"Hibtitek H
+influenzae b
+vaccine",V,Haemophilus influenzae (Pasteurellaceae),Antibacterial,29
+437,Hidrosmin,ND,"Melilotus albus (Fabaceae); Melilotus officinalis (Fabaceae);
+Penicillium janczewskii (Trichocomaceae); Penicillium
+jensenii (Trichocomaceae)",Cardiovascular disease,29
+438,Hirulog,ND,"Haementeria officinalis (Glossiphoniidae); Hirudo
+medicinalis (Hirudinidae)",Anticoagulation,29
+439,Histrelin,ND,Homo sapiens (Hominidae),Central precocious puberty,29
+440,"Humalog Insulin
+lispro",B,Homo sapiens (Hominidae),Antidiabetic,29
+441,Human factor VIII,B,Homo sapiens (Hominidae),Hemophilia,29
+442,"Humatrope
+Somatropin",B,Homo sapiens (Hominidae),Hormone,29
+443,Huperzine,N,Huperzia serrata (Lycopodiaceae),Neurological disease,29
+444,"Hyaluronate
+sodium",B,Homo sapiens (Hominidae),Joint lubricant,29
+445,Hydrastine,N,Hydrastis canadensis (Ranunculaceae),"Haemostatic, Astringent",29
+446,"Hydrocortisone
+aceponate",ND,Homo sapiens (Hominidae),Inflammatory disease,29
+447,"Hydrocortisone
+butyrate",ND,Homo sapiens (Hominidae),Inflammatory disease,29
+448,"Hydroxyprogestero
+ne",ND,Homo sapiens (Hominidae),Oncological disease,29
+449,Hylenex,B,Homo sapiens (Hominidae),Reproduction,29
+450,Hyoscyamine,N,Hyoscyamus niger (Solanaceae),Anticholinergic,29
+451,Ibopamine HCI,ND,Homo sapiens (Hominidae),Cardiotonic,29
+452,Ibritumomab,B,Homo sapiens (Hominidae),Anticancer,29
+453,"Idarubicin
+hydrochloride",ND,"Streptomyces coeruleorubidus (Streptomycetaceae);
+Streptomyces peucetius (Streptomycetaceae)",Oncological disease,29
+454,Iloprost,ND,Homo sapiens (Hominidae),Platelet aggreg. inhib.,29
+455,Imatinib mesilate,ND,"Lentzea albida (Actinosynnemataceae); Lentzea albida
+(Actinosynnemataceae); Lentzea albida
+(Actinosynnemataceae)",Anticancer,29
+456,Imidapril HCL,S*/NM,Bothrops jararaca (Viperidae),Cardiovascular disease,29
+457,Imiglucerase,B,Homo sapiens (Hominidae),Gaucher's disease,29
+458,Imipenem,ND,Streptomyces cattleya (Streptomycetaceae),Antibacterial,29
+459,Indinavir sulfate,S*/NM,"Actinomyces (Actinomycetaceae); Streptomyces testaceus
+(Streptomycetaceae); Streptomyces argenteolus subsp.
+toyonakensis (Streptomycetaceae)",Antiviral,29
+460,Indoramin HCL,S*,Glycine max (Fabaceae),Antihypertensive,29
+461,Infantrix HeXa,V,Corynebacterium diphtheriae (Corynebacteriaceae);,Dpt and others,29
+462,Hexavalent vaccine,,"Hepatitis B virus (Hepadnaviridae); Haemophilus influenzae
+(Pasteurellaceae); Enterovirus (Picornaviridae)",,30
+463,"Infergen Interferon
+alfacon-1",B,Homo sapiens (Hominidae),Antiviral,30
+464,Infliximab,B,Homo sapiens (Hominidae),Crohn's disease,30
+465,Inosine pranobex,S*,"Morbillivirus (Paramyxoviridae); Homo sapiens
+(Hominidae)",Antiviral,30
+466,Insulin aspart,B,Homo sapiens (Hominidae),Antidiabetic,30
+467,Interleukin-2,B,Homo sapiens (Hominidae),Anticancer,30
+468,"Intron-A Interferon
+alfa2b",B,Homo sapiens (Hominidae),Anticancer,30
+469,"Invivac Influenza
+vaccine",V,"Hepatitis A virus (Picornaviridae); Hepatitis B virus
+(Hepadnaviridae)",Antiviral,30
+470,Ipratropium,ND,"Atropa belladonna (Solanaceae); Datura stramonium
+(Solanaceae); Mandragora officinarum (Solanaceae)",Anticholinergic,30
+471,Ipriflavone,ND,Fabaceae (Fabaceae),Calcium metabolism,30
+472,Irbesartan,S/NM,Rattus norvegicus (Muridae),Antihypertensive,30
+473,"Irinotecan
+hydrochloride",ND,"Mappia foetida (Icacinaceae); Camptotheca acuminata
+(Cornaceae); Ophiorrhiza pumila (Rubiaceae)",Oncological disease,30
+474,Isepamicin,ND,Micromonospora echinospora (Micromonosporaceae),Antibacterial,30
+475,Isophane insulin,B,Homo sapiens (Hominidae),Antidiabetic,30
+476,Isoprenaline,ND,"Ephedra sinica (Ephedraceae); Acacia rigidula (Fabaceae);
+Senegalia berlandieri (Fabaceae)",Cardiovascular disease,30
+477,Isotretinoin,ND,Daucus carota (Apiaceae),Antiacne,30
+478,Ivermectin,N,Streptomyces avermitilis (Streptomycetaceae),Antiparasitic,30
+479,Ixabepilone,ND,Sorangium cellulosum (Polyangiaceae),Oncological disease,30
+480,Josamycin,N,Streptomyces narbonensis (Streptomycetaceae),Antibacterial,30
+481,Kanamycin,N,Streptomyces kanamyceticus (Streptomycetaceae),Antibacterial,30
+482,Kawain,N,Piper methysticum (Piperaceae),Cardiovascular disease,30
+483,Khellin,N,Ammi (Apiaceae),Bronchodilator,30
+484,Kinetin,S*,Nicotiana tabacum (Solanaceae),Skin photodamage,30
+485,"Kogenate
+Recombinant factor
+VIII",B,Homo sapiens (Hominidae),Hemophilia,30
+486,Kunecatechins,NB,Camellia sinensis (Theaceae),Anticancer,30
+487,Lamivudine,S*,"Human immunodeficiency virus 1 (Retroviridae); Homo
+sapiens (Hominidae)",Antiviral,30
+488,Lanatoside A,N,Digitalis lanata (Plantaginaceae),Cardiovascular disease,30
+489,Lanatoside B,N,Digitalis lanata (Plantaginaceae),Cardiovascular disease,30
+490,Lanatoside C,N,Digitalis lanata (Plantaginaceae),Cardiovascular disease,30
+491,Lanreotide acetate,ND,Homo sapiens (Hominidae),Growth hormone deficiency,30
+492,"Lantus Insulin
+glargine",B,Homo sapiens (Hominidae),Antidiabetic,30
+493,Lapatinib,S/NM,"Zea mays (Poaceae); Cocos nucifera (Arecaceae); Spinacia
+oleracea (Amaranthaceae); Pisum sativum (Fabaceae); Zea
+mays (Poaceae); Cocos nucifera (Arecaceae); Spinacia
+oleracea (Amaranthaceae); Pisum sativum (Fabaceae)",Anticancer,30
+494,Laronidase,B,Homo sapiens (Hominidae),Mucopolysaccharidosis,31
+495,Latanoprost,ND,"Allium sativum (Amaryllidaceae); Artemisia dracunculus
+(Asteraceae); Manduca sexta (Sphingidae)",Antiglaucoma,31
+496,L-Dopa,N,Mucuna pruriens var. utilis (Fabaceae),Neurological disease,31
+497,Lenampicillin HCL,ND,"Aspergillus flavus (Trichocomaceae); Emericella nidulans
+(Trichocomaceae); Penicillium chrysogenum
+(Trichocomaceae)",Antibacterial,31
+498,Lenogastrim,B,Homo sapiens (Hominidae),Hematopoiesis,31
+499,Lentinan,N,Lentinula edodes (Marasmiaceae),Oncological disease,31
+500,Lepirudin,ND,"Haementeria officinalis (Glossiphoniidae); Hirudo
+medicinalis (Hirudinidae)",Antithrombotic,31
+501,Leuprolide acetate,ND,Homo sapiens (Hominidae),Oncological disease,31
+502,"Levacecarnine
+HCL",ND,Homo sapiens (Hominidae),Nootropic,31
+503,Levalbuterol HCL,S*/NM,Ephedra sinica (Ephedraceae),Inflammatory disease,31
+504,"Levemir Insulin
+determir",B,Homo sapiens (Hominidae),Antidiabetic,31
+505,Levodopa,N,Mucuna pruriens (Fabaceae),Dietary supplement,31
+506,Levo-THP,N,"Corydalis ambigua (Papaveraceae); Stephania rotunda
+(Menispermaceae)","Immunological, inflammatory
+and related disease",31
+507,Levulan,N,Homo sapiens (Hominidae),Actinic keratoses,31
+508,Limaprost,ND,"Allium cepa (Amaryllidaceae); Allium sativum
+(Amaryllidaceae); Larix sibirica (Pinaceae); Populus
+balsamifera (Salicaceae)",Antithrombotic,31
+509,Lincomycin,N,Streptomyces lincolnensis (Streptomycetaceae),Antibacterial,31
+510,Liraglutide,ND,Homo sapiens (Hominidae),Anti-diabetes,31
+511,"Lisdexamfetamine
+dimesylate",N,"Ephedra sinica (Ephedraceae); Senegalia berlandieri
+(Fabaceae)",ADHD,31
+512,Lisinopril,S*/NM,Bothrops jararaca (Viperidae),Cardiovascular disease,31
+513,Lisuride maleate,ND,Claviceps (Clavicipitaceae),Antihyperprolactinemia,31
+514,"Logiparin Lmw
+heparin",ND,Homo sapiens (Hominidae),Anticoagulant,31
+515,Lomustine,S,Streptomyces achromogenes (Streptomycetaceae),Anticancer,31
+516,Lopinavir,S*/NM,"Actinomyces (Actinomycetaceae); Streptomyces testaceus
+(Streptomycetaceae); Streptomyces argenteolus subsp.
+toyonakensis (Streptomycetaceae)",Antiviral,31
+517,Loracarbef,ND,"Acremonium chrysogenum (Acremonium); Emericellopsis
+minima (Emericellopsis); Amycolatopsis lactamdurans
+(Pseudonocardiaceae); Streptomyces clavuligerus
+(Streptomycetaceae)",Antibacterial,31
+518,Losartan potassium,S/NM,Rattus norvegicus (Muridae),Antihypertensive,31
+519,"Loteprednol
+etabonate",ND,Homo sapiens (Hominidae),Inflammatory disease,31
+520,Lovastatin,N,Aspergillus terreus (Trichocomaceae),Cardiovascular disease,31
+521,Lubiprostone,ND,"Allium cepa (Amaryllidaceae); Allium sativum
+(Amaryllidaceae); Larix sibirica (Pinaceae); Populus
+balsamifera (Salicaceae)","Chronic idiopathic
+constipation",31
+522,Lunelle,ND,Homo sapiens (Hominidae),Contraception,31
