@@ -1,0 +1,146 @@
+Unnamed: 0,Drug name,"Drug
+type",Species origin (family),"Therapeutic class or
+targeted disease",source_page,SMILES
+3,"Acetylcholine
+chloride",N,Homo sapiens (Hominidae),Neurological disease,13,CC(=O)OCC[N+](C)(C)C.[Cl-]
+8,"Actimmune
+Interferon gamma-
+1b",B,Homo sapiens (Hominidae),Immunostimulant,13,Sum dodgy here
+11,Adalimumab,B,Homo sapiens (Hominidae),Antiarthritic,13,Sum dodgy here
+42,Amphetamine,N,"Ephedra sinica (Ephedraceae); Acacia rigidula (Fabaceae);
+Senegalia berlandieri (Fabaceae)",Neurological disease,14,CC(CC1=CC=CC=C1)N
+47,Anakinra,B,Homo sapiens (Hominidae),Antiarthritic,14,Sum dodgy here
+49,Anecortave acetate,ND,Homo sapiens (Hominidae),Macular degeneration,14,CC(=O)OCC(=O)C1(CCC2C1(CC=C3C2CCC4=CC(=O)CCC43C)C)O
+61,"Apomorphine
+hydrochloride",ND,Papaver somniferum (Papaveraceae),Neurological disease,15,CN1CCC2=C3C1CC4=C(C3=CC=C2)C(=C(C=C4)O)O.CN1CCC2=C3C1CC4=C(C3=CC=C2)C(=C(C=C4)O)O.O.Cl.Cl
+86,"Avonex Interferon
+beta-1a",B,Homo sapiens (Hominidae),Multiple sclerosis,16,Sum dodgy here
+107,"Betaseron
+Interferon b-1b",B,Homo sapiens (Hominidae),Multiple sclerosis,16,Sum dodgy here
+119,"Brovincamine
+fumarate",ND,Vinca minor (Apocynaceae),"Vasodilator, cerebral",17,CCC12CCCN3C1C4=C(CC3)C5=C(N4C(C2)(C(=O)OC)O)C=C(C=C5)Br.C(=CC(=O)O)C(=O)O
+123,Buprenorphine,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,17,CC(C)(C)C(C)(C1CC23CCC1(C4C25CCN(C3CC6=C5C(=C(C=C6)O)O4)CC7CC7)OC)O
+139,Capsaicin,N,"Capsicum annuum (Solanaceae); Capsicum frutescens
+(Solanaceae); Zingiber officinale (Zingiberaceae)",Neurological disease,17,CC(C)C=CCCCCC(=O)NCC1=CC(=C(C=C1)O)OC
+211,Choline alfoscerate,N,Homo sapiens (Hominidae),Nootropic,21,C[N+](C)(C)CCOP(=O)([O-])OCC(CO)O
+218,"Cimetropium
+bromide",ND,Datura metel (Solanaceae),Antispasmodic,22,C[N+]1(C2CC(CC1C3C2O3)OC(=O)C(CO)C4=CC=CC=C4)CC5CC5.[Br-]
+219,"Cisatracurium
+besilate",S*,Leontice leontopetalum (Berberidaceae),Muscle relaxant,22,C[N+]1(CCC2=CC(=C(C=C2C1CC3=CC(=C(C=C3)OC)OC)OC)OC)CCC(=O)OCCCCCOC(=O)CC[N+]4(CCC5=CC(=C(C=C5C4CC6=CC(=C(C=C6)OC)OC)OC)OC)C.C1=CC=C(C=C1)S(=O)(=O)[O-].C1=CC=C(C=C1)S(=O)(=O)[O-]
+220,Cissampeline,N,Cissampelos pareira (Menispermaceae),Skeletal muscle relaxant,22,Sum dodgy here
+230,Cocaine,N,Erythroxylum coca (Erythroxylaceae),Neurological disease,22,CN1C2CCC1C(C(C2)OC(=O)C3=CC=CC=C3)C(=O)OC
+240,Cotinine,N,Nicotiana spp. (Solanaceae),Insecticide,22,CN1C(CCC1=O)C2=CN=CC=C2
+244,Cyclosporine,N,"Claviceps purpurea (Clavicipitaceae); Tolypocladium
+inflatum (Clavicipitaceae); Cylindrocarpon lucidum
+(Nectriaceae)",Neurological disease,22,CCC1C(=O)N(CC(=O)N(C(C(=O)NC(C(=O)N(C(C(=O)NC(C(=O)NC(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N1)C(C(C)CC=CC)O)C)C(C)C)C)CC(C)C)C)CC(C)C)C)C)C)CC(C)C)C)C(C)C)CC(C)C)C)C
+265,"Delta-9-
+tetrahydrocannabin
+ol",N,Cannabis sativa (Cannabaceae),Neurological disease,23,Sum dodgy here
+276,"Dextroamphetamin
+e sulfate",ND,"Ephedra sinica (Ephedraceae); Acacia rigidula (Fabaceae);
+Senegalia berlandieri (Fabaceae)",ADHD; narcolepsy,23,Sum dodgy here
+277,Dextromethorphan,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,23,CN1CCC23CCCCC2C1CC4=C3C=C(C=C4)OC
+278,Diacetylmorphine,ND,Papaver somniferum (Papaveraceae),Neurological disease,23,CC(=O)OC1C=CC2C3CC4=C5C2(C1OC5=C(C=C4)OC(=O)C)CCN3C
+292,"Dopamine
+hydrochloride",N,Homo sapiens (Hominidae),Neurological disease,24,C1=CC(=C(C=C1CCN)O)O.Cl
+297,"Doxacurium
+chloride",S*,Leontice leontopetalum (Berberidaceae),Muscle relaxant,24,C[N+]1(CCC2=CC(=C(C(=C2C1CC3=CC(=C(C(=C3)OC)OC)OC)OC)OC)OC)CCCOC(=O)CCC(=O)OCCC[N+]4(CCC5=CC(=C(C(=C5C4CC6=CC(=C(C(=C6)OC)OC)OC)OC)OC)OC)C.[Cl-].[Cl-]
+308,Droxidopa,S*/NM,Homo sapiens (Hominidae),AntiParkinsonian,24,C1=CC(=C(C=C1C(C(C(=O)O)N)O)O)O
+333,Eptazocine HBr,S*,Papaver somniferum (Papaveraceae),Analgesic,25,CC12CCN(CC(C1)CC3=C2C=C(C=C3)O)C.Br
+334,Ergotamine,N,Claviceps purpurea (Clavicipitaceae),Neurological disease,25,CC1(C(=O)N2C(C(=O)N3CCCC3C2(O1)O)CC4=CC=CC=C4)NC(=O)C5CN(C6CC7=CNC8=CC=CC(=C78)C6=C5)C
+343,Etanercept,B,Homo sapiens (Hominidae),Antiarthritic,25,Sum dodgy here
+360,Filgrastim,B,Homo sapiens (Hominidae),Immunostimulant,26,Sum dodgy here
+362,Fingolimod,ND,Isaria (Cordycipitaceae),Multiple sclerosis,26,CCCCCCCCC1=CC=C(C=C1)CCC(CO)(CO)N
+373,"Flutropium
+bromide",ND,"Atropa belladonna (Solanaceae); Datura stramonium
+(Solanaceae); Mandragora officinarum (Solanaceae)",Antitussive,26,C[N+]1(C2CCC1CC(C2)OC(=O)C(C3=CC=CC=C3)(C4=CC=CC=C4)O)CCF.[Br-]
+385,Fosfosal,S*,Salix (Salicaceae),Analgesic,27,C1=CC=C(C(=C1)C(=O)O)OP(=O)(O)O
+393,Gabapentin,S*,Homo sapiens (Hominidae),Antiepileptic,27,C1CCC(CC1)(CC(=O)O)CN
+394,"Galantamine
+hydrobromide",N,"Galanthus elwesii (Amaryllidaceae); Galanthus nivalis
+(Amaryllidaceae); Galanthus woronowii (Amaryllidaceae);
+Leucojum aestivum (Amaryllidaceae); Lycoris radiata
+(Amaryllidaceae); Lycoris squamigera (Amaryllidaceae);
+Narcissus pseudonarcissus (Amaryllidaceae)",Neurological disease,27,CN1CCC23C=CC(CC2OC4=C(C=CC(=C34)C1)OC)O.Br
+411,Glatiramer acetate,S*,Homo sapiens (Hominidae),Multiple sclerosis,28,Sum dodgy here
+412,Glaucine,N,Glaucium flavum (Papaveraceae),Antitussive,28,CN1CCC2=CC(=C(C3=C2C1CC4=CC(=C(C=C43)OC)OC)OC)OC
+413,Glaziovine,N,Ocotea cf. glaziovii FS402 (Lauraceae),Antidepressant,28,CN1CCC2=CC(=C(C3=C2C1CC34C=CC(=O)C=C4)O)OC
+425,"Halopredone
+acetate",ND,Homo sapiens (Hominidae),Antiarthritic,28,CC(=O)OCC(=O)C1(CCC2C1(CC(C3(C2CC(C4=CC(=O)C(=CC43C)Br)F)F)O)C)OC(=O)C
+443,Huperzine,N,Huperzia serrata (Lycopodiaceae),Neurological disease,29,Sum dodgy here
+496,L-Dopa,N,Mucuna pruriens var. utilis (Fabaceae),Neurological disease,31,C1=CC(=C(C=C1CC(C(=O)O)N)O)O
+502,"Levacecarnine
+HCL",ND,Homo sapiens (Hominidae),Nootropic,31,Sum dodgy here
+511,"Lisdexamfetamine
+dimesylate",N,"Ephedra sinica (Ephedraceae); Senegalia berlandieri
+(Fabaceae)",ADHD,31,CC(CC1=CC=CC=C1)NC(=O)C(CCCCN)N.CS(=O)(=O)O.CS(=O)(=O)O
+537,Melevodopa,ND,Mucuna pruriens (Fabaceae),Neurological disease,32,COC(=O)C(CC1=CC(=C(C=C1)O)O)N
+550,Methamphetamine,ND,"Ephedra sinica (Ephedraceae); Acacia rigidula (Fabaceae);
+Senegalia berlandieri (Fabaceae)",Neurological disease,32,CC(CC1=CC=CC=C1)NC
+552,Methylmorphine,N,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,32,CN1CCC23C4C1CC5=C2C(=C(C=C5)OC)OC3C(C=C4)O
+572,"Mivacurium
+chloride",S*,Leontice leontopetalum (Berberidaceae),Muscle relaxant,33,C[N+]1(CCC2=CC(=C(C=C2C1CC3=CC(=C(C(=C3)OC)OC)OC)OC)OC)CCCOC(=O)CCC=CCCC(=O)OCCC[N+]4(CCC5=CC(=C(C=C5C4CC6=CC(=C(C(=C6)OC)OC)OC)OC)OC)C.[Cl-].[Cl-]
+583,Morphine sulfate,ND,"Papaver somniferum (Papaveraceae); Poaceae (Poaceae);
+Asteraceae (Asteraceae)",Neurological disease,34,CN1CCC23C4C1CC5=C2C(=C(C=C5)O)OC3C(C=C4)O.CN1CCC23C4C1CC5=C2C(=C(C=C5)O)OC3C(C=C4)O.OS(=O)(=O)O
+589,Nabilone,ND,Cannabis sativa (Cannabaceae),Neurological disease,34,CCCCCCC(C)(C)C1=CC(=C2C3CC(=O)CCC3C(OC2=C1)(C)C)O
+595,Nalbuphine,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,34,C1CC(C1)CN2CCC34C5C(CCC3(C2CC6=C4C(=C(C=C6)O)O5)O)O
+596,Nalmefene HCL,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,34,C=C1CCC2(C3CC4=C5C2(C1OC5=C(C=C4)O)CCN3CC6CC6)O.Cl
+597,Naloxone,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,34,C=CCN1CCC23C4C(=O)CCC2(C1CC5=C3C(=C(C=C5)O)O4)O
+598,Naltrexone HCI,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,34,Sum dodgy here
+601,Natalizumab,B,Mus musculus (Muridae),Multiple sclerosis,34,Sum dodgy here
+616,Nicotine,N,"Nicotiana tabacum (Solanaceae); Asclepias syriaca
+(Apocynaceae); Lycopodium spp. (Lycopodiaceae)",Insecticide,35,CN1CCCC1C2=CN=CC=C2
+626,Noscapine,N,Papaver somniferum (Papaveraceae),Antitussive,35,CN1CCC2=CC3=C(C(=C2C1C4C5=C(C(=C(C=C5)OC)OC)C(=O)O4)OC)OCO3
+640,"Omega-conotoxin
+MVIIA",N,Conus geographus (Conidae); Conus magus (Conidae),Neurological disease,36,CC1C(=O)NC(C(=O)NC2CSSCC3C(=O)NC(C(=O)NC(C(=O)NCC(=O)NC(C(=O)NC(CSSCC(C(=O)NC(CSSCC(C(=O)NC(C(=O)NCC(=O)NC(C(=O)NCC(=O)N1)CCCCN)CCCCN)N)C(=O)NC(C(=O)NCC(=O)NC(C(=O)N3)CO)C(C)O)NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC(=O)C(NC2=O)CO)CCCNC(=N)N)CC(C)C)CCSC)CC4=CC=C(C=C4)O)CC(=O)O)C(=O)N)CCCCN)CO)CCCNC(=N)N)CCCCN
+646,Orencia,B,Homo sapiens (Hominidae),Antiarthritic,36,Sum dodgy here
+650,Orthokine,B,Homo sapiens (Hominidae),Antiarthritic,36,Sum dodgy here
+655,Oxycodone HCl,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,36,CN1CCC23C4C(=O)CCC2(C1CC5=C3C(=C(C=C5)OC)O4)O.Cl
+656,Oxymorphone,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,36,CN1CCC23C4C(=O)CCC2(C1CC5=C3C(=C(C=C5)O)O4)O
+658,Pachycarpine,N,Sophora pachycarpa (Fabaceae),Oxytocic,36,C1CCN2CC3CC(C2C1)CN4C3CCCC4
+667,Papaverine,N,Papaver somniferum (Papaveraceae),Neurological disease,37,COC1=C(C=C(C=C1)CC2=NC=CC3=CC(=C(C=C32)OC)OC)OC
+672,Pegademase bovine,B,Bos taurus (Bovidae),Immunostimulant,37,Sum dodgy here
+681,Pentazocine,ND,Papaver somniferum (Papaveraceae),Neurological disease,37,CC1C2CC3=C(C1(CCN2CC=C(C)C)C)C=C(C=C3)O
+684,Pergolide mesylate,ND,"Turbina corymbosa (Convolvulaceae); Ipomoea violacea
+(Convolvulaceae)",AntiParkinsonian,37,CCCN1CC(CC2C1CC3=CNC4=CC=CC2=C34)CSC.CS(=O)(=O)O
+688,Physostigmine,N,Physostigma venenosum (Fabaceae),Neurological disease,37,CC12CCN(C1N(C3=C2C=C(C=C3)OC(=O)NC)C)C
+713,Pregabalin,ND,Homo sapiens (Hominidae),Antiepileptic,38,CC(C)CC(CC(=O)O)CN
+719,Progabide,S*,Homo sapiens (Hominidae),Anticonvulsant,38,C1=CC(=CC=C1C(=NCCCC(=O)N)C2=C(C=CC(=C2)F)O)Cl
+723,Propentofylline,ND,Homo sapiens (Hominidae),Vasodilator; cerebral,38,CCCN1C=NC2=C1C(=O)N(C(=O)N2C)CCCCC(=O)C
+734,Ramosetron,S*/NM,Homo sapiens (Hominidae),Antiemetic,39,CN1C=C(C2=CC=CC=C21)C(=O)C3CCC4=C(C3)NC=N4
+735,Ranibizumab,B,Mus musculus (Muridae),Macular degeneration,39,Sum dodgy here
+762,"Rocuronium
+bromide",ND,Homo sapiens (Hominidae),Muscle relaxant,40,CC(=O)OC1C(CC2C1(CCC3C2CCC4C3(CC(C(C4)O)N5CCOCC5)C)C)[N+]6(CCCC6)CC=C.[Br-]
+766,Ropinirole HCl,S*/NM,Homo sapiens (Hominidae),AntiParkinsonian,40,CCCN(CCC)CCC1=C2CC(=O)NC2=CC=C1.Cl
+767,Rorifone,N,Rorippa indica (Brassicaceae),Antitussive,40,CS(=O)(=O)CCCCCCCCCC#N
+774,Rotigotine,S/NM,Homo sapiens (Hominidae),AntiParkinsonian,40,CCCN(CCC1=CC=CS1)C2CCC3=C(C2)C=CC=C3O
+788,Sargramostim,B,Homo sapiens (Hominidae),Immunostimulant,41,Sum dodgy here
+790,Sativex,N,Cannabis sativa (Cannabaceae),Neuropathic pain,41,CCCCCC1=CC(=C(C(=C1)O)C2C=C(CCC2C(=C)C)C)O.CCCCCC1=CC(=C2C3C=C(CCC3C(OC2=C1)(C)C)C)O
+797,Sertindole,S*/NM,Homo sapiens (Hominidae),Neuroleptic,41,C1CN(CCC1C2=CN(C3=C2C=C(C=C3)Cl)C4=CC=C(C=C4)F)CCN5CCNC5=O
+804,Sodium oxybate,ND,Homo sapiens (Hominidae),Narcolepsy,41,C(CC(=O)[O-])CO.[Na+]
+823,Strychnine,N,Strychnos nux-vomica (Loganiaceae),Neurological disease,42,C1CN2CC3=CCOC4CC(=O)N5C6C4C3CC2C61C7=CC=CC=C75
+834,Taltirelin,ND,Homo sapiens (Hominidae),CNS Stimulant,42,CN1C(=O)CC(NC1=O)C(=O)NC(CC2=CN=CN2)C(=O)N3CCCC3C(=O)N
+835,Tandospirone,S/NM,Homo sapiens (Hominidae),Anxiolytic,42,C1CC2CC1C3C2C(=O)N(C3=O)CCCCN4CCN(CC4)C5=NC=CC=N5
+859,THC-CBD,N,Cannabis sativa (Cannabaceae),Neurological disease,43,Sum dodgy here
+880,"Tranylcypromine
+sulfate",ND,"Ephedra sinica (Ephedraceae); Acacia rigidula (Fabaceae);
+Senegalia berlandieri (Fabaceae)",Major depressive,44,C1C(C1N)C2=CC=CC=C2.C1C(C1N)C2=CC=CC=C2.OS(=O)(=O)O
+891,Tubocurarine,N,"Strychnos (Loganiaceae); Strychnos (Loganiaceae);
+Chondrodendron tomentosum (Menispermaceae); Curarea
+(Menispermaceae)",Skeletal muscle relaxant,44,CN1CCC2=CC(=C3C=C2C1CC4=CC=C(C=C4)OC5=C6C(CC7=CC(=C(C=C7)O)O3)[N+](CCC6=CC(=C5O)OC)(C)C)OC
+906,Vasicine,N,Acanthaceae (Acanthaceae),Oxytocic,45,C1CN2CC3=CC=CC=C3N=C2C1O
+907,"Vecuronium
+bromide",ND,Homo sapiens (Hominidae),Muscle relaxant,45,CC(=O)OC1CC2CCC3C(C2(CC1N4CCCCC4)C)CCC5(C3CC(C5OC(=O)C)[N+]6(CCCCC6)C)C.[Br-]
+913,Vigabatrin,ND,Homo sapiens (Hominidae),Antiepileptic,45,C=CC(CCC(=O)O)N
+916,Vincamine,N,Vinca minor (Apocynaceae),Cerebral stimulant,45,CCC12CCCN3C1C4=C(CC3)C5=CC=CC=C5N4C(C2)(C(=O)OC)O
+924,Vyvanse,ND,"Ephedra sinica (Ephedraceae); Acacia rigidula (Fabaceae);
+Senegalia berlandieri (Fabaceae)",Neurological disease,45,CC(CC1=CC=CC=C1)NC(=O)C(CCCCN)N.CS(=O)(=O)O.CS(=O)(=O)O
