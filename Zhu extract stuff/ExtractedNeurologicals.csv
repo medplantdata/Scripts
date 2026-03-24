@@ -1,0 +1,146 @@
+,Drug name,"Drug
+type",Species origin (family),"Therapeutic class or
+targeted disease",source_page
+3,"Acetylcholine
+chloride",N,Homo sapiens (Hominidae),Neurological disease,13
+8,"Actimmune
+Interferon gamma-
+1b",B,Homo sapiens (Hominidae),Immunostimulant,13
+11,Adalimumab,B,Homo sapiens (Hominidae),Antiarthritic,13
+42,Amphetamine,N,"Ephedra sinica (Ephedraceae); Acacia rigidula (Fabaceae);
+Senegalia berlandieri (Fabaceae)",Neurological disease,14
+47,Anakinra,B,Homo sapiens (Hominidae),Antiarthritic,14
+49,Anecortave acetate,ND,Homo sapiens (Hominidae),Macular degeneration,14
+61,"Apomorphine
+hydrochloride",ND,Papaver somniferum (Papaveraceae),Neurological disease,15
+86,"Avonex Interferon
+beta-1a",B,Homo sapiens (Hominidae),Multiple sclerosis,16
+107,"Betaseron
+Interferon b-1b",B,Homo sapiens (Hominidae),Multiple sclerosis,16
+119,"Brovincamine
+fumarate",ND,Vinca minor (Apocynaceae),"Vasodilator, cerebral",17
+123,Buprenorphine,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,17
+139,Capsaicin,N,"Capsicum annuum (Solanaceae); Capsicum frutescens
+(Solanaceae); Zingiber officinale (Zingiberaceae)",Neurological disease,17
+211,Choline alfoscerate,N,Homo sapiens (Hominidae),Nootropic,21
+218,"Cimetropium
+bromide",ND,Datura metel (Solanaceae),Antispasmodic,22
+219,"Cisatracurium
+besilate",S*,Leontice leontopetalum (Berberidaceae),Muscle relaxant,22
+220,Cissampeline,N,Cissampelos pareira (Menispermaceae),Skeletal muscle relaxant,22
+230,Cocaine,N,Erythroxylum coca (Erythroxylaceae),Neurological disease,22
+240,Cotinine,N,Nicotiana spp. (Solanaceae),Insecticide,22
+244,Cyclosporine,N,"Claviceps purpurea (Clavicipitaceae); Tolypocladium
+inflatum (Clavicipitaceae); Cylindrocarpon lucidum
+(Nectriaceae)",Neurological disease,22
+265,"Delta-9-
+tetrahydrocannabin
+ol",N,Cannabis sativa (Cannabaceae),Neurological disease,23
+276,"Dextroamphetamin
+e sulfate",ND,"Ephedra sinica (Ephedraceae); Acacia rigidula (Fabaceae);
+Senegalia berlandieri (Fabaceae)",ADHD; narcolepsy,23
+277,Dextromethorphan,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,23
+278,Diacetylmorphine,ND,Papaver somniferum (Papaveraceae),Neurological disease,23
+292,"Dopamine
+hydrochloride",N,Homo sapiens (Hominidae),Neurological disease,24
+297,"Doxacurium
+chloride",S*,Leontice leontopetalum (Berberidaceae),Muscle relaxant,24
+308,Droxidopa,S*/NM,Homo sapiens (Hominidae),AntiParkinsonian,24
+333,Eptazocine HBr,S*,Papaver somniferum (Papaveraceae),Analgesic,25
+334,Ergotamine,N,Claviceps purpurea (Clavicipitaceae),Neurological disease,25
+343,Etanercept,B,Homo sapiens (Hominidae),Antiarthritic,25
+360,Filgrastim,B,Homo sapiens (Hominidae),Immunostimulant,26
+362,Fingolimod,ND,Isaria (Cordycipitaceae),Multiple sclerosis,26
+373,"Flutropium
+bromide",ND,"Atropa belladonna (Solanaceae); Datura stramonium
+(Solanaceae); Mandragora officinarum (Solanaceae)",Antitussive,26
+385,Fosfosal,S*,Salix (Salicaceae),Analgesic,27
+393,Gabapentin,S*,Homo sapiens (Hominidae),Antiepileptic,27
+394,"Galantamine
+hydrobromide",N,"Galanthus elwesii (Amaryllidaceae); Galanthus nivalis
+(Amaryllidaceae); Galanthus woronowii (Amaryllidaceae);
+Leucojum aestivum (Amaryllidaceae); Lycoris radiata
+(Amaryllidaceae); Lycoris squamigera (Amaryllidaceae);
+Narcissus pseudonarcissus (Amaryllidaceae)",Neurological disease,27
+411,Glatiramer acetate,S*,Homo sapiens (Hominidae),Multiple sclerosis,28
+412,Glaucine,N,Glaucium flavum (Papaveraceae),Antitussive,28
+413,Glaziovine,N,Ocotea cf. glaziovii FS402 (Lauraceae),Antidepressant,28
+425,"Halopredone
+acetate",ND,Homo sapiens (Hominidae),Antiarthritic,28
+443,Huperzine,N,Huperzia serrata (Lycopodiaceae),Neurological disease,29
+496,L-Dopa,N,Mucuna pruriens var. utilis (Fabaceae),Neurological disease,31
+502,"Levacecarnine
+HCL",ND,Homo sapiens (Hominidae),Nootropic,31
+511,"Lisdexamfetamine
+dimesylate",N,"Ephedra sinica (Ephedraceae); Senegalia berlandieri
+(Fabaceae)",ADHD,31
+537,Melevodopa,ND,Mucuna pruriens (Fabaceae),Neurological disease,32
+550,Methamphetamine,ND,"Ephedra sinica (Ephedraceae); Acacia rigidula (Fabaceae);
+Senegalia berlandieri (Fabaceae)",Neurological disease,32
+552,Methylmorphine,N,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,32
+572,"Mivacurium
+chloride",S*,Leontice leontopetalum (Berberidaceae),Muscle relaxant,33
+583,Morphine sulfate,ND,"Papaver somniferum (Papaveraceae); Poaceae (Poaceae);
+Asteraceae (Asteraceae)",Neurological disease,34
+589,Nabilone,ND,Cannabis sativa (Cannabaceae),Neurological disease,34
+595,Nalbuphine,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,34
+596,Nalmefene HCL,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,34
+597,Naloxone,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,34
+598,Naltrexone HCI,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,34
+601,Natalizumab,B,Mus musculus (Muridae),Multiple sclerosis,34
+616,Nicotine,N,"Nicotiana tabacum (Solanaceae); Asclepias syriaca
+(Apocynaceae); Lycopodium spp. (Lycopodiaceae)",Insecticide,35
+626,Noscapine,N,Papaver somniferum (Papaveraceae),Antitussive,35
+640,"Omega-conotoxin
+MVIIA",N,Conus geographus (Conidae); Conus magus (Conidae),Neurological disease,36
+646,Orencia,B,Homo sapiens (Hominidae),Antiarthritic,36
+650,Orthokine,B,Homo sapiens (Hominidae),Antiarthritic,36
+655,Oxycodone HCl,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,36
+656,Oxymorphone,ND,"Papaver bracteatum (Papaveraceae); Papaver somniferum
+(Papaveraceae)",Neurological disease,36
+658,Pachycarpine,N,Sophora pachycarpa (Fabaceae),Oxytocic,36
+667,Papaverine,N,Papaver somniferum (Papaveraceae),Neurological disease,37
+672,Pegademase bovine,B,Bos taurus (Bovidae),Immunostimulant,37
+681,Pentazocine,ND,Papaver somniferum (Papaveraceae),Neurological disease,37
+684,Pergolide mesylate,ND,"Turbina corymbosa (Convolvulaceae); Ipomoea violacea
+(Convolvulaceae)",AntiParkinsonian,37
+688,Physostigmine,N,Physostigma venenosum (Fabaceae),Neurological disease,37
+713,Pregabalin,ND,Homo sapiens (Hominidae),Antiepileptic,38
+719,Progabide,S*,Homo sapiens (Hominidae),Anticonvulsant,38
+723,Propentofylline,ND,Homo sapiens (Hominidae),Vasodilator; cerebral,38
+734,Ramosetron,S*/NM,Homo sapiens (Hominidae),Antiemetic,39
+735,Ranibizumab,B,Mus musculus (Muridae),Macular degeneration,39
+762,"Rocuronium
+bromide",ND,Homo sapiens (Hominidae),Muscle relaxant,40
+766,Ropinirole HCl,S*/NM,Homo sapiens (Hominidae),AntiParkinsonian,40
+767,Rorifone,N,Rorippa indica (Brassicaceae),Antitussive,40
+774,Rotigotine,S/NM,Homo sapiens (Hominidae),AntiParkinsonian,40
+788,Sargramostim,B,Homo sapiens (Hominidae),Immunostimulant,41
+790,Sativex,N,Cannabis sativa (Cannabaceae),Neuropathic pain,41
+797,Sertindole,S*/NM,Homo sapiens (Hominidae),Neuroleptic,41
+804,Sodium oxybate,ND,Homo sapiens (Hominidae),Narcolepsy,41
+823,Strychnine,N,Strychnos nux-vomica (Loganiaceae),Neurological disease,42
+834,Taltirelin,ND,Homo sapiens (Hominidae),CNS Stimulant,42
+835,Tandospirone,S/NM,Homo sapiens (Hominidae),Anxiolytic,42
+859,THC-CBD,N,Cannabis sativa (Cannabaceae),Neurological disease,43
+880,"Tranylcypromine
+sulfate",ND,"Ephedra sinica (Ephedraceae); Acacia rigidula (Fabaceae);
+Senegalia berlandieri (Fabaceae)",Major depressive,44
+891,Tubocurarine,N,"Strychnos (Loganiaceae); Strychnos (Loganiaceae);
+Chondrodendron tomentosum (Menispermaceae); Curarea
+(Menispermaceae)",Skeletal muscle relaxant,44
+906,Vasicine,N,Acanthaceae (Acanthaceae),Oxytocic,45
+907,"Vecuronium
+bromide",ND,Homo sapiens (Hominidae),Muscle relaxant,45
+913,Vigabatrin,ND,Homo sapiens (Hominidae),Antiepileptic,45
+916,Vincamine,N,Vinca minor (Apocynaceae),Cerebral stimulant,45
+924,Vyvanse,ND,"Ephedra sinica (Ephedraceae); Acacia rigidula (Fabaceae);
+Senegalia berlandieri (Fabaceae)",Neurological disease,45
