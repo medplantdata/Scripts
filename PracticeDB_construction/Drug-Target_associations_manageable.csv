@@ -1,0 +1,51 @@
+Drug_id,Drug_Name,Target_id,Target_Name,Type_Of_Action
+D2PJTKO,Dalfampridine,T9B4DUV,Potassium voltage-gated channel subfamily A member 1,Antagonist
+D4F6PHW,Setiptiline,T2NNQFP,Adrenergic receptor Alpha-2 (ADRA2),Antagonist
+D5RSKP4,Lithium Carbonate,T3H3CBY,Inositol monophosphatase 1,Inhibitor
+D5UZ8NL,Lithium Citrate,T3H3CBY,Inositol monophosphatase 1,Inhibitor
+D7YSD23,Pozanicline,T9RHY3X,Neuronal acetylcholine receptor subunit alpha-4,Agonist
+D8YN2GM,Oxitriptan,T7ELSA1,Tryptophan--tRNA ligase 2,
+D8Z9TZC,Aptazapine,T2NNQFP,Adrenergic receptor Alpha-2 (ADRA2),Antagonist
+D9P7DM5,Betaine,T3ZZ0AK,Betaine--homocysteine S-methyltransferase (BHMT),Substrate
+D9P7DM5,Betaine,T7Z1AL8,Betaine--homocysteine S-methyltransferase 2 (BHMT2),Substrate
+D9I96ZK,Arbaclofen,T9X4Z2A,Gamma-aminobutyric acid type B receptor subunit 1 (GABBR1),Agonist
+D8VPRWF,Baclofen,T9X4Z2A,Gamma-aminobutyric acid type B receptor subunit 1 (GABBR1),Agonist
+D8VPRWF,Baclofen,T8X8DT5,Gamma-aminobutyric acid type B receptor subunit 2 (GABBR2),Agonist
+D7JACPF,Acamprosate,T2S9CP4,Gamma-aminobutyric acid type A receptor subunit beta3 (GABRB3),Positive Modulator
+D3I3CYW,Metformin,T7PLWMB,Glycerol-3-phosphate dehydrogenase 2 (GPD2),Inhibitor
+D9LHIEC,Interferon Gamma-1B,T4UF2VR,Interferon gamma receptor 1 (IFNGR1),Agonist
+D7WOUCZ,Diazoxide,T5OATQF,Potassium inwardly rectifying channel subfamily J member 8 (KCNJ8),Opener
+D3I3CYW,Metformin,T5IU69M,Mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 6 (MT-ND6),Inhibitor
+D9U1EMG,Fludarabine,T9RMNQV,Ribonucleotide reductase regulatory TP53 inducible subunit M2B (RRM2B),Inhibitor
+D4P3ITM,Hydroxyurea,T9RMNQV,Ribonucleotide reductase regulatory TP53 inducible subunit M2B (RRM2B),Inhibitor
+D6IVMED,Dantrolene,T4F7RMB,Ryanodine receptor 3 (RYR3),Antagonist
+D9FUM8P,Zilucoplan,T4Z7B2H,Complement C5 protein (C5),Inhibitor
+D4MFLOK,Anakinra,T8U47KC,HUMAN interleukin-1 receptor 1 (IL1R1),Antagonist
+D9Y6PO4,Losartan,T2DTGS7,HUMAN type-1 angiotensin II receptor (AGTR1),Antagonist
+D4G9MW1,Candesartan,T2DTGS7,HUMAN type-1 angiotensin II receptor (AGTR1),Antagonist
+D6VWF5U,Inotersen,T2ZPSV2,,Antisense
+D8OHA3U,Losmapimod,T9Z2LBI,Stress-activated protein kinase 2a (p38 alpha),Inhibitor
+D6WAGO6,Nd1251,T9XPG35,Nociceptin receptor (OPRL1),Agonist
+D8X6B39,Ezogabine,T9UC3TW,Voltage-gated potassium channel Kv7 (KCNQ),Activator
+D5P6OG7,Miglustat,T9TYGO5,Ceramide glucosyltransferase (UGCG),Inhibitor
+D9VAL8B,Topiramate,T9SJIUV,Glutamate receptor ionotropic kainate 1 (GRIK1),Antagonist
+D6G9CI7,Abatacept,T9S8SPW,Activation B7-1 antigen (CD80),Binder
+D6O9B3O,Ganaxolone,T9S8AHQ,GABA(A) receptor gamma-3 (GABRG3),Agonist
+D6USXJU,Remimazolam,T9S8AHQ,GABA(A) receptor gamma-3 (GABRG3),Agonist
+D9U3OUH,Zolpidem,T9S8AHQ,GABA(A) receptor gamma-3 (GABRG3),Modulator
+D2LNZS5,Flumazenil,T9S8AHQ,GABA(A) receptor gamma-3 (GABRG3),Modulator
+D9TU3DQ,Clobazam,T9S8AHQ,GABA(A) receptor gamma-3 (GABRG3),Modulator
+D3TNP2F,Brexanolone,T9S8AHQ,GABA(A) receptor gamma-3 (GABRG3),Modulator
+D8MKZTF,Docetaxel,T9R09YT,Tubulin (TUB),Inhibitor
+D2YZCOM,Colchicine,T9R09YT,Tubulin (TUB),Binder
+D8TF9LH,Paliperidone,T9QQO2N,5-HT receptor (5HTR),Antagonist
+D2RML91,Dexmecamylamine,T9O1RIN,Neuronal acetylcholine receptor beta-2 (CHRNB2),Antagonist
+D7XDPZ9,Idalopirdine,T9NPRBW,5-HT 6 receptor (HTR6),Enhancer
+D9WK3SV,Cytarabine,T9N2OIK,Herpes simplex virus DNA polymerase UL30 (HSV UL30),Inhibitor
+D2EE91S,Cariprazine,T9LWV6T,Dopamine D3 receptor (D3R),Modulator
+D7RTMI1,Pramipexole,T9LWV6T,Dopamine D3 receptor (D3R),Modulator
+D2OC08X,Ropinirole,T9LWV6T,Dopamine D3 receptor (D3R),Modulator
+D9ACQGO,Valbenazine,T9KD7BT,Synaptic vesicle amine transporter (SLC18A2),Antagonist
+D7D5BFY,Tetrabenazine,T9KD7BT,Synaptic vesicle amine transporter (SLC18A2),Blocker
+D9FS0WP,Deutetrabenazine,T9KD7BT,Synaptic vesicle amine transporter (SLC18A2),Modulator
+D5FE8WP,Guanfacine,T9JHY9E,G-protein coupled receptor 55 (GPR55),Agonist
