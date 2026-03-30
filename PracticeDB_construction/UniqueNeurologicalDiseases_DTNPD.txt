@@ -1,8 +1,6 @@
-0
 Schizophrenia or other primary psychotic disorders
 Anxiety or fear-related disorders
 Disorders with neurocognitive impairment as a major feature
-""
 Depressive disorders
 Pain
 Other disorders of the nervous system
