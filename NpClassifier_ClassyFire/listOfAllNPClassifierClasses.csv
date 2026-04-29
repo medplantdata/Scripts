@@ -1,0 +1,773 @@
+0,1,2,3,4,5,6
+Pathway,Superclass,Class,"Precision and Recall of
+Class",,,"Populatio
+n"
+,,,Precision,Recall,"F1
+score",
+Alkaloids,Ornithine alkaloids,Stemona alkaloids,1.000,1.000,1.000,112
+Alkaloids,Tyrosine alkaloids,Acutumine alkaloids,1.000,1.000,1.000,12
+Alkaloids,Tyrosine alkaloids,Betalain alkaloids,0.909,0.833,1.000,19
+Alkaloids,Tyrosine alkaloids,Cephalotaxus alkaloids,1.000,1.000,1.000,10
+Alkaloids,Tryptophan alkaloids,Hapalindole alkaloids,1.000,1.000,1.000,18
+Alkaloids,Tryptophan alkaloids,Pyrroloindole alkaloids,1.000,1.000,1.000,66
+Alkaloids,Anthranilic acid alkaloids,Phenoxazine alkaloids,1.000,1.000,1.000,26
+Alkaloids,Guanidine alkaloids,Saxitoxins,1.000,1.000,1.000,9
+Alkaloids,Guanidine alkaloids,Tetrodotoxins,1.000,1.000,1.000,26
+Alkaloids,Guanidine alkaloids,Acyclic guanidine alkaloids,1.000,1.000,1.000,4
+Alkaloids,Guanidine alkaloids,Bicyclic guanidine alkaloids,1.000,1.000,1.000,17
+Alkaloids,Guanidine alkaloids,Monocyclic guanidine alkaloids,1.000,1.000,1.000,6
+Alkaloids,Pseudoalkaloids,Cytochalasan alkaloids,1.000,1.000,1.000,125
+Alkaloids,Pseudoalkaloids,Capsaicins and Capsaicinoids,0.833,0.714,1.000,17
+Alkaloids,Pseudoalkaloids,Isariotin alkaloids,1.000,1.000,1.000,10
+Alkaloids,Peptide alkaloids,"Indole diketopiperazine alkaloids (L-Trp, L-Pro)",1.000,1.000,1.000,47
+Alkaloids,Peptide alkaloids,"Indole diketopiperazine alkaloids (L-Trp, L-Trp)",1.000,1.000,1.000,13
+Alkaloids,Peptide alkaloids,Other indole diketopiperazine alkaloids,0.966,0.933,1.000,43
+Alkaloids,Tetramate alkaloids,Pyrrocidine tetramate alkaloids,1.000,1.000,1.000,25
+Alkaloids,Tetramate alkaloids,Cyclopiazonic acid-tpye tetramate alkaloids,1.000,1.000,1.000,24
+Alkaloids,Tetramate alkaloids,Simple tetramate alkaloids,0.917,0.846,1.000,18
+Alkaloids,Mitomycin derivatives,Mitomycins,1.000,1.000,1.000,12
+Alkaloids,Proline alkaloids,Prodigiosins,1.000,1.000,1.000,26
+Alkaloids,Tryptophan alkaloids,Carbazole alkaloids,0.994,1.000,0.988,406
+Alkaloids,Peptide alkaloids,Ansa peptide alkaloids,0.980,1.000,0.960,128
+Alkaloids,Tryptophan alkaloids,Indole-Diterpenoid alkaloids (Penitrems),0.971,1.000,0.944,90
+Alkaloids,Tyrosine alkaloids,Morphinan alkaloids,0.959,0.986,0.934,408
+Alkaloids,Guanidine alkaloids,Pentacyclic guanidine alkaloids,0.966,1.000,0.933,36
+Alkaloids,Tyrosine alkaloids,Hasubanan alkaloids,0.929,0.929,0.929,37
+Alkaloids,Tryptophan alkaloids,Ergot alkaloids,0.963,1.000,0.929,72
+Alkaloids,Tryptophan alkaloids,Carboline alkaloids,0.951,0.978,0.925,734
+Alkaloids,Tryptophan alkaloids,Iboga type,0.960,1.000,0.923,135
+Alkaloids,Ornithine alkaloids,Tropane alkaloids,0.958,1.000,0.920,292
+Alkaloids,Pseudoalkaloids,Steroidal alkaloids,0.948,0.986,0.913,405
+Alkaloids,Anthranilic acid alkaloids,Acridone alkaloids,0.954,1.000,0.912,285
+Alkaloids,Tryptophan alkaloids,Corynanthe type,0.838,0.775,0.912,177
+Alkaloids,Tyrosine alkaloids,Protoberberine alkaloids,0.949,1.000,0.903,170
+Alkaloids,Lysine alkaloids,Quinolizidine alkaloids,0.925,0.949,0.902,216
+Alkaloids,Tyrosine alkaloids,Phenethylisoquinoline alkaloids,0.947,1.000,0.900,102
+Alkaloids,Tryptophan alkaloids,Pyrroloquinoline alkaloids,0.918,0.966,0.875,178
+Alkaloids,Serine alkaloids,Thiazole alkaloids,0.933,1.000,0.875,32
+Alkaloids,Pseudoalkaloids,Purine alkaloids,0.876,0.886,0.867,235
+Alkaloids,Tyrosine alkaloids,Isoquinoline alkaloids,0.806,0.757,0.862,903
+Alkaloids,Ornithine alkaloids,Polyamines,0.918,0.986,0.859,434
+Alkaloids,Tryptophan alkaloids,Strychnos type,0.906,0.960,0.857,146
+Alkaloids,Pseudoalkaloids,Phenylalanine-derived alkaloids,0.889,0.923,0.857,143
+Alkaloids,Miscellaneous alkaloids,Miscellaneous alkaloids,0.923,1.000,0.857,18
+Alkaloids,Pseudoalkaloids,Terpenoid alkaloids,0.902,0.965,0.846,335
+Alkaloids,Anthranilic acid alkaloids,Anthranillic acid derivatives,0.889,0.941,0.842,43
+Alkaloids,Ornithine alkaloids,Pyrrolizidine alkaloids,0.897,0.972,0.833,218
+Alkaloids,Tyrosine alkaloids,Protopine alkaloids,0.909,1.000,0.833,28
+Alkaloids,Tyrosine alkaloids,Aporphine alkaloids,0.907,1.000,0.830,237
+Alkaloids,Pseudoalkaloids,pteridine alkaloids,0.905,1.000,0.826,115
+Alkaloids,Anthranilic acid alkaloids,Phenazine alkaloids,0.903,1.000,0.824,86
+Alkaloids,Tyrosine alkaloids,Phenylethylamines,0.901,1.000,0.821,215
+Alkaloids,Tryptophan alkaloids,Simple oxindole alkaloids,0.889,1.000,0.800,21
+Alkaloids,Tryptophan alkaloids,Aspidosperma-Iboga hybrid type (Vinca alkaloids),0.667,0.571,0.800,56
+Alkaloids,Pseudoalkaloids,Isoindole alkaloids,0.889,1.000,0.800,72
+Alkaloids,Peptide alkaloids,"Indole diketopiperazine alkaloids (L-Trp, L-Ala)",0.880,1.000,0.786,39
+Alkaloids,Tyrosine alkaloids,Amarylidaceae alkaloids,0.833,0.889,0.784,253
+Alkaloids,Anthranilic acid alkaloids,Quinazoline alkaloids,0.839,0.929,0.765,88
+Alkaloids,Peptide alkaloids,Thiodiketopiperazine alkaloids,0.839,0.929,0.765,87
+Alkaloids,Peptide alkaloids,Simple diketopiperazine alkaloids,0.857,1.000,0.750,28
+Alkaloids,Tryptophan alkaloids,Yohimbine-like alkaloids,0.842,1.000,0.727,63
+Alkaloids,Nicotinic acid alkaloids,Pyridine alkaloids,0.802,0.901,0.722,623
+Alkaloids,Pseudoalkaloids,Azo and Azoxy alkaloids,0.818,1.000,0.692,71
+Alkaloids,Lysine alkaloids,Piperidine alkaloids,0.771,0.914,0.667,259
+Alkaloids,Tyrosine alkaloids,Terpenoid tetrahydroisoquinoline alkaloids,0.800,1.000,0.667,57
+Alkaloids,Tyrosine alkaloids,Homoerythrina alkaloids,0.667,0.667,0.667,10
+Alkaloids,Tryptophan alkaloids,Quinoline alkaloids,0.791,1.000,0.654,132
+Alkaloids,Anthranilic acid alkaloids,Quinoline alkaloids,0.791,1.000,0.654,132
+Alkaloids,Histidine alkaloids,Imidazole alkaloids,0.744,0.879,0.644,236
+Alkaloids,Peptide alkaloids,Pyrazine and Piperazine alkaloids,0.682,0.938,0.536,142
+Alkaloids,Tetramate alkaloids,Pyrazine and Piperazine alkaloids,0.682,0.938,0.536,142
+Alkaloids,Peptide alkaloids,Simple amide alkaloids,0.667,0.920,0.523,199
+Alkaloids,Tyrosine alkaloids,Tetrahydroisoquinoline alkaloids,0.683,1.000,0.519,156
+Alkaloids,Tyrosine alkaloids,Oxazole alkaloids,0.667,1.000,0.500,10
+Alkaloids,Ornithine alkaloids,Pyrrolidine alkaloids,0.636,0.933,0.483,150
+Alkaloids,Proline alkaloids,Pyrrole alkaloids,0.632,1.000,0.462,66
+Alkaloids,Lysine alkaloids,Indolizidine alkaloids,0.615,0.941,0.457,187
+Alkaloids,Guanidine alkaloids,Tricyclic guanidine alkaloids,0.545,1.000,0.375,27
+Alkaloids,Tryptophan alkaloids,Simple indole alkaloids,0.526,1.000,0.357,144
+Alkaloids,Pseudoalkaloids,Acetate-derived alkaloids,0.400,0.500,0.333,19
+Amino acids and Peptides,Macrolides,Rhizoxins,1.000,1.000,1.000,8
+Amino acids and Peptides,Macrolides,Macrolide lactams,1.000,1.000,1.000,35
+Amino acids and Peptides,Macrolides,Lactam bearing macrolide lactones,0.976,0.952,1.000,24
+Amino acids and Peptides,Macrolides,Antimycins,1.000,1.000,1.000,48
+Amino acids and Peptides,Macrolides,Macrocyclic tetramic acids,1.000,1.000,1.000,46
+Amino acids and Peptides,Linear polyketides,Elfamycins,1.000,1.000,1.000,10
+Amino acids and Peptides,Linear polyketides,DKXanthenes and derivatives,1.000,1.000,1.000,13
+Amino acids and Peptides,Cyclic polyketides,3-Spirotetramic acids,1.000,1.000,1.000,22
+Amino acids and Peptides,Peptide alkaloids,"Indole diketopiperazine alkaloids (L-Trp, L-Pro)",1.000,1.000,1.000,47
+Amino acids and Peptides,Peptide alkaloids,"Indole diketopiperazine alkaloids (L-Trp, L-Trp)",1.000,1.000,1.000,13
+Amino acids and Peptides,Peptide alkaloids,Other indole diketopiperazine alkaloids,0.966,0.933,1.000,43
+Amino acids and Peptides,Tetramate alkaloids,Pyrrocidine tetramate alkaloids,1.000,1.000,1.000,25
+Amino acids and Peptides,Tetramate alkaloids,Cyclopiazonic acid-type tetramate alkaloids,1.000,1.000,1.000,24
+Amino acids and Peptides,Mycosporine derivatives,Mycosporine and Mycosporine-like amino acids,1.000,1.000,1.000,27
+Amino acids and Peptides,Oligopeptides,Aeruginosins,1.000,1.000,1.000,46
+Amino acids and Peptides,Oligopeptides,Microginins,1.000,1.000,1.000,41
+Amino acids and Peptides,Oligopeptides,Anabaenopeptins,0.976,0.952,1.000,38
+Amino acids and Peptides,Oligopeptides,Microcystins,1.000,1.000,1.000,59
+Amino acids and Peptides,Oligopeptides,Microcolins and mirabimides,1.000,1.000,1.000,16
+Amino acids and Peptides,Oligopeptides,Tantazoles and mirabazoles,1.000,1.000,1.000,7
+Amino acids and Peptides,Oligopeptides,Vancomycins and Teicoplanins,1.000,1.000,1.000,283
+Amino acids and Peptides,Oligopeptides,Streptogramins,1.000,1.000,1.000,14
+Amino acids and Peptides,Oligopeptides,Actinomycins,1.000,1.000,1.000,99
+Amino acids and Peptides,β-lactams,Penicillins,1.000,1.000,1.000,101
+Amino acids and Peptides,β-lactams,Cephalosporins,0.973,0.947,1.000,90
+Amino acids and Peptides,β-lactams,Cephamycins,1.000,1.000,1.000,19
+Amino acids and Peptides,β-lactams,Clavams,1.000,1.000,1.000,13
+Amino acids and Peptides,β-lactams,Carbapenems,1.000,1.000,1.000,30
+Amino acids and Peptides,β-lactams,Monocyclic β-lactams,1.000,1.000,1.000,3
+Amino acids and Peptides,Oligopeptides,RiPPs-Amatoxins and Phallotoxins,1.000,1.000,1.000,8
+Amino acids and Peptides,Oligopeptides,RiPPs-Bottromycins,1.000,1.000,1.000,4
+Amino acids and Peptides,Oligopeptides,RiPPs-Lasso peptides,1.000,1.000,1.000,6
+Amino acids and Peptides,Oligopeptides,RiPPs-Microcins,1.000,1.000,1.000,4
+Amino acids and Peptides,Peptide alkaloids,Ansa peptide alkaloids,0.980,1.000,0.960,128
+Amino acids and Peptides,Oligopeptides,Cyclic peptides,0.967,0.984,0.951,1232
+Amino acids and Peptides,Oligopeptides,RiPPs-Thiopeptides,0.968,1.000,0.938,22
+Amino acids and Peptides,Oligopeptides,Depsipeptides,0.960,0.985,0.937,671
+Amino acids and Peptides,Amino acid glycosides,Glucosinolates,0.966,1.000,0.933,74
+Amino acids and Peptides,Oligopeptides,Lipopeptides,0.929,0.929,0.929,284
+Amino acids and Peptides,Oligopeptides,RiPPs-Lanthipeptides,0.962,1.000,0.926,17
+Amino acids and Peptides,Cyclic polyketides,3-Decalinoyltetramic acids,0.960,1.000,0.923,67
+Amino acids and Peptides,Oligopeptides,Linear peptides,0.927,0.935,0.918,247
+Amino acids and Peptides,Phenylpropanoids (C6-C3),Cinnamic acid amides,0.952,1.000,0.909,24
+Amino acids and Peptides,Oligopeptides,Bleomycins,0.900,0.900,0.900,47
+Amino acids and Peptides,Oligopeptides,Cryptophycins,0.917,1.000,0.846,36
+Amino acids and Peptides,Oligopeptides,Peptaibols,0.917,1.000,0.846,66
+Amino acids and Peptides,Small peptides,Dipeptides,0.859,0.880,0.838,531
+Amino acids and Peptides,Small peptides,Aminoacids,0.883,0.935,0.837,486
+Amino acids and Peptides,Linear polyketides,Melithiazole and Myxothiazole derivatives,0.909,1.000,0.833,23
+Amino acids and Peptides,Linear polyketides,3-acyl tetramic acids,0.897,1.000,0.813,74
+Amino acids and Peptides,Peptide alkaloids,"Indole diketopiperazine alkaloids (L-Trp, L-Ala)",0.880,1.000,0.786,39
+Amino acids and Peptides,Peptide alkaloids,Thiodiketopiperazine alkaloids,0.839,0.929,0.765,87
+Amino acids and Peptides,Peptide alkaloids,Simple diketopiperazine alkaloids,0.857,1.000,0.750,28
+Amino acids and Peptides,Small peptides,Tripeptides,0.819,0.919,0.739,231
+Amino acids and Peptides,Amino acid glycosides,Cyanogenic glycosides,0.800,1.000,0.667,34
+Amino acids and Peptides,Peptide alkaloids,Pyrazine and Piperazine alkaloids,0.682,0.938,0.536,142
+Amino acids and Peptides,Oligopeptides,RiPPs-Cyanobactins,0.400,1.000,0.250,15
+Carbohydrates,Polyols,Cyclitols,1.000,1.000,1.000,42
+Carbohydrates,Nucleosides,Purine nucleos(t)ides,0.955,1.000,0.913,114
+Carbohydrates,Nucleosides,Pyrimidine nucleos(t)ides,0.947,1.000,0.900,99
+Carbohydrates,Saccharides,Disaccharides,0.842,0.889,0.800,32
+Carbohydrates,Saccharides,Orthosomycins,0.889,1.000,0.800,18
+Carbohydrates,Saccharides,Monosaccharides,0.848,0.933,0.778,92
+Carbohydrates,"Aminosugars and
+aminoglycosides",Aminoglycosides,0.714,0.667,0.769,58
+Carbohydrates,Polyols,Amino cyclitols,0.851,1.000,0.741,121
+Carbohydrates,"Aminosugars and
+aminoglycosides",Aminosugars,0.776,0.864,0.704,127
+Carbohydrates,Saccharides,Paulomycins and derivatives,0.800,1.000,0.667,16
+Carbohydrates,Saccharides,Polysaccharides,0.714,1.000,0.556,51
+Fatty acids,Fatty Acids and Conjugates,Methoxy fatty acids,0.966,0.933,1.000,32
+Fatty acids,Fatty Acids and Conjugates,Nitro fatty acids,1.000,1.000,1.000,14
+Fatty acids,Fatty Acids and Conjugates,Mycolic acids,1.000,1.000,1.000,130
+Fatty acids,Octadecanoids,12-oxophytodienoic acid metabolites,1.000,1.000,1.000,9
+Fatty acids,Octadecanoids,Phytoprostanes,1.000,1.000,1.000,14
+Fatty acids,Octadecanoids,Phytofurans,1.000,1.000,1.000,4
+Fatty acids,Eicosanoids,Leukotrienes,0.988,0.976,1.000,49
+Fatty acids,Eicosanoids,Thromboxanes,1.000,1.000,1.000,11
+Fatty acids,Eicosanoids,Lipoxins,1.000,1.000,1.000,7
+Fatty acids,Eicosanoids,Hydroxy-hydroperoxyeicosatrienoic acids,0.923,0.857,1.000,17
+Fatty acids,Eicosanoids,Epoxyeicosatrienoic acids,1.000,1.000,1.000,8
+Fatty acids,Eicosanoids,Hepoxilins,0.800,0.667,1.000,11
+Fatty acids,Eicosanoids,Levuglandins,1.000,1.000,1.000,9
+Fatty acids,Eicosanoids,Isofurans,1.000,1.000,1.000,8
+Fatty acids,Eicosanoids,"Eicosa-1,2-dioxolanes",1.000,1.000,1.000,2
+Fatty acids,Eicosanoids,Resolvin Es,0.941,0.889,1.000,9
+Fatty acids,Eicosanoids,Clavulones,1.000,1.000,1.000,33
+Fatty acids,Docosanoids,Neuroprostanes,1.000,1.000,1.000,40
+Fatty acids,Docosanoids,"Docosa-1,2-dioxolanes",1.000,1.000,1.000,2
+Fatty acids,Docosanoids,Resolvin Ds,1.000,1.000,1.000,8
+Fatty acids,Fatty esters,Fatty acyl CoAs,1.000,1.000,1.000,265
+Fatty acids,Fatty esters,Fatty acyl carnitines,1.000,1.000,1.000,90
+Fatty acids,Fatty amides,Fatty acyl homoserine lactones,1.000,1.000,1.000,37
+Fatty acids,Fatty acyls,Fatty ethers,1.000,1.000,1.000,3
+Fatty acids,Fatty acyl glycosides,Sophorolipids,1.000,1.000,1.000,4
+Fatty acids,Fatty acyl glycosides,Rhamnolipids,0.971,0.944,1.000,16
+Fatty acids,Glycerolipids,Monoacylglycerols,1.000,1.000,1.000,53
+Fatty acids,Glycerolipids,Glycosylmonoacylglycerols,1.000,1.000,1.000,7
+Fatty acids,Glycerophospholipids,Glycerophosphocholines,1.000,1.000,1.000,1724
+Fatty acids,Glycerophospholipids,Glycerophosphoserines,1.000,1.000,1.000,1219
+Fatty acids,Glycerophospholipids,Glycerophosphoglycerophosphates,1.000,1.000,1.000,3
+Fatty acids,Glycerophospholipids,Glycerophosphoinositols,1.000,1.000,1.000,1188
+Fatty acids,Glycerophospholipids,Glycerophosphoinositol phosphates,1.000,1.000,1.000,7
+Fatty acids,Glycerophospholipids,Glycerophosphates,1.000,1.000,1.000,1198
+Fatty acids,Glycerophospholipids,Glycerophosphoglycerophosphoglycerols,1.000,1.000,1.000,666
+Fatty acids,Glycerophospholipids,CDP-Glycerols,1.000,1.000,1.000,36
+Fatty acids,Glycerophospholipids,Glycosylglycerophospholipids,1.000,1.000,1.000,5
+Fatty acids,Glycerophospholipids,Glycerophosphoinositolglycans,1.000,1.000,1.000,113
+Fatty acids,Glycerophospholipids,Oxidized glycerophospholipids,1.000,1.000,1.000,245
+Fatty acids,Glycerophospholipids,Long-Chain Bicyclic Phosphotriester,1.000,1.000,1.000,30
+Fatty acids,Sphingolipids,Acidic glycosphingolipids,1.000,1.000,1.000,13
+Fatty acids,Fatty acyls,Resin glycosides,0.983,0.967,1.000,145
+Fatty acids,Fatty acyls,Paraconic acids and derivatives,1.000,1.000,1.000,18
+Fatty acids,Fatty acyls,Halogenated hydrocarbons,1.000,1.000,1.000,43
+Fatty acids,Glycerolipids,Triacylglycerols,1.000,1.000,0.999,6889
+Fatty acids,Glycerophospholipids,Glycerophosphoethanolamines,0.996,0.996,0.996,1336
+Fatty acids,Glycerophospholipids,Glycerophosphoglycerols,0.998,1.000,0.996,1209
+Fatty acids,Sphingolipids,Phosphosphingolipids,0.992,1.000,0.985,326
+Fatty acids,Sphingolipids,Ceramides,0.987,1.000,0.975,200
+Fatty acids,Glycerolipids,Diacylglycerols,0.987,1.000,0.974,570
+Fatty acids,Fatty acyl glycosides,Ascarosides,0.983,1.000,0.967,152
+Fatty acids,Sphingolipids,Neutral glycosphingolipids,0.982,1.000,0.966,143
+Fatty acids,Fatty esters,Fatty acid estolides,0.981,1.000,0.963,123
+Fatty acids,Fatty acyls,Fatty aldehydes,0.938,0.927,0.950,201
+Fatty acids,Fatty Acids and Conjugates,Branched fatty acids,0.902,0.871,0.937,395
+Fatty acids,Eicosanoids,Isoprostanes,0.900,0.871,0.931,38
+Fatty acids,Fatty esters,Wax monoesters,0.952,0.977,0.929,905
+Fatty acids,Glycerolipids,Glycosyldiacylglycerols,0.960,1.000,0.923,35
+Fatty acids,Fatty Acids and Conjugates,Hydroperoxy fatty acids,0.957,1.000,0.917,27
+Fatty acids,Fatty Acids and Conjugates,Heterocyclic fatty acids,0.957,1.000,0.917,60
+Fatty acids,Fatty acyls,Oxygenated hydrocarbons,0.955,1.000,0.914,289
+Fatty acids,Fatty amides,N-acyl ethanolamines (endocannabinoids),0.952,1.000,0.909,56
+Fatty acids,Fatty Acids and Conjugates,Unsaturated fatty acids,0.901,0.895,0.906,794
+Fatty acids,Fatty Acids and Conjugates,Epoxy fatty acids,0.800,0.727,0.889,32
+Fatty acids,Fatty Acids and Conjugates,Carbocyclic fatty acids,0.909,0.938,0.882,85
+Fatty acids,Fatty amides,N-acyl amines,0.928,0.978,0.882,255
+Fatty acids,Eicosanoids,Prostaglandins,0.900,0.947,0.857,167
+Fatty acids,Fatty Acids and Conjugates,Amino fatty acids,0.882,0.938,0.833,40
+Fatty acids,Fatty Acids and Conjugates,Oxo fatty acids,0.778,0.757,0.800,173
+Fatty acids,Fatty Acids and Conjugates,Oxo fatty acids,0.778,0.757,0.800,173
+Fatty acids,Fatty Acids and Conjugates,Dicarboxylic acids,0.851,0.909,0.800,121
+Fatty acids,Octadecanoids,Jasmonic acids,0.889,1.000,0.800,11
+Fatty acids,Eicosanoids,Hydroxy-hydroperoxyeicosatetraenoic acids,0.842,0.889,0.800,52
+Fatty acids,Eicosanoids,Hydroxy-hydroperoxyeicosapentaenoic acids,0.857,0.923,0.800,26
+Fatty acids,Fatty esters,Cyano esters,0.889,1.000,0.800,24
+Fatty acids,Sphingolipids,Sphingoid bases,0.889,1.000,0.800,77
+Fatty acids,Fatty esters,Lactones,0.850,1.000,0.739,114
+Fatty acids,Octadecanoids,Other Octadecanoids,0.795,0.917,0.702,238
+Fatty acids,Docosanoids,Other Docosanoids,0.706,0.750,0.667,51
+Fatty acids,Fatty acyl glycosides,Fatty acyl glycosides of mono- and disaccharides,0.778,1.000,0.636,56
+Fatty acids,Fatty Acids and Conjugates,Hydroxy fatty acids,0.772,1.000,0.629,291
+Fatty acids,Fatty Acids and Conjugates,Hydroxy fatty acids,0.772,1.000,0.629,291
+Fatty acids,Eicosanoids,Other Eicosanoids,0.667,0.800,0.571,16
+Fatty acids,Fatty amides,Primary amides,0.600,0.750,0.500,27
+Fatty acids,Fatty acyls,Fatty nitriles,0.667,1.000,0.500,5
+Fatty acids,Fatty esters,Wax diesters,0.500,1.000,0.333,19
+Polyketides,Macrolides,Tylosins,0.923,0.857,1.000,60
+Polyketides,Macrolides,Avermectins,1.000,1.000,1.000,169
+Polyketides,Macrolides,Ascomycins and Rapamycins,1.000,1.000,1.000,88
+Polyketides,Macrolides,Ascomycins and Rapamycins,1.000,1.000,1.000,88
+Polyketides,Macrolides,Epothilones,1.000,1.000,1.000,63
+Polyketides,Macrolides,Rhizoxins,1.000,1.000,1.000,8
+Polyketides,Macrolides,Oligomycins,1.000,1.000,1.000,18
+Polyketides,Macrolides,Bafilomycins,1.000,1.000,1.000,24
+Polyketides,Macrolides,Macrolide lactams,1.000,1.000,1.000,35
+Polyketides,Macrolides,Lactam bearing macrolide lactones,0.976,0.952,1.000,24
+Polyketides,Macrolides,Enediynes,1.000,1.000,1.000,40
+Polyketides,Macrolides,Bryostatins,1.000,1.000,1.000,18
+Polyketides,Macrolides,Antimycins,1.000,1.000,1.000,48
+Polyketides,Macrolides,Oxa-Bridged Macrolides,1.000,1.000,1.000,17
+Polyketides,Macrolides,Macrocyclic tetramic acids,1.000,1.000,1.000,46
+Polyketides,Linear polyketides,Linear tetronates,1.000,1.000,1.000,7
+Polyketides,Linear polyketides,Elfamycins,1.000,1.000,1.000,10
+Polyketides,Linear polyketides,3-oligoenoyltetramic acids,1.000,1.000,1.000,58
+Polyketides,Linear polyketides,Linear polyenes,0.980,0.960,1.000,47
+Polyketides,Linear polyketides,DKXanthenes and derivatives,1.000,1.000,1.000,13
+Polyketides,Chromanes,Cytosporins,1.000,1.000,1.000,12
+Polyketides,Cyclic polyketides,Decalins with 2-pyrones,1.000,1.000,1.000,14
+Polyketides,Cyclic polyketides,3-Spirotetramic acids,1.000,1.000,1.000,22
+Polyketides,Cyclic polyketides,Nonadrides,1.000,1.000,1.000,28
+Polyketides,Alkylresorcinols,Monoalkylresorcinols,0.889,0.800,1.000,8
+Polyketides,Alkylresorcinols,Dialkylresorcinols,1.000,1.000,1.000,47
+Polyketides,Chromanes,Aflatoxins,1.000,1.000,1.000,68
+Polyketides,Aromatic polyketides,Griseofulvins,1.000,1.000,1.000,36
+Polyketides,Aromatic polyketides,Catechols with side chains,1.000,1.000,1.000,237
+Polyketides,Aromatic polyketides,Aromatic polyketides with side chains,1.000,1.000,1.000,25
+Polyketides,Aromatic polyketides,Simple aromatic polyketides,1.000,1.000,1.000,46
+Polyketides,Aromatic polyketides,Luminacins and derivatives,1.000,1.000,1.000,12
+Polyketides,Meroterpenoids,Cannabinoids,1.000,1.000,1.000,136
+Polyketides,"Polycyclic aromatic
+polyketides",Pradimicins,1.000,1.000,1.000,7
+Polyketides,"Polycyclic aromatic
+polyketides",Fasamycins and derivatives,1.000,1.000,1.000,35
+Polyketides,"Polycyclic aromatic
+polyketides",Benastatins and derivatives,1.000,1.000,1.000,9
+Polyketides,Phloroglucinols,Phloroglucinol-terpene hybrids,1.000,1.000,1.000,35
+Polyketides,Phloroglucinols,"Prenylated,geranylated phloroglucinols",1.000,1.000,1.000,34
+Polyketides,Naphthalenes,Spirodioxynaphthalenes,1.000,1.000,1.000,70
+Polyketides,Polyethers,Macrotetrolides,1.000,1.000,1.000,26
+Polyketides,Tropolones,Tropolones and derivatives (PKS),1.000,1.000,1.000,31
+Polyketides,Diphenyl ethers (DPEs),Fungal DPEs,0.964,0.931,1.000,48
+Polyketides,Meroterpenoids,Triketide meroterpenoids,1.000,1.000,1.000,73
+Polyketides,Meroterpenoids,Other polyketide meroterpenoids,1.000,1.000,1.000,24
+Polyketides,Linear polyketides,Phoslactomycins or Phosphazomycins,1.000,1.000,1.000,28
+Polyketides,Naphthalenes,Naphthalenones,1.000,1.000,1.000,30
+Polyketides,"Polycyclic aromatic
+polyketides",Ericamycins,1.000,1.000,1.000,28
+Polyketides,Aromatic polyketides,Benzophenones,0.966,0.933,1.000,18
+Polyketides,Macrolides,Boromycins,0.923,0.857,1.000,13
+Polyketides,Macrolides,Aplysiatoxins,1.000,1.000,1.000,17
+Polyketides,"Polycyclic aromatic
+polyketides",Duclauxin and derivatives,1.000,1.000,1.000,23
+Polyketides,Macrolides,Ansa macrolides,0.992,1.000,0.984,608
+Polyketides,Meroterpenoids,"Polyprenylated cyclic polyketides (Hop
+meroterpenoids)",0.992,1.000,0.984,303
+Polyketides,Macrolides,Erythromycins,0.986,1.000,0.971,532
+Polyketides,Aromatic polyketides,Depsides,0.985,1.000,0.971,342
+Polyketides,Linear polyketides,Acetogenins,0.976,0.984,0.968,314
+Polyketides,Aromatic polyketides,Depsidones,0.983,1.000,0.967,154
+Polyketides,"Polycyclic aromatic
+polyketides",Tetracyclines,0.978,1.000,0.957,124
+Polyketides,Phloroglucinols,Acyl phloroglucinols,0.977,1.000,0.955,107
+Polyketides,Phloroglucinols,Oligomeric phloroglucinols (phlorotannins),0.950,0.950,0.950,103
+Polyketides,Macrolides,Spirotetronate macrolides,0.970,1.000,0.941,83
+Polyketides,Aromatic polyketides,Sorbicilinoids,0.970,1.000,0.941,83
+Polyketides,"Polycyclic aromatic
+polyketides",Anthracyclines,0.970,1.000,0.941,186
+Polyketides,Oligopeptides,Depsipeptides,0.960,0.985,0.937,671
+Polyketides,Cyclic polyketides,2-pyrone derivatives,0.951,0.967,0.935,311
+Polyketides,Aromatic polyketides,Usnic acid and derivatives,0.964,1.000,0.931,39
+Polyketides,Cyclic polyketides,3-Decalinoyltetramic acids,0.960,1.000,0.923,67
+Polyketides,Cyclic polyketides,4-pyrone derivatives,0.917,0.917,0.917,41
+Polyketides,Polyethers,Ladder polyethers,0.957,1.000,0.917,58
+Polyketides,Cyclic polyketides,Fungal cyclic polyketides (Miscellaneous),0.957,1.000,0.917,26
+Polyketides,Macrolides,Polyene macrolides,0.947,1.000,0.900,154
+Polyketides,Polyethers,Polyether ionophores,0.941,1.000,0.889,97
+Polyketides,Chromanes,Azaphilones,0.929,1.000,0.867,305
+Polyketides,Linear polyketides,Melithiazole and Myxothiazole derivatives,0.909,1.000,0.833,23
+Polyketides,"Polycyclic aromatic
+polyketides",Angucyclines,0.899,0.976,0.833,244
+Polyketides,Aromatic polyketides,Strobilurins and derivatives,0.909,1.000,0.833,23
+Polyketides,Aromatic polyketides,Benzoquinones,0.909,1.000,0.833,17
+Polyketides,Xanthones,Methyl xanthones,0.900,1.000,0.818,163
+Polyketides,Linear polyketides,3-acyl tetramic acids,0.897,1.000,0.813,74
+Polyketides,Meroterpenoids,Tetraketide meroterpenoids,0.882,0.968,0.811,184
+Polyketides,Linear polyketides,Open-chain polyketides,0.864,0.961,0.785,453
+Polyketides,Cyclic polyketides,Phthalide derivatives,0.878,1.000,0.783,114
+Polyketides,Phloroglucinols,Dimeric phloroglucinols,0.857,0.947,0.783,121
+Polyketides,Cyclic polyketides,Monacolins and Monacolin derivatives,0.741,0.769,0.714,69
+Polyketides,Macrolides,Macrolide lactones,0.821,1.000,0.696,116
+Polyketides,Chromanes,Chromones,0.791,0.944,0.680,241
+Polyketides,Naphthalenes,Bisnaphthalenes,0.800,1.000,0.667,142
+Polyketides,Cyclic polyketides,Decalins with side chains,0.788,1.000,0.650,93
+Polyketides,Naphthalenes,Naphthoquinones,0.752,0.898,0.646,419
+Polyketides,Macrolides,Zearalenones,0.783,1.000,0.643,72
+Polyketides,Cyclic polyketides,Oblogolides,0.778,1.000,0.636,24
+Polyketides,Cyclic polyketides,Furans,0.737,0.875,0.636,56
+Polyketides,Naphthalenes,Naphthalenes and derivatives,0.629,0.786,0.524,108
+Polyketides,Cyclic polyketides,Simple cyclic polyketides,0.632,0.857,0.500,61
+Polyketides,Miscellaneous polyketides,Miscellaneous polyketides,0.667,1.000,0.500,79
+"Shikimates and
+Phenylpropanoids",Phenolic acids (C6-C1),Bagremycins,1.000,1.000,1.000,7
+"Shikimates and
+Phenylpropanoids",Phenylpropanoids (C6-C3),Cinnamoyl phenols,1.000,1.000,1.000,18
+"Shikimates and
+Phenylpropanoids",Mycosporine derivatives,Mycosporine and Mycosporine-like amino acids,1.000,1.000,1.000,27
+"Shikimates and
+Phenylpropanoids",Lignans,Dibenzylbutyrolactone lignans,1.000,1.000,1.000,53
+"Shikimates and
+Phenylpropanoids",Lignans,Furofuranoid lignans,1.000,1.000,1.000,63
+"Shikimates and
+Phenylpropanoids",Lignans,Dibenzocyclooctadienes lignans,1.000,1.000,1.000,127
+"Shikimates and
+Phenylpropanoids",Lignans,Coumarinolignans,0.933,0.875,1.000,28
+"Shikimates and
+Phenylpropanoids",Coumarins,Coumarinolignans,0.933,0.875,1.000,28
+"Shikimates and
+Phenylpropanoids",Diarylheptanoids,Biaryl type diarylheptanoids,1.000,1.000,1.000,56
+"Shikimates and
+Phenylpropanoids",Fluorenes,Selaginellins,1.000,1.000,1.000,42
+"Shikimates and
+Phenylpropanoids",Flavonoids,Flavans,1.000,1.000,1.000,20
+"Shikimates and
+Phenylpropanoids",Flavonoids,Aurones,1.000,1.000,1.000,43
+"Shikimates and
+Phenylpropanoids",Flavonoids,Isoaurones,1.000,1.000,1.000,12
+"Shikimates and
+Phenylpropanoids",Flavonoids,Flavonostilbenes,1.000,1.000,1.000,14
+"Shikimates and
+Phenylpropanoids",Stilbenoids,Flavonostilbenes,1.000,1.000,1.000,14
+"Shikimates and
+Phenylpropanoids",Stilbenoids,Stilbenolignans,1.000,1.000,1.000,15
+"Shikimates and
+Phenylpropanoids",Lignans,Stilbenolignans,1.000,1.000,1.000,15
+"Shikimates and
+Phenylpropanoids",Isoflavonoids,Coumaronochromones,0.971,0.944,1.000,49
+"Shikimates and
+Phenylpropanoids",Phenanthrenoids,Phenanthrenes,0.988,0.977,1.000,421
+"Shikimates and
+Phenylpropanoids",Flavonoids,Flavonols,0.993,0.995,0.991,1097
+"Shikimates and
+Phenylpropanoids",Flavonoids,Flavones,0.987,0.987,0.987,1148
+"Shikimates and
+Phenylpropanoids",Flavonoids,Flavan-3-ols,0.925,0.886,0.969,147
+"Shikimates and
+Phenylpropanoids",Styrylpyrones,Kavalactones and derivatives,0.926,0.893,0.962,129
+"Shikimates and
+Phenylpropanoids",Flavonoids,Chalcones,0.969,0.978,0.960,1386
+"Shikimates and
+Phenylpropanoids",Lignans,Furanoid lignans,0.950,0.950,0.950,40
+"Shikimates and
+Phenylpropanoids",Diarylheptanoids,Diarylether type diarylheptanoids,0.974,1.000,0.950,47
+"Shikimates and
+Phenylpropanoids",Flavonoids,Anthocyanidins,0.972,1.000,0.946,597
+"Shikimates and
+Phenylpropanoids",Flavonoids,Dihydroflavonols,0.889,0.842,0.941,84
+"Shikimates and
+Phenylpropanoids",Xanthones,Plant xanthones,0.968,1.000,0.938,162
+"Shikimates and
+Phenylpropanoids",Coumarins,Furocoumarins,0.955,0.981,0.930,263
+"Shikimates and
+Phenylpropanoids",Diarylheptanoids,Linear diarylheptanoids,0.912,0.897,0.929,138
+"Shikimates and
+Phenylpropanoids",Flavonoids,Proanthocyanins,0.963,1.000,0.929,71
+"Shikimates and
+Phenylpropanoids",Flavonoids,Flavanones,0.944,0.962,0.927,516
+"Shikimates and
+Phenylpropanoids",Stilbenoids,Oligomeric stibenes,0.945,0.977,0.915,225
+"Shikimates and
+Phenylpropanoids",Isoflavonoids,Isoflavones,0.944,0.977,0.913,233
+"Shikimates and
+Phenylpropanoids",Isoflavonoids,Coumestan,0.947,1.000,0.900,54
+"Shikimates and
+Phenylpropanoids",Isoflavonoids,Rotenoids,0.944,1.000,0.895,90
+"Shikimates and
+Phenylpropanoids",Phenylpropanoids (C6-C3),Cinnamic acids and derivatives,0.926,0.962,0.893,142
+"Shikimates and
+Phenylpropanoids",Terphenyls,m-Terphenyls,0.842,0.800,0.889,11
+"Shikimates and
+Phenylpropanoids",Phenolic acids (C6-C1),Gallotannins,0.923,0.973,0.878,200
+"Shikimates and
+Phenylpropanoids",Phenylethanoids (C6-C2),Phenylethanoids,0.903,0.933,0.875,85
+"Shikimates and
+Phenylpropanoids",Coumarins,Isocoumarins,0.909,0.950,0.872,544
+"Shikimates and
+Phenylpropanoids",Isoflavonoids,Pterocarpan,0.915,0.964,0.871,159
+"Shikimates and
+Phenylpropanoids",Flavonoids,Neoflavonoids,0.897,0.929,0.867,75
+"Shikimates and
+Phenylpropanoids",Terphenyls,p-Terphenyls,0.923,1.000,0.857,138
+"Shikimates and
+Phenylpropanoids","Diazotetronic acids and
+derivatives",Pulvinones,0.923,1.000,0.857,75
+"Shikimates and
+Phenylpropanoids",Coumarins,Pyranocoumarins,0.896,0.956,0.843,200
+"Shikimates and
+Phenylpropanoids",Small peptides,Aminoacids,0.883,0.935,0.837,3
+"Shikimates and
+Phenylpropanoids",Coumarins,Simple coumarins,0.865,0.906,0.828,817
+"Shikimates and
+Phenylpropanoids",Isoflavonoids,Isoflavanones,0.848,0.875,0.824,86
+"Shikimates and
+Phenylpropanoids",Isoflavonoids,2-arylbenzofurans,0.900,1.000,0.818,99
+"Shikimates and
+Phenylpropanoids",Tropolones,Tropolones and derivatives (Shikimate),0.889,1.000,0.800,15
+"Shikimates and
+Phenylpropanoids",Lignans,Arylnaphthalene and aryltetralin lignans,0.884,1.000,0.792,118
+"Shikimates and
+Phenylpropanoids",Stilbenoids,Monomeric stilbenes,0.857,0.955,0.778,114
+"Shikimates and
+Phenylpropanoids",Flavonoids,Flavonolignans,0.857,1.000,0.750,64
+"Shikimates and
+Phenylpropanoids",Lignans,Flavonolignans,0.857,1.000,0.750,64
+"Shikimates and
+Phenylpropanoids",Flavonoids,Flavandiols (Leucoanthocyanidins),0.815,1.000,0.688,81
+"Shikimates and
+Phenylpropanoids",Lignans,Dibenzylbutane lignans,0.750,1.000,0.600,54
+"Shikimates and
+Phenylpropanoids",Phenolic acids (C6-C1),Simple phenolic acids,0.704,0.962,0.556,219
+"Shikimates and
+Phenylpropanoids",Phenolic acids (C6-C1),Shikimic acids and derivatives,0.444,0.571,0.364,62
+"Shikimates and
+Phenylpropanoids",Lignans,Minor lignans,0.364,1.000,0.222,50
+Terpenoids,Diterpenoids,Platensimycin and Platencins,1.000,1.000,1.000,35
+Terpenoids,Meroterpenoids,Cannabinoids,1.000,1.000,1.000,136
+Terpenoids,Phloroglucinols,Phloroglucinol-terpene hybrids,1.000,1.000,1.000,35
+Terpenoids,Polyethers,Oxasqualenoids,1.000,1.000,1.000,26
+Terpenoids,Sesquiterpenoids,Alliacane sesquiterpenoids,1.000,1.000,1.000,30
+Terpenoids,Sesquiterpenoids,Allohimachalane sesquiterpenoids,1.000,1.000,1.000,10
+Terpenoids,Sesquiterpenoids,Bicyclogermacrane sesquiterpenoids,1.000,1.000,1.000,36
+Terpenoids,Sesquiterpenoids,Bicyclohumulane sesquiterpenoids,1.000,1.000,1.000,8
+Terpenoids,Sesquiterpenoids,Chiloscyphane sesquiterpenoids,1.000,1.000,1.000,6
+Terpenoids,Sesquiterpenoids,Coloratane sesquiterpenoids,1.000,1.000,1.000,15
+Terpenoids,Sesquiterpenoids,Cyclobisabolane sesquiterpenoids,1.000,1.000,1.000,12
+Terpenoids,Sesquiterpenoids,Cyclonerane sesquiterpenoids,1.000,1.000,1.000,10
+Terpenoids,Sesquiterpenoids,Elemane sesquiterpenoids,1.000,1.000,1.000,129
+Terpenoids,Sesquiterpenoids,Herbertane sesquiterpenoids,0.952,0.909,1.000,19
+Terpenoids,Sesquiterpenoids,Iphionane sesquiterpenoids,1.000,1.000,1.000,15
+Terpenoids,Sesquiterpenoids,Isocomane sesquiterpenoids,1.000,1.000,1.000,15
+Terpenoids,Sesquiterpenoids,Ivaxillarane sesquiterpenoids,1.000,1.000,1.000,7
+Terpenoids,Sesquiterpenoids,Longipinane sesquiterpenoids,1.000,1.000,1.000,53
+Terpenoids,Sesquiterpenoids,Marasmane sesquiterpenoids,1.000,1.000,1.000,19
+Terpenoids,Sesquiterpenoids,Noreremophilane sesquiterpenoids,0.933,0.875,1.000,20
+Terpenoids,Sesquiterpenoids,Oplopane sesquiterpenoids,1.000,1.000,1.000,52
+Terpenoids,Sesquiterpenoids,Pinguisane sesquiterpenoids,1.000,1.000,1.000,31
+Terpenoids,Sesquiterpenoids,Quadrane sesquiterpenoids,1.000,1.000,1.000,13
+Terpenoids,Sesquiterpenoids,Rotundane sesquiterpenoids,1.000,1.000,1.000,12
+Terpenoids,Sesquiterpenoids,Santalane sesquiterpenoids,1.000,1.000,1.000,41
+Terpenoids,Sesquiterpenoids,Sativane sesquiterpenoids,1.000,1.000,1.000,21
+Terpenoids,Sesquiterpenoids,Silphinane sesquiterpenoids,1.000,1.000,1.000,28
+Terpenoids,Sesquiterpenoids,Silphiperfolane sesquiterpenoids,1.000,1.000,1.000,21
+Terpenoids,Sesquiterpenoids,Sinularane sesquiterpenoids,1.000,1.000,1.000,10
+Terpenoids,Sesquiterpenoids,Spiroaxane sesquiterpenoids,1.000,1.000,1.000,25
+Terpenoids,Sesquiterpenoids,Sterpurane sesquiterpenoids,1.000,1.000,1.000,15
+Terpenoids,Sesquiterpenoids,Arteminisin,1.000,1.000,1.000,61
+Terpenoids,Sesquiterpenoids,Hamigerane sesquiterpenoids,1.000,1.000,1.000,11
+Terpenoids,Diterpenoids,Prenylbisabolane diterpenoids,1.000,1.000,1.000,15
+Terpenoids,Diterpenoids,Dactylomelane diterpenoids,1.000,1.000,1.000,14
+Terpenoids,Diterpenoids,Cycloabietane diterpenoids,1.000,1.000,1.000,26
+Terpenoids,Diterpenoids,Parguerane diterpenoids,1.000,1.000,1.000,20
+Terpenoids,Diterpenoids,Devadarane diterpenoids,1.000,1.000,1.000,9
+Terpenoids,Diterpenoids,Villanovane diterpenoids,1.000,1.000,1.000,13
+Terpenoids,Diterpenoids,Aphidicolane diterpenoids,1.000,1.000,1.000,91
+Terpenoids,Diterpenoids,Gibberellins,1.000,1.000,1.000,140
+Terpenoids,Diterpenoids,Norcembrane diterpenoids,1.000,1.000,1.000,10
+Terpenoids,Diterpenoids,Asbestinane diterpenoids,1.000,1.000,1.000,21
+Terpenoids,Diterpenoids,Sphaerane diterpenoids,1.000,1.000,1.000,24
+Terpenoids,Diterpenoids,Dolastane diterpenoids,1.000,1.000,1.000,39
+Terpenoids,Diterpenoids,Verrucosane diterpenoids,1.000,1.000,1.000,27
+Terpenoids,Diterpenoids,Casbane diterpenoids,1.000,1.000,1.000,19
+Terpenoids,Diterpenoids,Segetane diterpenoids,1.000,1.000,1.000,14
+Terpenoids,Diterpenoids,Pepluane diterpenoids,1.000,1.000,1.000,10
+Terpenoids,Diterpenoids,Paraliane diterpenoids,1.000,1.000,1.000,9
+Terpenoids,Diterpenoids,Lathyrane diterpenoids,1.000,1.000,1.000,39
+Terpenoids,Diterpenoids,Premyrsinane diterpenoids,1.000,1.000,1.000,12
+Terpenoids,Diterpenoids,Myrsinane diterpenoids,0.909,0.833,1.000,51
+Terpenoids,Diterpenoids,Tigliane diterpenoids,0.968,0.938,1.000,149
+Terpenoids,Diterpenoids,Jatropholane diterpenoids,1.000,1.000,1.000,21
+Terpenoids,Diterpenoids,Abeotaxane diterpenoids,1.000,1.000,1.000,22
+Terpenoids,Diterpenoids,Trinervitane diterpenoids,1.000,1.000,1.000,39
+Terpenoids,Diterpenoids,Kempane diterpenoids,1.000,1.000,1.000,3
+Terpenoids,Diterpenoids,Amphilectane diterpenoids,1.000,1.000,1.000,38
+Terpenoids,Diterpenoids,Eremane diterpenoids,1.000,1.000,1.000,4
+Terpenoids,Diterpenoids,Lobane diterpenoids,0.968,0.938,1.000,37
+Terpenoids,Diterpenoids,Decipiane diterpenoids,1.000,1.000,1.000,2
+Terpenoids,Diterpenoids,Sacculatane diterpenoids,1.000,1.000,1.000,34
+Terpenoids,Diterpenoids,Obtusane diterpenoids,1.000,1.000,1.000,4
+Terpenoids,Diterpenoids,Breviane diterpenoids,1.000,1.000,1.000,13
+Terpenoids,Diterpenoids,Cyclopiane diterpenoids,1.000,1.000,1.000,13
+Terpenoids,Sesterterpenoids,Asperane sesterterpenoids,1.000,1.000,1.000,7
+Terpenoids,Sesterterpenoids,Cericerane sesterterpenoids,1.000,1.000,1.000,14
+Terpenoids,Sesterterpenoids,Ophiobolane sesterterpenoids,1.000,1.000,1.000,30
+Terpenoids,Sesterterpenoids,Betaestacin-type sesterterpenoids,1.000,1.000,1.000,6
+Terpenoids,Sesterterpenoids,Mangicol-type sesterterpenoids,1.000,1.000,1.000,9
+Terpenoids,Triterpenoids,Baccharane triterpenoids,1.000,1.000,1.000,18
+Terpenoids,Triterpenoids,Shionane triterpenoids,1.000,1.000,1.000,21
+Terpenoids,Triterpenoids,Pachysanane triterpenoids,1.000,1.000,1.000,12
+Terpenoids,Triterpenoids,Bauerane triterpenoids,1.000,1.000,1.000,21
+Terpenoids,Triterpenoids,Adianane triterpenoids,1.000,1.000,1.000,12
+Terpenoids,Triterpenoids,Filicane triterpenoids,1.000,1.000,1.000,16
+Terpenoids,Triterpenoids,Malabaricane triterpenoids,1.000,1.000,1.000,44
+Terpenoids,Triterpenoids,Saponaceolide triterpenoids,1.000,1.000,1.000,20
+Terpenoids,Steroids,Bufadienolides,1.000,1.000,1.000,42
+Terpenoids,Carotenoids (C40),"Carotenoids (C40, β-Ψ)",1.000,1.000,1.000,97
+Terpenoids,Carotenoids (C40),"Carotenoids (C40, ε-Ψ)",1.000,1.000,1.000,13
+Terpenoids,Carotenoids (C40),"Carotenoids (C40, π-Ψ)",1.000,1.000,1.000,8
+Terpenoids,Carotenoids (C40),"Carotenoids (C40, Χ-Ψ)",0.667,0.500,1.000,3
+Terpenoids,Carotenoids (C40),"Carotenoids (C40, γ-ε)",1.000,1.000,1.000,3
+Terpenoids,Carotenoids (C40),"Carotenoids (C40, β-π)",0.667,0.500,1.000,6
+Terpenoids,Carotenoids (C40),"Carotenoids (C40, β-Χ)",1.000,1.000,1.000,8
+Terpenoids,Carotenoids (C40),"Carotenoids (C40, β-κ)",0.978,0.957,1.000,35
+Terpenoids,Carotenoids (C40),"Carotenoids (C40, κ-Χ)",1.000,1.000,1.000,2
+Terpenoids,Carotenoids (C40),"Carotenoids (C40, π-π)",0.800,0.667,1.000,6
+Terpenoids,Carotenoids (C40),"Carotenoids (C40, π-Χ)",0.667,0.500,1.000,3
+Terpenoids,Carotenoids (C45),"Carotenoids (C45, β-Ψ)",1.000,1.000,1.000,2
+Terpenoids,Carotenoids (C45),"Carotenoids (C45, ε-Ψ)",1.000,1.000,1.000,5
+Terpenoids,Carotenoids (C50),"Carotenoids (C50, β-β)",1.000,1.000,1.000,2
+Terpenoids,Carotenoids (C50),"Carotenoids (C50, ε-ε)",1.000,1.000,1.000,7
+Terpenoids,Carotenoids (C50),"Carotenoids (C50, γ-γ)",1.000,1.000,1.000,3
+Terpenoids,Apocarotenoids,"Apocarotenoids (C30, Ψ-Ψ)",0.842,0.727,1.000,33
+Terpenoids,Polyprenols,Bactoprenols,0.952,0.909,1.000,15
+Terpenoids,Polyprenols,Dolichols,1.000,1.000,1.000,14
+Terpenoids,Polyprenols,Polyprenol derivatives,1.000,1.000,1.000,33
+Terpenoids,Meroterpenoids,Other polyketide meroterpenoids,1.000,1.000,1.000,24
+Terpenoids,Meroterpenoids,Merosesquiterpenoids,1.000,1.000,1.000,34
+Terpenoids,Meroterpenoids,Meroterpenoids with 5- or 6-membered ring,1.000,1.000,1.000,15
+Terpenoids,Meroterpenoids,Meroterpenoids with bridged ring,1.000,1.000,1.000,23
+Terpenoids,Diterpenoids,Platensimycin and Platencins,1.000,1.000,1.000,35
+Terpenoids,Meroterpenoids,Merohemiterpenoids,0.933,0.875,1.000,14
+Terpenoids,Sesquiterpenoids,Agarofuran sesquiterpenoids,0.980,0.974,0.987,385
+Terpenoids,Meroterpenoids,"Polyprenylated cyclic polyketides (Hop
+meroterpenoids)",0.992,1.000,0.984,303
+Terpenoids,Steroids,Vitamin D3 and derivatives,0.984,0.989,0.978,457
+Terpenoids,Triterpenoids,Limonoids,0.983,0.989,0.977,438
+Terpenoids,Triterpenoids,Lupane triterpenoids,0.978,0.985,0.971,689
+Terpenoids,Triterpenoids,Ursane and Taraxastane triterpenoids,0.984,1.000,0.969,162
+Terpenoids,Steroids,Cardenolides,0.969,0.969,0.969,39
+Terpenoids,Diterpenoids,Briarane diterpenoids,0.976,1.000,0.952,211
+Terpenoids,Diterpenoids,Grayanotoxane diterpenoids,0.974,1.000,0.950,100
+Terpenoids,Triterpenoids,Oleanane triterpenoids,0.946,0.946,0.946,373
+Terpenoids,Sesquiterpenoids,Lactarane sesquiterpenoids,0.971,1.000,0.944,33
+Terpenoids,Tryptophan alkaloids,Indole-Diterpenoid alkaloids (Penitrems),0.971,1.000,0.944,90
+Terpenoids,Meroterpenoids,Prenyl quinone meroterpenoids,0.949,0.959,0.940,251
+Terpenoids,Diterpenoids,Mulinane diterpenoids,0.968,1.000,0.938,43
+Terpenoids,Sesterterpenoids,Norsesterterpenoids,0.968,1.000,0.938,39
+Terpenoids,Carotenoids (C40),"Carotenoids (C40, β-β)",0.946,0.957,0.936,237
+Terpenoids,Sesquiterpenoids,Laurane sesquiterpenoids,0.903,0.875,0.933,68
+Terpenoids,Triterpenoids,Dammarane and Protostane triterpenoids,0.938,0.950,0.927,207
+Terpenoids,Sesquiterpenoids,Cedrane and Isocedrane sesquiterpenoids,0.960,1.000,0.923,39
+Terpenoids,Sesterterpenoids,Monocarbocyclic sesterterpenoids,0.923,0.923,0.923,29
+Terpenoids,Carotenoids (C40),"Carotenoids (C40, Ψ-Ψ)",0.923,0.923,0.923,131
+Terpenoids,Diterpenoids,Cembrane diterpenoids,0.953,0.989,0.919,493
+Terpenoids,Sesquiterpenoids,Cyclofarnesane sesquiterpenoids,0.957,1.000,0.917,25
+Terpenoids,Meroterpenoids,Spriromeroterpenoids,0.917,0.917,0.917,57
+Terpenoids,Sesquiterpenoids,Trichothecane sesquiterpenoids,0.955,1.000,0.914,177
+Terpenoids,Pseudoalkaloids,Steroidal alkaloids,0.948,0.986,0.913,405
+Terpenoids,Triterpenoids,Quassinoids,0.954,1.000,0.912,169
+Terpenoids,Triterpenoids,Cycloartane triterpenoids,0.935,0.960,0.911,388
+Terpenoids,Triterpenoids,Multiflorane triterpenoids,0.952,1.000,0.909,54
+Terpenoids,Triterpenoids,Serratane triterpenoids,0.952,1.000,0.909,52
+Terpenoids,Diterpenoids,Kaurane and Phyllocladane diterpenoids,0.940,0.975,0.907,228
+Terpenoids,Sesquiterpenoids,Chamigrane sesquiterpenoids,0.950,1.000,0.905,107
+Terpenoids,Diterpenoids,Nagilactone diterpenoids,0.950,1.000,0.905,41
+Terpenoids,Sesquiterpenoids,Africanane sesquiterpenoids,0.947,1.000,0.900,34
+Terpenoids,Sesquiterpenoids,Asteriscane sesquiterpenoids,0.947,1.000,0.900,24
+Terpenoids,Diterpenoids,Guanacastane diterpenoids,0.947,1.000,0.900,52
+Terpenoids,Diterpenoids,Pachydictyane diterpenoids,0.900,0.900,0.900,52
+Terpenoids,Sesterterpenoids,Linear sesterterpenoids,0.947,1.000,0.900,46
+Terpenoids,Steroids,Ecdysteroids,0.947,1.000,0.900,99
+Terpenoids,Steroids,Vitamin D2 and derivatives,0.947,1.000,0.900,31
+Terpenoids,Triterpenoids,Cucurbitane triterpenoids,0.933,0.972,0.897,198
+Terpenoids,Diterpenoids,Taxane diterpenoids,0.904,0.917,0.892,202
+Terpenoids,Sesquiterpenoids,Oppositane sesquiterpenoids,0.941,1.000,0.889,25
+Terpenoids,Diterpenoids,Furanoabietane diterpenoids,0.842,0.800,0.889,19
+Terpenoids,Diterpenoids,Tetracyclic diterpenoids,0.867,0.847,0.889,390
+Terpenoids,Steroids,Furostane steroids,0.923,0.973,0.878,204
+Terpenoids,Sesquiterpenoids,Germacrane sesquiterpenoids,0.917,0.961,0.876,562
+Terpenoids,Sesquiterpenoids,Gymnomitrane sesquiterpenoids,0.933,1.000,0.875,32
+Terpenoids,Sesquiterpenoids,"Presilphiperfolane and Probotryane
+sesquiterpenoids",0.933,1.000,0.875,18
+Terpenoids,Diterpenoids,Pseudopterane diterpenoids,0.933,1.000,0.875,46
+Terpenoids,Diterpenoids,Xenicane diterpenoids,0.933,1.000,0.875,36
+Terpenoids,Diterpenoids,Serrulatane and Biflorane diterpenoids,0.933,1.000,0.875,83
+Terpenoids,Triterpenoids,Abeolupane triterpenoids,0.933,1.000,0.875,14
+Terpenoids,Triterpenoids,Acyclic triterpenoids,0.897,0.929,0.867,37
+Terpenoids,Carotenoids (C40),"Carotenoids (C40, β-ε)",0.897,0.929,0.867,74
+Terpenoids,Diterpenoids,Dolabellane diterpenoids,0.927,1.000,0.864,101
+Terpenoids,Triterpenoids,Apotirucallane triterpenoids,0.905,0.950,0.864,109
+Terpenoids,Steroids,Pregnane steroids,0.918,0.982,0.862,311
+Terpenoids,Sesquiterpenoids,Tremulane sesquiterpenoids,0.923,1.000,0.857,42
+Terpenoids,Sesquiterpenoids,Pentalenane sesquiterpenoids,0.923,1.000,0.857,14
+Terpenoids,Diterpenoids,Totarane diterpenoids,0.923,1.000,0.857,46
+Terpenoids,Triterpenoids,Onocerane triterpenoids,0.923,1.000,0.857,19
+Terpenoids,Triterpenoids,Polypodane triterpenoids,0.923,1.000,0.857,14
+Terpenoids,Carotenoids (C50),"Carotenoids (C50, Ψ-Ψ)",0.923,1.000,0.857,14
+Terpenoids,Monoterpenoids,Thujane monoterpenoids,0.880,0.917,0.846,63
+Terpenoids,Diterpenoids,Erythroxylane diterpenoids,0.917,1.000,0.846,29
+Terpenoids,Diterpenoids,Xeniaphyllane diterpenoids,0.917,1.000,0.846,35
+Terpenoids,Pseudoalkaloids,Terpenoid alkaloids,0.902,0.965,0.846,335
+Terpenoids,Triterpenoids,Hopane and Moretane triterpenoids,0.905,0.974,0.844,227
+Terpenoids,Monoterpenoids,Iridoids monoterpenoids,0.897,0.956,0.844,396
+Terpenoids,Steroids,Androstane steroids,0.897,0.963,0.839,164
+Terpenoids,Steroids,Cholestane steroids,0.833,0.829,0.836,550
+Terpenoids,Monoterpenoids,Carane monoterpenoids,0.893,0.962,0.833,152
+Terpenoids,Sesquiterpenoids,Picrotoxane sesquiterpenoids,0.909,1.000,0.833,83
+Terpenoids,Sesquiterpenoids,Thujopsane sesquiterpenoids,0.909,1.000,0.833,21
+Terpenoids,Sesquiterpenoids,Valerenane sesquiterpenoids,0.909,1.000,0.833,18
+Terpenoids,Diterpenoids,Halimane diterpenoids,0.882,0.938,0.833,92
+Terpenoids,Diterpenoids,Rhamnofolane diterpenoids,0.909,1.000,0.833,17
+Terpenoids,Steroids,Cholane steroids,0.909,1.000,0.833,59
+Terpenoids,Sesquiterpenoids,Spirovetivane sesquiterpenoids,0.903,1.000,0.824,48
+Terpenoids,Apocarotenoids,Apocarotenoids(ε-),0.875,0.933,0.824,47
+Terpenoids,Diterpenoids,Colensane and Clerodane diterpenoids,0.868,0.920,0.821,150
+Terpenoids,Sesquiterpenoids,Himachalane sesquiterpenoids,0.900,1.000,0.818,37
+Terpenoids,Sesquiterpenoids,Nardosinane sesquiterpenoids,0.900,1.000,0.818,56
+Terpenoids,Diterpenoids,Fusicoccane diterpenoids,0.900,1.000,0.818,57
+Terpenoids,Sesterterpenoids,Cheilanthane sesterterpenoids,0.857,0.900,0.818,26
+Terpenoids,Triterpenoids,Fusidane triterpenoids,0.857,0.900,0.818,55
+Terpenoids,Sesquiterpenoids,Guaiane sesquiterpenoids,0.890,0.985,0.813,404
+Terpenoids,Sesquiterpenoids,Pseudoguaiane sesquiterpenoids,0.897,1.000,0.813,38
+Terpenoids,Diterpenoids,Cassane diterpenoids,0.867,0.929,0.813,166
+Terpenoids,Meroterpenoids,Tetraketide meroterpenoids,0.882,0.968,0.811,184
+Terpenoids,Sesquiterpenoids,Eremophilane sesquiterpenoids,0.873,0.948,0.809,337
+Terpenoids,Diterpenoids,Eunicellane diterpenoids,0.893,1.000,0.806,150
+Terpenoids,Sesterterpenoids,Scalarane sesterterpenoids,0.893,1.000,0.806,152
+Terpenoids,Sesquiterpenoids,Caryolane sesquiterpenoids,0.889,1.000,0.800,12
+Terpenoids,Sesquiterpenoids,Illudalane sesquiterpenoids,0.762,0.727,0.800,55
+Terpenoids,Diterpenoids,Viscidane diterpenoids,0.889,1.000,0.800,10
+Terpenoids,Steroids,Ergostane steroids,0.831,0.873,0.793,596
+Terpenoids,Sesquiterpenoids,Patchoulane sesquiterpenoids,0.880,1.000,0.786,43
+Terpenoids,Diterpenoids,Norkaurane diterpenoids,0.846,0.917,0.786,211
+Terpenoids,Diterpenoids,Beyerane diterpenoids,0.880,1.000,0.786,69
+Terpenoids,Triterpenoids,Fernane and Arborinane triterpenoids,0.880,1.000,0.786,63
+Terpenoids,Diterpenoids,Jatrophane diterpenoids,0.878,1.000,0.783,119
+Terpenoids,Sesquiterpenoids,Bergamotane sesquiterpenoids,0.875,1.000,0.778,26
+Terpenoids,Sesquiterpenoids,Illudane sesquiterpenoids,0.875,1.000,0.778,50
+Terpenoids,Triterpenoids,Glutinane triterpenoids,0.875,1.000,0.778,27
+Terpenoids,Sesquiterpenoids,Aromadendrane sesquiterpenoids,0.850,0.944,0.773,109
+Terpenoids,Diterpenoids,Ingenane diterpenoids,0.870,1.000,0.769,52
+Terpenoids,Diterpenoids,Labdane diterpenoids,0.857,0.977,0.764,277
+Terpenoids,Diterpenoids,Secolabdane diterpenoids,0.865,1.000,0.762,46
+Terpenoids,Steroids,Spirostane steroids,0.842,0.941,0.762,107
+Terpenoids,Steroids,Stigmastane steroids,0.846,0.957,0.759,145
+Terpenoids,Monoterpenoids,Menthane monoterpenoids,0.829,0.920,0.754,308
+Terpenoids,Monoterpenoids,Irregular monoterpenoids,0.857,1.000,0.750,29
+Terpenoids,Sesquiterpenoids,Capnellane sesquiterpenoids,0.857,1.000,0.750,29
+Terpenoids,Sesquiterpenoids,Carabrane sesquiterpenoids,0.857,1.000,0.750,15
+Terpenoids,Sesquiterpenoids,Clovane sesquiterpenoids,0.857,1.000,0.750,20
+Terpenoids,Diterpenoids,Abietane diterpenoids,0.800,0.857,0.750,162
+Terpenoids,Diterpenoids,Spongiane diterpenoids,0.833,0.938,0.750,103
+Terpenoids,Diterpenoids,Trachylobane diterpenoids,0.857,1.000,0.750,62
+Terpenoids,Diterpenoids,Cyathane diterpenoids,0.857,1.000,0.750,59
+Terpenoids,Diterpenoids,Prenyleudesmane diterpenoids,0.857,1.000,0.750,9
+Terpenoids,Triterpenoids,Neohopane triterpenoids,0.857,1.000,0.750,11
+Terpenoids,Monoterpenoids,Monocyclic monoterpenoids,0.844,0.974,0.745,253
+Terpenoids,Monoterpenoids,Secoiridoid monoterpenoids,0.853,1.000,0.744,194
+Terpenoids,Triterpenoids,"Lanostane, Tirucallane and Euphane triterpenoids",0.820,0.934,0.731,387
+Terpenoids,Sesquiterpenoids,Brasilane sesquiterpenoids,0.842,1.000,0.727,25
+Terpenoids,Monoterpenoids,Pinane monoterpenoids,0.814,0.923,0.727,167
+Terpenoids,Diterpenoids,Verticillane diterpenoids,0.842,1.000,0.727,53
+Terpenoids,Diterpenoids,Atisane diterpenoids,0.839,1.000,0.722,88
+Terpenoids,Sesquiterpenoids,Cuparane sesquiterpenoids,0.833,1.000,0.714,70
+Terpenoids,Sesquiterpenoids,Eudesmane sesquiterpenoids,0.800,0.909,0.714,343
+Terpenoids,Sesquiterpenoids,Zizaane sesquiterpenoids,0.833,1.000,0.714,26
+Terpenoids,Diterpenoids,Sphenolobane diterpenoids,0.833,1.000,0.714,20
+Terpenoids,Meroterpenoids,Meromonoterpenoids,0.833,1.000,0.714,65
+Terpenoids,Sesquiterpenoids,Daucane sesquiterpenoids,0.829,1.000,0.708,121
+Terpenoids,Diterpenoids,Secokaurane diterpenoids,0.828,1.000,0.706,86
+Terpenoids,Apocarotenoids,Apocarotenoids (β-),0.809,0.950,0.704,131
+Terpenoids,Sesquiterpenoids,Cycloeudesmane sesquiterpenoids,0.824,1.000,0.700,95
+Terpenoids,Steroids,Estrane steroids,0.824,1.000,0.700,52
+Terpenoids,Sesquiterpenoids,Botryane sesquiterpenoids,0.818,1.000,0.692,25
+Terpenoids,Sesquiterpenoids,Humulane sesquiterpenoids,0.815,1.000,0.688,83
+Terpenoids,Diterpenoids,Podocarpane diterpenoids,0.774,0.889,0.686,174
+Terpenoids,Sesquiterpenoids,Campherenane sesquiterpenoids,0.800,1.000,0.667,16
+Terpenoids,Sesquiterpenoids,Copacamphane sesquiterpenoids,0.800,1.000,0.667,6
+Terpenoids,Sesquiterpenoids,Dunniane sesquiterpenoids,0.800,1.000,0.667,8
+Terpenoids,Sesquiterpenoids,Gorgonane sesquiterpenoids,0.800,1.000,0.667,16
+Terpenoids,Sesquiterpenoids,Ishwarane sesquiterpenoids,0.800,1.000,0.667,10
+Terpenoids,Sesquiterpenoids,Isolactarane sesquiterpenoids,0.800,1.000,0.667,21
+Terpenoids,Diterpenoids,Pimarane and Isopimarane diterpenoids,0.784,0.952,0.667,148
+Terpenoids,Triterpenoids,Friedelane triterpenoids,0.800,1.000,0.667,48
+Terpenoids,Triterpenoids,Stictane triterpenoids,0.800,1.000,0.667,15
+Terpenoids,Sesquiterpenoids,Cadinane sesquiterpenoids,0.779,0.957,0.657,338
+Terpenoids,Sesquiterpenoids,Noreudesmane sesquiterpenoids,0.783,1.000,0.643,36
+Terpenoids,Diterpenoids,Cleistanthane diterpenoids,0.778,1.000,0.636,58
+Terpenoids,Sesquiterpenoids,Copaane sesquiterpenoids,0.769,1.000,0.625,24
+Terpenoids,Sesquiterpenoids,Secoeudesmane sesquiterpenoids,0.769,1.000,0.625,21
+Terpenoids,Sesquiterpenoids,Acorane sesquiterpenoids,0.750,1.000,0.600,50
+Terpenoids,Sesquiterpenoids,Cubebane sesquiterpenoids,0.750,1.000,0.600,16
+Terpenoids,Sesquiterpenoids,Cyclolaurane sesquiterpenoids,0.750,1.000,0.600,14
+Terpenoids,Sesquiterpenoids,Humbertiane sesquiterpenoids,0.750,1.000,0.600,16
+Terpenoids,Sesquiterpenoids,Isodaucane sesquiterpenoids,0.750,1.000,0.600,17
+Terpenoids,Diterpenoids,Icetexane diterpenoids,0.750,1.000,0.600,50
+Terpenoids,Triterpenoids,Gammacerane triterpenoids,0.750,1.000,0.600,20
+Terpenoids,Apocarotenoids,Megastigmanes,0.714,0.882,0.600,122
+Terpenoids,Diterpenoids,Phytane diterpenoids,0.714,0.909,0.588,83
+Terpenoids,Apocarotenoids,Miscellaneous apocarotenoids,0.667,0.800,0.571,30
+Terpenoids,Diterpenoids,Secoabietane diterpenoids,0.710,1.000,0.550,96
+Terpenoids,Sesquiterpenoids,Caryophyllane sesquiterpenoids,0.667,1.000,0.500,107
+Terpenoids,Sesquiterpenoids,Homofarnesane sesquiterpenoids,0.667,1.000,0.500,7
+Terpenoids,Sesquiterpenoids,Longibornane sesquiterpenoids,0.667,1.000,0.500,6
+Terpenoids,Sesquiterpenoids,Pacifigorgiane sesquiterpenoids,0.667,1.000,0.500,9
+Terpenoids,Sesquiterpenoids,Valerane sesquiterpenoids,0.667,1.000,0.500,14
+Terpenoids,Diterpenoids,Abeoabietane diterpenoids,0.638,0.882,0.500,146
+Terpenoids,Diterpenoids,Sphaeroane diterpenoids,0.667,1.000,0.500,6
+Terpenoids,Carotenoids (C40),"Carotenoids (C40, β-γ)",0.667,1.000,0.500,4
+Terpenoids,Carotenoids (C40),"Carotenoids (C40, ε-ε)",0.667,1.000,0.500,7
+Terpenoids,Sesquiterpenoids,Drimane sesquiterpenoids,0.649,1.000,0.480,138
+Terpenoids,Monoterpenoids,Camphane monoterpenoids,0.621,0.900,0.474,101
+Terpenoids,Sesquiterpenoids,Longifolane sesquiterpenoids,0.600,1.000,0.429,30
+Terpenoids,Sesquiterpenoids,Farnesane sesquiterpenoids,0.596,1.000,0.424,162
+Terpenoids,Monoterpenoids,Fenchane monoterpenoids,0.571,1.000,0.400,21
+Terpenoids,Sesquiterpenoids,Prezizaane sesquiterpenoids,0.571,1.000,0.400,52
+Terpenoids,Sesquiterpenoids,Protoilludane sesquiterpenoids,0.545,0.857,0.400,75
+Terpenoids,Diterpenoids,Valparane diterpenoids,0.571,1.000,0.400,21
+Terpenoids,Diterpenoids,Norpimarane and Norisopimarane diterpenoids,0.522,0.857,0.375,76
+Terpenoids,Sesquiterpenoids,Hirsutane sesquiterpenoids,0.526,1.000,0.357,67
+Terpenoids,Diterpenoids,Norlabdane diterpenoids,0.516,1.000,0.348,84
+Terpenoids,Sesquiterpenoids,Bourbonane sesquiterpenoids,0.500,1.000,0.333,19
+Terpenoids,Sesquiterpenoids,Thapsane sesquiterpenoids,0.500,1.000,0.333,16
+Terpenoids,Diterpenoids,Cyclophytane diterpenoids,0.455,0.714,0.333,82
+Terpenoids,Sesquiterpenoids,Secogermacrane sesquiterpenoids,0.400,1.000,0.250,15
+Terpenoids,Diterpenoids,Cycloamphilectane diterpenoids,0.400,1.000,0.250,18
