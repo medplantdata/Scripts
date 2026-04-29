@@ -25,7 +25,7 @@ dropDF = df.iloc[2:, :-4]
 cleanDF = pd.DataFrame(dropDF.values, columns=['pathway', 'superclass','class'])
 cleanDF.to_csv('/home/school/masters/Scripts/NpClassifier_ClassyFire/cleaned_listOfAllNPClassifierClasses.csv', index=False)
 """
-#//////making data in DB format 
+#//////making data in DB format apparently this wont work
 """df = pd.read_csv('/home/school/masters/Scripts/NpClassifier_ClassyFire/cleaned_listOfAllNPClassifierClasses.csv')
 
 pathwayDf = pd.DataFrame(df['pathway'].tolist(index = True).drop_duplicates(), columns=['pathway_id','pathway'])
@@ -55,7 +55,7 @@ superclassDf.to_csv('/home/school/masters/Scripts/NpClassifier_ClassyFire/NpClas
 classDf.to_csv('/home/school/masters/Scripts/NpClassifier_ClassyFire/NpClassifierClassesDB.csv', index=False)
 """
 
-
+# ai assisted version of the above
 df = pd.read_csv(
     "/home/school/masters/Scripts/NpClassifier_ClassyFire/cleaned_listOfAllNPClassifierClasses.csv"
 )
