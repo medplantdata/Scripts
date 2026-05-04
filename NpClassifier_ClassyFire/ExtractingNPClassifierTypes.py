@@ -172,36 +172,3 @@ fkclassDF['superclass_id'] = fkclassDF['superclass'].map(
 
 # trying to remove duplicates and then assigning FK is difficult attempting to do it all in one go 
 
-df = pd.read_csv("/home/school/masters/Scripts/NpClassifier_ClassyFire/cleaned_listOfAllNPClassifierClasses.csv")
-pathwayDF = pd.DataFrame(df['pathway'].drop_duplicates().reset_index(drop=True)).reset_index()
-pathwayDF.columns = ['pathway_id', 'pathway']
-pathwayDF['pathway_id'] += 1
-pathwayDF.to_csv('/home/school/masters/Scripts/NpClassifier_ClassyFire/NpClassifierPathwaysDB.csv', index=False)
-
-superclassDF = pd.DataFrame(columns=['superclass_id','superclass','pathway_id'])
-superclass_counter = 0
-superclasslist = []
-
-for pathway, superclass in df[['pathway', 'superclass']].values:
-    if superclass.strip() not in superclasslist:
-        superclass_counter += 1
-        pathway_id = pathwayDF.loc[pathwayDF['pathway'] == pathway, 'pathway_id'].values[0]
-        superclasslist.append((superclass_counter, superclass, pathway_id))
-
-superclassDf = pd.DataFrame(superclasslist, columns=['superclass_id','superclass','pathway_id'])
-
-classDF = pd.DataFrame(columns=['class_id','class','superclass_id'])
-class_counter = 0
-classlist = []  
-
-for superclass, classes in df[['superclass', 'class']].values:
-    if classes.strip() not in classlist:
-        class_counter += 1
-        superclass_id = superclassDf.loc[superclassDf['superclass'] == superclass, 'superclass_id'].values[0]
-        classlist.append((class_counter, classes, superclass_id))
-
-classDf = pd.DataFrame(classlist, columns=['class_id','class','superclass_id'])
-
-pathwayDF.to_csv('/home/school/masters/Scripts/NpClassifier_ClassyFire/NpClassifierPathwaysDB.csv', index=False)
-superclassDf.to_csv('/home/school/masters/Scripts/NpClassifier_ClassyFire/NpClassifierSuperclassesDB.csv', index=False)
-classDf.to_csv('/home/school/masters/Scripts/NpClassifier_ClassyFire/NpClassifierClassesDB.csv', index=False)
