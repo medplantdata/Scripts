@@ -1,0 +1,2 @@
+5 may
+added a orders csv to the thing and discovered that I dont have permission to use the mysql to load from file. Made a python script that converts the csv int a sql command and added data that way.
