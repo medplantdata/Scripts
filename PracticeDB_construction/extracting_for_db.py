@@ -13,10 +13,12 @@ simplified_df.dropna(subset=['Title'], inplace=True)
 codedOnly_df = simplified_df.dropna(subset=['Code'])
 #print(codedOnly_df.head(10))
 
+"""
+Does not work because of the way the data is structured. The path is not correctly constructed because the hierarchy is not properly represented in the data. The code needs to be modified to correctly construct the path based on the hierarchy of the diseases.
 paths = []
 
 for code, title in simplified_df.itertuples(index=False):
-    if (title[:3] != '- -'):
+    if (title[:5] != '- - -'):
         path = ''
     if pd.isna(code):
         path = path + '/' + title
@@ -27,3 +29,4 @@ codedOnly_df['Path'] = paths
 print(codedOnly_df.head(20))
 
 codedOnly_df.to_csv('/home/school/masters/Scripts/PracticeDB_construction/diseases_with_materialized_paths.csv', index=False)
+"""
