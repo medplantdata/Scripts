@@ -1,2 +1,5 @@
 5 may
-added a orders csv to the thing and discovered that I dont have permission to use the mysql to load from file. Made a python script that converts the csv int a sql command and added data that way.
+Added a orders csv to the thing and discovered that I dont have permission to use the mysql to load from file. Made a python script that converts the csv int a sql command and added data that way.
+
+I also tried to do the connector from the php to the mysql database in the plant results.php file. Apparently there are 2 ways and the way I chose was PDO. Unfortunately it is unavailable
+on the server so I will have to get johann to download it. 
