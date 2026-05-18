@@ -3,3 +3,29 @@ Added a orders csv to the thing and discovered that I dont have permission to us
 
 I also tried to do the connector from the php to the mysql database in the plant results.php file. Apparently there are 2 ways and the way I chose was PDO. Unfortunately it is unavailable
 on the server so I will have to get johann to download it. 
+
+18 may - trying to add families using LOAD DATA, Checking if PDO is active and emailing johann
+Today attempting to try to add the family data to the wandDB so I can see the exact error to tell johann. Going to SCP the 
+family csv and then try use SQL.
+
+Could not use scp to go directly into my nlustre folder but can transfer to folders in my home directory and cp from there 
+to nlustre
+
+FIRST ATTEMPT
+mysql> LOAD DATA INFILE '/nlustre/users/nathanc/families.csv'
+    -> INTO TABLE families
+    -> FIELDS TERMINATED BY ','
+    -> ENCLOSED BY '"'
+    -> LINES TERMINATED BY '\n'
+    -> IGNORE 1 ROWS
+    -> (family_id,family_name,order_id);
+ERROR 1290 (HY000): The MySQL server is running with the --secure-file-priv option so it cannot execute this statement
+
+I have no access to the secure file specified on the server gonna ask johann if i can load from lustre.
+
+get php info:
+<?php
+phpinfo();
+
+The PDO package is installed and enabled but it looks like the issue is that the actual php-mysql package is not installed.
+
