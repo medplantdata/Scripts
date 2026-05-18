@@ -1,10 +1,16 @@
+TOC:
+5 May - 
+18 May - trying to add families using LOAD DATA, Checking if PDO is active and emailing johann, SANCDB plant scrape
+
+
+
 5 may
 Added a orders csv to the thing and discovered that I dont have permission to use the mysql to load from file. Made a python script that converts the csv int a sql command and added data that way.
 
 I also tried to do the connector from the php to the mysql database in the plant results.php file. Apparently there are 2 ways and the way I chose was PDO. Unfortunately it is unavailable
 on the server so I will have to get johann to download it. 
 
-18 may - trying to add families using LOAD DATA, Checking if PDO is active and emailing johann
+18 may - trying to add families using LOAD DATA, Checking if PDO is active and emailing johann, SANCDB plant scrape
 Today attempting to try to add the family data to the wandDB so I can see the exact error to tell johann. Going to SCP the 
 family csv and then try use SQL.
 
@@ -28,4 +34,11 @@ get php info:
 phpinfo();
 
 The PDO package is installed and enabled but it looks like the issue is that the actual php-mysql package is not installed.
+
+I scraped SANCDB search page and put all the plants listed there into a csv.
+
+FOR FUTURE:
+Will have to clean, the SANCDB plants. No redundency and get GBIF backbone to match genus to family in the database.
+
+Add web search functionality once johann has added permissions
 
