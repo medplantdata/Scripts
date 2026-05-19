@@ -1,6 +1,7 @@
 TOC:
 5 May - 
 18 May - trying to add families using LOAD DATA, Checking if PDO is active and emailing johann, SANCDB plant scrape
+19 May -> Adding families with LOAD DATA LOCAL, making new attempt at plant_results.php and assinging families to the species downloaded from SANCDB
 
 
 
@@ -41,4 +42,54 @@ FOR FUTURE:
 Will have to clean, the SANCDB plants. No redundency and get GBIF backbone to match genus to family in the database.
 
 Add web search functionality once johann has added permissions
+
+19 May -> Adding families with LOAD DATA LOCAL, making new attempt at plant_results.php and assinging families to the species downloaded from SANCDB
+All seems to be working in terms of "LOAD DATA LOCAL INFILE '/localdata/wand_data/families.csv'". The families were added
+successfully.
+
+I am making a plant_results_new.php to work out some of the kinks and to try again as the og one leaves a 500 internal server
+error.
+
+The following script seems to test the DB connection and it looks like the connection is fine and the error is in the code
+of the website.
+
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+
+echo "Reached start of dbtest\n";
+$host     = '127.0.0.1';
+$dbname   = 'wanddb';
+$username = 'wand';
+$password = '!0804_QeD#';
+$charset  = 'utf8mb4';
+
+$dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
+echo "DSN = $dsn\n";
+
+try {
+    $pdo = new PDO($dsn, $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "DB connection OK\n";
+} catch (PDOException $e) {
+    echo "DB connection failed: " . $e->getMessage();
+}
+
+$dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
+echo "DSN = $dsn\n";
+
+try {
+    $pdo = new PDO($dsn, $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "DB connection OK\n";
+} catch (PDOException $e) {
+    echo "DB connection failed: " . $e->getMessage();
+}
+
+
+GBIF have thier own python module but for some reason it seems not to work on my laptop so I am just going to use requests
+Ran the script and the CSV is generated with the Families genus and species from the SANCDB so now it just needs to be
+put in db fromat and I need to decide if the genus and species entries should be seperated. Probably. 
+
 
