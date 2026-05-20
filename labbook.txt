@@ -92,4 +92,34 @@ GBIF have thier own python module but for some reason it seems not to work on my
 Ran the script and the CSV is generated with the Families genus and species from the SANCDB so now it just needs to be
 put in db fromat and I need to decide if the genus and species entries should be seperated. Probably. 
 
+20 May
+Checked the SANCDB against the previously extracted families from the APG4 and discovered that the SANCDB also has a bunch
+of marine things. making a script now that assigns a kingdom as well so I can quickly remove non plant things and do
+a nicer comparison between the SANCDB plants and the APG4.
 
+Realized that there is Boopone and Boophane in the download so I need to figure out how to get rid of this kind of thing
+
+Family Dumortieraceae not found in APG IV list.
+Family Marchantiaceae not found in APG IV list.
+Family nan not found in APG IV list.
+Family Rhodomelaceae not found in APG IV list.
+Family Plocamiaceae not found in APG IV list.
+Family Ricciaceae not found in APG IV list.
+Family Ximeniaceae not found in APG IV list.
+All except for Ximeniaceae are liverworts or algae which I assume are not angiosperms
+Ximeniaceae is not recognised by wikipedia the correct order seems to be Olacaceae which is in the APG4 so I'm going to 
+exclude it (Ximenia caffra) and all the other ones just for simplicity
+
+Asparagaceae is the largest family in the SANCDB for plants at 14%
+
+in order to deduplicate synonyms I am getting the usage key from gbif for everything then dropping duplicates and 
+assigning the officail name
+
+now hopefully I will be able to match genuses to the families and species to the genus to prepare a nice upload file for the 
+wanddb
+
+Thought about it and seperating the genus and the species does Probably save some space but I rate that it will add more 
+complication because there will be duplication in the species names that isnt functionally duplication and that may make
+things difficult 
+
+Now just need to ad the data to the table I have moved the CSV over.
