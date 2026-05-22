@@ -2,7 +2,8 @@ TOC:
 5 May - 
 18 May - trying to add families using LOAD DATA, Checking if PDO is active and emailing johann, SANCDB plant scrape
 19 May -> Adding families with LOAD DATA LOCAL, making new attempt at plant_results.php and assinging families to the species downloaded from SANCDB
-
+20 May -> doing paper review
+21 May -> Adding SANCDB species to the db and creating the db table.
 
 
 5 may
@@ -123,3 +124,64 @@ complication because there will be duplication in the species names that isnt fu
 things difficult 
 
 Now just need to ad the data to the table I have moved the CSV over.
+
+21 May - article review
+reviewed the article
+
+22 May  - Adding species to the db and creating the db table.
+
+I learnt about the UNSIGNED command in SQL which basically means that you cant store a negative number in a column but that
+it uses the negative num storage for the positive to double the space.
+However I did not know that previously so I have to alter the previous families table because foreign key must have the exact 
+data type of what it is referencing.
+
+to check data types in table: SHOW CREATE TABLE families\G
+
+TO CHANGE THE DATATYPE:
+ALTER TABLE families
+MODIFY family_id INT UNSIGNED NOT NULL AUTO_INCREMENT;
+
+THEN I GOT AN ERROR THAT WONT ALLOW AN AUTO INCREMENT COLUMN (PLANT_ID) TO BE USED FOR A GENERATED COLUMN (WAND_ID)
+SO THE following WAS USED:
+
+CREATE TABLE plants (
+    plant_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    wand_id  VARCHAR(20) NOT NULL,
+    genus    VARCHAR(255),
+    species  VARCHAR(255),
+    gbif_key VARCHAR(15),
+    family_id INT UNSIGNED NOT NULL,
+    PRIMARY KEY (plant_id),
+    UNIQUE (wand_id),
+    CONSTRAINT fk_plant_family
+        FOREIGN KEY (family_id)
+        REFERENCES families(family_id)
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT
+);
+
+
+DELIMITER $$
+
+CREATE TRIGGER trg_plants_wand_id
+AFTER INSERT ON plants
+FOR EACH ROW
+BEGIN
+    UPDATE plants
+    SET wand_id = CONCAT('P', NEW.plant_id)
+    WHERE plant_id = NEW.plant_id;
+END$$
+
+DELIMITER ;
+
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/SANCDB_plants_for_DB.csv'
+INTO TABLE plants
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(wand_id, genus, species, gbif_key, family_id);
+
+It worked but the table was auto incrementing incorrectly so i cleared the table and it doest work now. kms
+i FOUND THE ERROR IT WAS IN THE LAST LINE OF THE LOADFROM FILE BUT I FIXED IT AND NOW EVERYTHING LOOKS FINE.
