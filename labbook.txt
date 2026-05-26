@@ -4,6 +4,8 @@ TOC:
 19 May -> Adding families with LOAD DATA LOCAL, making new attempt at plant_results.php and assinging families to the species downloaded from SANCDB
 20 May -> doing paper review
 21 May -> Adding SANCDB species to the db and creating the db table.
+22 May  - Adding species to the db and creating the db table.
+26 May - Cleaning the ICD 11 properly and adding to the wanddb
 
 
 5 may
@@ -161,16 +163,16 @@ CREATE TABLE plants (
 );
 
 
-DELIMITER $$
-
-CREATE TRIGGER trg_plants_wand_id
-AFTER INSERT ON plants
-FOR EACH ROW
-BEGIN
-    UPDATE plants
-    SET wand_id = CONCAT('P', NEW.plant_id)
-    WHERE plant_id = NEW.plant_id;
-END$$
+         DELIMITER $$
+this misbehave and has been REMOVED
+          CREATE TRIGGER trg_plants_wand_id
+          AFTER INSERT ON plants
+          FOR EACH ROW
+          BEGIN
+              UPDATE plants
+              SET wand_id = CONCAT('P', NEW.plant_id)
+              WHERE plant_id = NEW.plant_id;
+          END$$
 
 DELIMITER ;
 THIS TRIGGER CAUSES TOO MANY PROBLEMS AND HAS BEEN REMOVED
@@ -187,7 +189,9 @@ IGNORE 1 LINES
 It worked but the table was auto incrementing incorrectly so i cleared the table and it doest work now. kms
 i FOUND THE ERROR IT WAS IN THE LAST LINE OF THE LOADFROM FILE BUT I FIXED IT AND NOW EVERYTHING LOOKS FINE.
 
-26 May
+
+
+26 May - Cleaning the ICD 11 properly and adding to the wanddb
 Today I am attempting to clean and add the ICD-11 to the database.
 So by using the Block ID and seperating the based on that I seem to have constructed the paths correctly
 
@@ -201,25 +205,25 @@ up in the path so I am fixing that now
 
 I think it is fixed now so I am reattempting to add to the databse
 
-mysql> CREATE TABLE diseases (
+CREATE TABLE diseases (
 disease_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-wand_id    VARCHAR(20)  NOT NULL,
+wand_id    VARCHAR(20),
 code       VARCHAR(20)  NOT NULL,
 title      VARCHAR(255) NOT NULL,
 path       TEXT         NOT NULL,
 PRIMARY KEY (disease_id),
 UNIQUE (wand_id));
 
-mysql> DELIMITER //
-mysql> 
-mysql> CREATE TRIGGER diseases_wand_id
-    -> BEFORE INSERT ON diseases
-    -> FOR EACH ROW
-    -> BEGIN
-    ->     IF NEW.wand_id IS NULL OR NEW.wand_id = '' THEN
-    ->         SET NEW.wand_id = CONCAT('d', REPLACE(NEW.code, '.', '_'));
-    ->     END IF;
-    -> END //
+LOAD DATA LOCAL INFILE '/localdata/wand_data/diseases_with_materialized_paths.csv'
+INTO TABLE diseases
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(code, title, path);
 
+UPDATE diseases
+SET wand_id = CONCAT('d', disease_id)
+WHERE wand_id IS NULL OR wand_id = '';
 
-
+As far as I can tell all is good and the diseases are all added to the DB.
