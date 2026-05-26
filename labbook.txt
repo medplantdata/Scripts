@@ -173,6 +173,7 @@ BEGIN
 END$$
 
 DELIMITER ;
+THIS TRIGGER CAUSES TOO MANY PROBLEMS AND HAS BEEN REMOVED
 
 
 LOAD DATA LOCAL INFILE '/localdata/wand_data/SANCDB_plants_for_DB.csv'
@@ -194,3 +195,31 @@ I am just worried some entries may be missing IE there is no 6A11? it seems to s
 Apparently there are gaps in the ICD-11 Tho
 
 Now imma try add these to the database
+
+While attemting to add to the databse I realized that I was doing and oopsie and every single entry that was coded was ending
+up in the path so I am fixing that now
+
+I think it is fixed now so I am reattempting to add to the databse
+
+mysql> CREATE TABLE diseases (
+disease_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+wand_id    VARCHAR(20)  NOT NULL,
+code       VARCHAR(20)  NOT NULL,
+title      VARCHAR(255) NOT NULL,
+path       TEXT         NOT NULL,
+PRIMARY KEY (disease_id),
+UNIQUE (wand_id));
+
+mysql> DELIMITER //
+mysql> 
+mysql> CREATE TRIGGER diseases_wand_id
+    -> BEFORE INSERT ON diseases
+    -> FOR EACH ROW
+    -> BEGIN
+    ->     IF NEW.wand_id IS NULL OR NEW.wand_id = '' THEN
+    ->         SET NEW.wand_id = CONCAT('d', REPLACE(NEW.code, '.', '_'));
+    ->     END IF;
+    -> END //
+
+
+

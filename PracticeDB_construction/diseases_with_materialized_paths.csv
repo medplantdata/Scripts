@@ -1,367 +1,367 @@
 Code,Title,Path
-6A00,Disorders of intellectual development,Neurodevelopmental disorders/Disorders of intellectual development/
-6A01,Developmental speech or language disorders,Neurodevelopmental disorders/Disorders of intellectual development/Developmental speech or language disorders/
-6A02,Autism spectrum disorder,Neurodevelopmental disorders/Disorders of intellectual development/Developmental speech or language disorders/Autism spectrum disorder/
-6A03,Developmental learning disorder,Neurodevelopmental disorders/Disorders of intellectual development/Developmental speech or language disorders/Autism spectrum disorder/Developmental learning disorder/
-6A04,Developmental motor coordination disorder,Neurodevelopmental disorders/Disorders of intellectual development/Developmental speech or language disorders/Autism spectrum disorder/Developmental learning disorder/Developmental motor coordination disorder/
-6A05,Attention deficit hyperactivity disorder,Neurodevelopmental disorders/Disorders of intellectual development/Developmental speech or language disorders/Autism spectrum disorder/Developmental learning disorder/Developmental motor coordination disorder/Attention deficit hyperactivity disorder/
-6A06,Stereotyped movement disorder,Neurodevelopmental disorders/Disorders of intellectual development/Developmental speech or language disorders/Autism spectrum disorder/Developmental learning disorder/Developmental motor coordination disorder/Attention deficit hyperactivity disorder/Stereotyped movement disorder/
-6A0Y,Other specified neurodevelopmental disorders,Neurodevelopmental disorders/Disorders of intellectual development/Developmental speech or language disorders/Autism spectrum disorder/Developmental learning disorder/Developmental motor coordination disorder/Attention deficit hyperactivity disorder/Stereotyped movement disorder/Other specified neurodevelopmental disorders/
-6A0Z,"Neurodevelopmental disorders, unspecified","Neurodevelopmental disorders/Disorders of intellectual development/Developmental speech or language disorders/Autism spectrum disorder/Developmental learning disorder/Developmental motor coordination disorder/Attention deficit hyperactivity disorder/Stereotyped movement disorder/Other specified neurodevelopmental disorders/Neurodevelopmental disorders, unspecified/"
-6A20,Schizophrenia,Schizophrenia or other primary psychotic disorders/Schizophrenia/
-6A21,Schizoaffective disorder,Schizophrenia or other primary psychotic disorders/Schizophrenia/Schizoaffective disorder/
-6A22,Schizotypal disorder,Schizophrenia or other primary psychotic disorders/Schizophrenia/Schizoaffective disorder/Schizotypal disorder/
-6A23,Acute and transient psychotic disorder,Schizophrenia or other primary psychotic disorders/Schizophrenia/Schizoaffective disorder/Schizotypal disorder/Acute and transient psychotic disorder/
-6A24,Delusional disorder,Schizophrenia or other primary psychotic disorders/Schizophrenia/Schizoaffective disorder/Schizotypal disorder/Acute and transient psychotic disorder/Delusional disorder/
-6A25,Symptomatic manifestations of primary psychotic disorders,Schizophrenia or other primary psychotic disorders/Schizophrenia/Schizoaffective disorder/Schizotypal disorder/Acute and transient psychotic disorder/Delusional disorder/Symptomatic manifestations of primary psychotic disorders/
-6A2Y,Other specified primary psychotic disorder,Schizophrenia or other primary psychotic disorders/Schizophrenia/Schizoaffective disorder/Schizotypal disorder/Acute and transient psychotic disorder/Delusional disorder/Symptomatic manifestations of primary psychotic disorders/Other specified primary psychotic disorder/
-6A2Z,"Schizophrenia or other primary psychotic disorders, unspecified","Schizophrenia or other primary psychotic disorders/Schizophrenia/Schizoaffective disorder/Schizotypal disorder/Acute and transient psychotic disorder/Delusional disorder/Symptomatic manifestations of primary psychotic disorders/Other specified primary psychotic disorder/Schizophrenia or other primary psychotic disorders, unspecified/"
-6A40,Catatonia associated with another mental disorder,Catatonia/Catatonia associated with another mental disorder/
-6A41,Catatonia induced by substances or medications,Catatonia/Catatonia associated with another mental disorder/Catatonia induced by substances or medications/
-6A4Z,"Catatonia, unspecified","Catatonia/Catatonia associated with another mental disorder/Catatonia induced by substances or medications/Catatonia, unspecified/"
-6A60,Bipolar type I disorder,Mood disorders/Bipolar or related disorders/Bipolar type I disorder/
-6A61,Bipolar type II disorder,Mood disorders/Bipolar or related disorders/Bipolar type I disorder/Bipolar type II disorder/
-6A62,Cyclothymic disorder,Mood disorders/Bipolar or related disorders/Bipolar type I disorder/Bipolar type II disorder/Cyclothymic disorder/
-6A6Y,Other specified bipolar or related disorders,Mood disorders/Bipolar or related disorders/Bipolar type I disorder/Bipolar type II disorder/Cyclothymic disorder/Other specified bipolar or related disorders/
-6A6Z,"Bipolar or related disorders, unspecified","Mood disorders/Bipolar or related disorders/Bipolar type I disorder/Bipolar type II disorder/Cyclothymic disorder/Other specified bipolar or related disorders/Bipolar or related disorders, unspecified/"
-6A70,Single episode depressive disorder,Mood disorders/Depressive disorders/Single episode depressive disorder/
-6A71,Recurrent depressive disorder,Mood disorders/Depressive disorders/Single episode depressive disorder/Recurrent depressive disorder/
-6A72,Dysthymic disorder,Mood disorders/Depressive disorders/Single episode depressive disorder/Recurrent depressive disorder/Dysthymic disorder/
-6A73,Mixed depressive and anxiety disorder,Mood disorders/Depressive disorders/Single episode depressive disorder/Recurrent depressive disorder/Dysthymic disorder/Mixed depressive and anxiety disorder/
-6A7Y,Other specified depressive disorders,Mood disorders/Depressive disorders/Single episode depressive disorder/Recurrent depressive disorder/Dysthymic disorder/Mixed depressive and anxiety disorder/Other specified depressive disorders/
-6A7Z,"Depressive disorders, unspecified","Mood disorders/Depressive disorders/Single episode depressive disorder/Recurrent depressive disorder/Dysthymic disorder/Mixed depressive and anxiety disorder/Other specified depressive disorders/Depressive disorders, unspecified/"
-6A80,Symptomatic and course presentations for mood episodes in mood disorders,"Mood disorders/Depressive disorders/Single episode depressive disorder/Recurrent depressive disorder/Dysthymic disorder/Mixed depressive and anxiety disorder/Other specified depressive disorders/Depressive disorders, unspecified/Symptomatic and course presentations for mood episodes in mood disorders/"
-6A8Y,Other specified mood disorders,"Mood disorders/Depressive disorders/Single episode depressive disorder/Recurrent depressive disorder/Dysthymic disorder/Mixed depressive and anxiety disorder/Other specified depressive disorders/Depressive disorders, unspecified/Symptomatic and course presentations for mood episodes in mood disorders/Other specified mood disorders/"
-6A8Z,"Mood disorders, unspecified","Mood disorders/Depressive disorders/Single episode depressive disorder/Recurrent depressive disorder/Dysthymic disorder/Mixed depressive and anxiety disorder/Other specified depressive disorders/Depressive disorders, unspecified/Symptomatic and course presentations for mood episodes in mood disorders/Other specified mood disorders/Mood disorders, unspecified/"
-6B00,Generalised anxiety disorder,Anxiety or fear-related disorders/Generalised anxiety disorder/
-6B01,Panic disorder,Anxiety or fear-related disorders/Generalised anxiety disorder/Panic disorder/
-6B02,Agoraphobia,Anxiety or fear-related disorders/Generalised anxiety disorder/Panic disorder/Agoraphobia/
-6B03,Specific phobia,Anxiety or fear-related disorders/Generalised anxiety disorder/Panic disorder/Agoraphobia/Specific phobia/
-6B04,Social anxiety disorder,Anxiety or fear-related disorders/Generalised anxiety disorder/Panic disorder/Agoraphobia/Specific phobia/Social anxiety disorder/
-6B05,Separation anxiety disorder,Anxiety or fear-related disorders/Generalised anxiety disorder/Panic disorder/Agoraphobia/Specific phobia/Social anxiety disorder/Separation anxiety disorder/
-6B06,Selective mutism,Anxiety or fear-related disorders/Generalised anxiety disorder/Panic disorder/Agoraphobia/Specific phobia/Social anxiety disorder/Separation anxiety disorder/Selective mutism/
-6B0Y,Other specified anxiety or fear-related disorders,Anxiety or fear-related disorders/Generalised anxiety disorder/Panic disorder/Agoraphobia/Specific phobia/Social anxiety disorder/Separation anxiety disorder/Selective mutism/Other specified anxiety or fear-related disorders/
-6B0Z,"Anxiety or fear-related disorders, unspecified","Anxiety or fear-related disorders/Generalised anxiety disorder/Panic disorder/Agoraphobia/Specific phobia/Social anxiety disorder/Separation anxiety disorder/Selective mutism/Other specified anxiety or fear-related disorders/Anxiety or fear-related disorders, unspecified/"
-6B20,Obsessive-compulsive disorder,Obsessive-compulsive or related disorders/Obsessive-compulsive disorder/
-6B21,Body dysmorphic disorder,Obsessive-compulsive or related disorders/Obsessive-compulsive disorder/Body dysmorphic disorder/
-6B22,Olfactory reference disorder,Obsessive-compulsive or related disorders/Obsessive-compulsive disorder/Body dysmorphic disorder/Olfactory reference disorder/
-6B23,Hypochondriasis,Obsessive-compulsive or related disorders/Obsessive-compulsive disorder/Body dysmorphic disorder/Olfactory reference disorder/Hypochondriasis/
-6B24,Hoarding disorder,Obsessive-compulsive or related disorders/Obsessive-compulsive disorder/Body dysmorphic disorder/Olfactory reference disorder/Hypochondriasis/Hoarding disorder/
-6B25,Body-focused repetitive behaviour disorders,Obsessive-compulsive or related disorders/Obsessive-compulsive disorder/Body dysmorphic disorder/Olfactory reference disorder/Hypochondriasis/Hoarding disorder/Body-focused repetitive behaviour disorders/
-6B2Y,Other specified obsessive-compulsive or related disorders,Obsessive-compulsive or related disorders/Obsessive-compulsive disorder/Body dysmorphic disorder/Olfactory reference disorder/Hypochondriasis/Hoarding disorder/Body-focused repetitive behaviour disorders/Other specified obsessive-compulsive or related disorders/
-6B2Z,"Obsessive-compulsive or related disorders, unspecified","Obsessive-compulsive or related disorders/Obsessive-compulsive disorder/Body dysmorphic disorder/Olfactory reference disorder/Hypochondriasis/Hoarding disorder/Body-focused repetitive behaviour disorders/Other specified obsessive-compulsive or related disorders/Obsessive-compulsive or related disorders, unspecified/"
-6B40,Post traumatic stress disorder,Disorders specifically associated with stress/Post traumatic stress disorder/
-6B41,Complex post traumatic stress disorder,Disorders specifically associated with stress/Post traumatic stress disorder/Complex post traumatic stress disorder/
-6B42,Prolonged grief disorder,Disorders specifically associated with stress/Post traumatic stress disorder/Complex post traumatic stress disorder/Prolonged grief disorder/
-6B43,Adjustment disorder,Disorders specifically associated with stress/Post traumatic stress disorder/Complex post traumatic stress disorder/Prolonged grief disorder/Adjustment disorder/
-6B44,Reactive attachment disorder,Disorders specifically associated with stress/Post traumatic stress disorder/Complex post traumatic stress disorder/Prolonged grief disorder/Adjustment disorder/Reactive attachment disorder/
-6B45,Disinhibited social engagement disorder,Disorders specifically associated with stress/Post traumatic stress disorder/Complex post traumatic stress disorder/Prolonged grief disorder/Adjustment disorder/Reactive attachment disorder/Disinhibited social engagement disorder/
-6B4Y,Other specified disorders specifically associated with stress,Disorders specifically associated with stress/Post traumatic stress disorder/Complex post traumatic stress disorder/Prolonged grief disorder/Adjustment disorder/Reactive attachment disorder/Disinhibited social engagement disorder/Other specified disorders specifically associated with stress/
-6B4Z,"Disorders specifically associated with stress, unspecified","Disorders specifically associated with stress/Post traumatic stress disorder/Complex post traumatic stress disorder/Prolonged grief disorder/Adjustment disorder/Reactive attachment disorder/Disinhibited social engagement disorder/Other specified disorders specifically associated with stress/Disorders specifically associated with stress, unspecified/"
-6B60,Dissociative neurological symptom disorder,Dissociative disorders/Dissociative neurological symptom disorder/
-6B61,Dissociative amnesia,Dissociative disorders/Dissociative neurological symptom disorder/Dissociative amnesia/
-6B62,Trance disorder,Dissociative disorders/Dissociative neurological symptom disorder/Dissociative amnesia/Trance disorder/
-6B63,Possession trance disorder,Dissociative disorders/Dissociative neurological symptom disorder/Dissociative amnesia/Trance disorder/Possession trance disorder/
-6B64,Dissociative identity disorder,Dissociative disorders/Dissociative neurological symptom disorder/Dissociative amnesia/Trance disorder/Possession trance disorder/Dissociative identity disorder/
-6B65,Partial dissociative identity disorder,Dissociative disorders/Dissociative neurological symptom disorder/Dissociative amnesia/Trance disorder/Possession trance disorder/Dissociative identity disorder/Partial dissociative identity disorder/
-6B66,Depersonalization-derealization disorder,Dissociative disorders/Dissociative neurological symptom disorder/Dissociative amnesia/Trance disorder/Possession trance disorder/Dissociative identity disorder/Partial dissociative identity disorder/Depersonalization-derealization disorder/
-6B6Y,Other specified dissociative disorders,Dissociative disorders/Dissociative neurological symptom disorder/Dissociative amnesia/Trance disorder/Possession trance disorder/Dissociative identity disorder/Partial dissociative identity disorder/Depersonalization-derealization disorder/Other specified dissociative disorders/
-6B6Z,"Dissociative disorders, unspecified","Dissociative disorders/Dissociative neurological symptom disorder/Dissociative amnesia/Trance disorder/Possession trance disorder/Dissociative identity disorder/Partial dissociative identity disorder/Depersonalization-derealization disorder/Other specified dissociative disorders/Dissociative disorders, unspecified/"
-6B80,Anorexia Nervosa,Feeding or eating disorders/Anorexia Nervosa/
-6B81,Bulimia Nervosa,Feeding or eating disorders/Anorexia Nervosa/Bulimia Nervosa/
-6B82,Binge eating disorder,Feeding or eating disorders/Anorexia Nervosa/Bulimia Nervosa/Binge eating disorder/
-6B83,Avoidant-restrictive food intake disorder,Feeding or eating disorders/Anorexia Nervosa/Bulimia Nervosa/Binge eating disorder/Avoidant-restrictive food intake disorder/
-6B84,Pica,Feeding or eating disorders/Anorexia Nervosa/Bulimia Nervosa/Binge eating disorder/Avoidant-restrictive food intake disorder/Pica/
-6B85,Rumination-regurgitation disorder,Feeding or eating disorders/Anorexia Nervosa/Bulimia Nervosa/Binge eating disorder/Avoidant-restrictive food intake disorder/Pica/Rumination-regurgitation disorder/
-6B8Y,Other specified feeding or eating disorders,Feeding or eating disorders/Anorexia Nervosa/Bulimia Nervosa/Binge eating disorder/Avoidant-restrictive food intake disorder/Pica/Rumination-regurgitation disorder/Other specified feeding or eating disorders/
-6B8Z,"Feeding or eating disorders, unspecified","Feeding or eating disorders/Anorexia Nervosa/Bulimia Nervosa/Binge eating disorder/Avoidant-restrictive food intake disorder/Pica/Rumination-regurgitation disorder/Other specified feeding or eating disorders/Feeding or eating disorders, unspecified/"
-6C00,Enuresis,Elimination disorders/Enuresis/
-6C01,Encopresis,Elimination disorders/Enuresis/Encopresis/
-6C0Z,"Elimination disorders, unspecified","Elimination disorders/Enuresis/Encopresis/Elimination disorders, unspecified/"
-6C20,Bodily distress disorder,Disorders of bodily distress or bodily experience/Bodily distress disorder/
-6C21,Body integrity dysphoria,Disorders of bodily distress or bodily experience/Bodily distress disorder/Body integrity dysphoria/
-6C2Y,Other specified disorders of bodily distress or bodily experience,Disorders of bodily distress or bodily experience/Bodily distress disorder/Body integrity dysphoria/Other specified disorders of bodily distress or bodily experience/
-6C2Z,"Disorders of bodily distress or bodily experience, unspecified","Disorders of bodily distress or bodily experience/Bodily distress disorder/Body integrity dysphoria/Other specified disorders of bodily distress or bodily experience/Disorders of bodily distress or bodily experience, unspecified/"
-6C40,Disorders due to use of alcohol,Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/
-6C41,Disorders due to use of cannabis,Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/
-6C42,Disorders due to use of synthetic cannabinoids,Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/
-6C43,Disorders due to use of opioids,Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/Disorders due to use of opioids/
-6C44,"Disorders due to use of sedatives, hypnotics or anxiolytics","Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/Disorders due to use of opioids/Disorders due to use of sedatives, hypnotics or anxiolytics/"
-6C45,Disorders due to use of cocaine,"Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/Disorders due to use of opioids/Disorders due to use of sedatives, hypnotics or anxiolytics/Disorders due to use of cocaine/"
-6C46,"Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone","Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/Disorders due to use of opioids/Disorders due to use of sedatives, hypnotics or anxiolytics/Disorders due to use of cocaine/Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone/"
-6C47,Disorders due to use of synthetic cathinones,"Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/Disorders due to use of opioids/Disorders due to use of sedatives, hypnotics or anxiolytics/Disorders due to use of cocaine/Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone/Disorders due to use of synthetic cathinones/"
-6C48,Disorders due to use of caffeine,"Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/Disorders due to use of opioids/Disorders due to use of sedatives, hypnotics or anxiolytics/Disorders due to use of cocaine/Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone/Disorders due to use of synthetic cathinones/Disorders due to use of caffeine/"
-6C49,Disorders due to use of hallucinogens,"Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/Disorders due to use of opioids/Disorders due to use of sedatives, hypnotics or anxiolytics/Disorders due to use of cocaine/Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone/Disorders due to use of synthetic cathinones/Disorders due to use of caffeine/Disorders due to use of hallucinogens/"
-6C4A,Disorders due to use of nicotine,"Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/Disorders due to use of opioids/Disorders due to use of sedatives, hypnotics or anxiolytics/Disorders due to use of cocaine/Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone/Disorders due to use of synthetic cathinones/Disorders due to use of caffeine/Disorders due to use of hallucinogens/Disorders due to use of nicotine/"
-6C4B,Disorders due to use of volatile inhalants,"Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/Disorders due to use of opioids/Disorders due to use of sedatives, hypnotics or anxiolytics/Disorders due to use of cocaine/Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone/Disorders due to use of synthetic cathinones/Disorders due to use of caffeine/Disorders due to use of hallucinogens/Disorders due to use of nicotine/Disorders due to use of volatile inhalants/"
-6C4C,"Disorders due to use of methylene-dioxymethamphetamine [MDMA] or related drugs, including methylene-dioxyamphetamine [MDA]","Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/Disorders due to use of opioids/Disorders due to use of sedatives, hypnotics or anxiolytics/Disorders due to use of cocaine/Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone/Disorders due to use of synthetic cathinones/Disorders due to use of caffeine/Disorders due to use of hallucinogens/Disorders due to use of nicotine/Disorders due to use of volatile inhalants/Disorders due to use of methylene-dioxymethamphetamine [MDMA] or related drugs, including methylene-dioxyamphetamine [MDA]/"
-6C4D,Disorders due to use of dissociative drugs including ketamine or phencyclidine (PCP),"Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/Disorders due to use of opioids/Disorders due to use of sedatives, hypnotics or anxiolytics/Disorders due to use of cocaine/Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone/Disorders due to use of synthetic cathinones/Disorders due to use of caffeine/Disorders due to use of hallucinogens/Disorders due to use of nicotine/Disorders due to use of volatile inhalants/Disorders due to use of methylene-dioxymethamphetamine [MDMA] or related drugs, including methylene-dioxyamphetamine [MDA]/Disorders due to use of dissociative drugs including ketamine or phencyclidine (PCP)/"
-6C4E,"Disorders due to use of other specified psychoactive substances, including medications","Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/Disorders due to use of opioids/Disorders due to use of sedatives, hypnotics or anxiolytics/Disorders due to use of cocaine/Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone/Disorders due to use of synthetic cathinones/Disorders due to use of caffeine/Disorders due to use of hallucinogens/Disorders due to use of nicotine/Disorders due to use of volatile inhalants/Disorders due to use of methylene-dioxymethamphetamine [MDMA] or related drugs, including methylene-dioxyamphetamine [MDA]/Disorders due to use of dissociative drugs including ketamine or phencyclidine (PCP)/Disorders due to use of other specified psychoactive substances, including medications/"
-6C4F,"Disorders due to use of multiple specified psychoactive substances, including medications","Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/Disorders due to use of opioids/Disorders due to use of sedatives, hypnotics or anxiolytics/Disorders due to use of cocaine/Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone/Disorders due to use of synthetic cathinones/Disorders due to use of caffeine/Disorders due to use of hallucinogens/Disorders due to use of nicotine/Disorders due to use of volatile inhalants/Disorders due to use of methylene-dioxymethamphetamine [MDMA] or related drugs, including methylene-dioxyamphetamine [MDA]/Disorders due to use of dissociative drugs including ketamine or phencyclidine (PCP)/Disorders due to use of other specified psychoactive substances, including medications/Disorders due to use of multiple specified psychoactive substances, including medications/"
-6C4G,Disorders due to use of unknown or unspecified psychoactive substances,"Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/Disorders due to use of opioids/Disorders due to use of sedatives, hypnotics or anxiolytics/Disorders due to use of cocaine/Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone/Disorders due to use of synthetic cathinones/Disorders due to use of caffeine/Disorders due to use of hallucinogens/Disorders due to use of nicotine/Disorders due to use of volatile inhalants/Disorders due to use of methylene-dioxymethamphetamine [MDMA] or related drugs, including methylene-dioxyamphetamine [MDA]/Disorders due to use of dissociative drugs including ketamine or phencyclidine (PCP)/Disorders due to use of other specified psychoactive substances, including medications/Disorders due to use of multiple specified psychoactive substances, including medications/Disorders due to use of unknown or unspecified psychoactive substances/"
-6C4H,Disorders due to use of non-psychoactive substances,"Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/Disorders due to use of opioids/Disorders due to use of sedatives, hypnotics or anxiolytics/Disorders due to use of cocaine/Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone/Disorders due to use of synthetic cathinones/Disorders due to use of caffeine/Disorders due to use of hallucinogens/Disorders due to use of nicotine/Disorders due to use of volatile inhalants/Disorders due to use of methylene-dioxymethamphetamine [MDMA] or related drugs, including methylene-dioxyamphetamine [MDA]/Disorders due to use of dissociative drugs including ketamine or phencyclidine (PCP)/Disorders due to use of other specified psychoactive substances, including medications/Disorders due to use of multiple specified psychoactive substances, including medications/Disorders due to use of unknown or unspecified psychoactive substances/Disorders due to use of non-psychoactive substances/"
-6C4Y,Other specified disorders due to substance use,"Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/Disorders due to use of opioids/Disorders due to use of sedatives, hypnotics or anxiolytics/Disorders due to use of cocaine/Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone/Disorders due to use of synthetic cathinones/Disorders due to use of caffeine/Disorders due to use of hallucinogens/Disorders due to use of nicotine/Disorders due to use of volatile inhalants/Disorders due to use of methylene-dioxymethamphetamine [MDMA] or related drugs, including methylene-dioxyamphetamine [MDA]/Disorders due to use of dissociative drugs including ketamine or phencyclidine (PCP)/Disorders due to use of other specified psychoactive substances, including medications/Disorders due to use of multiple specified psychoactive substances, including medications/Disorders due to use of unknown or unspecified psychoactive substances/Disorders due to use of non-psychoactive substances/Other specified disorders due to substance use/"
-6C4Z,"Disorders due to substance use, unspecified","Disorders due to substance use or addictive behaviours/Disorders due to substance use/Disorders due to use of alcohol/Disorders due to use of cannabis/Disorders due to use of synthetic cannabinoids/Disorders due to use of opioids/Disorders due to use of sedatives, hypnotics or anxiolytics/Disorders due to use of cocaine/Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone/Disorders due to use of synthetic cathinones/Disorders due to use of caffeine/Disorders due to use of hallucinogens/Disorders due to use of nicotine/Disorders due to use of volatile inhalants/Disorders due to use of methylene-dioxymethamphetamine [MDMA] or related drugs, including methylene-dioxyamphetamine [MDA]/Disorders due to use of dissociative drugs including ketamine or phencyclidine (PCP)/Disorders due to use of other specified psychoactive substances, including medications/Disorders due to use of multiple specified psychoactive substances, including medications/Disorders due to use of unknown or unspecified psychoactive substances/Disorders due to use of non-psychoactive substances/Other specified disorders due to substance use/Disorders due to substance use, unspecified/"
-6C50,Gambling disorder,Disorders due to substance use or addictive behaviours/Disorders due to addictive behaviours/Gambling disorder/
-6C51,Gaming disorder,Disorders due to substance use or addictive behaviours/Disorders due to addictive behaviours/Gambling disorder/Gaming disorder/
-6C5Y,Other specified disorders due to addictive behaviours,Disorders due to substance use or addictive behaviours/Disorders due to addictive behaviours/Gambling disorder/Gaming disorder/Other specified disorders due to addictive behaviours/
-6C5Z,"Disorders due to addictive behaviours, unspecified","Disorders due to substance use or addictive behaviours/Disorders due to addictive behaviours/Gambling disorder/Gaming disorder/Other specified disorders due to addictive behaviours/Disorders due to addictive behaviours, unspecified/"
-6C70,Pyromania,Impulse control disorders/Pyromania/
-6C71,Kleptomania,Impulse control disorders/Pyromania/Kleptomania/
-6C72,Compulsive sexual behaviour disorder,Impulse control disorders/Pyromania/Kleptomania/Compulsive sexual behaviour disorder/
-6C73,Intermittent explosive disorder,Impulse control disorders/Pyromania/Kleptomania/Compulsive sexual behaviour disorder/Intermittent explosive disorder/
-6C7Y,Other specified impulse control disorders,Impulse control disorders/Pyromania/Kleptomania/Compulsive sexual behaviour disorder/Intermittent explosive disorder/Other specified impulse control disorders/
-6C7Z,"Impulse control disorders, unspecified","Impulse control disorders/Pyromania/Kleptomania/Compulsive sexual behaviour disorder/Intermittent explosive disorder/Other specified impulse control disorders/Impulse control disorders, unspecified/"
-6C90,Oppositional defiant disorder,Disruptive behaviour or dissocial disorders/Oppositional defiant disorder/
-6C91,Conduct-dissocial disorder,Disruptive behaviour or dissocial disorders/Oppositional defiant disorder/Conduct-dissocial disorder/
-6C9Y,Other specified disruptive behaviour or dissocial disorders,Disruptive behaviour or dissocial disorders/Oppositional defiant disorder/Conduct-dissocial disorder/Other specified disruptive behaviour or dissocial disorders/
-6C9Z,"Disruptive behaviour or dissocial disorders, unspecified","Disruptive behaviour or dissocial disorders/Oppositional defiant disorder/Conduct-dissocial disorder/Other specified disruptive behaviour or dissocial disorders/Disruptive behaviour or dissocial disorders, unspecified/"
-6D10,Personality disorder,Personality disorders and related traits/Personality disorder/
-6D11,Prominent personality traits or patterns,Personality disorders and related traits/Personality disorder/Prominent personality traits or patterns/
-6D30,Exhibitionistic disorder,Paraphilic disorders/Exhibitionistic disorder/
-6D31,Voyeuristic disorder,Paraphilic disorders/Exhibitionistic disorder/Voyeuristic disorder/
-6D32,Pedophilic disorder,Paraphilic disorders/Exhibitionistic disorder/Voyeuristic disorder/Pedophilic disorder/
-6D33,Coercive sexual sadism disorder,Paraphilic disorders/Exhibitionistic disorder/Voyeuristic disorder/Pedophilic disorder/Coercive sexual sadism disorder/
-6D34,Frotteuristic disorder,Paraphilic disorders/Exhibitionistic disorder/Voyeuristic disorder/Pedophilic disorder/Coercive sexual sadism disorder/Frotteuristic disorder/
-6D35,Other paraphilic disorder involving non-consenting individuals,Paraphilic disorders/Exhibitionistic disorder/Voyeuristic disorder/Pedophilic disorder/Coercive sexual sadism disorder/Frotteuristic disorder/Other paraphilic disorder involving non-consenting individuals/
-6D36,Paraphilic disorder involving solitary behaviour or consenting individuals,Paraphilic disorders/Exhibitionistic disorder/Voyeuristic disorder/Pedophilic disorder/Coercive sexual sadism disorder/Frotteuristic disorder/Other paraphilic disorder involving non-consenting individuals/Paraphilic disorder involving solitary behaviour or consenting individuals/
-6D3Z,"Paraphilic disorders, unspecified","Paraphilic disorders/Exhibitionistic disorder/Voyeuristic disorder/Pedophilic disorder/Coercive sexual sadism disorder/Frotteuristic disorder/Other paraphilic disorder involving non-consenting individuals/Paraphilic disorder involving solitary behaviour or consenting individuals/Paraphilic disorders, unspecified/"
-6D50,Factitious disorder imposed on self,Factitious disorders/Factitious disorder imposed on self/
-6D51,Factitious disorder imposed on another,Factitious disorders/Factitious disorder imposed on self/Factitious disorder imposed on another/
-6D5Z,"Factitious disorders, unspecified","Factitious disorders/Factitious disorder imposed on self/Factitious disorder imposed on another/Factitious disorders, unspecified/"
-6D70,Delirium,Neurocognitive disorders/Delirium/
-6D71,Mild neurocognitive disorder,Neurocognitive disorders/Delirium/Mild neurocognitive disorder/
-6D72,Amnestic disorder,Neurocognitive disorders/Delirium/Mild neurocognitive disorder/Amnestic disorder/
-6D80,Dementia due to Alzheimer disease,Neurocognitive disorders/Dementia/Dementia due to Alzheimer disease/
-6D81,Dementia due to cerebrovascular disease,Neurocognitive disorders/Dementia/Dementia due to Alzheimer disease/Dementia due to cerebrovascular disease/
-6D82,Dementia due to Lewy body disease,Neurocognitive disorders/Dementia/Dementia due to Alzheimer disease/Dementia due to cerebrovascular disease/Dementia due to Lewy body disease/
-6D83,Frontotemporal dementia,Neurocognitive disorders/Dementia/Dementia due to Alzheimer disease/Dementia due to cerebrovascular disease/Dementia due to Lewy body disease/Frontotemporal dementia/
-6D84,Dementia due to psychoactive substances including medications,Neurocognitive disorders/Dementia/Dementia due to Alzheimer disease/Dementia due to cerebrovascular disease/Dementia due to Lewy body disease/Frontotemporal dementia/Dementia due to psychoactive substances including medications/
-6D85,Dementia due to diseases classified elsewhere,Neurocognitive disorders/Dementia/Dementia due to Alzheimer disease/Dementia due to cerebrovascular disease/Dementia due to Lewy body disease/Frontotemporal dementia/Dementia due to psychoactive substances including medications/Dementia due to diseases classified elsewhere/
-6D86,Behavioural or psychological disturbances in dementia,Neurocognitive disorders/Dementia/Dementia due to Alzheimer disease/Dementia due to cerebrovascular disease/Dementia due to Lewy body disease/Frontotemporal dementia/Dementia due to psychoactive substances including medications/Dementia due to diseases classified elsewhere/Behavioural or psychological disturbances in dementia/
-6D8Y,"Dementia, other specified cause","Neurocognitive disorders/Dementia/Dementia due to Alzheimer disease/Dementia due to cerebrovascular disease/Dementia due to Lewy body disease/Frontotemporal dementia/Dementia due to psychoactive substances including medications/Dementia due to diseases classified elsewhere/Behavioural or psychological disturbances in dementia/Dementia, other specified cause/"
-6D8Z,"Dementia, unknown or unspecified cause","Neurocognitive disorders/Dementia/Dementia due to Alzheimer disease/Dementia due to cerebrovascular disease/Dementia due to Lewy body disease/Frontotemporal dementia/Dementia due to psychoactive substances including medications/Dementia due to diseases classified elsewhere/Behavioural or psychological disturbances in dementia/Dementia, other specified cause/Dementia, unknown or unspecified cause/"
-6E0Y,Other specified neurocognitive disorders,"Neurocognitive disorders/Dementia/Dementia due to Alzheimer disease/Dementia due to cerebrovascular disease/Dementia due to Lewy body disease/Frontotemporal dementia/Dementia due to psychoactive substances including medications/Dementia due to diseases classified elsewhere/Behavioural or psychological disturbances in dementia/Dementia, other specified cause/Dementia, unknown or unspecified cause/Other specified neurocognitive disorders/"
-6E0Z,"Neurocognitive disorders, unspecified","Neurocognitive disorders/Dementia/Dementia due to Alzheimer disease/Dementia due to cerebrovascular disease/Dementia due to Lewy body disease/Frontotemporal dementia/Dementia due to psychoactive substances including medications/Dementia due to diseases classified elsewhere/Behavioural or psychological disturbances in dementia/Dementia, other specified cause/Dementia, unknown or unspecified cause/Other specified neurocognitive disorders/Neurocognitive disorders, unspecified/"
-6E20,"Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, without psychotic symptoms","Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium/Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, without psychotic symptoms/"
-6E21,"Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, with psychotic symptoms","Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium/Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, without psychotic symptoms/Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, with psychotic symptoms/"
-6E2Z,"Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, unspecified","Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium/Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, without psychotic symptoms/Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, with psychotic symptoms/Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, unspecified/"
-6E40,Psychological or behavioural factors affecting disorders or diseases classified elsewhere,"Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium/Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, without psychotic symptoms/Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, with psychotic symptoms/Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, unspecified/Psychological or behavioural factors affecting disorders or diseases classified elsewhere/"
-6E60,Secondary neurodevelopmental syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/Secondary neurodevelopmental syndrome/
-6E61,Secondary psychotic syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/Secondary neurodevelopmental syndrome/Secondary psychotic syndrome/
-6E62,Secondary mood syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/Secondary neurodevelopmental syndrome/Secondary psychotic syndrome/Secondary mood syndrome/
-6E63,Secondary anxiety syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/Secondary neurodevelopmental syndrome/Secondary psychotic syndrome/Secondary mood syndrome/Secondary anxiety syndrome/
-6E64,Secondary obsessive-compulsive or related syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/Secondary neurodevelopmental syndrome/Secondary psychotic syndrome/Secondary mood syndrome/Secondary anxiety syndrome/Secondary obsessive-compulsive or related syndrome/
-6E65,Secondary dissociative syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/Secondary neurodevelopmental syndrome/Secondary psychotic syndrome/Secondary mood syndrome/Secondary anxiety syndrome/Secondary obsessive-compulsive or related syndrome/Secondary dissociative syndrome/
-6E66,Secondary impulse control syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/Secondary neurodevelopmental syndrome/Secondary psychotic syndrome/Secondary mood syndrome/Secondary anxiety syndrome/Secondary obsessive-compulsive or related syndrome/Secondary dissociative syndrome/Secondary impulse control syndrome/
-6E67,Secondary neurocognitive syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/Secondary neurodevelopmental syndrome/Secondary psychotic syndrome/Secondary mood syndrome/Secondary anxiety syndrome/Secondary obsessive-compulsive or related syndrome/Secondary dissociative syndrome/Secondary impulse control syndrome/Secondary neurocognitive syndrome/
-6E68,Secondary personality change,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/Secondary neurodevelopmental syndrome/Secondary psychotic syndrome/Secondary mood syndrome/Secondary anxiety syndrome/Secondary obsessive-compulsive or related syndrome/Secondary dissociative syndrome/Secondary impulse control syndrome/Secondary neurocognitive syndrome/Secondary personality change/
-6E69,Secondary catatonia syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/Secondary neurodevelopmental syndrome/Secondary psychotic syndrome/Secondary mood syndrome/Secondary anxiety syndrome/Secondary obsessive-compulsive or related syndrome/Secondary dissociative syndrome/Secondary impulse control syndrome/Secondary neurocognitive syndrome/Secondary personality change/Secondary catatonia syndrome/
-6E6Y,Other specified secondary mental or behavioural syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/Secondary neurodevelopmental syndrome/Secondary psychotic syndrome/Secondary mood syndrome/Secondary anxiety syndrome/Secondary obsessive-compulsive or related syndrome/Secondary dissociative syndrome/Secondary impulse control syndrome/Secondary neurocognitive syndrome/Secondary personality change/Secondary catatonia syndrome/Other specified secondary mental or behavioural syndrome/
-6E6Z,"Secondary mental or behavioural syndrome, unspecified","Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/Secondary neurodevelopmental syndrome/Secondary psychotic syndrome/Secondary mood syndrome/Secondary anxiety syndrome/Secondary obsessive-compulsive or related syndrome/Secondary dissociative syndrome/Secondary impulse control syndrome/Secondary neurocognitive syndrome/Secondary personality change/Secondary catatonia syndrome/Other specified secondary mental or behavioural syndrome/Secondary mental or behavioural syndrome, unspecified/"
-6E8Y,"Other specified mental, behavioural or neurodevelopmental disorders","Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/Secondary neurodevelopmental syndrome/Secondary psychotic syndrome/Secondary mood syndrome/Secondary anxiety syndrome/Secondary obsessive-compulsive or related syndrome/Secondary dissociative syndrome/Secondary impulse control syndrome/Secondary neurocognitive syndrome/Secondary personality change/Secondary catatonia syndrome/Other specified secondary mental or behavioural syndrome/Secondary mental or behavioural syndrome, unspecified/Other specified mental, behavioural or neurodevelopmental disorders/"
-6E8Z,"Mental, behavioural or neurodevelopmental disorders, unspecified","Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/Secondary neurodevelopmental syndrome/Secondary psychotic syndrome/Secondary mood syndrome/Secondary anxiety syndrome/Secondary obsessive-compulsive or related syndrome/Secondary dissociative syndrome/Secondary impulse control syndrome/Secondary neurocognitive syndrome/Secondary personality change/Secondary catatonia syndrome/Other specified secondary mental or behavioural syndrome/Secondary mental or behavioural syndrome, unspecified/Other specified mental, behavioural or neurodevelopmental disorders/Mental, behavioural or neurodevelopmental disorders, unspecified/"
-8A00,Parkinsonism,Movement disorders/Parkinsonism/
-8A01,Choreiform disorders,Movement disorders/Parkinsonism/Choreiform disorders/
-8A02,Dystonic disorders,Movement disorders/Parkinsonism/Choreiform disorders/Dystonic disorders/
-8A03,Ataxic disorders,Movement disorders/Parkinsonism/Choreiform disorders/Dystonic disorders/Ataxic disorders/
-8A04,Disorders associated with tremor,Movement disorders/Parkinsonism/Choreiform disorders/Dystonic disorders/Ataxic disorders/Disorders associated with tremor/
-8A05,Tic disorders,Movement disorders/Parkinsonism/Choreiform disorders/Dystonic disorders/Ataxic disorders/Disorders associated with tremor/Tic disorders/
-8A06,Myoclonic disorders,Movement disorders/Parkinsonism/Choreiform disorders/Dystonic disorders/Ataxic disorders/Disorders associated with tremor/Tic disorders/Myoclonic disorders/
-8A07,Certain specified movement disorder,Movement disorders/Parkinsonism/Choreiform disorders/Dystonic disorders/Ataxic disorders/Disorders associated with tremor/Tic disorders/Myoclonic disorders/Certain specified movement disorder/
-8A0Y,Other specified movement disorders,Movement disorders/Parkinsonism/Choreiform disorders/Dystonic disorders/Ataxic disorders/Disorders associated with tremor/Tic disorders/Myoclonic disorders/Certain specified movement disorder/Other specified movement disorders/
-8A0Z,"Movement disorders, unspecified","Movement disorders/Parkinsonism/Choreiform disorders/Dystonic disorders/Ataxic disorders/Disorders associated with tremor/Tic disorders/Myoclonic disorders/Certain specified movement disorder/Other specified movement disorders/Movement disorders, unspecified/"
-8A20,Alzheimer disease,Disorders with neurocognitive impairment as a major feature/Alzheimer disease/
-8A21,Progressive focal atrophies,Disorders with neurocognitive impairment as a major feature/Alzheimer disease/Progressive focal atrophies/
-8A22,Lewy body disease,Disorders with neurocognitive impairment as a major feature/Alzheimer disease/Progressive focal atrophies/Lewy body disease/
-8A23,Frontotemporal lobar degeneration,Disorders with neurocognitive impairment as a major feature/Alzheimer disease/Progressive focal atrophies/Lewy body disease/Frontotemporal lobar degeneration/
-8A2Y,Other specified disorders with neurocognitive impairment as a major feature,Disorders with neurocognitive impairment as a major feature/Alzheimer disease/Progressive focal atrophies/Lewy body disease/Frontotemporal lobar degeneration/Other specified disorders with neurocognitive impairment as a major feature/
-8A2Z,"Disorders with neurocognitive impairment as a major feature, unspecified","Disorders with neurocognitive impairment as a major feature/Alzheimer disease/Progressive focal atrophies/Lewy body disease/Frontotemporal lobar degeneration/Other specified disorders with neurocognitive impairment as a major feature/Disorders with neurocognitive impairment as a major feature, unspecified/"
-8A40,Multiple sclerosis,Multiple sclerosis or other white matter disorders/Multiple sclerosis/
-8A41,Isolated demyelinating syndromes of the central nervous system,Multiple sclerosis or other white matter disorders/Multiple sclerosis/Isolated demyelinating syndromes of the central nervous system/
-8A42,Acute disseminated encephalomyelitis,Multiple sclerosis or other white matter disorders/Multiple sclerosis/Isolated demyelinating syndromes of the central nervous system/Acute disseminated encephalomyelitis/
-8A43,Neuromyelitis optica,Multiple sclerosis or other white matter disorders/Multiple sclerosis/Isolated demyelinating syndromes of the central nervous system/Acute disseminated encephalomyelitis/Neuromyelitis optica/
-8A44,Leukodystrophies,Multiple sclerosis or other white matter disorders/Multiple sclerosis/Isolated demyelinating syndromes of the central nervous system/Acute disseminated encephalomyelitis/Neuromyelitis optica/Leukodystrophies/
-8A45,Secondary white matter disorders,Multiple sclerosis or other white matter disorders/Multiple sclerosis/Isolated demyelinating syndromes of the central nervous system/Acute disseminated encephalomyelitis/Neuromyelitis optica/Leukodystrophies/Secondary white matter disorders/
-8A46,Central demyelination of corpus callosum,Multiple sclerosis or other white matter disorders/Multiple sclerosis/Isolated demyelinating syndromes of the central nervous system/Acute disseminated encephalomyelitis/Neuromyelitis optica/Leukodystrophies/Secondary white matter disorders/Central demyelination of corpus callosum/
-8A4Y,Other specified multiple sclerosis or other white matter disorders,Multiple sclerosis or other white matter disorders/Multiple sclerosis/Isolated demyelinating syndromes of the central nervous system/Acute disseminated encephalomyelitis/Neuromyelitis optica/Leukodystrophies/Secondary white matter disorders/Central demyelination of corpus callosum/Other specified multiple sclerosis or other white matter disorders/
-8A4Z,"Multiple sclerosis or other white matter disorders, unspecified","Multiple sclerosis or other white matter disorders/Multiple sclerosis/Isolated demyelinating syndromes of the central nervous system/Acute disseminated encephalomyelitis/Neuromyelitis optica/Leukodystrophies/Secondary white matter disorders/Central demyelination of corpus callosum/Other specified multiple sclerosis or other white matter disorders/Multiple sclerosis or other white matter disorders, unspecified/"
-8A60,Epilepsy due to structural or metabolic conditions or diseases,Epilepsy or seizures/Epilepsy due to structural or metabolic conditions or diseases/
-8A61,Genetic or presumed genetic syndromes primarily expressed as epilepsy,Epilepsy or seizures/Epilepsy due to structural or metabolic conditions or diseases/Genetic or presumed genetic syndromes primarily expressed as epilepsy/
-8A62,Epileptic encephalopathies,Epilepsy or seizures/Epilepsy due to structural or metabolic conditions or diseases/Genetic or presumed genetic syndromes primarily expressed as epilepsy/Epileptic encephalopathies/
-8A63,Seizure due to acute causes,Epilepsy or seizures/Epilepsy due to structural or metabolic conditions or diseases/Genetic or presumed genetic syndromes primarily expressed as epilepsy/Epileptic encephalopathies/Seizure due to acute causes/
-8A64,Single seizure due to remote causes,Epilepsy or seizures/Epilepsy due to structural or metabolic conditions or diseases/Genetic or presumed genetic syndromes primarily expressed as epilepsy/Epileptic encephalopathies/Seizure due to acute causes/Single seizure due to remote causes/
-8A65,Single unprovoked seizure,Epilepsy or seizures/Epilepsy due to structural or metabolic conditions or diseases/Genetic or presumed genetic syndromes primarily expressed as epilepsy/Epileptic encephalopathies/Seizure due to acute causes/Single seizure due to remote causes/Single unprovoked seizure/
-8A66,Status epilepticus,Epilepsy or seizures/Epilepsy due to structural or metabolic conditions or diseases/Genetic or presumed genetic syndromes primarily expressed as epilepsy/Epileptic encephalopathies/Seizure due to acute causes/Single seizure due to remote causes/Single unprovoked seizure/Status epilepticus/
-8A67,Acute repetitive seizures,Epilepsy or seizures/Epilepsy due to structural or metabolic conditions or diseases/Genetic or presumed genetic syndromes primarily expressed as epilepsy/Epileptic encephalopathies/Seizure due to acute causes/Single seizure due to remote causes/Single unprovoked seizure/Status epilepticus/Acute repetitive seizures/
-8A68,Types of seizures,Epilepsy or seizures/Epilepsy due to structural or metabolic conditions or diseases/Genetic or presumed genetic syndromes primarily expressed as epilepsy/Epileptic encephalopathies/Seizure due to acute causes/Single seizure due to remote causes/Single unprovoked seizure/Status epilepticus/Acute repetitive seizures/Types of seizures/
-8A6Y,Other specified epilepsy or seizures,Epilepsy or seizures/Epilepsy due to structural or metabolic conditions or diseases/Genetic or presumed genetic syndromes primarily expressed as epilepsy/Epileptic encephalopathies/Seizure due to acute causes/Single seizure due to remote causes/Single unprovoked seizure/Status epilepticus/Acute repetitive seizures/Types of seizures/Other specified epilepsy or seizures/
-8A6Z,"Epilepsy or seizures, unspecified","Epilepsy or seizures/Epilepsy due to structural or metabolic conditions or diseases/Genetic or presumed genetic syndromes primarily expressed as epilepsy/Epileptic encephalopathies/Seizure due to acute causes/Single seizure due to remote causes/Single unprovoked seizure/Status epilepticus/Acute repetitive seizures/Types of seizures/Other specified epilepsy or seizures/Epilepsy or seizures, unspecified/"
-8A80,Migraine,Headache disorders/Migraine/
-8A81,Tension-type headache,Headache disorders/Migraine/Tension-type headache/
-8A82,Trigeminal autonomic cephalalgias,Headache disorders/Migraine/Tension-type headache/Trigeminal autonomic cephalalgias/
-8A83,Other primary headache disorder,Headache disorders/Migraine/Tension-type headache/Trigeminal autonomic cephalalgias/Other primary headache disorder/
-8A84,Secondary headache,Headache disorders/Migraine/Tension-type headache/Trigeminal autonomic cephalalgias/Other primary headache disorder/Secondary headache/
-8A85,Painful cranial neuropathies or other facial pains,Headache disorders/Migraine/Tension-type headache/Trigeminal autonomic cephalalgias/Other primary headache disorder/Secondary headache/Painful cranial neuropathies or other facial pains/
-8A8Y,Other specified headache disorders,Headache disorders/Migraine/Tension-type headache/Trigeminal autonomic cephalalgias/Other primary headache disorder/Secondary headache/Painful cranial neuropathies or other facial pains/Other specified headache disorders/
-8A8Z,"Headache disorders, unspecified","Headache disorders/Migraine/Tension-type headache/Trigeminal autonomic cephalalgias/Other primary headache disorder/Secondary headache/Painful cranial neuropathies or other facial pains/Other specified headache disorders/Headache disorders, unspecified/"
-8B00,Intracerebral haemorrhage,Cerebrovascular diseases/Intracranial haemorrhage/Intracerebral haemorrhage/
-8B01,Subarachnoid haemorrhage,Cerebrovascular diseases/Intracranial haemorrhage/Intracerebral haemorrhage/Subarachnoid haemorrhage/
-8B02,Nontraumatic subdural haemorrhage,Cerebrovascular diseases/Intracranial haemorrhage/Intracerebral haemorrhage/Subarachnoid haemorrhage/Nontraumatic subdural haemorrhage/
-8B03,Nontraumatic epidural haemorrhage,Cerebrovascular diseases/Intracranial haemorrhage/Intracerebral haemorrhage/Subarachnoid haemorrhage/Nontraumatic subdural haemorrhage/Nontraumatic epidural haemorrhage/
-8B0Z,"Intracranial haemorrhage, unspecified","Cerebrovascular diseases/Intracranial haemorrhage/Intracerebral haemorrhage/Subarachnoid haemorrhage/Nontraumatic subdural haemorrhage/Nontraumatic epidural haemorrhage/Intracranial haemorrhage, unspecified/"
-8B10,Transient ischaemic attack,Cerebrovascular diseases/Cerebral ischaemia/Transient ischaemic attack/
-8B11,Cerebral ischaemic stroke,Cerebrovascular diseases/Cerebral ischaemia/Transient ischaemic attack/Cerebral ischaemic stroke/
-8B1Y,Other specified cerebral ischaemia,Cerebrovascular diseases/Cerebral ischaemia/Transient ischaemic attack/Cerebral ischaemic stroke/Other specified cerebral ischaemia/
-8B1Z,"Cerebral ischaemia, unspecified","Cerebrovascular diseases/Cerebral ischaemia/Transient ischaemic attack/Cerebral ischaemic stroke/Other specified cerebral ischaemia/Cerebral ischaemia, unspecified/"
-8B20,Stroke not known if ischaemic or haemorrhagic,"Cerebrovascular diseases/Cerebral ischaemia/Transient ischaemic attack/Cerebral ischaemic stroke/Other specified cerebral ischaemia/Cerebral ischaemia, unspecified/Stroke not known if ischaemic or haemorrhagic/"
-8B21,Cerebrovascular disease with no acute cerebral symptom,"Cerebrovascular diseases/Cerebral ischaemia/Transient ischaemic attack/Cerebral ischaemic stroke/Other specified cerebral ischaemia/Cerebral ischaemia, unspecified/Stroke not known if ischaemic or haemorrhagic/Cerebrovascular disease with no acute cerebral symptom/"
-8B22,Certain specified cerebrovascular diseases,"Cerebrovascular diseases/Cerebral ischaemia/Transient ischaemic attack/Cerebral ischaemic stroke/Other specified cerebral ischaemia/Cerebral ischaemia, unspecified/Stroke not known if ischaemic or haemorrhagic/Cerebrovascular disease with no acute cerebral symptom/Certain specified cerebrovascular diseases/"
-8B23,Cerebrovascular abnormalities,"Cerebrovascular diseases/Cerebral ischaemia/Transient ischaemic attack/Cerebral ischaemic stroke/Other specified cerebral ischaemia/Cerebral ischaemia, unspecified/Stroke not known if ischaemic or haemorrhagic/Cerebrovascular disease with no acute cerebral symptom/Certain specified cerebrovascular diseases/Cerebrovascular abnormalities/"
-8B24,Hypoxic-ischaemic encephalopathy,"Cerebrovascular diseases/Cerebral ischaemia/Transient ischaemic attack/Cerebral ischaemic stroke/Other specified cerebral ischaemia/Cerebral ischaemia, unspecified/Stroke not known if ischaemic or haemorrhagic/Cerebrovascular disease with no acute cerebral symptom/Certain specified cerebrovascular diseases/Cerebrovascular abnormalities/Hypoxic-ischaemic encephalopathy/"
-8B25,Late effects of cerebrovascular disease,"Cerebrovascular diseases/Cerebral ischaemia/Transient ischaemic attack/Cerebral ischaemic stroke/Other specified cerebral ischaemia/Cerebral ischaemia, unspecified/Stroke not known if ischaemic or haemorrhagic/Cerebrovascular disease with no acute cerebral symptom/Certain specified cerebrovascular diseases/Cerebrovascular abnormalities/Hypoxic-ischaemic encephalopathy/Late effects of cerebrovascular disease/"
-8B26,Vascular syndromes of brain in cerebrovascular diseases,"Cerebrovascular diseases/Cerebral ischaemia/Transient ischaemic attack/Cerebral ischaemic stroke/Other specified cerebral ischaemia/Cerebral ischaemia, unspecified/Stroke not known if ischaemic or haemorrhagic/Cerebrovascular disease with no acute cerebral symptom/Certain specified cerebrovascular diseases/Cerebrovascular abnormalities/Hypoxic-ischaemic encephalopathy/Late effects of cerebrovascular disease/Vascular syndromes of brain in cerebrovascular diseases/"
-8B2Z,"Cerebrovascular diseases, unspecified","Cerebrovascular diseases/Cerebral ischaemia/Transient ischaemic attack/Cerebral ischaemic stroke/Other specified cerebral ischaemia/Cerebral ischaemia, unspecified/Stroke not known if ischaemic or haemorrhagic/Cerebrovascular disease with no acute cerebral symptom/Certain specified cerebrovascular diseases/Cerebrovascular abnormalities/Hypoxic-ischaemic encephalopathy/Late effects of cerebrovascular disease/Vascular syndromes of brain in cerebrovascular diseases/Cerebrovascular diseases, unspecified/"
-8B40,Cauda equina syndrome,Spinal cord disorders excluding trauma/Cauda equina syndrome/
-8B41,Myelitis,Spinal cord disorders excluding trauma/Cauda equina syndrome/Myelitis/
-8B42,Myelopathy,Spinal cord disorders excluding trauma/Cauda equina syndrome/Myelitis/Myelopathy/
-8B43,Non-compressive vascular myelopathies,Spinal cord disorders excluding trauma/Cauda equina syndrome/Myelitis/Myelopathy/Non-compressive vascular myelopathies/
-8B44,Degenerative myelopathic disorders,Spinal cord disorders excluding trauma/Cauda equina syndrome/Myelitis/Myelopathy/Non-compressive vascular myelopathies/Degenerative myelopathic disorders/
-8B4Y,Other specified spinal cord disorders excluding trauma,Spinal cord disorders excluding trauma/Cauda equina syndrome/Myelitis/Myelopathy/Non-compressive vascular myelopathies/Degenerative myelopathic disorders/Other specified spinal cord disorders excluding trauma/
-8B4Z,"Spinal cord disorders excluding trauma, unspecified","Spinal cord disorders excluding trauma/Cauda equina syndrome/Myelitis/Myelopathy/Non-compressive vascular myelopathies/Degenerative myelopathic disorders/Other specified spinal cord disorders excluding trauma/Spinal cord disorders excluding trauma, unspecified/"
-8B60,Motor neuron disease,Motor neuron diseases or related disorders/Motor neuron disease/
-8B61,Spinal muscular atrophy,Motor neuron diseases or related disorders/Motor neuron disease/Spinal muscular atrophy/
-8B62,Post polio progressive muscular atrophy,Motor neuron diseases or related disorders/Motor neuron disease/Spinal muscular atrophy/Post polio progressive muscular atrophy/
-8B6Y,Other specified motor neuron diseases or related disorders,Motor neuron diseases or related disorders/Motor neuron disease/Spinal muscular atrophy/Post polio progressive muscular atrophy/Other specified motor neuron diseases or related disorders/
-8B6Z,"Motor neuron diseases or related disorders, unspecified","Motor neuron diseases or related disorders/Motor neuron disease/Spinal muscular atrophy/Post polio progressive muscular atrophy/Other specified motor neuron diseases or related disorders/Motor neuron diseases or related disorders, unspecified/"
-8B80,Disorders of olfactory nerve,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves/Disorders of olfactory nerve/"
-8B81,Disorders of vestibulocochlear nerve,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves/Disorders of olfactory nerve/Disorders of vestibulocochlear nerve/"
-8B82,Disorders of trigeminal nerve,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves/Disorders of olfactory nerve/Disorders of vestibulocochlear nerve/Disorders of trigeminal nerve/"
-8B83,Disorders of spinal accessory nerve,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves/Disorders of olfactory nerve/Disorders of vestibulocochlear nerve/Disorders of trigeminal nerve/Disorders of spinal accessory nerve/"
-8B84,Disorders of hypoglossal nerve,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves/Disorders of olfactory nerve/Disorders of vestibulocochlear nerve/Disorders of trigeminal nerve/Disorders of spinal accessory nerve/Disorders of hypoglossal nerve/"
-8B85,Disorders of multiple cranial nerves,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves/Disorders of olfactory nerve/Disorders of vestibulocochlear nerve/Disorders of trigeminal nerve/Disorders of spinal accessory nerve/Disorders of hypoglossal nerve/Disorders of multiple cranial nerves/"
-8B86,Disorders of vagus nerve,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves/Disorders of olfactory nerve/Disorders of vestibulocochlear nerve/Disorders of trigeminal nerve/Disorders of spinal accessory nerve/Disorders of hypoglossal nerve/Disorders of multiple cranial nerves/Disorders of vagus nerve/"
-8B87,Disorders of glossopharyngeal nerve,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves/Disorders of olfactory nerve/Disorders of vestibulocochlear nerve/Disorders of trigeminal nerve/Disorders of spinal accessory nerve/Disorders of hypoglossal nerve/Disorders of multiple cranial nerves/Disorders of vagus nerve/Disorders of glossopharyngeal nerve/"
-8B88,Disorders of facial nerve,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves/Disorders of olfactory nerve/Disorders of vestibulocochlear nerve/Disorders of trigeminal nerve/Disorders of spinal accessory nerve/Disorders of hypoglossal nerve/Disorders of multiple cranial nerves/Disorders of vagus nerve/Disorders of glossopharyngeal nerve/Disorders of facial nerve/"
-8B8Y,Other specified disorders of cranial nerves,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves/Disorders of olfactory nerve/Disorders of vestibulocochlear nerve/Disorders of trigeminal nerve/Disorders of spinal accessory nerve/Disorders of hypoglossal nerve/Disorders of multiple cranial nerves/Disorders of vagus nerve/Disorders of glossopharyngeal nerve/Disorders of facial nerve/Other specified disorders of cranial nerves/"
-8B8Z,"Disorders of cranial nerves, unspecified","Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves/Disorders of olfactory nerve/Disorders of vestibulocochlear nerve/Disorders of trigeminal nerve/Disorders of spinal accessory nerve/Disorders of hypoglossal nerve/Disorders of multiple cranial nerves/Disorders of vagus nerve/Disorders of glossopharyngeal nerve/Disorders of facial nerve/Other specified disorders of cranial nerves/Disorders of cranial nerves, unspecified/"
-8B90,Nerve root or plexus compressions,"Disorders of nerve root, plexus or peripheral nerves/Nerve root or plexus disorders/Nerve root or plexus compressions/"
-8B91,Brachial plexus disorders,"Disorders of nerve root, plexus or peripheral nerves/Nerve root or plexus disorders/Nerve root or plexus compressions/Brachial plexus disorders/"
-8B92,Lumbosacral plexus disorders,"Disorders of nerve root, plexus or peripheral nerves/Nerve root or plexus disorders/Nerve root or plexus compressions/Brachial plexus disorders/Lumbosacral plexus disorders/"
-8B93,Radiculopathy,"Disorders of nerve root, plexus or peripheral nerves/Nerve root or plexus disorders/Nerve root or plexus compressions/Brachial plexus disorders/Lumbosacral plexus disorders/Radiculopathy/"
-8B94,Diabetic radiculoplexoneuropathy,"Disorders of nerve root, plexus or peripheral nerves/Nerve root or plexus disorders/Nerve root or plexus compressions/Brachial plexus disorders/Lumbosacral plexus disorders/Radiculopathy/Diabetic radiculoplexoneuropathy/"
-8B95,Secondary brachial plexus lesion due to certain specified disorders,"Disorders of nerve root, plexus or peripheral nerves/Nerve root or plexus disorders/Nerve root or plexus compressions/Brachial plexus disorders/Lumbosacral plexus disorders/Radiculopathy/Diabetic radiculoplexoneuropathy/Secondary brachial plexus lesion due to certain specified disorders/"
-8B9Y,Other specified nerve root or plexus disorders,"Disorders of nerve root, plexus or peripheral nerves/Nerve root or plexus disorders/Nerve root or plexus compressions/Brachial plexus disorders/Lumbosacral plexus disorders/Radiculopathy/Diabetic radiculoplexoneuropathy/Secondary brachial plexus lesion due to certain specified disorders/Other specified nerve root or plexus disorders/"
-8B9Z,"Nerve root or plexus disorders, unspecified","Disorders of nerve root, plexus or peripheral nerves/Nerve root or plexus disorders/Nerve root or plexus compressions/Brachial plexus disorders/Lumbosacral plexus disorders/Radiculopathy/Diabetic radiculoplexoneuropathy/Secondary brachial plexus lesion due to certain specified disorders/Other specified nerve root or plexus disorders/Nerve root or plexus disorders, unspecified/"
-8C00,Idiopathic progressive neuropathy,"Disorders of nerve root, plexus or peripheral nerves/Polyneuropathy/Idiopathic progressive neuropathy/"
-8C01,Inflammatory polyneuropathy,"Disorders of nerve root, plexus or peripheral nerves/Polyneuropathy/Idiopathic progressive neuropathy/Inflammatory polyneuropathy/"
-8C03,Other secondary polyneuropathy,"Disorders of nerve root, plexus or peripheral nerves/Polyneuropathy/Idiopathic progressive neuropathy/Inflammatory polyneuropathy/Other secondary polyneuropathy/"
-8C0Y,Other specified polyneuropathy,"Disorders of nerve root, plexus or peripheral nerves/Polyneuropathy/Idiopathic progressive neuropathy/Inflammatory polyneuropathy/Other secondary polyneuropathy/Other specified polyneuropathy/"
-8C0Z,"Polyneuropathy, unspecified","Disorders of nerve root, plexus or peripheral nerves/Polyneuropathy/Idiopathic progressive neuropathy/Inflammatory polyneuropathy/Other secondary polyneuropathy/Other specified polyneuropathy/Polyneuropathy, unspecified/"
-8C10,Mononeuropathies of upper limb,"Disorders of nerve root, plexus or peripheral nerves/Mononeuropathy/Mononeuropathies of upper limb/"
-8C11,Mononeuropathies of lower limb,"Disorders of nerve root, plexus or peripheral nerves/Mononeuropathy/Mononeuropathies of upper limb/Mononeuropathies of lower limb/"
-8C12,Certain specified mononeuropathies,"Disorders of nerve root, plexus or peripheral nerves/Mononeuropathy/Mononeuropathies of upper limb/Mononeuropathies of lower limb/Certain specified mononeuropathies/"
-8C1Y,Mononeuropathy of other specified site,"Disorders of nerve root, plexus or peripheral nerves/Mononeuropathy/Mononeuropathies of upper limb/Mononeuropathies of lower limb/Certain specified mononeuropathies/Mononeuropathy of other specified site/"
-8C1Z,Mononeuropathy of unspecified site,"Disorders of nerve root, plexus or peripheral nerves/Mononeuropathy/Mononeuropathies of upper limb/Mononeuropathies of lower limb/Certain specified mononeuropathies/Mononeuropathy of other specified site/Mononeuropathy of unspecified site/"
-8C20,Hereditary motor and sensory neuropathy,"Disorders of nerve root, plexus or peripheral nerves/Hereditary neuropathy/Hereditary motor and sensory neuropathy/"
-8C21,Hereditary sensory or autonomic neuropathy,"Disorders of nerve root, plexus or peripheral nerves/Hereditary neuropathy/Hereditary motor and sensory neuropathy/Hereditary sensory or autonomic neuropathy/"
-8C2Y,Other specified hereditary neuropathy,"Disorders of nerve root, plexus or peripheral nerves/Hereditary neuropathy/Hereditary motor and sensory neuropathy/Hereditary sensory or autonomic neuropathy/Other specified hereditary neuropathy/"
-8C2Z,"Hereditary neuropathy, unspecified","Disorders of nerve root, plexus or peripheral nerves/Hereditary neuropathy/Hereditary motor and sensory neuropathy/Hereditary sensory or autonomic neuropathy/Other specified hereditary neuropathy/Hereditary neuropathy, unspecified/"
-8C4Y,"Other specified disorders of nerve root, plexus or peripheral nerves","Disorders of nerve root, plexus or peripheral nerves/Hereditary neuropathy/Hereditary motor and sensory neuropathy/Hereditary sensory or autonomic neuropathy/Other specified hereditary neuropathy/Hereditary neuropathy, unspecified/Other specified disorders of nerve root, plexus or peripheral nerves/"
-8C4Z,"Disorders of nerve root, plexus or peripheral nerves, unspecified","Disorders of nerve root, plexus or peripheral nerves/Hereditary neuropathy/Hereditary motor and sensory neuropathy/Hereditary sensory or autonomic neuropathy/Other specified hereditary neuropathy/Hereditary neuropathy, unspecified/Other specified disorders of nerve root, plexus or peripheral nerves/Disorders of nerve root, plexus or peripheral nerves, unspecified/"
-8C60,Myasthenia gravis,Diseases of neuromuscular junction or muscle/Myasthenia gravis or certain specified neuromuscular junction disorders/Myasthenia gravis/
-8C61,Congenital myasthenic syndromes,Diseases of neuromuscular junction or muscle/Myasthenia gravis or certain specified neuromuscular junction disorders/Myasthenia gravis/Congenital myasthenic syndromes/
-8C62,Lambert-Eaton syndrome,Diseases of neuromuscular junction or muscle/Myasthenia gravis or certain specified neuromuscular junction disorders/Myasthenia gravis/Congenital myasthenic syndromes/Lambert-Eaton syndrome/
-8C6Y,Other specified neuromuscular junction disorders,Diseases of neuromuscular junction or muscle/Myasthenia gravis or certain specified neuromuscular junction disorders/Myasthenia gravis/Congenital myasthenic syndromes/Lambert-Eaton syndrome/Other specified neuromuscular junction disorders/
-8C6Z,"Neuromuscular junction disorders, unspecified","Diseases of neuromuscular junction or muscle/Myasthenia gravis or certain specified neuromuscular junction disorders/Myasthenia gravis/Congenital myasthenic syndromes/Lambert-Eaton syndrome/Other specified neuromuscular junction disorders/Neuromuscular junction disorders, unspecified/"
-8C70,Muscular dystrophy,Diseases of neuromuscular junction or muscle/Primary disorders of muscles/Muscular dystrophy/
-8C71,Myotonic disorders,Diseases of neuromuscular junction or muscle/Primary disorders of muscles/Muscular dystrophy/Myotonic disorders/
-8C72,Congenital myopathies,Diseases of neuromuscular junction or muscle/Primary disorders of muscles/Muscular dystrophy/Myotonic disorders/Congenital myopathies/
-8C73,Mitochondrial myopathies,Diseases of neuromuscular junction or muscle/Primary disorders of muscles/Muscular dystrophy/Myotonic disorders/Congenital myopathies/Mitochondrial myopathies/
-8C74,Periodic paralyses or disorders of muscle membrane excitability,Diseases of neuromuscular junction or muscle/Primary disorders of muscles/Muscular dystrophy/Myotonic disorders/Congenital myopathies/Mitochondrial myopathies/Periodic paralyses or disorders of muscle membrane excitability/
-8C75,Distal myopathies,Diseases of neuromuscular junction or muscle/Primary disorders of muscles/Muscular dystrophy/Myotonic disorders/Congenital myopathies/Mitochondrial myopathies/Periodic paralyses or disorders of muscle membrane excitability/Distal myopathies/
-8C76,Myofibrillar myopathy,Diseases of neuromuscular junction or muscle/Primary disorders of muscles/Muscular dystrophy/Myotonic disorders/Congenital myopathies/Mitochondrial myopathies/Periodic paralyses or disorders of muscle membrane excitability/Distal myopathies/Myofibrillar myopathy/
-8C77,Ocular myopathy,Diseases of neuromuscular junction or muscle/Primary disorders of muscles/Muscular dystrophy/Myotonic disorders/Congenital myopathies/Mitochondrial myopathies/Periodic paralyses or disorders of muscle membrane excitability/Distal myopathies/Myofibrillar myopathy/Ocular myopathy/
-8C78,Malignant hyperthermia or hyperpyrexia,Diseases of neuromuscular junction or muscle/Primary disorders of muscles/Muscular dystrophy/Myotonic disorders/Congenital myopathies/Mitochondrial myopathies/Periodic paralyses or disorders of muscle membrane excitability/Distal myopathies/Myofibrillar myopathy/Ocular myopathy/Malignant hyperthermia or hyperpyrexia/
-8C7Y,Other specified primary disorders of muscles,Diseases of neuromuscular junction or muscle/Primary disorders of muscles/Muscular dystrophy/Myotonic disorders/Congenital myopathies/Mitochondrial myopathies/Periodic paralyses or disorders of muscle membrane excitability/Distal myopathies/Myofibrillar myopathy/Ocular myopathy/Malignant hyperthermia or hyperpyrexia/Other specified primary disorders of muscles/
-8C7Z,"Primary disorders of muscles, unspecified","Diseases of neuromuscular junction or muscle/Primary disorders of muscles/Muscular dystrophy/Myotonic disorders/Congenital myopathies/Mitochondrial myopathies/Periodic paralyses or disorders of muscle membrane excitability/Distal myopathies/Myofibrillar myopathy/Ocular myopathy/Malignant hyperthermia or hyperpyrexia/Other specified primary disorders of muscles/Primary disorders of muscles, unspecified/"
-8C80,Drug-induced myopathy,Diseases of neuromuscular junction or muscle/Secondary myopathies/Drug-induced myopathy/
-8C81,Autoimmune myopathy,Diseases of neuromuscular junction or muscle/Secondary myopathies/Drug-induced myopathy/Autoimmune myopathy/
-8C82,Myopathy in certain specified infectious or parasitic disease,Diseases of neuromuscular junction or muscle/Secondary myopathies/Drug-induced myopathy/Autoimmune myopathy/Myopathy in certain specified infectious or parasitic disease/
-8C83,Myopathy in certain specified endocrine disease,Diseases of neuromuscular junction or muscle/Secondary myopathies/Drug-induced myopathy/Autoimmune myopathy/Myopathy in certain specified infectious or parasitic disease/Myopathy in certain specified endocrine disease/
-8C84,Secondary rhabdomyolysis,Diseases of neuromuscular junction or muscle/Secondary myopathies/Drug-induced myopathy/Autoimmune myopathy/Myopathy in certain specified infectious or parasitic disease/Myopathy in certain specified endocrine disease/Secondary rhabdomyolysis/
-8C8Y,Other specified secondary myopathies,Diseases of neuromuscular junction or muscle/Secondary myopathies/Drug-induced myopathy/Autoimmune myopathy/Myopathy in certain specified infectious or parasitic disease/Myopathy in certain specified endocrine disease/Secondary rhabdomyolysis/Other specified secondary myopathies/
-8C8Z,"Secondary myopathies, unspecified","Diseases of neuromuscular junction or muscle/Secondary myopathies/Drug-induced myopathy/Autoimmune myopathy/Myopathy in certain specified infectious or parasitic disease/Myopathy in certain specified endocrine disease/Secondary rhabdomyolysis/Other specified secondary myopathies/Secondary myopathies, unspecified/"
-8D0Y,Other specified diseases of muscle,"Diseases of neuromuscular junction or muscle/Secondary myopathies/Drug-induced myopathy/Autoimmune myopathy/Myopathy in certain specified infectious or parasitic disease/Myopathy in certain specified endocrine disease/Secondary rhabdomyolysis/Other specified secondary myopathies/Secondary myopathies, unspecified/Other specified diseases of muscle/"
-8D0Z,"Diseases of muscle, unspecified","Diseases of neuromuscular junction or muscle/Secondary myopathies/Drug-induced myopathy/Autoimmune myopathy/Myopathy in certain specified infectious or parasitic disease/Myopathy in certain specified endocrine disease/Secondary rhabdomyolysis/Other specified secondary myopathies/Secondary myopathies, unspecified/Other specified diseases of muscle/Diseases of muscle, unspecified/"
-8D20,Spastic cerebral palsy,Cerebral palsy/Spastic cerebral palsy/
-8D21,Dyskinetic cerebral palsy,Cerebral palsy/Spastic cerebral palsy/Dyskinetic cerebral palsy/
-8D22,Ataxic cerebral palsy,Cerebral palsy/Spastic cerebral palsy/Dyskinetic cerebral palsy/Ataxic cerebral palsy/
-8D23,Worster-Drought syndrome,Cerebral palsy/Spastic cerebral palsy/Dyskinetic cerebral palsy/Ataxic cerebral palsy/Worster-Drought syndrome/
-8D2Y,Other specified cerebral palsy,Cerebral palsy/Spastic cerebral palsy/Dyskinetic cerebral palsy/Ataxic cerebral palsy/Worster-Drought syndrome/Other specified cerebral palsy/
-8D2Z,"Cerebral palsy, unspecified","Cerebral palsy/Spastic cerebral palsy/Dyskinetic cerebral palsy/Ataxic cerebral palsy/Worster-Drought syndrome/Other specified cerebral palsy/Cerebral palsy, unspecified/"
-8D40,Neurological disorders due to nutrient deficiency,Nutritional or toxic disorders of the nervous system/Neurological disorders due to nutrient deficiency/
-8D41,Neurological disorders due to an excess of micro or macro nutrients,Nutritional or toxic disorders of the nervous system/Neurological disorders due to nutrient deficiency/Neurological disorders due to an excess of micro or macro nutrients/
-8D42,Neurological disorders due to overweight or obesity in adults or children,Nutritional or toxic disorders of the nervous system/Neurological disorders due to nutrient deficiency/Neurological disorders due to an excess of micro or macro nutrients/Neurological disorders due to overweight or obesity in adults or children/
-8D43,Neurological disorders due to toxicity,Nutritional or toxic disorders of the nervous system/Neurological disorders due to nutrient deficiency/Neurological disorders due to an excess of micro or macro nutrients/Neurological disorders due to overweight or obesity in adults or children/Neurological disorders due to toxicity/
-8D44,Alcohol-related neurological disorders,Nutritional or toxic disorders of the nervous system/Neurological disorders due to nutrient deficiency/Neurological disorders due to an excess of micro or macro nutrients/Neurological disorders due to overweight or obesity in adults or children/Neurological disorders due to toxicity/Alcohol-related neurological disorders/
-8D4Y,Other specified nutritional or toxic disorders of the nervous system,Nutritional or toxic disorders of the nervous system/Neurological disorders due to nutrient deficiency/Neurological disorders due to an excess of micro or macro nutrients/Neurological disorders due to overweight or obesity in adults or children/Neurological disorders due to toxicity/Alcohol-related neurological disorders/Other specified nutritional or toxic disorders of the nervous system/
-8D4Z,"Nutritional or toxic disorders of the nervous system, unspecified","Nutritional or toxic disorders of the nervous system/Neurological disorders due to nutrient deficiency/Neurological disorders due to an excess of micro or macro nutrients/Neurological disorders due to overweight or obesity in adults or children/Neurological disorders due to toxicity/Alcohol-related neurological disorders/Other specified nutritional or toxic disorders of the nervous system/Nutritional or toxic disorders of the nervous system, unspecified/"
-8D60,Increased intracranial pressure,Disorders of cerebrospinal fluid pressure or flow/Increased intracranial pressure/
-8D61,Intracranial hypotension,Disorders of cerebrospinal fluid pressure or flow/Increased intracranial pressure/Intracranial hypotension/
-8D62,Cerebrospinal fluid rhinorrhoea,Disorders of cerebrospinal fluid pressure or flow/Increased intracranial pressure/Intracranial hypotension/Cerebrospinal fluid rhinorrhoea/
-8D63,Cerebrospinal fluid otorrhoea,Disorders of cerebrospinal fluid pressure or flow/Increased intracranial pressure/Intracranial hypotension/Cerebrospinal fluid rhinorrhoea/Cerebrospinal fluid otorrhoea/
-8D64,Hydrocephalus,Disorders of cerebrospinal fluid pressure or flow/Increased intracranial pressure/Intracranial hypotension/Cerebrospinal fluid rhinorrhoea/Cerebrospinal fluid otorrhoea/Hydrocephalus/
-8D65,Cerebrospinal fluid fistula,Disorders of cerebrospinal fluid pressure or flow/Increased intracranial pressure/Intracranial hypotension/Cerebrospinal fluid rhinorrhoea/Cerebrospinal fluid otorrhoea/Hydrocephalus/Cerebrospinal fluid fistula/
-8D66,Syringomyelia or syringobulbia,Disorders of cerebrospinal fluid pressure or flow/Increased intracranial pressure/Intracranial hypotension/Cerebrospinal fluid rhinorrhoea/Cerebrospinal fluid otorrhoea/Hydrocephalus/Cerebrospinal fluid fistula/Syringomyelia or syringobulbia/
-8D67,Intracranial arachnoid cyst,Disorders of cerebrospinal fluid pressure or flow/Increased intracranial pressure/Intracranial hypotension/Cerebrospinal fluid rhinorrhoea/Cerebrospinal fluid otorrhoea/Hydrocephalus/Cerebrospinal fluid fistula/Syringomyelia or syringobulbia/Intracranial arachnoid cyst/
-8D68,Porencephalic cyst,Disorders of cerebrospinal fluid pressure or flow/Increased intracranial pressure/Intracranial hypotension/Cerebrospinal fluid rhinorrhoea/Cerebrospinal fluid otorrhoea/Hydrocephalus/Cerebrospinal fluid fistula/Syringomyelia or syringobulbia/Intracranial arachnoid cyst/Porencephalic cyst/
-8D6Y,Other specified disorders of cerebrospinal fluid pressure or flow,Disorders of cerebrospinal fluid pressure or flow/Increased intracranial pressure/Intracranial hypotension/Cerebrospinal fluid rhinorrhoea/Cerebrospinal fluid otorrhoea/Hydrocephalus/Cerebrospinal fluid fistula/Syringomyelia or syringobulbia/Intracranial arachnoid cyst/Porencephalic cyst/Other specified disorders of cerebrospinal fluid pressure or flow/
-8D6Z,"Disorders of cerebrospinal fluid pressure or flow, unspecified","Disorders of cerebrospinal fluid pressure or flow/Increased intracranial pressure/Intracranial hypotension/Cerebrospinal fluid rhinorrhoea/Cerebrospinal fluid otorrhoea/Hydrocephalus/Cerebrospinal fluid fistula/Syringomyelia or syringobulbia/Intracranial arachnoid cyst/Porencephalic cyst/Other specified disorders of cerebrospinal fluid pressure or flow/Disorders of cerebrospinal fluid pressure or flow, unspecified/"
-8D80,Congenital malformations of the autonomic nervous system,Disorders of autonomic nervous system/Congenital malformations of the autonomic nervous system/
-8D81,Inherited autonomic nervous system disorders,Disorders of autonomic nervous system/Congenital malformations of the autonomic nervous system/Inherited autonomic nervous system disorders/
-8D82,Autoimmune disorders involving the autonomic nervous system,Disorders of autonomic nervous system/Congenital malformations of the autonomic nervous system/Inherited autonomic nervous system disorders/Autoimmune disorders involving the autonomic nervous system/
-8D83,Autonomic nervous system disorder due to infection,Disorders of autonomic nervous system/Congenital malformations of the autonomic nervous system/Inherited autonomic nervous system disorders/Autoimmune disorders involving the autonomic nervous system/Autonomic nervous system disorder due to infection/
-8D84,Pure autonomic nervous system failure,Disorders of autonomic nervous system/Congenital malformations of the autonomic nervous system/Inherited autonomic nervous system disorders/Autoimmune disorders involving the autonomic nervous system/Autonomic nervous system disorder due to infection/Pure autonomic nervous system failure/
-8D85,Autonomic nervous system disorder due to substances,Disorders of autonomic nervous system/Congenital malformations of the autonomic nervous system/Inherited autonomic nervous system disorders/Autoimmune disorders involving the autonomic nervous system/Autonomic nervous system disorder due to infection/Pure autonomic nervous system failure/Autonomic nervous system disorder due to substances/
-8D86,Autonomic nervous system hyperactivity,Disorders of autonomic nervous system/Congenital malformations of the autonomic nervous system/Inherited autonomic nervous system disorders/Autoimmune disorders involving the autonomic nervous system/Autonomic nervous system disorder due to infection/Pure autonomic nervous system failure/Autonomic nervous system disorder due to substances/Autonomic nervous system hyperactivity/
-8D87,Autonomic nervous system disorder due to certain specified neurodegenerative disorder,Disorders of autonomic nervous system/Congenital malformations of the autonomic nervous system/Inherited autonomic nervous system disorders/Autoimmune disorders involving the autonomic nervous system/Autonomic nervous system disorder due to infection/Pure autonomic nervous system failure/Autonomic nervous system disorder due to substances/Autonomic nervous system hyperactivity/Autonomic nervous system disorder due to certain specified neurodegenerative disorder/
-8D88,Autonomic neuropathies,Disorders of autonomic nervous system/Congenital malformations of the autonomic nervous system/Inherited autonomic nervous system disorders/Autoimmune disorders involving the autonomic nervous system/Autonomic nervous system disorder due to infection/Pure autonomic nervous system failure/Autonomic nervous system disorder due to substances/Autonomic nervous system hyperactivity/Autonomic nervous system disorder due to certain specified neurodegenerative disorder/Autonomic neuropathies/
-8D89,Disorders of orthostatic tolerance,Disorders of autonomic nervous system/Congenital malformations of the autonomic nervous system/Inherited autonomic nervous system disorders/Autoimmune disorders involving the autonomic nervous system/Autonomic nervous system disorder due to infection/Pure autonomic nervous system failure/Autonomic nervous system disorder due to substances/Autonomic nervous system hyperactivity/Autonomic nervous system disorder due to certain specified neurodegenerative disorder/Autonomic neuropathies/Disorders of orthostatic tolerance/
-8D8A,Focal or segmental autonomic disorders,Disorders of autonomic nervous system/Congenital malformations of the autonomic nervous system/Inherited autonomic nervous system disorders/Autoimmune disorders involving the autonomic nervous system/Autonomic nervous system disorder due to infection/Pure autonomic nervous system failure/Autonomic nervous system disorder due to substances/Autonomic nervous system hyperactivity/Autonomic nervous system disorder due to certain specified neurodegenerative disorder/Autonomic neuropathies/Disorders of orthostatic tolerance/Focal or segmental autonomic disorders/
-8D8B,Disorders affecting autonomic synaptic neurotransmission,Disorders of autonomic nervous system/Congenital malformations of the autonomic nervous system/Inherited autonomic nervous system disorders/Autoimmune disorders involving the autonomic nervous system/Autonomic nervous system disorder due to infection/Pure autonomic nervous system failure/Autonomic nervous system disorder due to substances/Autonomic nervous system hyperactivity/Autonomic nervous system disorder due to certain specified neurodegenerative disorder/Autonomic neuropathies/Disorders of orthostatic tolerance/Focal or segmental autonomic disorders/Disorders affecting autonomic synaptic neurotransmission/
-8D8C,Autonomic dysreflexia,Disorders of autonomic nervous system/Congenital malformations of the autonomic nervous system/Inherited autonomic nervous system disorders/Autoimmune disorders involving the autonomic nervous system/Autonomic nervous system disorder due to infection/Pure autonomic nervous system failure/Autonomic nervous system disorder due to substances/Autonomic nervous system hyperactivity/Autonomic nervous system disorder due to certain specified neurodegenerative disorder/Autonomic neuropathies/Disorders of orthostatic tolerance/Focal or segmental autonomic disorders/Disorders affecting autonomic synaptic neurotransmission/Autonomic dysreflexia/
-8D8D,Hypoglycaemia unawareness,Disorders of autonomic nervous system/Congenital malformations of the autonomic nervous system/Inherited autonomic nervous system disorders/Autoimmune disorders involving the autonomic nervous system/Autonomic nervous system disorder due to infection/Pure autonomic nervous system failure/Autonomic nervous system disorder due to substances/Autonomic nervous system hyperactivity/Autonomic nervous system disorder due to certain specified neurodegenerative disorder/Autonomic neuropathies/Disorders of orthostatic tolerance/Focal or segmental autonomic disorders/Disorders affecting autonomic synaptic neurotransmission/Autonomic dysreflexia/Hypoglycaemia unawareness/
-8D8Y,Other specified disorders of autonomic nervous system,Disorders of autonomic nervous system/Congenital malformations of the autonomic nervous system/Inherited autonomic nervous system disorders/Autoimmune disorders involving the autonomic nervous system/Autonomic nervous system disorder due to infection/Pure autonomic nervous system failure/Autonomic nervous system disorder due to substances/Autonomic nervous system hyperactivity/Autonomic nervous system disorder due to certain specified neurodegenerative disorder/Autonomic neuropathies/Disorders of orthostatic tolerance/Focal or segmental autonomic disorders/Disorders affecting autonomic synaptic neurotransmission/Autonomic dysreflexia/Hypoglycaemia unawareness/Other specified disorders of autonomic nervous system/
-8D8Z,"Disorders of autonomic nervous system, unspecified","Disorders of autonomic nervous system/Congenital malformations of the autonomic nervous system/Inherited autonomic nervous system disorders/Autoimmune disorders involving the autonomic nervous system/Autonomic nervous system disorder due to infection/Pure autonomic nervous system failure/Autonomic nervous system disorder due to substances/Autonomic nervous system hyperactivity/Autonomic nervous system disorder due to certain specified neurodegenerative disorder/Autonomic neuropathies/Disorders of orthostatic tolerance/Focal or segmental autonomic disorders/Disorders affecting autonomic synaptic neurotransmission/Autonomic dysreflexia/Hypoglycaemia unawareness/Other specified disorders of autonomic nervous system/Disorders of autonomic nervous system, unspecified/"
-8E00,Sporadic Creutzfeldt-Jakob Disease,Human prion diseases/Sporadic Creutzfeldt-Jakob Disease/
-8E01,Acquired prion disease,Human prion diseases/Sporadic Creutzfeldt-Jakob Disease/Acquired prion disease/
-8E02,Genetic prion diseases,Human prion diseases/Sporadic Creutzfeldt-Jakob Disease/Acquired prion disease/Genetic prion diseases/
-8E03,Variably protease sensitive prionopathy,Human prion diseases/Sporadic Creutzfeldt-Jakob Disease/Acquired prion disease/Genetic prion diseases/Variably protease sensitive prionopathy/
-8E0Y,Other specified human prion diseases,Human prion diseases/Sporadic Creutzfeldt-Jakob Disease/Acquired prion disease/Genetic prion diseases/Variably protease sensitive prionopathy/Other specified human prion diseases/
-8E0Z,"Human prion diseases, unspecified","Human prion diseases/Sporadic Creutzfeldt-Jakob Disease/Acquired prion disease/Genetic prion diseases/Variably protease sensitive prionopathy/Other specified human prion diseases/Human prion diseases, unspecified/"
-8E20,Persistent vegetative state,Disorders of consciousness/Persistent vegetative state/
-8E21,Permanent vegetative state,Disorders of consciousness/Persistent vegetative state/Permanent vegetative state/
-8E22,Minimally conscious state,Disorders of consciousness/Persistent vegetative state/Permanent vegetative state/Minimally conscious state/
-8E2Y,Other specified disorders of consciousness,Disorders of consciousness/Persistent vegetative state/Permanent vegetative state/Minimally conscious state/Other specified disorders of consciousness/
-8E2Z,"Disorders of consciousness, unspecified","Disorders of consciousness/Persistent vegetative state/Permanent vegetative state/Minimally conscious state/Other specified disorders of consciousness/Disorders of consciousness, unspecified/"
-8E40,Disorders of the meninges excluding infection,Certain disorders of the nervous system/Disorders of the meninges excluding infection/
-8E41,Pachymeningitis,Certain disorders of the nervous system/Disorders of the meninges excluding infection/Pachymeningitis/
-8E42,Superficial siderosis of the nervous system,Certain disorders of the nervous system/Disorders of the meninges excluding infection/Pachymeningitis/Superficial siderosis of the nervous system/
-8E43,Pain disorders,Certain disorders of the nervous system/Disorders of the meninges excluding infection/Pachymeningitis/Superficial siderosis of the nervous system/Pain disorders/
-8E44,Post anoxic brain damage,Certain disorders of the nervous system/Disorders of the meninges excluding infection/Pachymeningitis/Superficial siderosis of the nervous system/Pain disorders/Post anoxic brain damage/
-8E45,Locked-in syndrome,Certain disorders of the nervous system/Disorders of the meninges excluding infection/Pachymeningitis/Superficial siderosis of the nervous system/Pain disorders/Post anoxic brain damage/Locked-in syndrome/
-8E46,Reye syndrome,Certain disorders of the nervous system/Disorders of the meninges excluding infection/Pachymeningitis/Superficial siderosis of the nervous system/Pain disorders/Post anoxic brain damage/Locked-in syndrome/Reye syndrome/
-8E47,"Encephalopathy, not elsewhere classified","Certain disorders of the nervous system/Disorders of the meninges excluding infection/Pachymeningitis/Superficial siderosis of the nervous system/Pain disorders/Post anoxic brain damage/Locked-in syndrome/Reye syndrome/Encephalopathy, not elsewhere classified/"
-8E48,"Encephalitis, not elsewhere classified","Certain disorders of the nervous system/Disorders of the meninges excluding infection/Pachymeningitis/Superficial siderosis of the nervous system/Pain disorders/Post anoxic brain damage/Locked-in syndrome/Reye syndrome/Encephalopathy, not elsewhere classified/Encephalitis, not elsewhere classified/"
-8E49,Postviral fatigue syndrome,"Certain disorders of the nervous system/Disorders of the meninges excluding infection/Pachymeningitis/Superficial siderosis of the nervous system/Pain disorders/Post anoxic brain damage/Locked-in syndrome/Reye syndrome/Encephalopathy, not elsewhere classified/Encephalitis, not elsewhere classified/Postviral fatigue syndrome/"
-8E4A,Paraneoplastic or autoimmune disorders of the nervous system,"Certain disorders of the nervous system/Disorders of the meninges excluding infection/Pachymeningitis/Superficial siderosis of the nervous system/Pain disorders/Post anoxic brain damage/Locked-in syndrome/Reye syndrome/Encephalopathy, not elsewhere classified/Encephalitis, not elsewhere classified/Postviral fatigue syndrome/Paraneoplastic or autoimmune disorders of the nervous system/"
-8E60,Post ventricular shunting leak,Postprocedural disorders of the nervous system/Post ventricular shunting leak/
-8E61,Post radiation injury of the nervous system,Postprocedural disorders of the nervous system/Post ventricular shunting leak/Post radiation injury of the nervous system/
-8E62,Postprocedural meningitis,Postprocedural disorders of the nervous system/Post ventricular shunting leak/Post radiation injury of the nervous system/Postprocedural meningitis/
-8E63,Post pump encephalopathy,Postprocedural disorders of the nervous system/Post ventricular shunting leak/Post radiation injury of the nervous system/Postprocedural meningitis/Post pump encephalopathy/
-8E64,Multifocal cerebral infarctions,Postprocedural disorders of the nervous system/Post ventricular shunting leak/Post radiation injury of the nervous system/Postprocedural meningitis/Post pump encephalopathy/Multifocal cerebral infarctions/
-8E66,Intracranial hypotension due to lumbar puncture,Postprocedural disorders of the nervous system/Post ventricular shunting leak/Post radiation injury of the nervous system/Postprocedural meningitis/Post pump encephalopathy/Multifocal cerebral infarctions/Intracranial hypotension due to lumbar puncture/
-8E67,Cerebrospinal fluid leak due to surgery or lumbar puncture,Postprocedural disorders of the nervous system/Post ventricular shunting leak/Post radiation injury of the nervous system/Postprocedural meningitis/Post pump encephalopathy/Multifocal cerebral infarctions/Intracranial hypotension due to lumbar puncture/Cerebrospinal fluid leak due to surgery or lumbar puncture/
-8E7Y,Other specified diseases of the nervous system,Postprocedural disorders of the nervous system/Post ventricular shunting leak/Post radiation injury of the nervous system/Postprocedural meningitis/Post pump encephalopathy/Multifocal cerebral infarctions/Intracranial hypotension due to lumbar puncture/Cerebrospinal fluid leak due to surgery or lumbar puncture/Other specified diseases of the nervous system/
-8E7Z,"Diseases of the nervous system, unspecified","Postprocedural disorders of the nervous system/Post ventricular shunting leak/Post radiation injury of the nervous system/Postprocedural meningitis/Post pump encephalopathy/Multifocal cerebral infarctions/Intracranial hypotension due to lumbar puncture/Cerebrospinal fluid leak due to surgery or lumbar puncture/Other specified diseases of the nervous system/Diseases of the nervous system, unspecified/"
+6A00,Disorders of intellectual development,Neurodevelopmental disorders/
+6A01,Developmental speech or language disorders,Neurodevelopmental disorders/
+6A02,Autism spectrum disorder,Neurodevelopmental disorders/
+6A03,Developmental learning disorder,Neurodevelopmental disorders/
+6A04,Developmental motor coordination disorder,Neurodevelopmental disorders/
+6A05,Attention deficit hyperactivity disorder,Neurodevelopmental disorders/
+6A06,Stereotyped movement disorder,Neurodevelopmental disorders/
+6A0Y,Other specified neurodevelopmental disorders,Neurodevelopmental disorders/
+6A0Z,"Neurodevelopmental disorders, unspecified",Neurodevelopmental disorders/
+6A20,Schizophrenia,Schizophrenia or other primary psychotic disorders/
+6A21,Schizoaffective disorder,Schizophrenia or other primary psychotic disorders/
+6A22,Schizotypal disorder,Schizophrenia or other primary psychotic disorders/
+6A23,Acute and transient psychotic disorder,Schizophrenia or other primary psychotic disorders/
+6A24,Delusional disorder,Schizophrenia or other primary psychotic disorders/
+6A25,Symptomatic manifestations of primary psychotic disorders,Schizophrenia or other primary psychotic disorders/
+6A2Y,Other specified primary psychotic disorder,Schizophrenia or other primary psychotic disorders/
+6A2Z,"Schizophrenia or other primary psychotic disorders, unspecified",Schizophrenia or other primary psychotic disorders/
+6A40,Catatonia associated with another mental disorder,Catatonia/
+6A41,Catatonia induced by substances or medications,Catatonia/
+6A4Z,"Catatonia, unspecified",Catatonia/
+6A60,Bipolar type I disorder,Mood disorders/Bipolar or related disorders
+6A61,Bipolar type II disorder,Mood disorders/Bipolar or related disorders
+6A62,Cyclothymic disorder,Mood disorders/Bipolar or related disorders
+6A6Y,Other specified bipolar or related disorders,Mood disorders/Bipolar or related disorders
+6A6Z,"Bipolar or related disorders, unspecified",Mood disorders/Bipolar or related disorders
+6A70,Single episode depressive disorder,Mood disorders/Depressive disorders
+6A71,Recurrent depressive disorder,Mood disorders/Depressive disorders
+6A72,Dysthymic disorder,Mood disorders/Depressive disorders
+6A73,Mixed depressive and anxiety disorder,Mood disorders/Depressive disorders
+6A7Y,Other specified depressive disorders,Mood disorders/Depressive disorders
+6A7Z,"Depressive disorders, unspecified",Mood disorders/Depressive disorders
+6A80,Symptomatic and course presentations for mood episodes in mood disorders,Mood disorders/Depressive disorders
+6A8Y,Other specified mood disorders,Mood disorders/Depressive disorders
+6A8Z,"Mood disorders, unspecified",Mood disorders/Depressive disorders
+6B00,Generalised anxiety disorder,Anxiety or fear-related disorders/
+6B01,Panic disorder,Anxiety or fear-related disorders/
+6B02,Agoraphobia,Anxiety or fear-related disorders/
+6B03,Specific phobia,Anxiety or fear-related disorders/
+6B04,Social anxiety disorder,Anxiety or fear-related disorders/
+6B05,Separation anxiety disorder,Anxiety or fear-related disorders/
+6B06,Selective mutism,Anxiety or fear-related disorders/
+6B0Y,Other specified anxiety or fear-related disorders,Anxiety or fear-related disorders/
+6B0Z,"Anxiety or fear-related disorders, unspecified",Anxiety or fear-related disorders/
+6B20,Obsessive-compulsive disorder,Obsessive-compulsive or related disorders/
+6B21,Body dysmorphic disorder,Obsessive-compulsive or related disorders/
+6B22,Olfactory reference disorder,Obsessive-compulsive or related disorders/
+6B23,Hypochondriasis,Obsessive-compulsive or related disorders/
+6B24,Hoarding disorder,Obsessive-compulsive or related disorders/
+6B25,Body-focused repetitive behaviour disorders,Obsessive-compulsive or related disorders/
+6B2Y,Other specified obsessive-compulsive or related disorders,Obsessive-compulsive or related disorders/
+6B2Z,"Obsessive-compulsive or related disorders, unspecified",Obsessive-compulsive or related disorders/
+6B40,Post traumatic stress disorder,Disorders specifically associated with stress/
+6B41,Complex post traumatic stress disorder,Disorders specifically associated with stress/
+6B42,Prolonged grief disorder,Disorders specifically associated with stress/
+6B43,Adjustment disorder,Disorders specifically associated with stress/
+6B44,Reactive attachment disorder,Disorders specifically associated with stress/
+6B45,Disinhibited social engagement disorder,Disorders specifically associated with stress/
+6B4Y,Other specified disorders specifically associated with stress,Disorders specifically associated with stress/
+6B4Z,"Disorders specifically associated with stress, unspecified",Disorders specifically associated with stress/
+6B60,Dissociative neurological symptom disorder,Dissociative disorders/
+6B61,Dissociative amnesia,Dissociative disorders/
+6B62,Trance disorder,Dissociative disorders/
+6B63,Possession trance disorder,Dissociative disorders/
+6B64,Dissociative identity disorder,Dissociative disorders/
+6B65,Partial dissociative identity disorder,Dissociative disorders/
+6B66,Depersonalization-derealization disorder,Dissociative disorders/
+6B6Y,Other specified dissociative disorders,Dissociative disorders/
+6B6Z,"Dissociative disorders, unspecified",Dissociative disorders/
+6B80,Anorexia Nervosa,Feeding or eating disorders/
+6B81,Bulimia Nervosa,Feeding or eating disorders/
+6B82,Binge eating disorder,Feeding or eating disorders/
+6B83,Avoidant-restrictive food intake disorder,Feeding or eating disorders/
+6B84,Pica,Feeding or eating disorders/
+6B85,Rumination-regurgitation disorder,Feeding or eating disorders/
+6B8Y,Other specified feeding or eating disorders,Feeding or eating disorders/
+6B8Z,"Feeding or eating disorders, unspecified",Feeding or eating disorders/
+6C00,Enuresis,Elimination disorders/
+6C01,Encopresis,Elimination disorders/
+6C0Z,"Elimination disorders, unspecified",Elimination disorders/
+6C20,Bodily distress disorder,Disorders of bodily distress or bodily experience/
+6C21,Body integrity dysphoria,Disorders of bodily distress or bodily experience/
+6C2Y,Other specified disorders of bodily distress or bodily experience,Disorders of bodily distress or bodily experience/
+6C2Z,"Disorders of bodily distress or bodily experience, unspecified",Disorders of bodily distress or bodily experience/
+6C40,Disorders due to use of alcohol,Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C41,Disorders due to use of cannabis,Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C42,Disorders due to use of synthetic cannabinoids,Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C43,Disorders due to use of opioids,Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C44,"Disorders due to use of sedatives, hypnotics or anxiolytics",Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C45,Disorders due to use of cocaine,Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C46,"Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone",Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C47,Disorders due to use of synthetic cathinones,Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C48,Disorders due to use of caffeine,Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C49,Disorders due to use of hallucinogens,Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C4A,Disorders due to use of nicotine,Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C4B,Disorders due to use of volatile inhalants,Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C4C,"Disorders due to use of methylene-dioxymethamphetamine [MDMA] or related drugs, including methylene-dioxyamphetamine [MDA]",Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C4D,Disorders due to use of dissociative drugs including ketamine or phencyclidine (PCP),Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C4E,"Disorders due to use of other specified psychoactive substances, including medications",Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C4F,"Disorders due to use of multiple specified psychoactive substances, including medications",Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C4G,Disorders due to use of unknown or unspecified psychoactive substances,Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C4H,Disorders due to use of non-psychoactive substances,Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C4Y,Other specified disorders due to substance use,Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C4Z,"Disorders due to substance use, unspecified",Disorders due to substance use or addictive behaviours/Disorders due to substance use
+6C50,Gambling disorder,Disorders due to substance use or addictive behaviours/Disorders due to addictive behaviours
+6C51,Gaming disorder,Disorders due to substance use or addictive behaviours/Disorders due to addictive behaviours
+6C5Y,Other specified disorders due to addictive behaviours,Disorders due to substance use or addictive behaviours/Disorders due to addictive behaviours
+6C5Z,"Disorders due to addictive behaviours, unspecified",Disorders due to substance use or addictive behaviours/Disorders due to addictive behaviours
+6C70,Pyromania,Impulse control disorders/
+6C71,Kleptomania,Impulse control disorders/
+6C72,Compulsive sexual behaviour disorder,Impulse control disorders/
+6C73,Intermittent explosive disorder,Impulse control disorders/
+6C7Y,Other specified impulse control disorders,Impulse control disorders/
+6C7Z,"Impulse control disorders, unspecified",Impulse control disorders/
+6C90,Oppositional defiant disorder,Disruptive behaviour or dissocial disorders/
+6C91,Conduct-dissocial disorder,Disruptive behaviour or dissocial disorders/
+6C9Y,Other specified disruptive behaviour or dissocial disorders,Disruptive behaviour or dissocial disorders/
+6C9Z,"Disruptive behaviour or dissocial disorders, unspecified",Disruptive behaviour or dissocial disorders/
+6D10,Personality disorder,Personality disorders and related traits/
+6D11,Prominent personality traits or patterns,Personality disorders and related traits/
+6D30,Exhibitionistic disorder,Paraphilic disorders/
+6D31,Voyeuristic disorder,Paraphilic disorders/
+6D32,Pedophilic disorder,Paraphilic disorders/
+6D33,Coercive sexual sadism disorder,Paraphilic disorders/
+6D34,Frotteuristic disorder,Paraphilic disorders/
+6D35,Other paraphilic disorder involving non-consenting individuals,Paraphilic disorders/
+6D36,Paraphilic disorder involving solitary behaviour or consenting individuals,Paraphilic disorders/
+6D3Z,"Paraphilic disorders, unspecified",Paraphilic disorders/
+6D50,Factitious disorder imposed on self,Factitious disorders/
+6D51,Factitious disorder imposed on another,Factitious disorders/
+6D5Z,"Factitious disorders, unspecified",Factitious disorders/
+6D70,Delirium,Neurocognitive disorders/
+6D71,Mild neurocognitive disorder,Neurocognitive disorders/
+6D72,Amnestic disorder,Neurocognitive disorders/
+6D80,Dementia due to Alzheimer disease,Neurocognitive disorders/Dementia
+6D81,Dementia due to cerebrovascular disease,Neurocognitive disorders/Dementia
+6D82,Dementia due to Lewy body disease,Neurocognitive disorders/Dementia
+6D83,Frontotemporal dementia,Neurocognitive disorders/Dementia
+6D84,Dementia due to psychoactive substances including medications,Neurocognitive disorders/Dementia
+6D85,Dementia due to diseases classified elsewhere,Neurocognitive disorders/Dementia
+6D86,Behavioural or psychological disturbances in dementia,Neurocognitive disorders/Dementia
+6D8Y,"Dementia, other specified cause",Neurocognitive disorders/Dementia
+6D8Z,"Dementia, unknown or unspecified cause",Neurocognitive disorders/Dementia
+6E0Y,Other specified neurocognitive disorders,Neurocognitive disorders/Dementia
+6E0Z,"Neurocognitive disorders, unspecified",Neurocognitive disorders/Dementia
+6E20,"Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, without psychotic symptoms","Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium/"
+6E21,"Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, with psychotic symptoms","Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium/"
+6E2Z,"Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, unspecified","Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium/"
+6E40,Psychological or behavioural factors affecting disorders or diseases classified elsewhere,"Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium/"
+6E60,Secondary neurodevelopmental syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/
+6E61,Secondary psychotic syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/
+6E62,Secondary mood syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/
+6E63,Secondary anxiety syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/
+6E64,Secondary obsessive-compulsive or related syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/
+6E65,Secondary dissociative syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/
+6E66,Secondary impulse control syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/
+6E67,Secondary neurocognitive syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/
+6E68,Secondary personality change,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/
+6E69,Secondary catatonia syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/
+6E6Y,Other specified secondary mental or behavioural syndrome,Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/
+6E6Z,"Secondary mental or behavioural syndrome, unspecified",Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/
+6E8Y,"Other specified mental, behavioural or neurodevelopmental disorders",Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/
+6E8Z,"Mental, behavioural or neurodevelopmental disorders, unspecified",Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere/
+8A00,Parkinsonism,Movement disorders/
+8A01,Choreiform disorders,Movement disorders/
+8A02,Dystonic disorders,Movement disorders/
+8A03,Ataxic disorders,Movement disorders/
+8A04,Disorders associated with tremor,Movement disorders/
+8A05,Tic disorders,Movement disorders/
+8A06,Myoclonic disorders,Movement disorders/
+8A07,Certain specified movement disorder,Movement disorders/
+8A0Y,Other specified movement disorders,Movement disorders/
+8A0Z,"Movement disorders, unspecified",Movement disorders/
+8A20,Alzheimer disease,Disorders with neurocognitive impairment as a major feature/
+8A21,Progressive focal atrophies,Disorders with neurocognitive impairment as a major feature/
+8A22,Lewy body disease,Disorders with neurocognitive impairment as a major feature/
+8A23,Frontotemporal lobar degeneration,Disorders with neurocognitive impairment as a major feature/
+8A2Y,Other specified disorders with neurocognitive impairment as a major feature,Disorders with neurocognitive impairment as a major feature/
+8A2Z,"Disorders with neurocognitive impairment as a major feature, unspecified",Disorders with neurocognitive impairment as a major feature/
+8A40,Multiple sclerosis,Multiple sclerosis or other white matter disorders/
+8A41,Isolated demyelinating syndromes of the central nervous system,Multiple sclerosis or other white matter disorders/
+8A42,Acute disseminated encephalomyelitis,Multiple sclerosis or other white matter disorders/
+8A43,Neuromyelitis optica,Multiple sclerosis or other white matter disorders/
+8A44,Leukodystrophies,Multiple sclerosis or other white matter disorders/
+8A45,Secondary white matter disorders,Multiple sclerosis or other white matter disorders/
+8A46,Central demyelination of corpus callosum,Multiple sclerosis or other white matter disorders/
+8A4Y,Other specified multiple sclerosis or other white matter disorders,Multiple sclerosis or other white matter disorders/
+8A4Z,"Multiple sclerosis or other white matter disorders, unspecified",Multiple sclerosis or other white matter disorders/
+8A60,Epilepsy due to structural or metabolic conditions or diseases,Epilepsy or seizures/
+8A61,Genetic or presumed genetic syndromes primarily expressed as epilepsy,Epilepsy or seizures/
+8A62,Epileptic encephalopathies,Epilepsy or seizures/
+8A63,Seizure due to acute causes,Epilepsy or seizures/
+8A64,Single seizure due to remote causes,Epilepsy or seizures/
+8A65,Single unprovoked seizure,Epilepsy or seizures/
+8A66,Status epilepticus,Epilepsy or seizures/
+8A67,Acute repetitive seizures,Epilepsy or seizures/
+8A68,Types of seizures,Epilepsy or seizures/
+8A6Y,Other specified epilepsy or seizures,Epilepsy or seizures/
+8A6Z,"Epilepsy or seizures, unspecified",Epilepsy or seizures/
+8A80,Migraine,Headache disorders/
+8A81,Tension-type headache,Headache disorders/
+8A82,Trigeminal autonomic cephalalgias,Headache disorders/
+8A83,Other primary headache disorder,Headache disorders/
+8A84,Secondary headache,Headache disorders/
+8A85,Painful cranial neuropathies or other facial pains,Headache disorders/
+8A8Y,Other specified headache disorders,Headache disorders/
+8A8Z,"Headache disorders, unspecified",Headache disorders/
+8B00,Intracerebral haemorrhage,Cerebrovascular diseases/Intracranial haemorrhage
+8B01,Subarachnoid haemorrhage,Cerebrovascular diseases/Intracranial haemorrhage
+8B02,Nontraumatic subdural haemorrhage,Cerebrovascular diseases/Intracranial haemorrhage
+8B03,Nontraumatic epidural haemorrhage,Cerebrovascular diseases/Intracranial haemorrhage
+8B0Z,"Intracranial haemorrhage, unspecified",Cerebrovascular diseases/Intracranial haemorrhage
+8B10,Transient ischaemic attack,Cerebrovascular diseases/Cerebral ischaemia
+8B11,Cerebral ischaemic stroke,Cerebrovascular diseases/Cerebral ischaemia
+8B1Y,Other specified cerebral ischaemia,Cerebrovascular diseases/Cerebral ischaemia
+8B1Z,"Cerebral ischaemia, unspecified",Cerebrovascular diseases/Cerebral ischaemia
+8B20,Stroke not known if ischaemic or haemorrhagic,Cerebrovascular diseases/Cerebral ischaemia
+8B21,Cerebrovascular disease with no acute cerebral symptom,Cerebrovascular diseases/Cerebral ischaemia
+8B22,Certain specified cerebrovascular diseases,Cerebrovascular diseases/Cerebral ischaemia
+8B23,Cerebrovascular abnormalities,Cerebrovascular diseases/Cerebral ischaemia
+8B24,Hypoxic-ischaemic encephalopathy,Cerebrovascular diseases/Cerebral ischaemia
+8B25,Late effects of cerebrovascular disease,Cerebrovascular diseases/Cerebral ischaemia
+8B26,Vascular syndromes of brain in cerebrovascular diseases,Cerebrovascular diseases/Cerebral ischaemia
+8B2Z,"Cerebrovascular diseases, unspecified",Cerebrovascular diseases/Cerebral ischaemia
+8B40,Cauda equina syndrome,Spinal cord disorders excluding trauma/
+8B41,Myelitis,Spinal cord disorders excluding trauma/
+8B42,Myelopathy,Spinal cord disorders excluding trauma/
+8B43,Non-compressive vascular myelopathies,Spinal cord disorders excluding trauma/
+8B44,Degenerative myelopathic disorders,Spinal cord disorders excluding trauma/
+8B4Y,Other specified spinal cord disorders excluding trauma,Spinal cord disorders excluding trauma/
+8B4Z,"Spinal cord disorders excluding trauma, unspecified",Spinal cord disorders excluding trauma/
+8B60,Motor neuron disease,Motor neuron diseases or related disorders/
+8B61,Spinal muscular atrophy,Motor neuron diseases or related disorders/
+8B62,Post polio progressive muscular atrophy,Motor neuron diseases or related disorders/
+8B6Y,Other specified motor neuron diseases or related disorders,Motor neuron diseases or related disorders/
+8B6Z,"Motor neuron diseases or related disorders, unspecified",Motor neuron diseases or related disorders/
+8B80,Disorders of olfactory nerve,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves"
+8B81,Disorders of vestibulocochlear nerve,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves"
+8B82,Disorders of trigeminal nerve,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves"
+8B83,Disorders of spinal accessory nerve,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves"
+8B84,Disorders of hypoglossal nerve,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves"
+8B85,Disorders of multiple cranial nerves,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves"
+8B86,Disorders of vagus nerve,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves"
+8B87,Disorders of glossopharyngeal nerve,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves"
+8B88,Disorders of facial nerve,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves"
+8B8Y,Other specified disorders of cranial nerves,"Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves"
+8B8Z,"Disorders of cranial nerves, unspecified","Disorders of nerve root, plexus or peripheral nerves/Disorders of cranial nerves"
+8B90,Nerve root or plexus compressions,"Disorders of nerve root, plexus or peripheral nerves/Nerve root or plexus disorders"
+8B91,Brachial plexus disorders,"Disorders of nerve root, plexus or peripheral nerves/Nerve root or plexus disorders"
+8B92,Lumbosacral plexus disorders,"Disorders of nerve root, plexus or peripheral nerves/Nerve root or plexus disorders"
+8B93,Radiculopathy,"Disorders of nerve root, plexus or peripheral nerves/Nerve root or plexus disorders"
+8B94,Diabetic radiculoplexoneuropathy,"Disorders of nerve root, plexus or peripheral nerves/Nerve root or plexus disorders"
+8B95,Secondary brachial plexus lesion due to certain specified disorders,"Disorders of nerve root, plexus or peripheral nerves/Nerve root or plexus disorders"
+8B9Y,Other specified nerve root or plexus disorders,"Disorders of nerve root, plexus or peripheral nerves/Nerve root or plexus disorders"
+8B9Z,"Nerve root or plexus disorders, unspecified","Disorders of nerve root, plexus or peripheral nerves/Nerve root or plexus disorders"
+8C00,Idiopathic progressive neuropathy,"Disorders of nerve root, plexus or peripheral nerves/Polyneuropathy"
+8C01,Inflammatory polyneuropathy,"Disorders of nerve root, plexus or peripheral nerves/Polyneuropathy"
+8C03,Other secondary polyneuropathy,"Disorders of nerve root, plexus or peripheral nerves/Polyneuropathy"
+8C0Y,Other specified polyneuropathy,"Disorders of nerve root, plexus or peripheral nerves/Polyneuropathy"
+8C0Z,"Polyneuropathy, unspecified","Disorders of nerve root, plexus or peripheral nerves/Polyneuropathy"
+8C10,Mononeuropathies of upper limb,"Disorders of nerve root, plexus or peripheral nerves/Mononeuropathy"
+8C11,Mononeuropathies of lower limb,"Disorders of nerve root, plexus or peripheral nerves/Mononeuropathy"
+8C12,Certain specified mononeuropathies,"Disorders of nerve root, plexus or peripheral nerves/Mononeuropathy"
+8C1Y,Mononeuropathy of other specified site,"Disorders of nerve root, plexus or peripheral nerves/Mononeuropathy"
+8C1Z,Mononeuropathy of unspecified site,"Disorders of nerve root, plexus or peripheral nerves/Mononeuropathy"
+8C20,Hereditary motor and sensory neuropathy,"Disorders of nerve root, plexus or peripheral nerves/Hereditary neuropathy"
+8C21,Hereditary sensory or autonomic neuropathy,"Disorders of nerve root, plexus or peripheral nerves/Hereditary neuropathy"
+8C2Y,Other specified hereditary neuropathy,"Disorders of nerve root, plexus or peripheral nerves/Hereditary neuropathy"
+8C2Z,"Hereditary neuropathy, unspecified","Disorders of nerve root, plexus or peripheral nerves/Hereditary neuropathy"
+8C4Y,"Other specified disorders of nerve root, plexus or peripheral nerves","Disorders of nerve root, plexus or peripheral nerves/Hereditary neuropathy"
+8C4Z,"Disorders of nerve root, plexus or peripheral nerves, unspecified","Disorders of nerve root, plexus or peripheral nerves/Hereditary neuropathy"
+8C60,Myasthenia gravis,Diseases of neuromuscular junction or muscle/Myasthenia gravis or certain specified neuromuscular junction disorders
+8C61,Congenital myasthenic syndromes,Diseases of neuromuscular junction or muscle/Myasthenia gravis or certain specified neuromuscular junction disorders
+8C62,Lambert-Eaton syndrome,Diseases of neuromuscular junction or muscle/Myasthenia gravis or certain specified neuromuscular junction disorders
+8C6Y,Other specified neuromuscular junction disorders,Diseases of neuromuscular junction or muscle/Myasthenia gravis or certain specified neuromuscular junction disorders
+8C6Z,"Neuromuscular junction disorders, unspecified",Diseases of neuromuscular junction or muscle/Myasthenia gravis or certain specified neuromuscular junction disorders
+8C70,Muscular dystrophy,Diseases of neuromuscular junction or muscle/Primary disorders of muscles
+8C71,Myotonic disorders,Diseases of neuromuscular junction or muscle/Primary disorders of muscles
+8C72,Congenital myopathies,Diseases of neuromuscular junction or muscle/Primary disorders of muscles
+8C73,Mitochondrial myopathies,Diseases of neuromuscular junction or muscle/Primary disorders of muscles
+8C74,Periodic paralyses or disorders of muscle membrane excitability,Diseases of neuromuscular junction or muscle/Primary disorders of muscles
+8C75,Distal myopathies,Diseases of neuromuscular junction or muscle/Primary disorders of muscles
+8C76,Myofibrillar myopathy,Diseases of neuromuscular junction or muscle/Primary disorders of muscles
+8C77,Ocular myopathy,Diseases of neuromuscular junction or muscle/Primary disorders of muscles
+8C78,Malignant hyperthermia or hyperpyrexia,Diseases of neuromuscular junction or muscle/Primary disorders of muscles
+8C7Y,Other specified primary disorders of muscles,Diseases of neuromuscular junction or muscle/Primary disorders of muscles
+8C7Z,"Primary disorders of muscles, unspecified",Diseases of neuromuscular junction or muscle/Primary disorders of muscles
+8C80,Drug-induced myopathy,Diseases of neuromuscular junction or muscle/Secondary myopathies
+8C81,Autoimmune myopathy,Diseases of neuromuscular junction or muscle/Secondary myopathies
+8C82,Myopathy in certain specified infectious or parasitic disease,Diseases of neuromuscular junction or muscle/Secondary myopathies
+8C83,Myopathy in certain specified endocrine disease,Diseases of neuromuscular junction or muscle/Secondary myopathies
+8C84,Secondary rhabdomyolysis,Diseases of neuromuscular junction or muscle/Secondary myopathies
+8C8Y,Other specified secondary myopathies,Diseases of neuromuscular junction or muscle/Secondary myopathies
+8C8Z,"Secondary myopathies, unspecified",Diseases of neuromuscular junction or muscle/Secondary myopathies
+8D0Y,Other specified diseases of muscle,Diseases of neuromuscular junction or muscle/Secondary myopathies
+8D0Z,"Diseases of muscle, unspecified",Diseases of neuromuscular junction or muscle/Secondary myopathies
+8D20,Spastic cerebral palsy,Cerebral palsy/
+8D21,Dyskinetic cerebral palsy,Cerebral palsy/
+8D22,Ataxic cerebral palsy,Cerebral palsy/
+8D23,Worster-Drought syndrome,Cerebral palsy/
+8D2Y,Other specified cerebral palsy,Cerebral palsy/
+8D2Z,"Cerebral palsy, unspecified",Cerebral palsy/
+8D40,Neurological disorders due to nutrient deficiency,Nutritional or toxic disorders of the nervous system/
+8D41,Neurological disorders due to an excess of micro or macro nutrients,Nutritional or toxic disorders of the nervous system/
+8D42,Neurological disorders due to overweight or obesity in adults or children,Nutritional or toxic disorders of the nervous system/
+8D43,Neurological disorders due to toxicity,Nutritional or toxic disorders of the nervous system/
+8D44,Alcohol-related neurological disorders,Nutritional or toxic disorders of the nervous system/
+8D4Y,Other specified nutritional or toxic disorders of the nervous system,Nutritional or toxic disorders of the nervous system/
+8D4Z,"Nutritional or toxic disorders of the nervous system, unspecified",Nutritional or toxic disorders of the nervous system/
+8D60,Increased intracranial pressure,Disorders of cerebrospinal fluid pressure or flow/
+8D61,Intracranial hypotension,Disorders of cerebrospinal fluid pressure or flow/
+8D62,Cerebrospinal fluid rhinorrhoea,Disorders of cerebrospinal fluid pressure or flow/
+8D63,Cerebrospinal fluid otorrhoea,Disorders of cerebrospinal fluid pressure or flow/
+8D64,Hydrocephalus,Disorders of cerebrospinal fluid pressure or flow/
+8D65,Cerebrospinal fluid fistula,Disorders of cerebrospinal fluid pressure or flow/
+8D66,Syringomyelia or syringobulbia,Disorders of cerebrospinal fluid pressure or flow/
+8D67,Intracranial arachnoid cyst,Disorders of cerebrospinal fluid pressure or flow/
+8D68,Porencephalic cyst,Disorders of cerebrospinal fluid pressure or flow/
+8D6Y,Other specified disorders of cerebrospinal fluid pressure or flow,Disorders of cerebrospinal fluid pressure or flow/
+8D6Z,"Disorders of cerebrospinal fluid pressure or flow, unspecified",Disorders of cerebrospinal fluid pressure or flow/
+8D80,Congenital malformations of the autonomic nervous system,Disorders of autonomic nervous system/
+8D81,Inherited autonomic nervous system disorders,Disorders of autonomic nervous system/
+8D82,Autoimmune disorders involving the autonomic nervous system,Disorders of autonomic nervous system/
+8D83,Autonomic nervous system disorder due to infection,Disorders of autonomic nervous system/
+8D84,Pure autonomic nervous system failure,Disorders of autonomic nervous system/
+8D85,Autonomic nervous system disorder due to substances,Disorders of autonomic nervous system/
+8D86,Autonomic nervous system hyperactivity,Disorders of autonomic nervous system/
+8D87,Autonomic nervous system disorder due to certain specified neurodegenerative disorder,Disorders of autonomic nervous system/
+8D88,Autonomic neuropathies,Disorders of autonomic nervous system/
+8D89,Disorders of orthostatic tolerance,Disorders of autonomic nervous system/
+8D8A,Focal or segmental autonomic disorders,Disorders of autonomic nervous system/
+8D8B,Disorders affecting autonomic synaptic neurotransmission,Disorders of autonomic nervous system/
+8D8C,Autonomic dysreflexia,Disorders of autonomic nervous system/
+8D8D,Hypoglycaemia unawareness,Disorders of autonomic nervous system/
+8D8Y,Other specified disorders of autonomic nervous system,Disorders of autonomic nervous system/
+8D8Z,"Disorders of autonomic nervous system, unspecified",Disorders of autonomic nervous system/
+8E00,Sporadic Creutzfeldt-Jakob Disease,Human prion diseases/
+8E01,Acquired prion disease,Human prion diseases/
+8E02,Genetic prion diseases,Human prion diseases/
+8E03,Variably protease sensitive prionopathy,Human prion diseases/
+8E0Y,Other specified human prion diseases,Human prion diseases/
+8E0Z,"Human prion diseases, unspecified",Human prion diseases/
+8E20,Persistent vegetative state,Disorders of consciousness/
+8E21,Permanent vegetative state,Disorders of consciousness/
+8E22,Minimally conscious state,Disorders of consciousness/
+8E2Y,Other specified disorders of consciousness,Disorders of consciousness/
+8E2Z,"Disorders of consciousness, unspecified",Disorders of consciousness/
+8E40,Disorders of the meninges excluding infection,Certain disorders of the nervous system/
+8E41,Pachymeningitis,Certain disorders of the nervous system/
+8E42,Superficial siderosis of the nervous system,Certain disorders of the nervous system/
+8E43,Pain disorders,Certain disorders of the nervous system/
+8E44,Post anoxic brain damage,Certain disorders of the nervous system/
+8E45,Locked-in syndrome,Certain disorders of the nervous system/
+8E46,Reye syndrome,Certain disorders of the nervous system/
+8E47,"Encephalopathy, not elsewhere classified",Certain disorders of the nervous system/
+8E48,"Encephalitis, not elsewhere classified",Certain disorders of the nervous system/
+8E49,Postviral fatigue syndrome,Certain disorders of the nervous system/
+8E4A,Paraneoplastic or autoimmune disorders of the nervous system,Certain disorders of the nervous system/
+8E60,Post ventricular shunting leak,Postprocedural disorders of the nervous system/
+8E61,Post radiation injury of the nervous system,Postprocedural disorders of the nervous system/
+8E62,Postprocedural meningitis,Postprocedural disorders of the nervous system/
+8E63,Post pump encephalopathy,Postprocedural disorders of the nervous system/
+8E64,Multifocal cerebral infarctions,Postprocedural disorders of the nervous system/
+8E66,Intracranial hypotension due to lumbar puncture,Postprocedural disorders of the nervous system/
+8E67,Cerebrospinal fluid leak due to surgery or lumbar puncture,Postprocedural disorders of the nervous system/
+8E7Y,Other specified diseases of the nervous system,Postprocedural disorders of the nervous system/
+8E7Z,"Diseases of the nervous system, unspecified",Postprocedural disorders of the nervous system/

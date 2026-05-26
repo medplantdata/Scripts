@@ -46,9 +46,8 @@ for code, title, BlockId in df.itertuples(index=False):
         head = name
         path = head + '/'
     elif 'L2' in str(BlockId):
-        path = head + '/' + name + '/'
+        path = head + '/' + name
     elif pd.isna(BlockId) and not pd.isna(code):
-        path = path + name + '/'
         entry = [code, name, path]
         icd.append(entry)
     
