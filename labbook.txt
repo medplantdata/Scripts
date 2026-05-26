@@ -185,3 +185,12 @@ IGNORE 1 LINES
 
 It worked but the table was auto incrementing incorrectly so i cleared the table and it doest work now. kms
 i FOUND THE ERROR IT WAS IN THE LAST LINE OF THE LOADFROM FILE BUT I FIXED IT AND NOW EVERYTHING LOOKS FINE.
+
+26 May
+Today I am attempting to clean and add the ICD-11 to the database.
+So by using the Block ID and seperating the based on that I seem to have constructed the paths correctly
+
+I am just worried some entries may be missing IE there is no 6A11? it seems to skip 6A1_ but has 6A0_ and 6A2_
+Apparently there are gaps in the ICD-11 Tho
+
+Now imma try add these to the database
