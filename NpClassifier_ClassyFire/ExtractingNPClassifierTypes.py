@@ -170,5 +170,33 @@ fkclassDF['superclass_id'] = fkclassDF['superclass'].map(
 )
 """
 
-# trying to remove duplicates and then assigning FK is difficult attempting to do it all in one go 
+# coming back about a month later I have no idea what was going on above so we are retrying with a bit more experience
+# what I see is the pathwaysDB csv is good but the superclasses and classes are not
 
+df = pd.read_csv("/home/school/masters/Scripts/NpClassifier_ClassyFire/cleaned_listOfAllNPClassifierClasses.csv")
+pathwaysDF = pd.read_csv('/home/school/masters/Scripts/NpClassifier_ClassyFire/NpClassifierPathwaysDB.csv')
+
+
+
+pathwaysDict = dict(zip(pathwaysDF['pathway'], pathwaysDF['pathway_id']))
+
+pathway_supeclass_df = df[['pathway', 'superclass']]
+pathway_supeclass_df = pathway_supeclass_df.drop_duplicates(['pathway', 'superclass'])
+print(pathway_supeclass_df)
+
+print("Rows after drop_duplicates:", len(pathway_supeclass_df))
+
+print("Unique pathways:", pathway_supeclass_df['pathway'].nunique())
+print("Unique superclasses:", pathway_supeclass_df['superclass'].nunique())
+
+# Check if pathways are repeated with different superclasses
+print(
+    pathway_supeclass_df
+    .groupby('pathway')['superclass']
+    .nunique()
+    .sort_values(ascending=False)
+    .head(10)
+)
+pathway_supeclass_df['pathway_id'] = pathway_supeclass_df['pathway'].map(pathwaysDict).astype("Int64")
+
+print(pathway_supeclass_df)

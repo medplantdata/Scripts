@@ -162,6 +162,7 @@ CREATE TABLE plants (
         ON DELETE RESTRICT
 );
 
+#########################################################dROPPED THIS TRIGGER
 
          DELIMITER $$
 this misbehave and has been REMOVED
@@ -227,3 +228,58 @@ SET wand_id = CONCAT('d', disease_id)
 WHERE wand_id IS NULL OR wand_id = '';
 
 As far as I can tell all is good and the diseases are all added to the DB.
+
+27 May
+
+I so previously the NP classifier pathways superclasses and classes have been organized into db friendly fromat I have
+now sent them to the /wand_data/ and will later add to the DB
+
+only issue is according to the paper: "NPClassifier classifies the structure of an NP at three levels into seven Pathways, 
+70 Superclasses, and 672 Classes" I have 7 pathways 75 superclasses and 651 classes. I am hoping when I start mapping 
+compounds that this will be an easier thing to solve.
+
+ADDING TO wandDB
+
+CREATE TABLE npclassifier_pathway (
+pathway_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+pathway VARCHAR(40) NOT NULL,
+PRIMARY KEY (pathway_id));
+
+CREATE TABLE npclassifier_superclass (
+superclass_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+superclass TEXT NOT NULL,
+pathway_id INT UNSIGNED NOT NULL,
+PRIMARY KEY (superclass_id),
+CONSTRAINT fk_superclass_pathway
+FOREIGN KEY (pathway_id)
+REFERENCES npclassifier_pathway(pathway_id)
+ON UPDATE CASCADE
+ON DELETE RESTRICT);
+
+CREATE TABLE npclassifier_class (
+class_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+class TEXT NOT NULL,
+superclass_id INT UNSIGNED NOT NULL,
+PRIMARY KEY (class_id),
+CONSTRAINT fk_class_superclass
+FOREIGN KEY (superclass_id)
+REFERENCES npclassifier_superclass(superclass_id)
+ON UPDATE CASCADE
+ON DELETE RESTRICT);
+
+I created all the tables but  now I see there is an issue with the supeclass cs it has the class entries so imma fix that next
+it looks like the pathway csv is correct tho
+
+Oaky so something strange about the superclasses there are supposed to be 70 and I have 75 unique classes. When I deduplicate
+on pathway and class there are 91 entries which makes it seem like the same class can belong to different pathways
+Unique pathways: 7
+Unique superclasses: 75
+pathway
+Shikimates and\nPhenylpropanoids    18
+Polyketides                         16
+Terpenoids                          16
+Alkaloids                           15
+Amino acids and Peptides            11
+Fatty acids                         11
+Carbohydrates                        4
+= 91 
