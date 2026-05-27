@@ -245,27 +245,28 @@ pathway_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 pathway VARCHAR(40) NOT NULL,
 PRIMARY KEY (pathway_id));
 
-CREATE TABLE npclassifier_superclass (
-superclass_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-superclass TEXT NOT NULL,
-pathway_id INT UNSIGNED NOT NULL,
-PRIMARY KEY (superclass_id),
-CONSTRAINT fk_superclass_pathway
-FOREIGN KEY (pathway_id)
-REFERENCES npclassifier_pathway(pathway_id)
-ON UPDATE CASCADE
-ON DELETE RESTRICT);
-
-CREATE TABLE npclassifier_class (
-class_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-class TEXT NOT NULL,
-superclass_id INT UNSIGNED NOT NULL,
-PRIMARY KEY (class_id),
-CONSTRAINT fk_class_superclass
-FOREIGN KEY (superclass_id)
-REFERENCES npclassifier_superclass(superclass_id)
-ON UPDATE CASCADE
-ON DELETE RESTRICT);
+the below was used but had to be removed as the approach changed please see below
+                                    CREATE TABLE npclassifier_superclass (
+                                    superclass_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+                                    superclass TEXT NOT NULL,
+                                    pathway_id INT UNSIGNED NOT NULL,
+                                    PRIMARY KEY (superclass_id),
+                                    CONSTRAINT fk_superclass_pathway
+                                    FOREIGN KEY (pathway_id)
+                                    REFERENCES npclassifier_pathway(pathway_id)
+                                    ON UPDATE CASCADE
+                                    ON DELETE RESTRICT);
+                                    
+                                    CREATE TABLE npclassifier_class (
+                                    class_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+                                    class TEXT NOT NULL,
+                                    superclass_id INT UNSIGNED NOT NULL,
+                                    PRIMARY KEY (class_id),
+                                    CONSTRAINT fk_class_superclass
+                                    FOREIGN KEY (superclass_id)
+                                    REFERENCES npclassifier_superclass(superclass_id)
+                                    ON UPDATE CASCADE
+                                    ON DELETE RESTRICT);
 
 I created all the tables but  now I see there is an issue with the supeclass cs it has the class entries so imma fix that next
 it looks like the pathway csv is correct tho
@@ -283,3 +284,75 @@ Amino acids and Peptides            11
 Fatty acids                         11
 Carbohydrates                        4
 = 91 
+
+so it seems like this is normal and certain subclasses can belong to multiple pathways. In light of this it is Probably
+best to change the layout of the DB. I think it would be best to drop the adjacency list idea and create junction tables
+to assign these things to each other.
+
+ADDING JUNCTION AND DB CSVS TO THE DB
+
+CREATE TABLE npclassifier_superclass (
+superclass_id INT UNSIGNED NOT NULL,
+superclass TEXT NOT NULL,
+PRIMARY KEY (superclass_id));
+
+CREATE TABLE npclassifier_class (
+class_id INT UNSIGNED NOT NULL,
+class TEXT NOT NULL,
+PRIMARY KEY (class_id));
+
+CREATE TABLE junction_pathway_subclass (
+pathway_id  INT UNSIGNED NOT NULL,
+superclass_id INT UNSIGNED NOT NULL,
+PRIMARY KEY (pathway_id, superclass_id),
+FOREIGN KEY (pathway_id) REFERENCES npclassifier_pathway(pathway_id),
+FOREIGN KEY (superclass_id) REFERENCES npclassifier_superclass(superclass_id));
+
+CREATE TABLE junction_superclass_class (
+superclass_id  INT UNSIGNED NOT NULL,
+class_id INT UNSIGNED NOT NULL,
+PRIMARY KEY (superclass_id, class_id),
+FOREIGN KEY (superclass_id) REFERENCES npclassifier_superclass(superclass_id),
+FOREIGN KEY (class_id) REFERENCES npclassifier_class(class_id));
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/NpClassifierPathwaysDB.csv'
+INTO TABLE npclassifier_pathway
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(pathway_id,pathway);
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/NpClassifierSuperclassesDB.csv'
+INTO TABLE npclassifier_superclass
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(superclass_id,superclass);
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/NpClassifierClassesDB.csv'
+INTO TABLE npclassifier_class
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(class_id,class);
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/NpClassifierPathwaySuperclassJunctionDB.csv'
+INTO TABLE junction_pathway_subclass
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(pathway_id,superclass_id);
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/NpClassifierSuperclassClassJunctionDB.csv'
+INTO TABLE junction_superclass_class
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(superclass_id,class_id);
+
+looks like everything is added correctly

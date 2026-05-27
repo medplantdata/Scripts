@@ -1,696 +1,654 @@
-class_id,class,superclass_id
-1,Stemona alkaloids,1
-2,Acutumine alkaloids,2
-3,Betalain alkaloids,2
-4,Cephalotaxus alkaloids,2
-5,Hapalindole alkaloids,5
-6,Pyrroloindole alkaloids,5
-7,Phenoxazine alkaloids,7
-8,Saxitoxins,8
-9,Tetrodotoxins,8
-10,Acyclic guanidine alkaloids,8
-11,Bicyclic guanidine alkaloids,8
-12,Monocyclic guanidine alkaloids,8
-13,Cytochalasan alkaloids,13
-14,Capsaicins and Capsaicinoids,13
-15,Isariotin alkaloids,13
-16,"Indole diketopiperazine alkaloids (L-Trp, L-Pro)",16
-17,"Indole diketopiperazine alkaloids (L-Trp, L-Trp)",16
-18,Other indole diketopiperazine alkaloids,16
-19,Pyrrocidine tetramate alkaloids,19
-20,Cyclopiazonic acid-tpye tetramate alkaloids,19
-21,Simple tetramate alkaloids,19
-22,Mitomycins,22
-23,Prodigiosins,23
-24,Carbazole alkaloids,5
-25,Ansa peptide alkaloids,16
-26,Indole-Diterpenoid alkaloids (Penitrems),5
-27,Morphinan alkaloids,2
-28,Pentacyclic guanidine alkaloids,8
-29,Hasubanan alkaloids,2
-30,Ergot alkaloids,5
-31,Carboline alkaloids,5
-32,Iboga type,5
-33,Tropane alkaloids,1
-34,Steroidal alkaloids,13
-35,Acridone alkaloids,7
-36,Corynanthe type,5
-37,Protoberberine alkaloids,2
-38,Quinolizidine alkaloids,38
-39,Phenethylisoquinoline alkaloids,2
-40,Pyrroloquinoline alkaloids,5
-41,Thiazole alkaloids,41
-42,Purine alkaloids,13
-43,Isoquinoline alkaloids,2
-44,Polyamines,1
-45,Strychnos type,5
-46,Phenylalanine-derived alkaloids,13
-47,Miscellaneous alkaloids,47
-48,Terpenoid alkaloids,13
-49,Anthranillic acid derivatives,7
-50,Pyrrolizidine alkaloids,1
-51,Protopine alkaloids,2
-52,Aporphine alkaloids,2
-53,pteridine alkaloids,13
-54,Phenazine alkaloids,7
-55,Phenylethylamines,2
-56,Simple oxindole alkaloids,5
-57,Aspidosperma-Iboga hybrid type (Vinca alkaloids),5
-58,Isoindole alkaloids,13
-59,"Indole diketopiperazine alkaloids (L-Trp, L-Ala)",16
-60,Amarylidaceae alkaloids,2
-61,Quinazoline alkaloids,7
-62,Thiodiketopiperazine alkaloids,16
-63,Simple diketopiperazine alkaloids,16
-64,Yohimbine-like alkaloids,5
-65,Pyridine alkaloids,65
-66,Azo and Azoxy alkaloids,13
-67,Piperidine alkaloids,38
-68,Terpenoid tetrahydroisoquinoline alkaloids,2
-69,Homoerythrina alkaloids,2
-70,Quinoline alkaloids,5
-71,Quinoline alkaloids,7
-72,Imidazole alkaloids,72
-73,Pyrazine and Piperazine alkaloids,16
-74,Pyrazine and Piperazine alkaloids,19
-75,Simple amide alkaloids,16
-76,Tetrahydroisoquinoline alkaloids,2
-77,Oxazole alkaloids,2
-78,Pyrrolidine alkaloids,1
-79,Pyrrole alkaloids,23
-80,Indolizidine alkaloids,38
-81,Tricyclic guanidine alkaloids,8
-82,Simple indole alkaloids,5
-83,Acetate-derived alkaloids,13
-84,Rhizoxins,84
-85,Macrolide lactams,84
-86,Lactam bearing macrolide lactones,84
-87,Antimycins,84
-88,Macrocyclic tetramic acids,84
-89,Elfamycins,89
-90,DKXanthenes and derivatives,89
-91,3-Spirotetramic acids,91
-92,"Indole diketopiperazine alkaloids (L-Trp, L-Pro)",16
-93,"Indole diketopiperazine alkaloids (L-Trp, L-Trp)",16
-94,Other indole diketopiperazine alkaloids,16
-95,Pyrrocidine tetramate alkaloids,19
-96,Cyclopiazonic acid-type tetramate alkaloids,19
-97,Mycosporine and Mycosporine-like amino acids,97
-98,Aeruginosins,98
-99,Microginins,98
-100,Anabaenopeptins,98
-101,Microcystins,98
-102,Microcolins and mirabimides,98
-103,Tantazoles and mirabazoles,98
-104,Vancomycins and Teicoplanins,98
-105,Streptogramins,98
-106,Actinomycins,98
-107,Penicillins,107
-108,Cephalosporins,107
-109,Cephamycins,107
-110,Clavams,107
-111,Carbapenems,107
-112,Monocyclic β-lactams,107
-113,RiPPs-Amatoxins and Phallotoxins,98
-114,RiPPs-Bottromycins,98
-115,RiPPs-Lasso peptides,98
-116,RiPPs-Microcins,98
-117,Ansa peptide alkaloids,16
-118,Cyclic peptides,98
-119,RiPPs-Thiopeptides,98
-120,Depsipeptides,98
-121,Glucosinolates,121
-122,Lipopeptides,98
-123,RiPPs-Lanthipeptides,98
-124,3-Decalinoyltetramic acids,91
-125,Linear peptides,98
-126,Cinnamic acid amides,126
-127,Bleomycins,98
-128,Cryptophycins,98
-129,Peptaibols,98
-130,Dipeptides,130
-131,Aminoacids,130
-132,Melithiazole and Myxothiazole derivatives,89
-133,3-acyl tetramic acids,89
-134,"Indole diketopiperazine alkaloids (L-Trp, L-Ala)",16
-135,Thiodiketopiperazine alkaloids,16
-136,Simple diketopiperazine alkaloids,16
-137,Tripeptides,130
-138,Cyanogenic glycosides,121
-139,Pyrazine and Piperazine alkaloids,16
-140,RiPPs-Cyanobactins,98
-141,Cyclitols,141
-142,Purine nucleos(t)ides,142
-143,Pyrimidine nucleos(t)ides,142
-144,Disaccharides,144
-145,Orthosomycins,144
-146,Monosaccharides,144
-147,Aminoglycosides,147
-148,Amino cyclitols,141
-149,Aminosugars,147
-150,Paulomycins and derivatives,144
-151,Polysaccharides,144
-152,Methoxy fatty acids,152
-153,Nitro fatty acids,152
-154,Mycolic acids,152
-155,12-oxophytodienoic acid metabolites,155
-156,Phytoprostanes,155
-157,Phytofurans,155
-158,Leukotrienes,158
-159,Thromboxanes,158
-160,Lipoxins,158
-161,Hydroxy-hydroperoxyeicosatrienoic acids,158
-162,Epoxyeicosatrienoic acids,158
-163,Hepoxilins,158
-164,Levuglandins,158
-165,Isofurans,158
-166,"Eicosa-1,2-dioxolanes",158
-167,Resolvin Es,158
-168,Clavulones,158
-169,Neuroprostanes,169
-170,"Docosa-1,2-dioxolanes",169
-171,Resolvin Ds,169
-172,Fatty acyl CoAs,172
-173,Fatty acyl carnitines,172
-174,Fatty acyl homoserine lactones,174
-175,Fatty ethers,175
-176,Sophorolipids,176
-177,Rhamnolipids,176
-178,Monoacylglycerols,178
-179,Glycosylmonoacylglycerols,178
-180,Glycerophosphocholines,180
-181,Glycerophosphoserines,180
-182,Glycerophosphoglycerophosphates,180
-183,Glycerophosphoinositols,180
-184,Glycerophosphoinositol phosphates,180
-185,Glycerophosphates,180
-186,Glycerophosphoglycerophosphoglycerols,180
-187,CDP-Glycerols,180
-188,Glycosylglycerophospholipids,180
-189,Glycerophosphoinositolglycans,180
-190,Oxidized glycerophospholipids,180
-191,Long-Chain Bicyclic Phosphotriester,180
-192,Acidic glycosphingolipids,192
-193,Resin glycosides,175
-194,Paraconic acids and derivatives,175
-195,Halogenated hydrocarbons,175
-196,Triacylglycerols,178
-197,Glycerophosphoethanolamines,180
-198,Glycerophosphoglycerols,180
-199,Phosphosphingolipids,192
-200,Ceramides,192
-201,Diacylglycerols,178
-202,Ascarosides,176
-203,Neutral glycosphingolipids,192
-204,Fatty acid estolides,172
-205,Fatty aldehydes,175
-206,Branched fatty acids,152
-207,Isoprostanes,158
-208,Wax monoesters,172
-209,Glycosyldiacylglycerols,178
-210,Hydroperoxy fatty acids,152
-211,Heterocyclic fatty acids,152
-212,Oxygenated hydrocarbons,175
-213,N-acyl ethanolamines (endocannabinoids),174
-214,Unsaturated fatty acids,152
-215,Epoxy fatty acids,152
-216,Carbocyclic fatty acids,152
-217,N-acyl amines,174
-218,Prostaglandins,158
-219,Amino fatty acids,152
-220,Oxo fatty acids,152
-221,Oxo fatty acids,152
-222,Dicarboxylic acids,152
-223,Jasmonic acids,155
-224,Hydroxy-hydroperoxyeicosatetraenoic acids,158
-225,Hydroxy-hydroperoxyeicosapentaenoic acids,158
-226,Cyano esters,172
-227,Sphingoid bases,192
-228,Lactones,172
-229,Other Octadecanoids,155
-230,Other Docosanoids,169
-231,Fatty acyl glycosides of mono- and disaccharides,176
-232,Hydroxy fatty acids,152
-233,Hydroxy fatty acids,152
-234,Other Eicosanoids,158
-235,Primary amides,174
-236,Fatty nitriles,175
-237,Wax diesters,172
-238,Tylosins,84
-239,Avermectins,84
-240,Ascomycins and Rapamycins,84
-241,Ascomycins and Rapamycins,84
-242,Epothilones,84
-243,Rhizoxins,84
-244,Oligomycins,84
-245,Bafilomycins,84
-246,Macrolide lactams,84
-247,Lactam bearing macrolide lactones,84
-248,Enediynes,84
-249,Bryostatins,84
-250,Antimycins,84
-251,Oxa-Bridged Macrolides,84
-252,Macrocyclic tetramic acids,84
-253,Linear tetronates,89
-254,Elfamycins,89
-255,3-oligoenoyltetramic acids,89
-256,Linear polyenes,89
-257,DKXanthenes and derivatives,89
-258,Cytosporins,258
-259,Decalins with 2-pyrones,91
-260,3-Spirotetramic acids,91
-261,Nonadrides,91
-262,Monoalkylresorcinols,262
-263,Dialkylresorcinols,262
-264,Aflatoxins,258
-265,Griseofulvins,265
-266,Catechols with side chains,265
-267,Aromatic polyketides with side chains,265
-268,Simple aromatic polyketides,265
-269,Luminacins and derivatives,265
-270,Cannabinoids,270
-271,Pradimicins,271
-272,Fasamycins and derivatives,271
-273,Benastatins and derivatives,271
-274,Phloroglucinol-terpene hybrids,274
-275,"Prenylated,geranylated phloroglucinols",274
-276,Spirodioxynaphthalenes,276
-277,Macrotetrolides,277
-278,Tropolones and derivatives (PKS),278
-279,Fungal DPEs,279
-280,Triketide meroterpenoids,270
-281,Other polyketide meroterpenoids,270
-282,Phoslactomycins or Phosphazomycins,89
-283,Naphthalenones,276
-284,Ericamycins,271
-285,Benzophenones,265
-286,Boromycins,84
-287,Aplysiatoxins,84
-288,Duclauxin and derivatives,271
-289,Ansa macrolides,84
-290,"Polyprenylated cyclic polyketides (Hop
-meroterpenoids)",270
-291,Erythromycins,84
-292,Depsides,265
-293,Acetogenins,89
-294,Depsidones,265
-295,Tetracyclines,271
-296,Acyl phloroglucinols,274
-297,Oligomeric phloroglucinols (phlorotannins),274
-298,Spirotetronate macrolides,84
-299,Sorbicilinoids,265
-300,Anthracyclines,271
-301,Depsipeptides,98
-302,2-pyrone derivatives,91
-303,Usnic acid and derivatives,265
-304,3-Decalinoyltetramic acids,91
-305,4-pyrone derivatives,91
-306,Ladder polyethers,277
-307,Fungal cyclic polyketides (Miscellaneous),91
-308,Polyene macrolides,84
-309,Polyether ionophores,277
-310,Azaphilones,258
-311,Melithiazole and Myxothiazole derivatives,89
-312,Angucyclines,271
-313,Strobilurins and derivatives,265
-314,Benzoquinones,265
-315,Methyl xanthones,315
-316,3-acyl tetramic acids,89
-317,Tetraketide meroterpenoids,270
-318,Open-chain polyketides,89
-319,Phthalide derivatives,91
-320,Dimeric phloroglucinols,274
-321,Monacolins and Monacolin derivatives,91
-322,Macrolide lactones,84
-323,Chromones,258
-324,Bisnaphthalenes,276
-325,Decalins with side chains,91
-326,Naphthoquinones,276
-327,Zearalenones,84
-328,Oblogolides,91
-329,Furans,91
-330,Naphthalenes and derivatives,276
-331,Simple cyclic polyketides,91
-332,Miscellaneous polyketides,332
-333,Bagremycins,333
-334,Cinnamoyl phenols,126
-335,Mycosporine and Mycosporine-like amino acids,97
-336,Dibenzylbutyrolactone lignans,336
-337,Furofuranoid lignans,336
-338,Dibenzocyclooctadienes lignans,336
-339,Coumarinolignans,336
-340,Coumarinolignans,340
-341,Biaryl type diarylheptanoids,341
-342,Selaginellins,342
-343,Flavans,343
-344,Aurones,343
-345,Isoaurones,343
-346,Flavonostilbenes,343
-347,Flavonostilbenes,347
-348,Stilbenolignans,347
-349,Stilbenolignans,336
-350,Coumaronochromones,350
-351,Phenanthrenes,351
-352,Flavonols,343
-353,Flavones,343
-354,Flavan-3-ols,343
-355,Kavalactones and derivatives,355
-356,Chalcones,343
-357,Furanoid lignans,336
-358,Diarylether type diarylheptanoids,341
-359,Anthocyanidins,343
-360,Dihydroflavonols,343
-361,Plant xanthones,315
-362,Furocoumarins,340
-363,Linear diarylheptanoids,341
-364,Proanthocyanins,343
-365,Flavanones,343
-366,Oligomeric stibenes,347
-367,Isoflavones,350
-368,Coumestan,350
-369,Rotenoids,350
-370,Cinnamic acids and derivatives,126
-371,m-Terphenyls,371
-372,Gallotannins,333
-373,Phenylethanoids,373
-374,Isocoumarins,340
-375,Pterocarpan,350
-376,Neoflavonoids,343
-377,p-Terphenyls,371
-378,Pulvinones,378
-379,Pyranocoumarins,340
-380,Aminoacids,130
-381,Simple coumarins,340
-382,Isoflavanones,350
-383,2-arylbenzofurans,350
-384,Tropolones and derivatives (Shikimate),278
-385,Arylnaphthalene and aryltetralin lignans,336
-386,Monomeric stilbenes,347
-387,Flavonolignans,343
-388,Flavonolignans,336
-389,Flavandiols (Leucoanthocyanidins),343
-390,Dibenzylbutane lignans,336
-391,Simple phenolic acids,333
-392,Shikimic acids and derivatives,333
-393,Minor lignans,336
-394,Platensimycin and Platencins,394
-395,Cannabinoids,270
-396,Phloroglucinol-terpene hybrids,274
-397,Oxasqualenoids,277
-398,Alliacane sesquiterpenoids,398
-399,Allohimachalane sesquiterpenoids,398
-400,Bicyclogermacrane sesquiterpenoids,398
-401,Bicyclohumulane sesquiterpenoids,398
-402,Chiloscyphane sesquiterpenoids,398
-403,Coloratane sesquiterpenoids,398
-404,Cyclobisabolane sesquiterpenoids,398
-405,Cyclonerane sesquiterpenoids,398
-406,Elemane sesquiterpenoids,398
-407,Herbertane sesquiterpenoids,398
-408,Iphionane sesquiterpenoids,398
-409,Isocomane sesquiterpenoids,398
-410,Ivaxillarane sesquiterpenoids,398
-411,Longipinane sesquiterpenoids,398
-412,Marasmane sesquiterpenoids,398
-413,Noreremophilane sesquiterpenoids,398
-414,Oplopane sesquiterpenoids,398
-415,Pinguisane sesquiterpenoids,398
-416,Quadrane sesquiterpenoids,398
-417,Rotundane sesquiterpenoids,398
-418,Santalane sesquiterpenoids,398
-419,Sativane sesquiterpenoids,398
-420,Silphinane sesquiterpenoids,398
-421,Silphiperfolane sesquiterpenoids,398
-422,Sinularane sesquiterpenoids,398
-423,Spiroaxane sesquiterpenoids,398
-424,Sterpurane sesquiterpenoids,398
-425,Arteminisin,398
-426,Hamigerane sesquiterpenoids,398
-427,Prenylbisabolane diterpenoids,394
-428,Dactylomelane diterpenoids,394
-429,Cycloabietane diterpenoids,394
-430,Parguerane diterpenoids,394
-431,Devadarane diterpenoids,394
-432,Villanovane diterpenoids,394
-433,Aphidicolane diterpenoids,394
-434,Gibberellins,394
-435,Norcembrane diterpenoids,394
-436,Asbestinane diterpenoids,394
-437,Sphaerane diterpenoids,394
-438,Dolastane diterpenoids,394
-439,Verrucosane diterpenoids,394
-440,Casbane diterpenoids,394
-441,Segetane diterpenoids,394
-442,Pepluane diterpenoids,394
-443,Paraliane diterpenoids,394
-444,Lathyrane diterpenoids,394
-445,Premyrsinane diterpenoids,394
-446,Myrsinane diterpenoids,394
-447,Tigliane diterpenoids,394
-448,Jatropholane diterpenoids,394
-449,Abeotaxane diterpenoids,394
-450,Trinervitane diterpenoids,394
-451,Kempane diterpenoids,394
-452,Amphilectane diterpenoids,394
-453,Eremane diterpenoids,394
-454,Lobane diterpenoids,394
-455,Decipiane diterpenoids,394
-456,Sacculatane diterpenoids,394
-457,Obtusane diterpenoids,394
-458,Breviane diterpenoids,394
-459,Cyclopiane diterpenoids,394
-460,Asperane sesterterpenoids,460
-461,Cericerane sesterterpenoids,460
-462,Ophiobolane sesterterpenoids,460
-463,Betaestacin-type sesterterpenoids,460
-464,Mangicol-type sesterterpenoids,460
-465,Baccharane triterpenoids,465
-466,Shionane triterpenoids,465
-467,Pachysanane triterpenoids,465
-468,Bauerane triterpenoids,465
-469,Adianane triterpenoids,465
-470,Filicane triterpenoids,465
-471,Malabaricane triterpenoids,465
-472,Saponaceolide triterpenoids,465
-473,Bufadienolides,473
-474,"Carotenoids (C40, β-Ψ)",474
-475,"Carotenoids (C40, ε-Ψ)",474
-476,"Carotenoids (C40, π-Ψ)",474
-477,"Carotenoids (C40, Χ-Ψ)",474
-478,"Carotenoids (C40, γ-ε)",474
-479,"Carotenoids (C40, β-π)",474
-480,"Carotenoids (C40, β-Χ)",474
-481,"Carotenoids (C40, β-κ)",474
-482,"Carotenoids (C40, κ-Χ)",474
-483,"Carotenoids (C40, π-π)",474
-484,"Carotenoids (C40, π-Χ)",474
-485,"Carotenoids (C45, β-Ψ)",485
-486,"Carotenoids (C45, ε-Ψ)",485
-487,"Carotenoids (C50, β-β)",487
-488,"Carotenoids (C50, ε-ε)",487
-489,"Carotenoids (C50, γ-γ)",487
-490,"Apocarotenoids (C30, Ψ-Ψ)",490
-491,Bactoprenols,491
-492,Dolichols,491
-493,Polyprenol derivatives,491
-494,Other polyketide meroterpenoids,270
-495,Merosesquiterpenoids,270
-496,Meroterpenoids with 5- or 6-membered ring,270
-497,Meroterpenoids with bridged ring,270
-498,Platensimycin and Platencins,394
-499,Merohemiterpenoids,270
-500,Agarofuran sesquiterpenoids,398
-501,"Polyprenylated cyclic polyketides (Hop
-meroterpenoids)",270
-502,Vitamin D3 and derivatives,473
-503,Limonoids,465
-504,Lupane triterpenoids,465
-505,Ursane and Taraxastane triterpenoids,465
-506,Cardenolides,473
-507,Briarane diterpenoids,394
-508,Grayanotoxane diterpenoids,394
-509,Oleanane triterpenoids,465
-510,Lactarane sesquiterpenoids,398
-511,Indole-Diterpenoid alkaloids (Penitrems),5
-512,Prenyl quinone meroterpenoids,270
-513,Mulinane diterpenoids,394
-514,Norsesterterpenoids,460
-515,"Carotenoids (C40, β-β)",474
-516,Laurane sesquiterpenoids,398
-517,Dammarane and Protostane triterpenoids,465
-518,Cedrane and Isocedrane sesquiterpenoids,398
-519,Monocarbocyclic sesterterpenoids,460
-520,"Carotenoids (C40, Ψ-Ψ)",474
-521,Cembrane diterpenoids,394
-522,Cyclofarnesane sesquiterpenoids,398
-523,Spriromeroterpenoids,270
-524,Trichothecane sesquiterpenoids,398
-525,Steroidal alkaloids,13
-526,Quassinoids,465
-527,Cycloartane triterpenoids,465
-528,Multiflorane triterpenoids,465
-529,Serratane triterpenoids,465
-530,Kaurane and Phyllocladane diterpenoids,394
-531,Chamigrane sesquiterpenoids,398
-532,Nagilactone diterpenoids,394
-533,Africanane sesquiterpenoids,398
-534,Asteriscane sesquiterpenoids,398
-535,Guanacastane diterpenoids,394
-536,Pachydictyane diterpenoids,394
-537,Linear sesterterpenoids,460
-538,Ecdysteroids,473
-539,Vitamin D2 and derivatives,473
-540,Cucurbitane triterpenoids,465
-541,Taxane diterpenoids,394
-542,Oppositane sesquiterpenoids,398
-543,Furanoabietane diterpenoids,394
-544,Tetracyclic diterpenoids,394
-545,Furostane steroids,473
-546,Germacrane sesquiterpenoids,398
-547,Gymnomitrane sesquiterpenoids,398
-548,"Presilphiperfolane and Probotryane
-sesquiterpenoids",398
-549,Pseudopterane diterpenoids,394
-550,Xenicane diterpenoids,394
-551,Serrulatane and Biflorane diterpenoids,394
-552,Abeolupane triterpenoids,465
-553,Acyclic triterpenoids,465
-554,"Carotenoids (C40, β-ε)",474
-555,Dolabellane diterpenoids,394
-556,Apotirucallane triterpenoids,465
-557,Pregnane steroids,473
-558,Tremulane sesquiterpenoids,398
-559,Pentalenane sesquiterpenoids,398
-560,Totarane diterpenoids,394
-561,Onocerane triterpenoids,465
-562,Polypodane triterpenoids,465
-563,"Carotenoids (C50, Ψ-Ψ)",487
-564,Thujane monoterpenoids,564
-565,Erythroxylane diterpenoids,394
-566,Xeniaphyllane diterpenoids,394
-567,Terpenoid alkaloids,13
-568,Hopane and Moretane triterpenoids,465
-569,Iridoids monoterpenoids,564
-570,Androstane steroids,473
-571,Cholestane steroids,473
-572,Carane monoterpenoids,564
-573,Picrotoxane sesquiterpenoids,398
-574,Thujopsane sesquiterpenoids,398
-575,Valerenane sesquiterpenoids,398
-576,Halimane diterpenoids,394
-577,Rhamnofolane diterpenoids,394
-578,Cholane steroids,473
-579,Spirovetivane sesquiterpenoids,398
-580,Apocarotenoids(ε-),490
-581,Colensane and Clerodane diterpenoids,394
-582,Himachalane sesquiterpenoids,398
-583,Nardosinane sesquiterpenoids,398
-584,Fusicoccane diterpenoids,394
-585,Cheilanthane sesterterpenoids,460
-586,Fusidane triterpenoids,465
-587,Guaiane sesquiterpenoids,398
-588,Pseudoguaiane sesquiterpenoids,398
-589,Cassane diterpenoids,394
-590,Tetraketide meroterpenoids,270
-591,Eremophilane sesquiterpenoids,398
-592,Eunicellane diterpenoids,394
-593,Scalarane sesterterpenoids,460
-594,Caryolane sesquiterpenoids,398
-595,Illudalane sesquiterpenoids,398
-596,Viscidane diterpenoids,394
-597,Ergostane steroids,473
-598,Patchoulane sesquiterpenoids,398
-599,Norkaurane diterpenoids,394
-600,Beyerane diterpenoids,394
-601,Fernane and Arborinane triterpenoids,465
-602,Jatrophane diterpenoids,394
-603,Bergamotane sesquiterpenoids,398
-604,Illudane sesquiterpenoids,398
-605,Glutinane triterpenoids,465
-606,Aromadendrane sesquiterpenoids,398
-607,Ingenane diterpenoids,394
-608,Labdane diterpenoids,394
-609,Secolabdane diterpenoids,394
-610,Spirostane steroids,473
-611,Stigmastane steroids,473
-612,Menthane monoterpenoids,564
-613,Irregular monoterpenoids,564
-614,Capnellane sesquiterpenoids,398
-615,Carabrane sesquiterpenoids,398
-616,Clovane sesquiterpenoids,398
-617,Abietane diterpenoids,394
-618,Spongiane diterpenoids,394
-619,Trachylobane diterpenoids,394
-620,Cyathane diterpenoids,394
-621,Prenyleudesmane diterpenoids,394
-622,Neohopane triterpenoids,465
-623,Monocyclic monoterpenoids,564
-624,Secoiridoid monoterpenoids,564
-625,"Lanostane, Tirucallane and Euphane triterpenoids",465
-626,Brasilane sesquiterpenoids,398
-627,Pinane monoterpenoids,564
-628,Verticillane diterpenoids,394
-629,Atisane diterpenoids,394
-630,Cuparane sesquiterpenoids,398
-631,Eudesmane sesquiterpenoids,398
-632,Zizaane sesquiterpenoids,398
-633,Sphenolobane diterpenoids,394
-634,Meromonoterpenoids,270
-635,Daucane sesquiterpenoids,398
-636,Secokaurane diterpenoids,394
-637,Apocarotenoids (β-),490
-638,Cycloeudesmane sesquiterpenoids,398
-639,Estrane steroids,473
-640,Botryane sesquiterpenoids,398
-641,Humulane sesquiterpenoids,398
-642,Podocarpane diterpenoids,394
-643,Campherenane sesquiterpenoids,398
-644,Copacamphane sesquiterpenoids,398
-645,Dunniane sesquiterpenoids,398
-646,Gorgonane sesquiterpenoids,398
-647,Ishwarane sesquiterpenoids,398
-648,Isolactarane sesquiterpenoids,398
-649,Pimarane and Isopimarane diterpenoids,394
-650,Friedelane triterpenoids,465
-651,Stictane triterpenoids,465
-652,Cadinane sesquiterpenoids,398
-653,Noreudesmane sesquiterpenoids,398
-654,Cleistanthane diterpenoids,394
-655,Copaane sesquiterpenoids,398
-656,Secoeudesmane sesquiterpenoids,398
-657,Acorane sesquiterpenoids,398
-658,Cubebane sesquiterpenoids,398
-659,Cyclolaurane sesquiterpenoids,398
-660,Humbertiane sesquiterpenoids,398
-661,Isodaucane sesquiterpenoids,398
-662,Icetexane diterpenoids,394
-663,Gammacerane triterpenoids,465
-664,Megastigmanes,490
-665,Phytane diterpenoids,394
-666,Miscellaneous apocarotenoids,490
-667,Secoabietane diterpenoids,394
-668,Caryophyllane sesquiterpenoids,398
-669,Homofarnesane sesquiterpenoids,398
-670,Longibornane sesquiterpenoids,398
-671,Pacifigorgiane sesquiterpenoids,398
-672,Valerane sesquiterpenoids,398
-673,Abeoabietane diterpenoids,394
-674,Sphaeroane diterpenoids,394
-675,"Carotenoids (C40, β-γ)",474
-676,"Carotenoids (C40, ε-ε)",474
-677,Drimane sesquiterpenoids,398
-678,Camphane monoterpenoids,564
-679,Longifolane sesquiterpenoids,398
-680,Farnesane sesquiterpenoids,398
-681,Fenchane monoterpenoids,564
-682,Prezizaane sesquiterpenoids,398
-683,Protoilludane sesquiterpenoids,398
-684,Valparane diterpenoids,394
-685,Norpimarane and Norisopimarane diterpenoids,394
-686,Hirsutane sesquiterpenoids,398
-687,Norlabdane diterpenoids,394
-688,Bourbonane sesquiterpenoids,398
-689,Thapsane sesquiterpenoids,398
-690,Cyclophytane diterpenoids,394
-691,Secogermacrane sesquiterpenoids,398
-692,Cycloamphilectane diterpenoids,394
+class_id,class
+1,Stemona alkaloids
+2,Acutumine alkaloids
+3,Betalain alkaloids
+4,Cephalotaxus alkaloids
+5,Hapalindole alkaloids
+6,Pyrroloindole alkaloids
+7,Phenoxazine alkaloids
+8,Saxitoxins
+9,Tetrodotoxins
+10,Acyclic guanidine alkaloids
+11,Bicyclic guanidine alkaloids
+12,Monocyclic guanidine alkaloids
+13,Cytochalasan alkaloids
+14,Capsaicins and Capsaicinoids
+15,Isariotin alkaloids
+16,"Indole diketopiperazine alkaloids (L-Trp, L-Pro)"
+17,"Indole diketopiperazine alkaloids (L-Trp, L-Trp)"
+18,Other indole diketopiperazine alkaloids
+19,Pyrrocidine tetramate alkaloids
+20,Cyclopiazonic acid-tpye tetramate alkaloids
+21,Simple tetramate alkaloids
+22,Mitomycins
+23,Prodigiosins
+24,Carbazole alkaloids
+25,Ansa peptide alkaloids
+26,Indole-Diterpenoid alkaloids (Penitrems)
+27,Morphinan alkaloids
+28,Pentacyclic guanidine alkaloids
+29,Hasubanan alkaloids
+30,Ergot alkaloids
+31,Carboline alkaloids
+32,Iboga type
+33,Tropane alkaloids
+34,Steroidal alkaloids
+35,Acridone alkaloids
+36,Corynanthe type
+37,Protoberberine alkaloids
+38,Quinolizidine alkaloids
+39,Phenethylisoquinoline alkaloids
+40,Pyrroloquinoline alkaloids
+41,Thiazole alkaloids
+42,Purine alkaloids
+43,Isoquinoline alkaloids
+44,Polyamines
+45,Strychnos type
+46,Phenylalanine-derived alkaloids
+47,Miscellaneous alkaloids
+48,Terpenoid alkaloids
+49,Anthranillic acid derivatives
+50,Pyrrolizidine alkaloids
+51,Protopine alkaloids
+52,Aporphine alkaloids
+53,pteridine alkaloids
+54,Phenazine alkaloids
+55,Phenylethylamines
+56,Simple oxindole alkaloids
+57,Aspidosperma-Iboga hybrid type (Vinca alkaloids)
+58,Isoindole alkaloids
+59,"Indole diketopiperazine alkaloids (L-Trp, L-Ala)"
+60,Amarylidaceae alkaloids
+61,Quinazoline alkaloids
+62,Thiodiketopiperazine alkaloids
+63,Simple diketopiperazine alkaloids
+64,Yohimbine-like alkaloids
+65,Pyridine alkaloids
+66,Azo and Azoxy alkaloids
+67,Piperidine alkaloids
+68,Terpenoid tetrahydroisoquinoline alkaloids
+69,Homoerythrina alkaloids
+70,Quinoline alkaloids
+71,Imidazole alkaloids
+72,Pyrazine and Piperazine alkaloids
+73,Simple amide alkaloids
+74,Tetrahydroisoquinoline alkaloids
+75,Oxazole alkaloids
+76,Pyrrolidine alkaloids
+77,Pyrrole alkaloids
+78,Indolizidine alkaloids
+79,Tricyclic guanidine alkaloids
+80,Simple indole alkaloids
+81,Acetate-derived alkaloids
+82,Rhizoxins
+83,Macrolide lactams
+84,Lactam bearing macrolide lactones
+85,Antimycins
+86,Macrocyclic tetramic acids
+87,Elfamycins
+88,DKXanthenes and derivatives
+89,3-Spirotetramic acids
+90,Cyclopiazonic acid-type tetramate alkaloids
+91,Mycosporine and Mycosporine-like amino acids
+92,Aeruginosins
+93,Microginins
+94,Anabaenopeptins
+95,Microcystins
+96,Microcolins and mirabimides
+97,Tantazoles and mirabazoles
+98,Vancomycins and Teicoplanins
+99,Streptogramins
+100,Actinomycins
+101,Penicillins
+102,Cephalosporins
+103,Cephamycins
+104,Clavams
+105,Carbapenems
+106,Monocyclic β-lactams
+107,RiPPs-Amatoxins and Phallotoxins
+108,RiPPs-Bottromycins
+109,RiPPs-Lasso peptides
+110,RiPPs-Microcins
+111,Cyclic peptides
+112,RiPPs-Thiopeptides
+113,Depsipeptides
+114,Glucosinolates
+115,Lipopeptides
+116,RiPPs-Lanthipeptides
+117,3-Decalinoyltetramic acids
+118,Linear peptides
+119,Cinnamic acid amides
+120,Bleomycins
+121,Cryptophycins
+122,Peptaibols
+123,Dipeptides
+124,Aminoacids
+125,Melithiazole and Myxothiazole derivatives
+126,3-acyl tetramic acids
+127,Tripeptides
+128,Cyanogenic glycosides
+129,RiPPs-Cyanobactins
+130,Cyclitols
+131,Purine nucleos(t)ides
+132,Pyrimidine nucleos(t)ides
+133,Disaccharides
+134,Orthosomycins
+135,Monosaccharides
+136,Aminoglycosides
+137,Amino cyclitols
+138,Aminosugars
+139,Paulomycins and derivatives
+140,Polysaccharides
+141,Methoxy fatty acids
+142,Nitro fatty acids
+143,Mycolic acids
+144,12-oxophytodienoic acid metabolites
+145,Phytoprostanes
+146,Phytofurans
+147,Leukotrienes
+148,Thromboxanes
+149,Lipoxins
+150,Hydroxy-hydroperoxyeicosatrienoic acids
+151,Epoxyeicosatrienoic acids
+152,Hepoxilins
+153,Levuglandins
+154,Isofurans
+155,"Eicosa-1,2-dioxolanes"
+156,Resolvin Es
+157,Clavulones
+158,Neuroprostanes
+159,"Docosa-1,2-dioxolanes"
+160,Resolvin Ds
+161,Fatty acyl CoAs
+162,Fatty acyl carnitines
+163,Fatty acyl homoserine lactones
+164,Fatty ethers
+165,Sophorolipids
+166,Rhamnolipids
+167,Monoacylglycerols
+168,Glycosylmonoacylglycerols
+169,Glycerophosphocholines
+170,Glycerophosphoserines
+171,Glycerophosphoglycerophosphates
+172,Glycerophosphoinositols
+173,Glycerophosphoinositol phosphates
+174,Glycerophosphates
+175,Glycerophosphoglycerophosphoglycerols
+176,CDP-Glycerols
+177,Glycosylglycerophospholipids
+178,Glycerophosphoinositolglycans
+179,Oxidized glycerophospholipids
+180,Long-Chain Bicyclic Phosphotriester
+181,Acidic glycosphingolipids
+182,Resin glycosides
+183,Paraconic acids and derivatives
+184,Halogenated hydrocarbons
+185,Triacylglycerols
+186,Glycerophosphoethanolamines
+187,Glycerophosphoglycerols
+188,Phosphosphingolipids
+189,Ceramides
+190,Diacylglycerols
+191,Ascarosides
+192,Neutral glycosphingolipids
+193,Fatty acid estolides
+194,Fatty aldehydes
+195,Branched fatty acids
+196,Isoprostanes
+197,Wax monoesters
+198,Glycosyldiacylglycerols
+199,Hydroperoxy fatty acids
+200,Heterocyclic fatty acids
+201,Oxygenated hydrocarbons
+202,N-acyl ethanolamines (endocannabinoids)
+203,Unsaturated fatty acids
+204,Epoxy fatty acids
+205,Carbocyclic fatty acids
+206,N-acyl amines
+207,Prostaglandins
+208,Amino fatty acids
+209,Oxo fatty acids
+210,Dicarboxylic acids
+211,Jasmonic acids
+212,Hydroxy-hydroperoxyeicosatetraenoic acids
+213,Hydroxy-hydroperoxyeicosapentaenoic acids
+214,Cyano esters
+215,Sphingoid bases
+216,Lactones
+217,Other Octadecanoids
+218,Other Docosanoids
+219,Fatty acyl glycosides of mono- and disaccharides
+220,Hydroxy fatty acids
+221,Other Eicosanoids
+222,Primary amides
+223,Fatty nitriles
+224,Wax diesters
+225,Tylosins
+226,Avermectins
+227,Ascomycins and Rapamycins
+228,Epothilones
+229,Oligomycins
+230,Bafilomycins
+231,Enediynes
+232,Bryostatins
+233,Oxa-Bridged Macrolides
+234,Linear tetronates
+235,3-oligoenoyltetramic acids
+236,Linear polyenes
+237,Cytosporins
+238,Decalins with 2-pyrones
+239,Nonadrides
+240,Monoalkylresorcinols
+241,Dialkylresorcinols
+242,Aflatoxins
+243,Griseofulvins
+244,Catechols with side chains
+245,Aromatic polyketides with side chains
+246,Simple aromatic polyketides
+247,Luminacins and derivatives
+248,Cannabinoids
+249,Pradimicins
+250,Fasamycins and derivatives
+251,Benastatins and derivatives
+252,Phloroglucinol-terpene hybrids
+253,"Prenylated,geranylated phloroglucinols"
+254,Spirodioxynaphthalenes
+255,Macrotetrolides
+256,Tropolones and derivatives (PKS)
+257,Fungal DPEs
+258,Triketide meroterpenoids
+259,Other polyketide meroterpenoids
+260,Phoslactomycins or Phosphazomycins
+261,Naphthalenones
+262,Ericamycins
+263,Benzophenones
+264,Boromycins
+265,Aplysiatoxins
+266,Duclauxin and derivatives
+267,Ansa macrolides
+268,"Polyprenylated cyclic polyketides (Hop
+meroterpenoids)"
+269,Erythromycins
+270,Depsides
+271,Acetogenins
+272,Depsidones
+273,Tetracyclines
+274,Acyl phloroglucinols
+275,Oligomeric phloroglucinols (phlorotannins)
+276,Spirotetronate macrolides
+277,Sorbicilinoids
+278,Anthracyclines
+279,2-pyrone derivatives
+280,Usnic acid and derivatives
+281,4-pyrone derivatives
+282,Ladder polyethers
+283,Fungal cyclic polyketides (Miscellaneous)
+284,Polyene macrolides
+285,Polyether ionophores
+286,Azaphilones
+287,Angucyclines
+288,Strobilurins and derivatives
+289,Benzoquinones
+290,Methyl xanthones
+291,Tetraketide meroterpenoids
+292,Open-chain polyketides
+293,Phthalide derivatives
+294,Dimeric phloroglucinols
+295,Monacolins and Monacolin derivatives
+296,Macrolide lactones
+297,Chromones
+298,Bisnaphthalenes
+299,Decalins with side chains
+300,Naphthoquinones
+301,Zearalenones
+302,Oblogolides
+303,Furans
+304,Naphthalenes and derivatives
+305,Simple cyclic polyketides
+306,Miscellaneous polyketides
+307,Bagremycins
+308,Cinnamoyl phenols
+309,Dibenzylbutyrolactone lignans
+310,Furofuranoid lignans
+311,Dibenzocyclooctadienes lignans
+312,Coumarinolignans
+313,Biaryl type diarylheptanoids
+314,Selaginellins
+315,Flavans
+316,Aurones
+317,Isoaurones
+318,Flavonostilbenes
+319,Stilbenolignans
+320,Coumaronochromones
+321,Phenanthrenes
+322,Flavonols
+323,Flavones
+324,Flavan-3-ols
+325,Kavalactones and derivatives
+326,Chalcones
+327,Furanoid lignans
+328,Diarylether type diarylheptanoids
+329,Anthocyanidins
+330,Dihydroflavonols
+331,Plant xanthones
+332,Furocoumarins
+333,Linear diarylheptanoids
+334,Proanthocyanins
+335,Flavanones
+336,Oligomeric stibenes
+337,Isoflavones
+338,Coumestan
+339,Rotenoids
+340,Cinnamic acids and derivatives
+341,m-Terphenyls
+342,Gallotannins
+343,Phenylethanoids
+344,Isocoumarins
+345,Pterocarpan
+346,Neoflavonoids
+347,p-Terphenyls
+348,Pulvinones
+349,Pyranocoumarins
+350,Simple coumarins
+351,Isoflavanones
+352,2-arylbenzofurans
+353,Tropolones and derivatives (Shikimate)
+354,Arylnaphthalene and aryltetralin lignans
+355,Monomeric stilbenes
+356,Flavonolignans
+357,Flavandiols (Leucoanthocyanidins)
+358,Dibenzylbutane lignans
+359,Simple phenolic acids
+360,Shikimic acids and derivatives
+361,Minor lignans
+362,Platensimycin and Platencins
+363,Oxasqualenoids
+364,Alliacane sesquiterpenoids
+365,Allohimachalane sesquiterpenoids
+366,Bicyclogermacrane sesquiterpenoids
+367,Bicyclohumulane sesquiterpenoids
+368,Chiloscyphane sesquiterpenoids
+369,Coloratane sesquiterpenoids
+370,Cyclobisabolane sesquiterpenoids
+371,Cyclonerane sesquiterpenoids
+372,Elemane sesquiterpenoids
+373,Herbertane sesquiterpenoids
+374,Iphionane sesquiterpenoids
+375,Isocomane sesquiterpenoids
+376,Ivaxillarane sesquiterpenoids
+377,Longipinane sesquiterpenoids
+378,Marasmane sesquiterpenoids
+379,Noreremophilane sesquiterpenoids
+380,Oplopane sesquiterpenoids
+381,Pinguisane sesquiterpenoids
+382,Quadrane sesquiterpenoids
+383,Rotundane sesquiterpenoids
+384,Santalane sesquiterpenoids
+385,Sativane sesquiterpenoids
+386,Silphinane sesquiterpenoids
+387,Silphiperfolane sesquiterpenoids
+388,Sinularane sesquiterpenoids
+389,Spiroaxane sesquiterpenoids
+390,Sterpurane sesquiterpenoids
+391,Arteminisin
+392,Hamigerane sesquiterpenoids
+393,Prenylbisabolane diterpenoids
+394,Dactylomelane diterpenoids
+395,Cycloabietane diterpenoids
+396,Parguerane diterpenoids
+397,Devadarane diterpenoids
+398,Villanovane diterpenoids
+399,Aphidicolane diterpenoids
+400,Gibberellins
+401,Norcembrane diterpenoids
+402,Asbestinane diterpenoids
+403,Sphaerane diterpenoids
+404,Dolastane diterpenoids
+405,Verrucosane diterpenoids
+406,Casbane diterpenoids
+407,Segetane diterpenoids
+408,Pepluane diterpenoids
+409,Paraliane diterpenoids
+410,Lathyrane diterpenoids
+411,Premyrsinane diterpenoids
+412,Myrsinane diterpenoids
+413,Tigliane diterpenoids
+414,Jatropholane diterpenoids
+415,Abeotaxane diterpenoids
+416,Trinervitane diterpenoids
+417,Kempane diterpenoids
+418,Amphilectane diterpenoids
+419,Eremane diterpenoids
+420,Lobane diterpenoids
+421,Decipiane diterpenoids
+422,Sacculatane diterpenoids
+423,Obtusane diterpenoids
+424,Breviane diterpenoids
+425,Cyclopiane diterpenoids
+426,Asperane sesterterpenoids
+427,Cericerane sesterterpenoids
+428,Ophiobolane sesterterpenoids
+429,Betaestacin-type sesterterpenoids
+430,Mangicol-type sesterterpenoids
+431,Baccharane triterpenoids
+432,Shionane triterpenoids
+433,Pachysanane triterpenoids
+434,Bauerane triterpenoids
+435,Adianane triterpenoids
+436,Filicane triterpenoids
+437,Malabaricane triterpenoids
+438,Saponaceolide triterpenoids
+439,Bufadienolides
+440,"Carotenoids (C40, β-Ψ)"
+441,"Carotenoids (C40, ε-Ψ)"
+442,"Carotenoids (C40, π-Ψ)"
+443,"Carotenoids (C40, Χ-Ψ)"
+444,"Carotenoids (C40, γ-ε)"
+445,"Carotenoids (C40, β-π)"
+446,"Carotenoids (C40, β-Χ)"
+447,"Carotenoids (C40, β-κ)"
+448,"Carotenoids (C40, κ-Χ)"
+449,"Carotenoids (C40, π-π)"
+450,"Carotenoids (C40, π-Χ)"
+451,"Carotenoids (C45, β-Ψ)"
+452,"Carotenoids (C45, ε-Ψ)"
+453,"Carotenoids (C50, β-β)"
+454,"Carotenoids (C50, ε-ε)"
+455,"Carotenoids (C50, γ-γ)"
+456,"Apocarotenoids (C30, Ψ-Ψ)"
+457,Bactoprenols
+458,Dolichols
+459,Polyprenol derivatives
+460,Merosesquiterpenoids
+461,Meroterpenoids with 5- or 6-membered ring
+462,Meroterpenoids with bridged ring
+463,Merohemiterpenoids
+464,Agarofuran sesquiterpenoids
+465,Vitamin D3 and derivatives
+466,Limonoids
+467,Lupane triterpenoids
+468,Ursane and Taraxastane triterpenoids
+469,Cardenolides
+470,Briarane diterpenoids
+471,Grayanotoxane diterpenoids
+472,Oleanane triterpenoids
+473,Lactarane sesquiterpenoids
+474,Prenyl quinone meroterpenoids
+475,Mulinane diterpenoids
+476,Norsesterterpenoids
+477,"Carotenoids (C40, β-β)"
+478,Laurane sesquiterpenoids
+479,Dammarane and Protostane triterpenoids
+480,Cedrane and Isocedrane sesquiterpenoids
+481,Monocarbocyclic sesterterpenoids
+482,"Carotenoids (C40, Ψ-Ψ)"
+483,Cembrane diterpenoids
+484,Cyclofarnesane sesquiterpenoids
+485,Spriromeroterpenoids
+486,Trichothecane sesquiterpenoids
+487,Quassinoids
+488,Cycloartane triterpenoids
+489,Multiflorane triterpenoids
+490,Serratane triterpenoids
+491,Kaurane and Phyllocladane diterpenoids
+492,Chamigrane sesquiterpenoids
+493,Nagilactone diterpenoids
+494,Africanane sesquiterpenoids
+495,Asteriscane sesquiterpenoids
+496,Guanacastane diterpenoids
+497,Pachydictyane diterpenoids
+498,Linear sesterterpenoids
+499,Ecdysteroids
+500,Vitamin D2 and derivatives
+501,Cucurbitane triterpenoids
+502,Taxane diterpenoids
+503,Oppositane sesquiterpenoids
+504,Furanoabietane diterpenoids
+505,Tetracyclic diterpenoids
+506,Furostane steroids
+507,Germacrane sesquiterpenoids
+508,Gymnomitrane sesquiterpenoids
+509,"Presilphiperfolane and Probotryane
+sesquiterpenoids"
+510,Pseudopterane diterpenoids
+511,Xenicane diterpenoids
+512,Serrulatane and Biflorane diterpenoids
+513,Abeolupane triterpenoids
+514,Acyclic triterpenoids
+515,"Carotenoids (C40, β-ε)"
+516,Dolabellane diterpenoids
+517,Apotirucallane triterpenoids
+518,Pregnane steroids
+519,Tremulane sesquiterpenoids
+520,Pentalenane sesquiterpenoids
+521,Totarane diterpenoids
+522,Onocerane triterpenoids
+523,Polypodane triterpenoids
+524,"Carotenoids (C50, Ψ-Ψ)"
+525,Thujane monoterpenoids
+526,Erythroxylane diterpenoids
+527,Xeniaphyllane diterpenoids
+528,Hopane and Moretane triterpenoids
+529,Iridoids monoterpenoids
+530,Androstane steroids
+531,Cholestane steroids
+532,Carane monoterpenoids
+533,Picrotoxane sesquiterpenoids
+534,Thujopsane sesquiterpenoids
+535,Valerenane sesquiterpenoids
+536,Halimane diterpenoids
+537,Rhamnofolane diterpenoids
+538,Cholane steroids
+539,Spirovetivane sesquiterpenoids
+540,Apocarotenoids(ε-)
+541,Colensane and Clerodane diterpenoids
+542,Himachalane sesquiterpenoids
+543,Nardosinane sesquiterpenoids
+544,Fusicoccane diterpenoids
+545,Cheilanthane sesterterpenoids
+546,Fusidane triterpenoids
+547,Guaiane sesquiterpenoids
+548,Pseudoguaiane sesquiterpenoids
+549,Cassane diterpenoids
+550,Eremophilane sesquiterpenoids
+551,Eunicellane diterpenoids
+552,Scalarane sesterterpenoids
+553,Caryolane sesquiterpenoids
+554,Illudalane sesquiterpenoids
+555,Viscidane diterpenoids
+556,Ergostane steroids
+557,Patchoulane sesquiterpenoids
+558,Norkaurane diterpenoids
+559,Beyerane diterpenoids
+560,Fernane and Arborinane triterpenoids
+561,Jatrophane diterpenoids
+562,Bergamotane sesquiterpenoids
+563,Illudane sesquiterpenoids
+564,Glutinane triterpenoids
+565,Aromadendrane sesquiterpenoids
+566,Ingenane diterpenoids
+567,Labdane diterpenoids
+568,Secolabdane diterpenoids
+569,Spirostane steroids
+570,Stigmastane steroids
+571,Menthane monoterpenoids
+572,Irregular monoterpenoids
+573,Capnellane sesquiterpenoids
+574,Carabrane sesquiterpenoids
+575,Clovane sesquiterpenoids
+576,Abietane diterpenoids
+577,Spongiane diterpenoids
+578,Trachylobane diterpenoids
+579,Cyathane diterpenoids
+580,Prenyleudesmane diterpenoids
+581,Neohopane triterpenoids
+582,Monocyclic monoterpenoids
+583,Secoiridoid monoterpenoids
+584,"Lanostane, Tirucallane and Euphane triterpenoids"
+585,Brasilane sesquiterpenoids
+586,Pinane monoterpenoids
+587,Verticillane diterpenoids
+588,Atisane diterpenoids
+589,Cuparane sesquiterpenoids
+590,Eudesmane sesquiterpenoids
+591,Zizaane sesquiterpenoids
+592,Sphenolobane diterpenoids
+593,Meromonoterpenoids
+594,Daucane sesquiterpenoids
+595,Secokaurane diterpenoids
+596,Apocarotenoids (β-)
+597,Cycloeudesmane sesquiterpenoids
+598,Estrane steroids
+599,Botryane sesquiterpenoids
+600,Humulane sesquiterpenoids
+601,Podocarpane diterpenoids
+602,Campherenane sesquiterpenoids
+603,Copacamphane sesquiterpenoids
+604,Dunniane sesquiterpenoids
+605,Gorgonane sesquiterpenoids
+606,Ishwarane sesquiterpenoids
+607,Isolactarane sesquiterpenoids
+608,Pimarane and Isopimarane diterpenoids
+609,Friedelane triterpenoids
+610,Stictane triterpenoids
+611,Cadinane sesquiterpenoids
+612,Noreudesmane sesquiterpenoids
+613,Cleistanthane diterpenoids
+614,Copaane sesquiterpenoids
+615,Secoeudesmane sesquiterpenoids
+616,Acorane sesquiterpenoids
+617,Cubebane sesquiterpenoids
+618,Cyclolaurane sesquiterpenoids
+619,Humbertiane sesquiterpenoids
+620,Isodaucane sesquiterpenoids
+621,Icetexane diterpenoids
+622,Gammacerane triterpenoids
+623,Megastigmanes
+624,Phytane diterpenoids
+625,Miscellaneous apocarotenoids
+626,Secoabietane diterpenoids
+627,Caryophyllane sesquiterpenoids
+628,Homofarnesane sesquiterpenoids
+629,Longibornane sesquiterpenoids
+630,Pacifigorgiane sesquiterpenoids
+631,Valerane sesquiterpenoids
+632,Abeoabietane diterpenoids
+633,Sphaeroane diterpenoids
+634,"Carotenoids (C40, β-γ)"
+635,"Carotenoids (C40, ε-ε)"
+636,Drimane sesquiterpenoids
+637,Camphane monoterpenoids
+638,Longifolane sesquiterpenoids
+639,Farnesane sesquiterpenoids
+640,Fenchane monoterpenoids
+641,Prezizaane sesquiterpenoids
+642,Protoilludane sesquiterpenoids
+643,Valparane diterpenoids
+644,Norpimarane and Norisopimarane diterpenoids
+645,Hirsutane sesquiterpenoids
+646,Norlabdane diterpenoids
+647,Bourbonane sesquiterpenoids
+648,Thapsane sesquiterpenoids
+649,Cyclophytane diterpenoids
+650,Secogermacrane sesquiterpenoids
+651,Cycloamphilectane diterpenoids

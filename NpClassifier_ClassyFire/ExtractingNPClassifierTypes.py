@@ -172,7 +172,8 @@ fkclassDF['superclass_id'] = fkclassDF['superclass'].map(
 
 # coming back about a month later I have no idea what was going on above so we are retrying with a bit more experience
 # what I see is the pathwaysDB csv is good but the superclasses and classes are not
-
+# So this approach below is not going to work due to the one to many relationship between pathways and superclasses
+"""
 df = pd.read_csv("/home/school/masters/Scripts/NpClassifier_ClassyFire/cleaned_listOfAllNPClassifierClasses.csv")
 pathwaysDF = pd.read_csv('/home/school/masters/Scripts/NpClassifier_ClassyFire/NpClassifierPathwaysDB.csv')
 
@@ -182,21 +183,92 @@ pathwaysDict = dict(zip(pathwaysDF['pathway'], pathwaysDF['pathway_id']))
 
 pathway_supeclass_df = df[['pathway', 'superclass']]
 pathway_supeclass_df = pathway_supeclass_df.drop_duplicates(['pathway', 'superclass'])
-print(pathway_supeclass_df)
 
-print("Rows after drop_duplicates:", len(pathway_supeclass_df))
+df_superclass = pathway_supeclass_df.drop_duplicates(subset=['superclass'])
 
-print("Unique pathways:", pathway_supeclass_df['pathway'].nunique())
-print("Unique superclasses:", pathway_supeclass_df['superclass'].nunique())
+count = 0
+entry = []
+pathway = []
+for superclass in df_superclass['superclass']:
+    count += 1
+    pathway = df_superclass.loc[df_superclass['superclass'] == superclass, 'pathway'].values
+    pathway_id = pathwaysDict[pathway]
+    entry.append((count, superclass, pathway_id))
 
-# Check if pathways are repeated with different superclasses
-print(
-    pathway_supeclass_df
-    .groupby('pathway')['superclass']
-    .nunique()
-    .sort_values(ascending=False)
-    .head(10)
+superclassDF = pd.DataFrame(entry, columns=['superclass_id', 'superclass', 'pathway_id'])
+superclassDF.to_csv('/home/school/masters/Scripts/NpClassifier_ClassyFire/NpClassifierSuperclassesDB.csv', index=False)
+"""
+
+# coding this to extract a unique list of superclasses and classes and the creating junction tables
+
+df = pd.read_csv("/home/school/masters/Scripts/NpClassifier_ClassyFire/cleaned_listOfAllNPClassifierClasses.csv")
+
+df_superclass = df[['superclass']].drop_duplicates().reset_index(drop=True).reset_index()
+df_superclass.columns = ['superclass_id', 'superclass']
+df_superclass['superclass_id'] += 1
+df_superclass.to_csv('/home/school/masters/Scripts/NpClassifier_ClassyFire/NpClassifierSuperclassesDB.csv', index=False)
+
+df_class = df[['class']].drop_duplicates().reset_index(drop=True).reset_index()
+df_class.columns = ['class_id', 'class']
+df_class['class_id'] += 1
+df_class.to_csv('/home/school/masters/Scripts/NpClassifier_ClassyFire/NpClassifierClassesDB.csv', index=False)
+
+# Unique (superclass, class) pairs from the raw df
+df_superclass_class = (
+    df[['superclass', 'class']]
+    .drop_duplicates()
+    .reset_index(drop=True)
 )
-pathway_supeclass_df['pathway_id'] = pathway_supeclass_df['pathway'].map(pathwaysDict).astype("Int64")
 
-print(pathway_supeclass_df)
+# Merge to attach superclass_id from df_superclass
+df_superclass_class = df_superclass_class.merge(
+    df_superclass[['superclass', 'superclass_id']],
+    on='superclass',
+    how='left'
+)
+
+# Merge to attach class_id from df_class
+df_superclass_class = df_superclass_class.merge(
+    df_class[['class', 'class_id']],
+    on='class',
+    how='left'
+)
+
+# Keep only the junction IDs
+df_superclass_class = df_superclass_class[['superclass_id', 'class_id']].drop_duplicates()
+
+# Save junction (many-to-many) table
+df_superclass_class.to_csv(
+    '/home/school/masters/Scripts/NpClassifier_ClassyFire/NpClassifierSuperclassClassJunctionDB.csv',
+    index=False
+)
+
+df_pathway = df[['pathway']].drop_duplicates().reset_index(drop=True).reset_index()
+df_pathway.columns = ['pathway_id', 'pathway']
+df_pathway['pathway_id'] += 1
+df_pathway.to_csv('/home/school/masters/Scripts/NpClassifier_ClassyFire/NpClassifierPathwaysDB.csv', index=False)
+
+df_pathway_superclass = (
+    df[['pathway', 'superclass']]
+    .drop_duplicates()
+    .reset_index(drop=True)
+)
+
+df_pathway_superclass = df_pathway_superclass.merge(
+    df_pathway[['pathway', 'pathway_id']],
+    on='pathway',
+    how='left'
+)
+
+df_pathway_superclass = df_pathway_superclass.merge(
+    df_superclass[['superclass', 'superclass_id']],
+    on='superclass',
+    how='left'
+)
+
+df_pathway_superclass = df_pathway_superclass[['pathway_id', 'superclass_id']].drop_duplicates()
+
+df_pathway_superclass.to_csv(
+    '/home/school/masters/Scripts/NpClassifier_ClassyFire/NpClassifierPathwaySuperclassJunctionDB.csv',
+    index=False
+)
