@@ -1,11 +1,12 @@
 TOC:
 5 May - 
-18 May - trying to add families using LOAD DATA, Checking if PDO is active and emailing johann, SANCDB plant scrape
+18 May -> trying to add families using LOAD DATA, Checking if PDO is active and emailing johann, SANCDB plant scrape
 19 May -> Adding families with LOAD DATA LOCAL, making new attempt at plant_results.php and assinging families to the species downloaded from SANCDB
 20 May -> doing paper review
 21 May -> Adding SANCDB species to the db and creating the db table.
-22 May  - Adding species to the db and creating the db table.
-26 May - Cleaning the ICD 11 properly and adding to the wanddb
+22 May -> Adding species to the db and creating the db table.
+26 May -> Cleaning the ICD 11 properly and adding to the wanddb
+27 May -> Cleaning the NP classifier data and adding it to the DB
 
 
 5 may
@@ -229,7 +230,7 @@ WHERE wand_id IS NULL OR wand_id = '';
 
 As far as I can tell all is good and the diseases are all added to the DB.
 
-27 May
+27 May - Cleaning the NP classifier data and adding it to the DB
 
 I so previously the NP classifier pathways superclasses and classes have been organized into db friendly fromat I have
 now sent them to the /wand_data/ and will later add to the DB
@@ -356,3 +357,22 @@ IGNORE 1 LINES
 (superclass_id,class_id);
 
 looks like everything is added correctly
+
+28 May - Downloading and adding the African Natural Products Collection from COCONUT
+
+Making sdf into csv to make my life easier. There are 5897 entries in the ANPDB database. The website is not specific but 
+it seems like it is not plants only so I'm gonna try remove that first using the gbif kingdom thingy I have used previously.
+
+so i ran the script and here are the errors it had:
+["Error for Tribulus terrestris: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))", "Error for Jacobaea adonidifolia: HTTPSConnectionPool(host='api.gbif.org', port=443): Max retries exceeded with url: /v1/species/match?name=Jacobaea+adonidifolia (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))", "Error for Garcinia kola: HTTPSConnectionPool(host='api.gbif.org', port=443): Max retries exceeded with url: /v1/species/match?name=Garcinia+kola (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))"]
+otherwise all seems sucessful and now I have a anpdb_plants.csv file with 5401 compound entries with hopefully only plants 
+inside.
+
+29 May
+
+
+
+
+
+
+CHECK THE ERROR MESSAGE FROM YESTERDAY YOU LAZY BASTARD!!!!!!!!!!!!!!!!!
