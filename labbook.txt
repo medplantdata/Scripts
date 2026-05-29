@@ -369,10 +369,18 @@ otherwise all seems sucessful and now I have a anpdb_plants.csv file with 5401 c
 inside.
 
 29 May
+ looks like all the things from the error were plants so im not stressed.
 
+ today I want to turn the plant names from the ANPDB compounds into gbif accepted names and assign gbif codes so that 
+ i can more easily just make a junction table which I may also do today. 
 
+ I should have just done that yesterday as well lowkey
 
+ So I ran this script starting at about maybe 9 am or so. It is mow 22:14. There are apparently a lot of entries and from the looks of things the COCONUT ANPDB
+ already uses a GBIF or equivalent standardised database because it seems like all of the entries return NA for the accepted usage key which is what happens
+ when the name corresponds to the accepted name. The script has run to about 27 150 entries at this point. so I am going to cancel. 
+ 
+ for future refernece I think the names are standardised so I think comparing to plants in the db already is a good idea. The gbif also have some sort of 
+ feature apparently where you can submit a list of names and get a result back which may be a better way of doing this. My sketchy progress bar code says that I am 
+ only 11 % done. cancelling to come back with a better approach in future.
 
-
-
-CHECK THE ERROR MESSAGE FROM YESTERDAY YOU LAZY BASTARD!!!!!!!!!!!!!!!!!
