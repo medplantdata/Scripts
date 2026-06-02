@@ -7,6 +7,7 @@ TOC:
 22 May -> Adding species to the db and creating the db table.
 26 May -> Cleaning the ICD 11 properly and adding to the wanddb
 27 May -> Cleaning the NP classifier data and adding it to the DB
+2 June -> proposal and fixing the obsidain canvas for the db trying to figure out the long run on the ANPDB issue
 
 
 5 may
@@ -384,7 +385,18 @@ inside.
  feature apparently where you can submit a list of names and get a result back which may be a better way of doing this. My sketchy progress bar code says that I am 
  only 11 % done. cancelling to come back with a better approach in future.
 
-2 June - proposal and fixing the obsidain canvas for the db
+2 June - proposal and fixing the obsidain canvas for the db trying to figure out the long run on the ANPDB issue
 Proposal isn't great but it feels like it is getting long so I am going to just tidy from now. Basically at first draft state with the hypothesis now added.
 
 made sure the obsiadian canvas was inline with my actual DB
+
+Total organisms to process: 229916
+Total unique organisms to process: 34369
+
+maybe the key is to query everything that is unique insead to build a dictionary. The Names may already be standardised too which makes this all a waste but
+i guess I still have to check.
+
+I will query with the unique and then make it so that it stores each chemical with its organisms double checks the kingdom
+to get rid of non-plants
+
+I think I wrote a decent script but I'm going home so I may check it at home and then just run it overnight
