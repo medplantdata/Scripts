@@ -384,3 +384,7 @@ inside.
  feature apparently where you can submit a list of names and get a result back which may be a better way of doing this. My sketchy progress bar code says that I am 
  only 11 % done. cancelling to come back with a better approach in future.
 
+2 June - proposal and fixing the obsidain canvas for the db
+Proposal isn't great but it feels like it is getting long so I am going to just tidy from now. Basically at first draft state with the hypothesis now added.
+
+made sure the obsiadian canvas was inline with my actual DB
