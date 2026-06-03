@@ -404,4 +404,34 @@ I think I wrote a decent script but I'm going home so I may check it at home and
 3 June - 
 Ran the script overnight. All seems well except that the number of plants and the number of non-plants from the csv's 
 dont add up to the total unique organisms from the ANPDB. I will have to check to see what is missing because it doesn't
-look like there was any output from the error. 
+look like there was any output from the error. The total should be 34369 but the plants are 27983 and the non plants are
+6296 (34279) so there are 90 missing
+
+
+Gonna see which entries now are missing with code:
+Total missing organisms: 90
+Missing organisms: Mentha canadensis, Rumex dentatus, Litogyne gariepina, Aristolochia clematitis, Chrozophora sabulosa, Euphrasia regelii, Helichrysum amorginum, Taraxacum alpinum (Hoppe) Hegetschw., Teucrium montanum, Peritassa laevigata, Chrysopogon zizanioides, Pelargonium odoratissimum, Mentha arvensis L., Senna sophera, Ibacus peronii, Centaurea marschalliana, Potamogeton perfoliatus, Gossypium hirsutum, Neopallasia pectinata, Centaurea hierapolitana, Achillea holosericea, Eugenia sp., Penicillium scabrosum, Penicillium restrictum, Santalum Album, Dendroviguiera adenophylla, Trichoderma vinosum, Boehmeria platanifolia, Baccharis varians, Tarchonanthus camphoratus, Chlamydomonas parkeae, Alluaudia humbertii, Khaya senegalensis L., Litsea pulchella, Cascabela thevetia, Datura Innoxia, Conospermum stoechadis, Teucrium scorodonia, Aplysina cauliformis, Mallotus pallidus, Pauridiantha callicarpoides, Isoplexis isabelliana, Phaseolus Vulgaris, Passiflora alata, Oenothera biennis, Acacia caven, Cynanchum formosanum, Lobelia fistulosa, Aspalathus linearis, Conandron ramondioides, Cissus quinquefolia, Haliotis diversicolor, Wisteriopsis reticulata, Vicia balansae, Centaurea rhaetica, Dracocephalum multicaule, Crossostephium chinense, Tagetes minuta, Cinchona cuprea, Erythrina coralloides, Echinacea, Daphne oleoides ssp.oleoides, Elaeagnus glabra, Morinda Citrifolia, Iris carthaliniae, Wedelia bishoplecta, Hypericum reflexum, Pimpinella anisum, Hymenoclea salsola, Laurencia implicata, Boopis graminea, Cestrum diurnum, Chondracanthus spinosus, Blumenbachia insignis, Bougainvillea spectabilis, Nasturtium sp., Psiadia arabica, Salacia longipes, Vismia pentagyna, Viburnum buddleifolium, Eucalyptus decorticans, Senecio glutinosus, Herreania sp., Pseudaegle trifoliata, Vitis rotundifolia, Plantago albicans, Acmella ciliata, Mucuna pruriens, Juniperus virginiana, Daphne mezereum
+
+awe so the script matches up imma try query gbif with these and see what happens:
+Awe I'm not sure whats cutting here
+Processed: Datura Innoxia - GBIF ID: NA - Accepted GBIF ID: NA - Accepted Name: NA - Kingdom: NA
+Processed: Pauridiantha callicarpoides - GBIF ID: 2915419 - Accepted GBIF ID: NA - Accepted Name: Pauridiantha callicarpoides (Hiern) Bremek. - Kingdom: Plantae
+
+thie above is an example like the datura innoxia seems to be a legit thing like it has a wiki but all the things are missing?
+Then the one underneath is like fine? why was it not added first time
+
+ran it again and it seems that sometime it doesnt connect proper to the server:
+Error for Viburnum buddleifolium: HTTPSConnectionPool(host='api.gbif.org', port=443): Max retries exceeded with url: /v1/species/match?name=Viburnum+buddleifolium (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+
+Gonna add what I can to the anpdb_plants.csv and pull out all the weird ones to see why they dont shmaak:
+the ones that dont shmaak:
+        original_name gbif_id gbif_accepted_id gbif_accepted_name kingdom
+0  Phaseolus Vulgaris      NA               NA                 NA      NA
+1      Datura Innoxia      NA               NA                 NA      NA
+2         Eugenia sp.      NA               NA                 NA      NA
+3      Santalum Album      NA               NA                 NA      NA
+4  Morinda Citrifolia      NA               NA                 NA      NA
+5       Herreania sp.      NA               NA                 NA      NA
+
+
+I also realised that the way the script was written I dunno where the NA for kingdom ended up

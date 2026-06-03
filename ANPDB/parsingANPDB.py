@@ -130,7 +130,7 @@ print(f"Total unique organisms to process: {len(orgSet)}")"""
 #creating a unique list with the name that gets the accepted name the family and the kingdom so i can make it plants only
 # and map it to db later
 
-df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
 organisms = df['organisms'].str.split('|').explode().str.strip().unique()
 
 URL = "https://api.gbif.org/v1/species/match"
@@ -173,4 +173,107 @@ df_plants = pd.DataFrame(entry, columns=['original_name', 'gbif_id', 'gbif_accep
 df_plants.to_csv('/home/school/masters/Scripts/ANPDB/unique_plants_with_correct_Names.csv', index=False)
 df_nonplants = pd.DataFrame(nonplants, columns=['non_plant_organisms'])
 df_nonplants.to_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv', index=False)
-print(error)
+print(error)"""
+
+# The total number of organisms is more than the plant and non plant organisms so this code is to try see what was missing
+
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
+organisms = df['organisms'].str.split('|').explode().str.strip().unique()
+df_plants = pd.read_csv('/home/school/masters/Scripts/ANPDB/unique_plants_with_correct_Names.csv')
+df_nonplants = pd.read_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv')
+
+missing_organisms = set(organisms) - set(df_plants['original_name']) - set(df_nonplants['non_plant_organisms'])
+print(f"Total missing organisms: {len(missing_organisms)}")
+print(f"Missing organisms: {', '.join(missing_organisms)}")
+for organism in missing_organisms:
+    print(organism)"""
+
+
+# querying the GBIF to see what was wrong with these organisms
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
+organisms = df['organisms'].str.split('|').explode().str.strip().unique()
+df_plants = pd.read_csv('/home/school/masters/Scripts/ANPDB/unique_plants_with_correct_Names.csv')
+df_nonplants = pd.read_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv')
+
+missing_organisms = set(organisms) - set(df_plants['original_name']) - set(df_nonplants['non_plant_organisms'])
+
+newMissing_organisms = []
+URL = "https://api.gbif.org/v1/species/match"
+for organism in missing_organisms:
+    params = {"name": organism}
+    try:
+        time.sleep(0.1)
+        r = requests.get(URL, params=params, timeout=10)
+        r.raise_for_status()
+        data = r.json()
+        gbif_accepted_name = data.get("scientificName", "NA")
+        gbif_accepted_usagekey = data.get("acceptedUsageKey", "NA")
+        gbif_usagekey = data.get("usageKey", "NA")
+        kingdom = data.get("kingdom", "NA")
+        print(f"Processed: {organism} - GBIF ID: {gbif_usagekey} - Accepted GBIF ID: {gbif_accepted_usagekey} - Accepted Name: {gbif_accepted_name} - Kingdom: {kingdom}")
+        newMissing_organisms.append((organism, gbif_usagekey, gbif_accepted_usagekey, gbif_accepted_name, kingdom))
+    except requests.exceptions.RequestException as e:
+        print(f"Error for {organism}: {e}")
+
+df_missing = pd.DataFrame(newMissing_organisms, columns=['original_name', 'gbif_id', 'gbif_accepted_id', 'gbif_accepted_name', 'kingdom'])
+print(df_missing.shape)"""
+
+
+
+# adding the missing organisms to the plants and non plants csvs and pulling out the weird ones
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
+organisms = df['organisms'].str.split('|').explode().str.strip().unique()
+df_plants = pd.read_csv('/home/school/masters/Scripts/ANPDB/unique_plants_with_correct_Names.csv')
+df_nonplants = pd.read_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv')
+
+missing_organisms = set(organisms) - set(df_plants['original_name']) - set(df_nonplants['non_plant_organisms'])
+
+new_plants = []
+new_nonplants = []
+nowhere = []
+
+URL = "https://api.gbif.org/v1/species/match"
+for organism in missing_organisms:
+    params = {"name": organism}
+    try:
+        time.sleep(0.1)
+        r = requests.get(URL, params=params, timeout=10)
+        r.raise_for_status()
+        data = r.json()
+        gbif_accepted_name = data.get("scientificName", "NA")
+        gbif_accepted_usagekey = data.get("acceptedUsageKey", "NA")
+        gbif_usagekey = data.get("usageKey", "NA")
+        kingdom = data.get("kingdom", "NA")
+        print(f"Processed: {organism} - GBIF ID: {gbif_usagekey} - Accepted GBIF ID: {gbif_accepted_usagekey} - Accepted Name: {gbif_accepted_name} - Kingdom: {kingdom}")
+        if kingdom == "Plantae":
+            new_plants.append((organism, gbif_usagekey, gbif_accepted_usagekey, gbif_accepted_name, kingdom))
+        elif kingdom == "NA":
+            nowhere.append((organism, gbif_usagekey, gbif_accepted_usagekey, gbif_accepted_name, kingdom))
+        else:
+            new_nonplants.append((organism, gbif_usagekey, gbif_accepted_usagekey, gbif_accepted_name, kingdom))
+    except requests.exceptions.RequestException as e:
+        print(f"Error for {organism}: {e}")
+
+df_new_plants = pd.DataFrame(new_plants, columns=['original_name', 'gbif_id', 'gbif_accepted_id', 'gbif_accepted_name', 'kingdom'])
+df_new_nonplants = pd.DataFrame(new_nonplants, columns=['original_name', 'gbif_id', 'gbif_accepted_id', 'gbif_accepted_name', 'kingdom'])
+df_nowhere = pd.DataFrame(nowhere, columns=['original_name', 'gbif_id', 'gbif_accepted_id', 'gbif_accepted_name', 'kingdom'])
+
+df_plants = pd.concat([df_plants, df_new_plants], ignore_index=True)
+df_nonplants = pd.concat([df_nonplants, df_new_nonplants], ignore_index=True)
+
+df_plants.to_csv('/home/school/masters/Scripts/ANPDB/unique_plants_with_correct_Names.csv', index=False)
+df_nonplants.to_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv', index=False)
+df_nowhere.to_csv('/home/school/masters/Scripts/ANPDB/nowhere_organisms.csv', index=False)
+print(df_nowhere)"""
+
+# previous run had 2 errors rechecking the left out 
+
+df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
+organisms = df['organisms'].str.split('|').explode().str.strip().unique()
+df_plants = pd.read_csv('/home/school/masters/Scripts/ANPDB/unique_plants_with_correct_Names.csv')
+df_nonplants = pd.read_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv')
+
+missing_organisms = set(organisms) - set(df_plants['original_name']) - set(df_nonplants['non_plant_organisms'])
+
+print(f"Total missing organisms: {len(missing_organisms)}")
+print(f"Missing organisms: {', '.join(missing_organisms)}")
