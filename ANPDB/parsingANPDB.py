@@ -221,7 +221,7 @@ print(df_missing.shape)"""
 
 
 # adding the missing organisms to the plants and non plants csvs and pulling out the weird ones
-"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
+df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
 organisms = df['organisms'].str.split('|').explode().str.strip().unique()
 df_plants = pd.read_csv('/home/school/masters/Scripts/ANPDB/unique_plants_with_correct_Names.csv')
 df_nonplants = pd.read_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv')
@@ -264,11 +264,11 @@ df_nonplants = pd.concat([df_nonplants, df_new_nonplants], ignore_index=True)
 df_plants.to_csv('/home/school/masters/Scripts/ANPDB/unique_plants_with_correct_Names.csv', index=False)
 df_nonplants.to_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv', index=False)
 df_nowhere.to_csv('/home/school/masters/Scripts/ANPDB/nowhere_organisms.csv', index=False)
-print(df_nowhere)"""
+print(df_nowhere)
 
 # previous run had 2 errors rechecking the left out 
 
-df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
 organisms = df['organisms'].str.split('|').explode().str.strip().unique()
 df_plants = pd.read_csv('/home/school/masters/Scripts/ANPDB/unique_plants_with_correct_Names.csv')
 df_nonplants = pd.read_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv')
@@ -276,4 +276,4 @@ df_nonplants = pd.read_csv('/home/school/masters/Scripts/ANPDB/non_plant_organis
 missing_organisms = set(organisms) - set(df_plants['original_name']) - set(df_nonplants['non_plant_organisms'])
 
 print(f"Total missing organisms: {len(missing_organisms)}")
-print(f"Missing organisms: {', '.join(missing_organisms)}")
+print(f"Missing organisms: {', '.join(missing_organisms)}")"""
