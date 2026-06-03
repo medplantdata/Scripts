@@ -399,4 +399,9 @@ i guess I still have to check.
 I will query with the unique and then make it so that it stores each chemical with its organisms double checks the kingdom
 to get rid of non-plants
 
-I think I wrote a decent script but I'm going home so I may check it at home and then just run it overnight
+I think I wrote a decent script but I'm going home so I may check it at home and then just run it overnight.
+
+3 June - 
+Ran the script overnight. All seems well except that the number of plants and the number of non-plants from the csv's 
+dont add up to the total unique organisms from the ANPDB. I will have to check to see what is missing because it doesn't
+look like there was any output from the error. 

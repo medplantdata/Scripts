@@ -141,7 +141,7 @@ def progress_bar(count, total):
     filled_length = int(bar_length * count // total)
     bar = '█' * filled_length + '-' * (bar_length - filled_length)
     print(f'\rProgress: |{bar}| {count}/{total} ({(count/total)*100:.2f}%)', end='')
-
+nonplants = []
 count = 0
 error = []
 entry = []
@@ -164,11 +164,13 @@ for organism in organisms:
         else:
             print(f"{organism} is not a plant, skipping.")
             error.append(f"{organism} is not a plant, skipping.")
+            nonplants.append(organism)
     except requests.exceptions.RequestException as e:
         print(f"Error for {organism}: {e}")
         error.append(f"Error for {organism}: {e}")
 
 df_plants = pd.DataFrame(entry, columns=['original_name', 'gbif_id', 'gbif_accepted_id', 'gbif_accepted_name', 'kingdom'])
 df_plants.to_csv('/home/school/masters/Scripts/ANPDB/unique_plants_with_correct_Names.csv', index=False)
-        
+df_nonplants = pd.DataFrame(nonplants, columns=['non_plant_organisms'])
+df_nonplants.to_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv', index=False)
 print(error)
