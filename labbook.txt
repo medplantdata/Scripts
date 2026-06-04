@@ -434,4 +434,34 @@ the ones that dont shmaak:
 5       Herreania sp.      NA               NA                 NA      NA
 
 
-I also realised that the way the script was written I dunno where the NA for kingdom ended up
+I also realised that the way the script was written I dunno where the NA for kingdom ended up but hopefully I fixed that now
+
+So now after running the script a few times there are 28061 plant entries and 6326 non plants to a total of 34387 that is 
+17 missing and the script says 12 are missing
+
+Okay disregard above after some fiddling there are 28061 plants and 6302 non plants at 34363 meaning 6 are missing!!!!!!
+exactly the amount:
+Total missing organisms: 6
+Missing organisms: Santalum Album, Eugenia sp., Phaseolus Vulgaris, Morinda Citrifolia, Datura Innoxia, Herreania sp.
+
+so I will try query these ones manually I think the issue is the capitalisation?
+
+The issue was capitalsation and the fact that some organisms were labelled as sp. not spp.
+Im not sure what to do about the fact that some have no species name as the plants are coded in the database with a full 
+genus and species so I may store the spp or leave it out or request all the spp. for the genus???
+
+there are 6304 non plants and 28065 plants = 34369 so 0 missing !!!!! :)
+Total missing organisms: 0
+
+
+now to try code the data for the DB. First I'll try get rid of the non plants from the main thingy 
+
+looks like the anpdb_plants has only plant organisms now
+
+To code this for the DB I will need to Generate 3 things:
+1 - a table of compounds with organisms removed and ID column and pubchem ID column
+2 - a table of the plants with their family FK (figure out for spp. entries)
+3 - a junction table for plant to compound
+4 - a junction table to the np classifier
+5 - a junction table to the chemical classifier
+6 - a junction table for newman and cragg code

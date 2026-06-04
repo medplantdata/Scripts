@@ -221,7 +221,7 @@ print(df_missing.shape)"""
 
 
 # adding the missing organisms to the plants and non plants csvs and pulling out the weird ones
-df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
 organisms = df['organisms'].str.split('|').explode().str.strip().unique()
 df_plants = pd.read_csv('/home/school/masters/Scripts/ANPDB/unique_plants_with_correct_Names.csv')
 df_nonplants = pd.read_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv')
@@ -255,7 +255,7 @@ for organism in missing_organisms:
         print(f"Error for {organism}: {e}")
 
 df_new_plants = pd.DataFrame(new_plants, columns=['original_name', 'gbif_id', 'gbif_accepted_id', 'gbif_accepted_name', 'kingdom'])
-df_new_nonplants = pd.DataFrame(new_nonplants, columns=['original_name', 'gbif_id', 'gbif_accepted_id', 'gbif_accepted_name', 'kingdom'])
+df_new_nonplants = pd.DataFrame(new_nonplants, columns=['original_name')
 df_nowhere = pd.DataFrame(nowhere, columns=['original_name', 'gbif_id', 'gbif_accepted_id', 'gbif_accepted_name', 'kingdom'])
 
 df_plants = pd.concat([df_plants, df_new_plants], ignore_index=True)
@@ -264,11 +264,11 @@ df_nonplants = pd.concat([df_nonplants, df_new_nonplants], ignore_index=True)
 df_plants.to_csv('/home/school/masters/Scripts/ANPDB/unique_plants_with_correct_Names.csv', index=False)
 df_nonplants.to_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv', index=False)
 df_nowhere.to_csv('/home/school/masters/Scripts/ANPDB/nowhere_organisms.csv', index=False)
-print(df_nowhere)
+print(df_nowhere)"""
 
 # previous run had 2 errors rechecking the left out 
-
-"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
+"""
+df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
 organisms = df['organisms'].str.split('|').explode().str.strip().unique()
 df_plants = pd.read_csv('/home/school/masters/Scripts/ANPDB/unique_plants_with_correct_Names.csv')
 df_nonplants = pd.read_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv')
@@ -276,4 +276,123 @@ df_nonplants = pd.read_csv('/home/school/masters/Scripts/ANPDB/non_plant_organis
 missing_organisms = set(organisms) - set(df_plants['original_name']) - set(df_nonplants['non_plant_organisms'])
 
 print(f"Total missing organisms: {len(missing_organisms)}")
-print(f"Missing organisms: {', '.join(missing_organisms)}")"""
+print(f"Missing organisms: {', '.join(missing_organisms)}")
+"""
+
+# fixing a fuck up with the concatenation
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv')
+
+df.drop(columns=['gbif_id', 'gbif_accepted_id', 'gbif_accepted_name', 'kingdom'], inplace=True)
+
+df['non_plant_organisms'] = df['non_plant_organisms'].fillna(df['original_name'])
+
+df.drop(columns=['original_name'], inplace=True)
+
+df.to_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv', index=False)"""
+
+# deleting non distinct from non plants
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv')
+
+df.drop_duplicates(subset=['non_plant_organisms'], inplace=True)
+
+df.to_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv', index=False)"""
+
+# something is weird here 
+"""
+df = pd.read_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv')
+
+print(df.shape)"""
+
+# manually adding weird entries
+"""missing_og_names = ['Santalum Album', 'Eugenia sp.', 'Phaseolus Vulgaris', 'Morinda Citrifolia', 'Datura Innoxia', 'Herreania sp.']
+manual_corrections = ['Santalum album', 'Eugenia spp.', 'Phaseolus vulgaris', 'Morinda citrifolia', 'Datura innoxia', 'Herreania spp.']
+df_plants = pd.read_csv('/home/school/masters/Scripts/ANPDB/unique_plants_with_correct_Names.csv')
+df_nonplants = pd.read_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv')
+
+url = "https://api.gbif.org/v1/species/match"
+
+new_plants = []
+new_nonplants = []
+
+for og_name, corrected_name in zip(missing_og_names, manual_corrections):
+    params = {"name": corrected_name}
+    try:
+        time.sleep(0.1)
+        r = requests.get(url, params=params, timeout=10)
+        r.raise_for_status()
+        data = r.json()
+        gbif_accepted_name = data.get("scientificName", "NA")
+        gbif_accepted_usagekey = data.get("acceptedUsageKey", "NA")
+        gbif_usagekey = data.get("usageKey", "NA")
+        kingdom = data.get("kingdom", "NA")
+        print(f"Processed: {corrected_name} - GBIF ID: {gbif_usagekey} - Accepted GBIF ID: {gbif_accepted_usagekey} - Accepted Name: {gbif_accepted_name} - Kingdom: {kingdom}")
+        if kingdom == "Plantae":
+            new_plants.append({'original_name': og_name, 'gbif_id': gbif_usagekey, 'gbif_accepted_id': gbif_accepted_usagekey, 'gbif_accepted_name': gbif_accepted_name, 'kingdom': kingdom})
+        else:
+            new_nonplants.append({'non_plant_organisms': og_name})
+    except requests.exceptions.RequestException as e:
+        print(f"Error for {corrected_name}: {e}")
+
+df_plants = pd.concat([df_plants, pd.DataFrame(new_plants)], ignore_index=True)
+df_nonplants = pd.concat([df_nonplants, pd.DataFrame(new_nonplants)], ignore_index=True)
+
+df_plants.to_csv('/home/school/masters/Scripts/ANPDB/unique_plants_with_correct_Names.csv', index=False)
+df_nonplants.to_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv', index=False)"""
+
+# removing all of the non plants from the csv 
+
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
+df_nonplants = pd.read_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv')
+nonplant_set = set(df_nonplants['non_plant_organisms'].str.strip())
+def return_plant_list(organisms):
+    out = ''
+    for organism in organisms.split('|'):
+        if organism.strip() not in nonplant_set:
+            out += f"{organism.strip()}|"
+    if out == '':
+        out = 'no_plants|'
+    return out[:-1]
+
+
+df['organisms'] = df['organisms'].apply(return_plant_list)
+
+df.to_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv', index=False)
+
+count = 0
+for organisms in df['organisms']:
+    if organisms == 'no_plants':
+        count += 1
+        print(organisms)
+print(f"Total no_plants entries: {count}")"""
+
+# double checking that all the no_plants entries are gone and that the plants csv is correct
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
+plant_db = pd.read_csv('/home/school/masters/Scripts/ANPDB/unique_plants_with_correct_Names.csv')
+nonplant_db = pd.read_csv('/home/school/masters/Scripts/ANPDB/non_plant_organisms.csv')
+
+plant_set = set(plant_db['original_name'].str.strip())
+nonplant_set = set(nonplant_db['non_plant_organisms'].str.strip())
+
+for organisms in df['organisms']:
+    for organism in organisms.split('|'):
+        if organism.strip() not in plant_set and organism.strip() not in nonplant_set:
+            print(f"Organism not found in either set: {organism.strip()}")
+        
+        if organism.strip() in nonplant_set:
+            print(f"there is an imposter among us: {organism.strip()}")"""
+
+# creating the CSV for compound to DB export
+df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
+
+df = df.drop(columns=['chemical_class', 'chemical_sub_class', 'chemical_super_class', 
+                      'np_classifier_pathway', 'np_classifier_superclass', 'np_classifier_class','organisms','ID'])
+
+df = df.rename(columns={'identifier': 'coconut_id', 'canonical_smiles': 'smiles', 'standard_inchi': 'inchi', 'standard_inchi_key': 'inchi_key', 'name': 'compound_name', 'synonyms': 'synonyms', 'cas': 'cas'})
+
+df = df.reset_index(drop=True)
+df['compound_id'] = df.index + 1
+
+new_order = ['compound_id', 'smiles', 'inchi', 'inchi_key','compound_name', 'synonyms', 'coconut_id', 'cas']
+df = df[new_order]
+
+df.to_csv('/home/school/masters/Scripts/ANPDB/anpdb_compounds_for_db.csv', index=False)
