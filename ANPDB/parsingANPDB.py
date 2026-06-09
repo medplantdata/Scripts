@@ -3,6 +3,8 @@ from rdkit.Chem import PandasTools
 import pandas as pd
 import requests
 import time
+import pubchempy as pcp
+
 """
 # converting sdf to csv and getting rid of unnecessary columns
 sdfFile = '/home/school/masters/Scripts/ANPDB/anpdb-05-2026.sdf'
@@ -382,7 +384,7 @@ for organisms in df['organisms']:
             print(f"there is an imposter among us: {organism.strip()}")"""
 
 # creating the CSV for compound to DB export
-df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
 
 df = df.drop(columns=['chemical_class', 'chemical_sub_class', 'chemical_super_class', 
                       'np_classifier_pathway', 'np_classifier_superclass', 'np_classifier_class','organisms','ID'])
@@ -395,4 +397,157 @@ df['compound_id'] = df.index + 1
 new_order = ['compound_id', 'smiles', 'inchi', 'inchi_key','compound_name', 'synonyms', 'coconut_id', 'cas']
 df = df[new_order]
 
+df.to_csv('/home/school/masters/Scripts/ANPDB/anpdb_compounds_for_db.csv', index=False)"""
+
+# getting the pubmed ids for the comounds
+
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_compounds_for_db.csv')
+cids = []
+
+def progress_bar(count, total):
+    bar_length = 40
+    filled_length = int(bar_length * count // total)
+    bar = '#' * filled_length + '-' * (bar_length - filled_length)
+    print(f'\rProgress: |{bar}| {count}/{total} ({(count/total)*100:.2f}%)', end='')
+errors = []
+counter = 0
+
+for inchi_key in df['inchi_key']:
+    time.sleep(0.5)
+    counter += 1
+    try:
+        compounds = pcp.get_compounds(inchi_key, 'inchikey')
+        if compounds:
+            compound = compounds[0]
+            cids.append(compound.cid)
+            print(f"Compound: {compound.iupac_name}, PubMed IDs: {compound.cid}")
+            progress_bar(counter, len(df['inchi_key']))
+        else:
+            print(f"No compound found for InChIKey: {inchi_key}")
+            errors.append(inchi_key)
+    except Exception as e:
+        print(f"Error processing InChIKey {inchi_key}: {e}")
+        errors.append(inchi_key)
+
+df['cids'] = cids
+
 df.to_csv('/home/school/masters/Scripts/ANPDB/anpdb_compounds_for_db.csv', index=False)
+print(f"Errors for InChIKeys: {', '.join(errors)}")
+"""
+#getting the new plants into db ready format
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/unique_plants_with_correct_Names.csv')
+refDF = pd.read_csv('/home/school/masters/Scripts/SANCDB_Genus_Species_Extract/SANCDB_plants_for_DB.csv')
+
+df['genus'] = df['original_name'].str.split(' ').str[0]
+df['species'] = df['original_name'].str.split(' ').str[1]
+
+df['gbif_key'] = df['gbif_accepted_id'].fillna(df['gbif_id'])
+df['gbif_key'] = df['gbif_key'].astype(str).str.replace(r'\.0$', '', regex=True)
+
+parts = df['original_name'].str.split(' ', n=2, expand=True)
+dfEDGEcases = df.loc[parts[2].notna(), 'original_name']
+print(dfEDGEcases)
+
+df.to_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv', index=False)"""
+
+#showing duplicates
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv')
+duplicates = df[df.duplicated(subset=['gbif_key'], keep=False)]
+print(duplicates)"""
+
+# removing duplicates
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv')
+df = df.drop_duplicates(subset=['gbif_key'], keep='first')
+df.to_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv', index=False)"""
+
+# getting all the entries where the species entry was empty to figure whats happeneing
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv')
+empty_species = df[df['species'].isna()]
+
+url = "https://api.gbif.org/v1/species/{}"
+
+
+errors = []
+for gbif_key, name in empty_species[['gbif_key', 'gbif_accepted_name']].values:
+
+    try:
+        time.sleep(0.1)
+        r = requests.get(url.format(gbif_key), timeout=10)
+        r.raise_for_status()
+        data = r.json()
+        family = data.get("family", "NA")
+        genus_fromGBIF = data.get("genus", "NA")
+        print(f"Processed: {gbif_key}")
+        if isinstance(name, str) and name.strip():
+            genus_local = name.strip().split()[0]   # "Euphorbia" from "Euphorbia esula"
+        else:
+            genus_local = None
+        fam_norm = family.lower() if isinstance(family, str) else None
+        gen_gbif_norm = genus_fromGBIF.lower() if isinstance(genus_fromGBIF, str) else None
+        gen_local_norm = genus_local.lower() if genus_local else None
+        if fam_norm and gen_local_norm and fam_norm == gen_local_norm:
+            print(f'gbif says {name} is a family')
+            df.drop(df[df['gbif_key'] == gbif_key].index, inplace=True)
+        elif gen_gbif_norm and gen_local_norm and gen_gbif_norm == gen_local_norm:
+            print(f'gbif says {name} is not a family')
+            df.loc[df['gbif_key'] == gbif_key, 'species'] = 'spp.'
+        else:
+            print(f'this one is weird {name}')
+            errors.append(f'this one is weird {name}')
+    except requests.exceptions.RequestException as e:
+        print(f"Error for {gbif_key}: {e}")
+        errors.append(f"Error for {gbif_key}: {e}")
+
+df.to_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv', index=False)
+print(errors)
+"""
+
+#['this one is weird Launea Endl.', 'this one is weird Liliopsida', 'this one is weird Helianthopsis H.Rob.', 'this one is weird Myrsinaceae']
+# now manually sorting these ones out
+"""
+df= pd.read_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv')
+
+df.loc[df['gbif_accepted_name'] == 'Launea Endl.', 'species'] = 'spp.'
+df.drop(df[df['gbif_accepted_name'] == 'Liliopsida'].index, inplace=True)
+df.loc[df['gbif_accepted_name'] == 'Helianthopsis H.Rob.', 'species'] = 'spp.'
+df.drop(df[df['gbif_accepted_name'] == 'Myrsinaceae'].index, inplace=True)
+
+df.to_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv', index=False)"""
+
+# using the gbif to query genus family and species for the plant db transfer
+
+df = pd.read_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv')
+errors = []
+
+df['family'] = None
+
+def progressbar(count, total):
+    bar_length = 40
+    filled_length = int(bar_length * count // total)
+    bar = '#' * filled_length + '-' * (bar_length - filled_length)
+    print(f'\rProgress: |{bar}| {count}/{total} ({(count/total)*100:.2f}%)', end='')
+
+count = 0
+url = "https://api.gbif.org/v1/species/{}"
+for key in df['gbif_key']:
+    time.sleep(0.4)
+    count += 1
+    try:
+        r = requests.get(url.format(key), timeout=10)
+        r.raise_for_status()
+        data = r.json()
+        family = data.get("family", "NA")
+        genus = data.get("genus", "NA")
+        species = data.get("species", "NA")
+        df.loc[df['gbif_key'] == key, 'family'] = family
+        df.loc[df['gbif_key'] == key, 'genus'] = genus
+        df.loc[df['gbif_key'] == key, 'species'] = species
+        print(f"Processed: {key}")
+        progressbar(count, len(df['gbif_key']))
+    except requests.exceptions.RequestException as e:
+        print(f"Error for {key}: {e}")
+        errors.append(f"Error for {key}: {e}")
+
+df.to_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv', index=False)
+print(errors)
+

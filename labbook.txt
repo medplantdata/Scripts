@@ -8,6 +8,9 @@ TOC:
 26 May -> Cleaning the ICD 11 properly and adding to the wanddb
 27 May -> Cleaning the NP classifier data and adding it to the DB
 2 June -> proposal and fixing the obsidain canvas for the db trying to figure out the long run on the ANPDB issue
+3 June -> cleaning up ANPDB
+8 June -> adding cids
+
 
 
 5 may
@@ -401,7 +404,7 @@ to get rid of non-plants
 
 I think I wrote a decent script but I'm going home so I may check it at home and then just run it overnight.
 
-3 June - 
+3 June - cleaning up ANPDB
 Ran the script overnight. All seems well except that the number of plants and the number of non-plants from the csv's 
 dont add up to the total unique organisms from the ANPDB. I will have to check to see what is missing because it doesn't
 look like there was any output from the error. The total should be 34369 but the plants are 27983 and the non plants are
@@ -465,3 +468,40 @@ To code this for the DB I will need to Generate 3 things:
 4 - a junction table to the np classifier
 5 - a junction table to the chemical classifier
 6 - a junction table for newman and cragg code
+
+8 June - adding cids 
+Getting the pubchem column for the compounds and getting adding the plans to the db
+cool I have the script and it looks like it works itll just run for a while because of the rate limits 
+
+ran It and it failed on the db to csv thing:
+Length of values (4858) does not match length of index (5401)
+
+9 - June
+Adding cids that actually save this time and adding the plants
+
+Okay so working on the plants_for DB there are 2 issues some of the entries are for families or are for a genus with no 
+actual species in. 
+Then there are entries where there are issues suh as the variant of the plant being described
+
+either way it looks like I forgot to save the family
+
+they are also not distinct on the GBIF key so I removed all the duplicates keeping about 81% of the og 
+
+now dealing with the ones that have missing species - some are a legit genus others are families. Because the DB will because 
+the db will be able to see families already I am going to remove them and keep empty genuses
+
+Okay so all the familieas are removes and spp. has been addded to the ones with no species that were a genus
+Acouple werent found :['this one is weird Launea Endl.', 'this one is weird Liliopsida', 'this one is weird Helianthopsis H.Rob.', 'this one is weird Myrsinaceae']
+
+Ill try sort them out manually:
+Launea Endl. is genus
+Liliopsida is class
+Helianthopsis H.Rob. is a genus but oudeted name
+Myrsinaceae is a family
+These ones have been sorted out manually
+
+I have also discoveerd that an accepted name does not necessarily mean that it is the correct name as some old names
+are accepted ie Helianthopsis is now Pappobolus -> will need to fetch names from gbif again but using accepted key
+
+So the best course of action will be to fetch the genus and species and family sperately from the gbif and then use that to
+build the entry for the db -> have the script will run overnight
