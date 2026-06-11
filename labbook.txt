@@ -518,3 +518,59 @@ ended with this so no error message. There are none nan values in the species co
 the last plant may not have been enetered? There are 22573 distinct values the last ones ID is 22572 and the ID starts at 0
 the error also specifically starts for Progress: |########################################| 22573/22573 so I think the last one 
 must be checked but rest should be good.
+
+July - 11 more fixups and cleaning for db of ANCDB and the CID stuff
+
+fixing empty entries -> i undid the nan cleanup when i did the new species column 
+there are some weird ones I am fixing now manually:
+Clerodendron fragrans
+Murraya exotica
+Ilex amara 
+Bryum rutilans
+
+starting to notice a pattern here -> some of them are possibly multiple things and some of them have alternative spellings
+also some of them are genus only but a synonym genus that wasnt caught by the name genus gbif genus check:
+here are the problems:
+name with gbif id assigned to the name match and what happened to them
+
+Clerodendron fragrans -> Clerodendrum fragrans Vent
+Murraya exotica 933 -> ambigous removed
+Ilex amara 220 -> ambigous removed 
+Bryum rutilans 1333 -> ambigous removed 
+Buphane fischeri 7316092 -> changed Boophone fischeri
+Lignum dalbergiae odoriferae rosewood 2962953 -> very weird excluded
+Anagallis sp. 8330627 -> synonyms to Lysmachia added sp.
+Aplophyllum pedicellatum 7597471 -> I think this is a typo there is a Haplophyllum pedicellatum that is medicinal so using that
+Asarum sp. 7707728 -> is real added sp
+Eriobotrya sp. 3024121 -> is real the synonym is Rhaphiolepis
+Coeloseira pacifica 2663412 -> this is like an algae or something so it was removed
+Launea 4255554 -> exists gave it sp.
+Pimpinella sp. 3027402 -> marked as doubtful on gbif so I removed it
+Urginea sp. 6425216 -> real synonym is drimia
+Jungermannia obovata 126 -> could be multiple things was removed
+Harpephyllum afrum 6 -> another spelling mistake I think so added Harpephyllum caffrum Bernh.
+Befaria glutinosa 7402726 -> couldnt find decent match gbif kept taking to a south american plant removed it
+Terebinthina sp. 7331877 -> listed as doubtful so removed
+Trocholejeunea scandvicensis 2688855 -> removed as I think it is a duplicate of Trocholejeunea sandvicensis
+Nidus vespae 2838904 -> removed it is apparently honeycomb
+Vanillosmopsis sp. 7339037 -> appears to be a synonym of eremanthus
+Crataeva sp. 3871722 -> there is already an entry with a species name for the genus so removing this
+Polypodium hastatum 392 -> synonym for Tectaria incisa Cav.
+Helianthopsis 7338871 -> synonym just needed sp.
+Emblica sp. 7276108 -> synonym just needed sp.
+Porphyra laciniata 106 -> could have been multiple entries so I removed it
+Butyrospermum sp. 7333522 -> synonym needed sp. 
+Lycopodium chinense 245 -> could be many things so was removed
+Decussocarpus spp. 7315457 -> synonym needed sp
+Notopterygium sp. 8174379 -> synonym needed sp
+Asiasarum sp. 7313569 -> synonym needed sp
+Symphoricarpus sp. 7272635 -> synonym needed sp.
+Pachypodanthium sp. 7320087 -> synonym needed sp.
+Philyrea spp. 6880048  -> synonym needed spp
+Melanorrhoea spp. 3190606 -> synonym needed spp
+Rabdosia sp. 3233576 -> synonym need sp. 
+
+I will sort manually, anything with ambiguous name/classification will be removed and all mispelled names will be mapped to 
+the og names and I will list changes above
+
+All missing were sorted out now I need to deduplicate on the GBIF key and map the families to the id for final db stuff

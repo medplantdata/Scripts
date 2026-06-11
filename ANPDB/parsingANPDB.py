@@ -516,7 +516,7 @@ df.to_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv', index=False)""
 
 # using the gbif to query genus family and species for the plant db transfer
 
-df = pd.read_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv')
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv')
 errors = []
 
 df['family'] = None
@@ -549,5 +549,52 @@ for key in df['gbif_key']:
         errors.append(f"Error for {key}: {e}")
 
 df.to_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv', index=False)
-print(errors)
+print(errors)"""
 
+# sorting out the nan entries for the plants for db in tghe species column
+"""
+df = pd.read_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv')
+
+print(len(df[df['species'].isna()]))
+print(df[df['species'].isna()])
+
+dfNans = df[df['species'].isna()]
+errors = []
+url = "https://api.gbif.org/v1/species/{}"
+
+for gbif_key in dfNans['gbif_key']:
+    try:
+        time.sleep(0.2)
+        r = requests.get(url.format(gbif_key), timeout=10)
+        r.raise_for_status()
+        data = r.json()
+        species = data.get("species", "NA")
+        df.loc[df['gbif_key'] == gbif_key, 'species'] = species
+        print(f"Processed: {gbif_key}")
+    except requests.exceptions.RequestException as e:
+        print(f"Error for {gbif_key}: {e}")
+        errors.append(f"Error for {gbif_key}: {e}")
+
+df.to_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv', index=False)
+"""
+
+# sorting out the nans in the plants for db species column
+"""
+df = pd.read_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv')
+empty_species = df[df['species'].isna()]
+
+for  gbif_accepted_name, genus, gbif_key in empty_species[['gbif_accepted_name','genus','gbif_key']].values:
+    name = gbif_accepted_name.split()[0]
+    if name == genus:
+        df.loc[df['gbif_key'] == gbif_key, 'species'] = 'spp.'
+
+    
+
+df.to_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv', index=False)"""
+
+# filtering missing species
+df = pd.read_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv')
+empty = df[df['species'].isna()]
+
+for origional_name, gbif_id in empty[['original_name', 'gbif_id']].values:
+    print(origional_name + " " + str((gbif_id)))
