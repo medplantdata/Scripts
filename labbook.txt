@@ -10,6 +10,10 @@ TOC:
 2 June -> proposal and fixing the obsidain canvas for the db trying to figure out the long run on the ANPDB issue
 3 June -> cleaning up ANPDB
 8 June -> adding cids
+9 June -> fixing cids
+11 June ->  more fixups and cleaning for db of ANCDB and the CID stuff
+18 June -> Fixing cid errors and adding compounds to DB
+
 
 
 
@@ -519,7 +523,7 @@ the last plant may not have been enetered? There are 22573 distinct values the l
 the error also specifically starts for Progress: |########################################| 22573/22573 so I think the last one 
 must be checked but rest should be good.
 
-July - 11 more fixups and cleaning for db of ANCDB and the CID stuff
+June - 11 more fixups and cleaning for db of ANCDB and the CID stuff
 
 fixing empty entries -> i undid the nan cleanup when i did the new species column 
 there are some weird ones I am fixing now manually:
@@ -575,7 +579,7 @@ the og names and I will list changes above
 
 All missing were sorted out now I need to deduplicate on the GBIF key and map the families to the id for final db stuff
 
-18 June Fixing cid errors
+18 June - Fixing cid errors
 On the 9 June I got the CIDS using inchi keys from pubmed. There was an issue with many of them throwing errors and there
 are as many empty rows so I will run the same thing again just incase the issue was request timeouts.
 Errors from July 9:
@@ -662,12 +666,116 @@ with more " to mess it up I think the easiest fix is manually
 
 So I will use:
 
-
-
 UPDATE compounds
 SET coconut_id = 'CNP0533567.0', cas = '', cid = 101177416
 WHERE compound_id = 128;
 
 This is all good and works but those ' and " in the synonyms is messing it up. I am gonna eat lunch now but I rate that
 the best option from here is to fix everything else manually and then to start figuring out if these are actually good/legit
-synonyms   
+synonyms 
+
+
+23 June - Gary suggestions and manual fix of compounds in DB and junction table for classifier and compounds
+
+Gary suggested I put a list of the plant families from the apg 4 into AI to ask it to find the ones that are extra and should
+not be there and that I email the list of plants I changed from the 11th
+
+I sent the email
+
+here is the query I used for perplexity PRO search:
+I have a list of 446 plant families and I want to check their authenticity against the APG4 (416 families to know which ones need to be removed).  Here is the list:'Amborellaceae', 'Cabombaceae', 'Hydatellaceae', 'Nymphaeaceae', 'Austrobaileyaceae', 'Schisandraceae', 'Trimeniaceae', 'Canellaceae', 'Winteraceae', 'Aristolochiaceae', 'Hydnoraceae', 'Lactoridaceae', 'Piperaceae', 'Saururaceae', 'Annonaceae', 'Degeneriaceae', 'Eupomatiaceae', 'Himantandraceae', 'Myristicaceae', 'Magnoliaceae', 'Atherospermataceae', 'Calycanthaceae', 'Gomortegaceae', 'Hernandiaceae', 'Lauraceae', 'Monimiaceae', 'Siparunaceae', 'Chloranthaceae', 'Acoraceae', 'Alismataceae', 'Aponogetonaceae', 'Araceae', 'Butomaceae', 'Cymodoceaceae', 'Hydrocharitaceae', 'Juncaginaceae', 'Maundiaceae', 'Posidoniaceae', 'Potamogetonaceae', 'Ruppiaceae', 'Scheuchzeriaceae', 'Tofieldiaceae', 'Zosteraceae', 'Petrosaviaceae', 'Burmanniaceae', 'Dioscoreaceae', 'Nartheciaceae', 'Cyclanthaceae', 'Pandanaceae', 'Stemonaceae', 'Triuridaceae', 'Velloziaceae', 'Alstroemeriaceae', 'Campynemataceae', 'Colchicaceae', 'Corsiaceae', 'Liliaceae', 'Melanthiaceae', 'Petermanniaceae', 'Philesiaceae', 'Ripogonaceae', 'Smilacaceae', 'Amaryllidaceae', 'Asparagaceae', 'Asphodelaceae', 'Xanthorrhoeaceae', 'Asteliaceae', 'Blandfordiaceae', 'Boryaceae', 'Doryanthaceae', 'Hypoxidaceae', 'Iridaceae', 'Ixioliriaceae', 'Lanariaceae', 'Orchidaceae', 'Tecophilaeaceae', 'Xeronemataceae', 'Dasypogonaceae', 'Arecaceae', 'Palmae', 'Commelinaceae', 'Haemodoraceae', 'Hanguanaceae', 'Philydraceae', 'Pontederiaceae', 'Cannaceae', 'Costaceae', 'Heliconiaceae', 'Lowiaceae', 'Marantaceae', 'Musaceae', 'Strelitziaceae', 'Zingiberaceae', 'Bromeliaceae', 'Cyperaceae', 'Ecdeiocoleaceae', 'Eriocaulaceae', 'Flagellariaceae', 'Joinvilleaceae','Juncaceae', 'Mayacaceae', 'Poaceae', 'Gramineae', 'Rapateaceae', 'Restionaceae', 'Anarthriaceae', 'Centrolepidaceae', 'Thurniaceae', 'Typhaceae', 'Xyridaceae', 'Ceratophyllaceae', 'Berberidaceae', 'Circaeasteraceae', 'Eupteleaceae', 'Lardizabalaceae', 'Menispermaceae', 'Papaveraceae', 'Ranunculaceae', 'Nelumbonaceae', 'Platanaceae', 'Proteaceae', 'Sabiaceae', 'Trochodendraceae', 'Buxaceae', 'Haptanthaceae', 'Gunneraceae', 'Myrothamnaceae', 'Dilleniaceae', 'Altingiaceae', 'Aphanopetalaceae', 'Cercidiphyllaceae', 'Crassulaceae', 'Cynomoriaceae', 'Daphniphyllaceae', 'Grossulariaceae', 'Haloragaceae', 'Hamamelidaceae', 'Iteaceae', 'Paeoniaceae', 'Penthoraceae', 'Peridiscaceae', 'Saxifragaceae', 'Tetracarpaeaceae', 'Celastraceae', 'Lepidobotryaceae', 'Brunelliaceae', 'Cephalotaceae', 'Connaraceae', 'Cunoniaceae', 'Elaeocarpaceae', 'Huaceae', 'Oxalidaceae', 'Achariaceae', 'Balanopaceae', 'Bonnetiaceae', 'Calophyllaceae', 'Caryocaraceae', 'Centroplacaceae', 'Chrysobalanaceae', 'Clusiaceae', 'Guttiferae', 'Ctenolophonaceae', 'Dichapetalaceae', 'Elatinaceae', 'Erythroxylaceae', 'Euphorbiaceae', 'Euphroniaceae', 'Goupiaceae', 'Humiriaceae', 'Hypericaceae', 'Irvingiaceae', 'Ixonanthaceae', 'Lacistemataceae', 'Linaceae', 'Lophopyxidaceae', 'Malpighiaceae', 'Ochnaceae', 'Pandaceae', 'Passifloraceae', 'Peraceae', 'Phyllanthaceae', 'Picrodendraceae', 'Podostemaceae', 'Putranjivaceae', 'Rafflesiaceae', 'Rhizophoraceae', 'Salicaceae', 'Trigoniaceae', 'Violaceae', 'Vitaceae', 'Krameriaceae', 'Zygophyllaceae', 'Fabaceae', 'Leguminosae', 'Polygalaceae', 'Quillajaceae', 'Surianaceae', 'Barbeyaceae', 'Cannabaceae', 'Dirachmaceae', 'Elaeagnaceae', 'Moraceae', 'Rhamnaceae', 'Rosaceae', 'Ulmaceae', 'Urticaceae', 'Betulaceae', 'Casuarinaceae', 'Fagaceae', 'Juglandaceae', 'Myricaceae', 'Nothofagaceae', 'Ticodendraceae', 'Anisophylleaceae', 'Apodanthaceae', 'Begoniaceae', 'Coriariaceae', 'Corynocarpaceae', 'Cucurbitaceae', 'Datiscaceae', 'Tetramelaceae', 'Francoaceae', 'Bersamaceae', 'Greyiaceae', 'Ledocarpaceae', 'Melianthaceae', 'Rhynchothecaceae', 'Vivianiaceae', 'Geraniaceae', 'Alzateaceae', 'Combretaceae', 'Crypteroniaceae', 'Lythraceae', 'Melastomataceae', 'Myrtaceae', 'Onagraceae', 'Penaeaceae', 'Vochysiaceae', 'Aphloiaceae', 'Crossosomataceae', 'Geissolomataceae', 'Guamatelaceae', 'Stachyuraceae', 'Staphyleaceae', 'Strasburgeriaceae', 'Picramniaceae', 'Dipentodontaceae', 'Gerrardinaceae', 'Petenaeaceae', 'Tapisciaceae', 'Anacardiaceae', 'Biebersteiniaceae', 'Burseraceae', 'Kirkiaceae', 'Meliaceae', 'Nitrariaceae', 'Rutaceae', 'Sapindaceae', 'Xanthocerataceae', 'Simaroubaceae', 'Bixaceae', 'Cistaceae', 'Cytinaceae', 'Dipterocarpaceae', 'Malvaceae', 'Muntingiaceae', 'Neuradaceae', 'Sarcolaenaceae', 'Sphaerosepalaceae', 'Thymelaeaceae', 'Akaniaceae', 'Bataceae', 'Brassicaceae', 'Cruciferae', 'Capparaceae', 'Caricaceae', 'Cleomaceae', 'Emblingiaceae', 'Gyrostemonaceae', 'Koeberliniaceae', 'Limnanthaceae', 'Moringaceae', 'Pentadiplandraceae', 'Resedaceae', 'Borthwickiaceae', 'Stixidaceae', 'Salvadoraceae', 'Setchellanthaceae', 'Tovariaceae', 'Tropaeolaceae', 'Aextoxicaceae', 'Berberidopsidaceae', 'Balanophoraceae', 'Loranthaceae', 'Misodendraceae', 'Olacaceae', 'Opiliaceae', 'Santalaceae', 'Amphorogynaceae', 'Cervantesiaceae', 'Comandraceae', 'Nanodeaceae', 'Schoepfiaceae', 'Achatocarpaceae', 'Aizoaceae', 'Amaranthaceae', 'Anacampserotaceae', 'Ancistrocladaceae', 'Asteropeiaceae', 'Barbeuiaceae', 'Basellaceae', 'Cactaceae', 'Caryophyllaceae', 'Didiereaceae', 'Dioncophyllaceae', 'Droseraceae', 'Drosophyllaceae', 'Frankeniaceae', 'Gisekiaceae', 'Halophytaceae', 'Kewaceae', 'Limeaceae', 'Lophiocarpaceae', 'Macarthuriaceae', 'Microteaceae', 'Molluginaceae', 'Montiaceae', 'Nepenthaceae', 'Nyctaginaceae', 'Physenaceae', 'Phytolaccaceae', 'Plumbaginaceae', 'Polygonaceae', 'Portulacaceae', 'Rhabdodendraceae', 'Rivinaceae', 'Sarcobataceae', 'Simmondsiaceae', 'Stegnospermataceae', 'Talinaceae', 'Tamaricaceae', 'Cornaceae', 'Curtisiaceae', 'Grubbiaceae', 'Hydrangeaceae', 'Hydrostachyaceae', 'Loasaceae', 'Nyssaceae', 'Actinidiaceae', 'Balsaminaceae', 'Clethraceae', 'Cyrillaceae', 'Diapensiaceae', 'Ebenaceae', 'Ericaceae', 'Fouquieriaceae', 'Lecythidaceae', 'Marcgraviaceae', 'Mitrastemonaceae', 'Pentaphylacaceae', 'Polemoniaceae', 'Primulaceae', 'Roridulaceae', 'Sapotaceae', 'Sarraceniaceae', 'Sladeniaceae', 'Styracaceae', 'Symplocaceae', 'Tetrameristaceae', 'Theaceae', 'Icacinaceae', 'Oncothecaceae', 'Metteniusaceae', 'Eucommiaceae', 'Garryaceae', 'Apocynaceae', 'Gelsemiaceae', 'Pteleocarpaceae', 'Gentianaceae', 'Loganiaceae', 'Rubiaceae','Boraginaceae', 'Codonaceae', 'Vahliaceae', 'Convolvulaceae', 'Hydroleaceae', 'Montiniaceae', 'Solanaceae', 'Sphenocleaceae', 'Acanthaceae', 'Bignoniaceae', 'Byblidaceae', 'Calceolariaceae', 'Carlemanniaceae', 'Gesneriaceae', 'Lamiaceae', 'Labiatae', 'Lentibulariaceae', 'Linderniaceae', 'Martyniaceae', 'Mazaceae', 'Oleaceae', 'Orobanchaceae', 'Lindenbergiaceae', 'Paulowniaceae', 'Pedaliaceae', 'Phrymaceae', 'Plantaginaceae', 'Plocospermataceae', 'Schlegeliaceae', 'Scrophulariaceae', 'Stilbaceae', 'Tetrachondraceae', 'Thomandersiaceae', 'Verbenaceae', 'Aquifoliaceae', 'Cardiopteridaceae', 'Helwingiaceae', 'Phyllonomaceae', 'Stemonuraceae', 'Alseuosmiaceae', 'Argophyllaceae', 'Asteraceae', 'Compositae', 'Calyceraceae', 'Campanulaceae', 'Goodeniaceae', 'Menyanthaceae', 'Pentaphragmataceae', 'Phellinaceae', 'Rousseaceae', 'Stylidiaceae', 'Escalloniaceae', 'Bruniaceae', 'Columelliaceae', 'Paracryphiaceae', 'Adoxaceae', 'Caprifoliaceae', 'Apiaceae', 'Umbelliferae', 'Araliaceae', 'Griseliniaceae', 'Myodocarpaceae', 'Pennantiaceae', 'Pittosporaceae', 'Torricelliaceae'. Please see which of these are duplicates or do not form part of the 416 APG4 families.
+
+Here is the output:
+https://www.perplexity.ai/search/f6428450-8974-468b-aedc-d0638f471d15
+
+So there a couple issues with changed names and synonymns and collapsed families so I think It may be faster to find a
+more accurate list than what was provided by the GBIF first time and start from scratch. 
+
+I dont feel like that now so I am going to check the db entries from the 18th to fix the whole " error issue.
+I need to make sure those entries are actual legitimate synonyms for the compounds because I dont know why a chemical
+name needs a "
+
+4'-hydroxy-2'-methoxy-2",2"-dimethylpyrano[5",6":8,7]isoflav-3-ene so apparently the " is necessary here
+
+I am going to ask perplexity to check the following to see if the are correct:
+
+4'-hydroxy-2'-methoxy-2\",2\"-dimethylpyrano[5\",6\":8,7]isoflav-3-ene
+7,4'-dihydroxy-2'-methoxy-8-(3\",3\"-dimethylallyl)isoflav-3-ene
+2-arylbenzofuran, 6,4'-dihydroxy-2'-methoxy-5-(1\",1\"-dimethylallyl)-2-arylbenzofuran
+5,4'-dihydroxy-6-(3\"'-methylbut-2\"'-enyl)-2\"-hydroxyisopropyl dihydrofurano [4\",5\":8,7] isoflavone
+(7R)-5-hydroxy-2,2-dimethyl-7-(2,4,5-trimethoxyphenyl)-7,8-dihydropyrano[3,2-g]c|(R)-5-hydroxy-2',4',5'-trimethoxy-2\",2\"-dimethylpyrano[5\",6\":6,7]isoflavanone
+
+https://www.perplexity.ai/search/f6428450-8974-468b-aedc-d0638f471d15#4
+
+So they are goofy some of them but I think that its best to keep them in the origional form so I am going to adjust the fromat
+and add them as they are 
+
+SQL:
+
+update compounds 
+set
+synonyms = '4''-hydroxy-2''-methoxy-2\",2\"-dimethylpyrano[5\",6\":8,7]isoflav-3-ene|burttinol-B',                               
+coconut_id = 'CNP0533567.0',
+cid = 101177416
+where compound_id = 128;
+
+
+
+####### used wrong id here
+            update compounds 
+            set
+            synonyms = '3-(4-hydroxy-2-methoxy-phenyl)-8-(3-methylbut-2-enyl)-2H-chromen-7-ol|7,4''-dihydroxy-2''-methoxy-8-(3\",3\"-dimethylallyl)isoflav-3-ene|Erypoegin A|InChI=1\/C21H22O4\/c1-13(2)4-7-18-19(23)9-5-14-10-15(12-25-21(14)18)17-8-6-16(22)11-20(17)24-3\/h4-6,8-11,22-23H,7,12H2,1-3H3|VRTQHEPVVCLRMQ-UHFFFAOYSA-|burttinol-C',                               
+            coconut_id = 'CNP0287612.0',
+            cid = 5315558
+            where compound_id = 378;
+
+
+
+# #######i realized cas may also have junk in it but I checked and for the 2 above entries there was nothing in the cas field
+
+update compounds 
+set
+synonyms = '2-arylbenzofuran, 6,4''-dihydroxy-2''-methoxy-5-(1\",1\"-dimethylallyl)-2-arylbenzofuran|5-(1,1-dimethylallyl)-2-(4-hydroxy-2-methoxy-phenyl)benzofuran-6-ol|Burttinol D|burttinol-D',                               
+coconut_id = 'CNP0302341.0',
+cas = NULL,
+cid = 5315559
+where compound_id = 2330;
+
+update compounds 
+set
+synonyms = '5,4''-dihydroxy-6-(3\"-methylbut-2\"-enyl)-2\"-hydroxyisopropyl dihydrofurano [4\",5\":8,7] isoflavone|isosenegalensin',                               
+coconut_id = 'CNP0503351.0',
+cas = NULL,
+cid = NULL
+where compound_id = 2366;
+
+update compounds 
+set
+synonyms = '(7R)-5-hydroxy-2,2-dimethyl-7-(2,4,5-trimethoxyphenyl)-7,8-dihydropyrano[3,2-g]c|(R)-5-hydroxy-2'',4'',5''-trimethoxy-2\",2\"-dimethylpyrano[5\",6\":6,7]isoflavanone|(R)-Saclenone|CHEMBL4081628',                               
+coconut_id = 'CNP0289854.1',
+cas = NULL,
+cid = 12971611
+where compound_id = 2581;
+
+so I think I cocked it up for 378 that is the wrong ID it was supposed to be 379
+Everything else looks good so I just need to update 378 and 379
+
+update compounds 
+set
+synonyms = '3-(4-hydroxy-2-methoxy-phenyl)-8-(3-methylbut-2-enyl)-2H-chromen-7-ol|7,4''-dihydroxy-2''-methoxy-8-(3\",3\"-dimethylallyl)isoflav-3-ene|Erypoegin A|InChI=1\/C21H22O4\/c1-13(2)4-7-18-19(23)9-5-14-10-15(12-25-21(14)18)17-8-6-16(22)11-20(17)24-3\/h4-6,8-11,22-23H,7,12H2,1-3H3|VRTQHEPVVCLRMQ-UHFFFAOYSA-|burttinol-C',                               
+coconut_id = 'CNP0287612.0',
+cid = 5315558
+where compound_id = 379;
+
+update compounds 
+set
+synonyms = 'LMPK12050166|SCHEMBL241743|genistein 7-O-glucoside',                               
+coconut_id = 'CNP0258154.2',
+cid = 44257273
+where compound_id = 378;
+
+So now I think the ANCDB stuff is in and looking good. 
+
+
+So I started writing something that will make a junction table for the Np class and the compounds but some of the class
+entries are nan and then some of the compounds are beloning to multiple classes so I am working on sorting that
