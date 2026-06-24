@@ -13,6 +13,7 @@ TOC:
 9 June -> fixing cids
 11 June ->  more fixups and cleaning for db of ANCDB and the CID stuff
 18 June -> Fixing cid errors and adding compounds to DB
+23 June - Gary suggestions and manual fix of compounds in DB and junction table for classifier and compounds
 
 
 
@@ -779,3 +780,27 @@ So now I think the ANCDB stuff is in and looking good.
 
 So I started writing something that will make a junction table for the Np class and the compounds but some of the class
 entries are nan and then some of the compounds are beloning to multiple classes so I am working on sorting that
+
+24 June - finishing junction table for np classifier to compounds
+
+So there is an issue. Sometimes the NPclassifier will leave the class entry blank. The Class, Superclass, Pathway junction table
+heirarchy is therefore a bit fucked up because I was going to directly link the compound to a class with a junction table.
+Now that won't work. The compound still needs to somehow link back to a superclass or pathway. As far as I can see there
+are also nan values for those 2 columns. 
+
+The solutions I can think of:
+1 - Store each compound with its full path in the compounds table. This is redundant and not normalised but it would mean 
+I can probably get rid of the other junction tables and np classifier tables. 
+2 - Junction table with the full path can be stored like above but I think that this is the normalized way. Actually I think
+this is better than above but the only issue is that it feels redundant. There is already tables and junctions for the 
+heirarchy between the pathway, superclass, class so it feels like I would just be rewriting that. Will the junction 
+table of compounds and the npclassifier classification capture the heirarchy? I dont think it will do that effectively.
+3 - There could be some sort of way of storing both the id of the classification and the level of the classification. I
+just don't know how the relathionship will work out when creating the foreign key link in MYSQL.
+
+I also manually added some of the compounds to the npclassifier web app and it looks like some of the goofier molecules
+really cant be described. So I feel like option 2 is the best most database correct way to store it and I will build the
+junction table accordingly with 4 foreign keys 1 for compound id and then an ID for each level of the classification.
+ 
+ So it looks like all the things that the coconut db missed are truly missing however they failed to include multiple
+ pathways for compounds that can belong to 
