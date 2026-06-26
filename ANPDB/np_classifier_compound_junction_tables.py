@@ -33,7 +33,7 @@ print(junction1.head())
 
 # So due to the fact that the coconut entries are incomplete I am going to use the API and reclassify the stuff
 
-dfcompounds  = pd.read_csv('/home/school/masters/Scripts/ANPDB/anpdb_plants.csv')
+dfcompounds  = pd.read_csv('ANPDB/anpdb_compounds_for_dbclean.csv')
 dfpathways   = pd.read_csv('/home/school/masters/Scripts/NpClassifier_ClassyFire/NpClassifierPathwaysDB.csv')
 dfsuperclass = pd.read_csv('/home/school/masters/Scripts/NpClassifier_ClassyFire/NpClassifierSuperclassesDB.csv')
 dfclasses    = pd.read_csv('/home/school/masters/Scripts/NpClassifier_ClassyFire/NpClassifierClassesDB.csv')
@@ -90,3 +90,5 @@ junction2.to_csv('/home/school/masters/Scripts/ANPDB/anpdb_compound_superclass_j
 junction3.to_csv('/home/school/masters/Scripts/ANPDB/anpdb_compound_pathway_junction.csv', index=False)
 
 print(errors)
+
+
