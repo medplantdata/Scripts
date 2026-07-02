@@ -18,6 +18,7 @@ TOC:
 26 June -> sorting out error message from 24 June
 29 June -> New website build
 30 June -> New website db connect
+1 July -> Adding compound search to the website
 
 
 
@@ -868,5 +869,6 @@ Compound search achieved and can search by and return compound names,smiles, inc
 can prolly do the finla info page where the descriptors are calced and the structure is drawn
 
 
+2 July - Adding compound draw and descriptor ability
 
 GO CKECK ERROTS FOR THE NPCLASSIFICATION
