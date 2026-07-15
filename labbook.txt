@@ -929,7 +929,30 @@ accepted families in the GBIF. the full complete list is in the plants_for_db_no
 are from legit apg4 families to plants_for_db_APG4_families_only.csv
 
 
-looks like plants are on the I hope everything is good now to add to db
+I will also need to delete and re add the SANCDB plants they are not lekker
+looks like plants are on the I hope everything is good now to add to db: SQL:
+
+           CREATE TABLE plants (
+           plant_id  INT UNSIGNED NOT NULL,
+           genus VARCHAR(50),
+           species VARCHAR(50),
+           gbif_key INT UNSIGNED,
+           synonyms TEXT,
+           family_id INT UNSIGNED NOT NULL,
+           PRIMARY KEY (plant_id),
+           FOREIGN KEY (family_id) REFERENCES families(family_id));
+           
+           LOAD DATA LOCAL INFILE '/localdata/wand_data/plants_to_send_to_db.csv'
+           INTO TABLE plants
+           FIELDS TERMINATED BY ','
+           ENCLOSED BY '"'
+           LINES TERMINATED BY '\n'
+           IGNORE 1 LINES
+           (plant_id,genus, species, gbif_key, synonyms, family_id);
+
+looks like all worked out and there are 19940 plants in there now :))))))
+
+Ill try clean up the SANCDB stuff now to add back in
 
 
 
