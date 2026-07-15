@@ -876,7 +876,7 @@ descriptor and drawing ability added
 There are aesthetic issues but otherise is good
 
 
-15 July - adding plants and plant family link to DB
+15 July - adding ANCDB plants and plant family link with corrected SANCDB plants to DB
 
 have been working on proposal for last while
 
@@ -954,7 +954,178 @@ looks like all worked out and there are 19940 plants in there now :))))))
 
 Ill try clean up the SANCDB stuff now to add back in
 
+the following were excluded because they were not returned by the gbif species thing:
+5428512
+3034806
+8025262
+9348735
+3106738
+
+then I excluded everything that was in the anpdb from the file that I will send to the server.
+Duplicate found for Vachellia karroo with GBIF key 3974754.0. Skipping entry.
+Duplicate found for Acacia mearnsii with GBIF key 2979775.0. Skipping entry.
+Duplicate found for Vachellia nilotica with GBIF key 3974744.0. Skipping entry.
+Duplicate found for Agapanthus africanus with GBIF key 2854740.0. Skipping entry.
+Duplicate found for Alepidea amatymbica with GBIF key 3633432.0. Skipping entry.
+Duplicate found for Aloe castanea with GBIF key 8355770.0. Skipping entry.
+Duplicate found for Aloe claviflora with GBIF key 2777226.0. Skipping entry.
+Duplicate found for Aloe ferox with GBIF key 2777789.0. Skipping entry.
+Duplicate found for Aloe marlothii with GBIF key 2778219.0. Skipping entry.
+Duplicate found for Aloe peglerae with GBIF key 7920572.0. Skipping entry.
+Duplicate found for Annona senegalensis with GBIF key 5407251.0. Skipping entry.
+Duplicate found for Antizoma angustifolia with GBIF key 3830390.0. Skipping entry.
+Duplicate found for Arctotis arctotoides with GBIF key 7764662.0. Skipping entry.
+Duplicate found for Artemisia afra with GBIF key 8078031.0. Skipping entry.
+Duplicate found for Aspalathus linearis with GBIF key 5348220.0. Skipping entry.
+Duplicate found for Athrixia phylicoides with GBIF key 3087104.0. Skipping entry.
+Duplicate found for Bolusanthus speciosus with GBIF key 2952355.0. Skipping entry.
+Duplicate found for Boophone disticha with GBIF key 2854664.0. Skipping entry.
+Duplicate found for Crossyne flava with GBIF key 2853222.0. Skipping entry.
+Duplicate found for Brunsvigia josephinae with GBIF key 4013911.0. Skipping entry.
+Duplicate found for Brunsvigia radulosa with GBIF key 2853422.0. Skipping entry.
+Duplicate found for Buddleja salviifolia with GBIF key 4055797.0. Skipping entry.
+Duplicate found for Buxus natalensis with GBIF key 3988045.0. Skipping entry.
+Duplicate found for Callistemon citrinus with GBIF key 3173413.0. Skipping entry.
+Duplicate found for Calpurnia aurea with GBIF key 2956417.0. Skipping entry.
+Duplicate found for Centratherum punctatum with GBIF key 3090864.0. Skipping entry.
+Duplicate found for Ceratonia siliqua with GBIF key 5356354.0. Skipping entry.
+Duplicate found for Coleonema album with GBIF key 5594432.0. Skipping entry.
+Duplicate found for Combretum apiculatum with GBIF key 3698502.0. Skipping entry.
+Duplicate found for Combretum caffrum with GBIF key 3699709.0. Skipping entry.
+Duplicate found for Crinum bulbispermum with GBIF key 2853668.0. Skipping entry.
+Duplicate found for Crinum macowanii with GBIF key 2853929.0. Skipping entry.
+Duplicate found for Crinum moorei with GBIF key 4928395.0. Skipping entry.
+Duplicate found for Crotalaria agatiflora with GBIF key 2942820.0. Skipping entry.
+Duplicate found for Crotalaria globifera with GBIF key 2942923.0. Skipping entry.
+Duplicate found for Croton dichogamus with GBIF key 3059533.0. Skipping entry.
+Duplicate found for Croton gratissimus with GBIF key 3058727.0. Skipping entry.
+Duplicate found for Croton steenkampianus with GBIF key 3058591.0. Skipping entry.
+Duplicate found for Cussonia paniculata with GBIF key 3035211.0. Skipping entry.
+Duplicate found for Cyrtanthus elatus with GBIF key 5325993.0. Skipping entry.
+Duplicate found for Cyrtanthus falcatus with GBIF key 5326032.0. Skipping entry.
+Duplicate found for Cyrtanthus obliquus with GBIF key 5326072.0. Skipping entry.
+Duplicate found for Datura stramonium with GBIF key 2928751.0. Skipping entry.
+Duplicate found for Dichilus gracilis with GBIF key 5359923.0. Skipping entry.
+Duplicate found for Dicoma tomentosa with GBIF key 3103375.0. Skipping entry.
+Duplicate found for Diospyros lycioides with GBIF key 4070128.0. Skipping entry.
+Duplicate found for Distephanus angulifolius with GBIF key 5400049.0. Skipping entry.
+Duplicate found for Dodonaea angustifolia with GBIF key 5577690.0. Skipping entry.
+Duplicate found for Drimia altissima with GBIF key 8295156.0. Skipping entry.
+Duplicate found for Drimia delagoensis with GBIF key 2776829.0. Skipping entry.
+Duplicate found for Drimia elata with GBIF key 11038477.0. Skipping entry.
+Duplicate found for Drimiopsis maculata with GBIF key 2776471.0. Skipping entry.
+Duplicate found for Elaeodendron croceum with GBIF key 3792084.0. Skipping entry.
+Duplicate found for Eleutherine bulbosa with GBIF key 2749556.0. Skipping entry.
+Duplicate found for Eriocephalus punctulatus with GBIF key 3130102.0. Skipping entry.
+Duplicate found for Eriosema kraussianum with GBIF key 5349171.0. Skipping entry.
+Duplicate found for Erythrina caffra with GBIF key 5349557.0. Skipping entry.
+Duplicate found for Euclea natalensis with GBIF key 6056978.0. Skipping entry.
+Duplicate found for Eucomis autumnalis with GBIF key 2775117.0. Skipping entry.
+Duplicate found for Eucomis comosa with GBIF key 2775144.0. Skipping entry.
+Duplicate found for Ficus glumosa with GBIF key 5571065.0. Skipping entry.
+Duplicate found for Ficus sansibarica with GBIF key 7262605.0. Skipping entry.
+Duplicate found for Foeniculum vulgare with GBIF key 3034922.0. Skipping entry.
+Duplicate found for Aizoon africanum with GBIF key 9810425.0. Skipping entry.
+Duplicate found for Garcinia livingstonei with GBIF key 3189564.0. Skipping entry.
+Duplicate found for Geigeria aspera with GBIF key 3119865.0. Skipping entry.
+Duplicate found for Greyia flanaganii with GBIF key 3750353.0. Skipping entry.
+Duplicate found for Gunnera perpensa with GBIF key 3723634.0. Skipping entry.
+Duplicate found for Halleria lucida with GBIF key 5560356.0. Skipping entry.
+Duplicate found for Harpagophytum procumbens with GBIF key 3585335.0. Skipping entry.
+Duplicate found for Helichrysum asperum with GBIF key 3131766.0. Skipping entry.
+Duplicate found for Helichrysum cymosum with GBIF key 3131345.0. Skipping entry.
+Duplicate found for Helichrysum kraussii with GBIF key 3131274.0. Skipping entry.
+Duplicate found for Helichrysum melanacme with GBIF key 3131968.0. Skipping entry.
+Duplicate found for Helichrysum splendidum with GBIF key 3131768.0. Skipping entry.
+Duplicate found for Hoodia gordonii with GBIF key 7956185.0. Skipping entry.
+Duplicate found for Irvingia gabonensis with GBIF key 5380976.0. Skipping entry.
+Duplicate found for Kigelia africana with GBIF key 3172561.0. Skipping entry.
+Duplicate found for Laurus nobilis with GBIF key 3034015.0. Skipping entry.
+Duplicate found for Lawsonia inermis with GBIF key 5420912.0. Skipping entry.
+Duplicate found for Ledebouria socialis with GBIF key 2773791.0. Skipping entry.
+Duplicate found for Leonotis leonurus with GBIF key 2926906.0. Skipping entry.
+Duplicate found for Leucosidea sericea with GBIF key 3030262.0. Skipping entry.
+Duplicate found for Lippia javanica with GBIF key 4086664.0. Skipping entry.
+Duplicate found for Lippia rehmannii with GBIF key 4084647.0. Skipping entry.
+Duplicate found for Lippia scaberrima with GBIF key 4084203.0. Skipping entry.
+Duplicate found for Melianthus major with GBIF key 3845298.0. Skipping entry.
+Duplicate found for Myristica fragrans with GBIF key 5406817.0. Skipping entry.
+Duplicate found for Myrothamnus flabellifolius with GBIF key 4936263.0. Skipping entry.
+Duplicate found for Myrsine africana with GBIF key 7331120.0. Skipping entry.
+Duplicate found for Nerine filifolia with GBIF key 5326933.0. Skipping entry.
+Duplicate found for Nerine sarniensis with GBIF key 5326867.0. Skipping entry.
+Duplicate found for Olea europaea with GBIF key 5830157.0. Skipping entry.
+Duplicate found for Olea capensis with GBIF key 7475694.0. Skipping entry.
+Duplicate found for Olea europaea with GBIF key 5415040.0. Skipping entry.
+Duplicate found for Ornithogalum thyrsoides with GBIF key 2773545.0. Skipping entry.
+Duplicate found for Osyris lanceolata with GBIF key 7473922.0. Skipping entry.
+Duplicate found for Oxyanthus speciosus with GBIF key 2901539.0. Skipping entry.
+Duplicate found for Parinari capensis with GBIF key 2985030.0. Skipping entry.
+Duplicate found for Parinari curatellifolia with GBIF key 8185443.0. Skipping entry.
+Duplicate found for Pelargonium sidoides with GBIF key 3827581.0. Skipping entry.
+Duplicate found for Peltophorum africanum with GBIF key 2952780.0. Skipping entry.
+Duplicate found for Pentanisia prunelloides with GBIF key 2898462.0. Skipping entry.
+Duplicate found for Coleus barbatus with GBIF key 8030165.0. Skipping entry.
+Duplicate found for Plectranthus ecklonii with GBIF key 3904963.0. Skipping entry.
+Duplicate found for Plectranthus purpuratus with GBIF key 7309146.0. Skipping entry.
+Duplicate found for Prunus africana with GBIF key 3022853.0. Skipping entry.
+Duplicate found for Putterlickia verrucosa with GBIF key 3790785.0. Skipping entry.
+Duplicate found for Salvia africana with GBIF key 3886290.0. Skipping entry.
+Duplicate found for Salvia aurea with GBIF key 3884533.0. Skipping entry.
+Duplicate found for Scadoxus puniceus with GBIF key 2860719.0. Skipping entry.
+Duplicate found for Mesembryanthemum tortuosum with GBIF key 7750120.0. Skipping entry.
+Duplicate found for Schkuhria pinnata with GBIF key 8346536.0. Skipping entry.
+Duplicate found for Schotia brachypetala with GBIF key 2959242.0. Skipping entry.
+Duplicate found for Schizocarphus nervosus with GBIF key 2771381.0. Skipping entry.
+Duplicate found for Scutia myrtina with GBIF key 8317476.0. Skipping entry.
+Duplicate found for Securidaca longepedunculata with GBIF key 5658133.0. Skipping entry.
+Duplicate found for Senecio chrysocoma with GBIF key 3108921.0. Skipping entry.
+Duplicate found for Senecio oxyodontus with GBIF key 3108873.0. Skipping entry.
+Duplicate found for Senecio pterophorus with GBIF key 3107177.0. Skipping entry.
+Duplicate found for Sideroxylon inerme with GBIF key 2887200.0. Skipping entry.
+Duplicate found for Siphonochilus aethiopicus with GBIF key 2757671.0. Skipping entry.
+Duplicate found for Solanum aculeastrum with GBIF key 2929801.0. Skipping entry.
+Duplicate found for Solanum aculeatissimum with GBIF key 2929394.0. Skipping entry.
+Duplicate found for Sophora flavescens with GBIF key 2959073.0. Skipping entry.
+Duplicate found for Sphaeranthus indicus with GBIF key 8302135.0. Skipping entry.
+Duplicate found for Spilanthes acmella with GBIF key 7367845.0. Skipping entry.
+Duplicate found for Spirostachys africana with GBIF key 5378880.0. Skipping entry.
+Duplicate found for Streptocarpus dunnii with GBIF key 8269257.0. Skipping entry.
+Duplicate found for Struthiola argentea with GBIF key 5524321.0. Skipping entry.
+Duplicate found for Lessertia frutescens with GBIF key 5633333.0. Skipping entry.
+Duplicate found for Syzygium jambos with GBIF key 3183534.0. Skipping entry.
+Duplicate found for Vepris gerrardii with GBIF key 10329959.0. Skipping entry.
+Duplicate found for Vepris natalensis with GBIF key 3834275.0. Skipping entry.
+Duplicate found for Terminalia sericea with GBIF key 3699769.0. Skipping entry.
+Duplicate found for Zanthoxylum asiaticum with GBIF key 10789822.0. Skipping entry.
+Duplicate found for Turraea floribunda with GBIF key 3849883.0. Skipping entry.
+Duplicate found for Typha capensis with GBIF key 5289571.0. Skipping entry.
+Duplicate found for Vepris glomerata with GBIF key 7269194.0. Skipping entry.
+Duplicate found for Gymnanthemum amygdalinum with GBIF key 3130899.0. Skipping entry.
+Duplicate found for Vernonia colorata with GBIF key 5396914.0. Skipping entry.
+Duplicate found for Vismia baccifera with GBIF key 8113584.0. Skipping entry.
+Duplicate found for Warburgia salutaris with GBIF key 5603223.0. Skipping entry.
+Duplicate found for Xysmalobium undulatum with GBIF key 3571866.0. Skipping entry.
 
 
+           LOAD DATA LOCAL INFILE '/localdata/wand_data/use_final_SANCDB_plants_for_DB_no_dups.csv'
+           INTO TABLE plants
+           FIELDS TERMINATED BY ','
+           ENCLOSED BY '"'
+           LINES TERMINATED BY '\n'
+           IGNORE 1 LINES
+           (plant_id,genus, species, gbif_key, synonyms, family_id);
+
+and then there was a fuckup
+apparently datawarrior and sql disagree on the number of entries in the ANCDB file and there was an error with the new 
+plant_id not being unique when i set it to start at 19941 
+
+Okay so somehow the ID assign thing fucked out and I have Id's up to a higher number than there are entries for the ANPDB. 
+The issue was that when I skipped all the plants that were sp and spp for a genus that had a species already then it counted 
+on so I am going to reassign plantID
+
+I think it is sorted so I will now just send the new anpdb file with correct ID to vm and rerun all the above SQL
+
+As far as I can tell all went well and the things are in correctly all 20014 as expected
 
 GO CKECK ERROTS FOR THE NPCLASSIFICATION

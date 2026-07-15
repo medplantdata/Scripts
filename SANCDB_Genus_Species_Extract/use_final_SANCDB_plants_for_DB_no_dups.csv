@@ -1,0 +1,75 @@
+plant_id,genus,species,gbif_key,synonyms,family_id
+19941,Senegalia,nigrescens,3795961,Acacia nigrescens,193
+19942,Acokanthera,oppositifolia,3619546,,376
+19943,Albuca,fastigiata,2772375,,64
+19944,Apodytes,dimidiata,3597463,,373
+19945,Boscia,albitrunca,5602556,,275
+19946,Buddleja,saligna,3173331,,411
+19947,Cedrelopsis,microfoliolata,3990256,Cedrelopsis microfoliata,257
+19948,Cissampelos,capensis,7514615,,116
+19949,Croton,megalobotrys,3060022,,166
+19950,Croton,menyharthii,3059559,,166
+19951,Croton,pseudopulchellus,3058146,,166
+19952,Curtisia,dentata,8057620,,343
+19953,Fusifilum,depressum,2773832,Drimia depressa,64
+19954,Drimia,macrocentra,2776864,,64
+19955,Drimiopsis,burkei,2776491,,64
+19956,Ecklonia,maxima,3196111,,95
+19957,Elephantorrhiza,elephantina,2933010,,193
+19958,Dicerothamnus,rhinocerotis,3104052,Elytropappus rhinocerotis,423
+19959,Erythrophleum,lasianthum,2971195,,193
+19960,Eucomis,bicolor,2775154,,64
+19961,Eucomis,humilis,2775128,,64
+19962,Eucomis,montana,2775143,,64
+19963,Eucomis,pallidiflora,2775155,,64
+19964,Eucomis,schijffii,2775130,Eucomis schiffii,64
+19965,Euphorbia,bothae,3064695,,166
+19966,Euryops,floribundus,5394977,,423
+19967,Ornithogalum,candicans,2772982,Galtonia candicans,64
+19968,Gethyllis,ciliaris,2855231,,63
+19969,Helichrysum,niveum,7926500,,423
+19970,Helichrysum,teretifolium,3131467,,423
+19971,Helichrysum,umbraculigerum,3131861,,423
+19972,Hyaenanche,globosa,3075183,,182
+19973,Hypoxis,colchicifolia,2853001,,71
+19974,Lachenalia,punctata,2775284,Lachenalia rubida,64
+19975,Ledebouria,ovatifolia,2773678,,64
+19976,Leonotis,ocymifolia,7307634,,396
+19977,Massonia,bifolia,2770402,,64
+19978,Massonia,pustulata,2770444,,64
+19979,Gymnosporia,procumbens,3794114,Maytenus procumbens,144
+19980,Merwilla,plumbea,2768144,,64
+19981,Mimusops,obtusifolia,2883807,,364
+19982,Ocimum,labiatum,3897145,,396
+19983,Olax,dissitiflora,3685821,,296
+19984,Oncosiphon,pilulifer,10852031,Oncosiphon piluliferum,423
+19985,Ormocarpum,trichocarpum,2954028,,193
+19986,Ornithogalum,saundersiae,2773403,,64
+19987,Plectranthus,hadiensis,8338131,,396
+19988,Plectranthus,lucidus,3903566,,396
+19989,Coleus,venteri,11076130,Plectranthus venteri,396
+19990,Pseudoprospero,firmifolium,2774040,,64
+19991,Rafnia,amplexicaulis,2974555,,193
+19992,Rauvolfia,caffra,3618324,,376
+19993,Resnova,humifusa,2767731,,64
+19994,Rhodocodon,campanulatus,10808922,,64
+19995,Rosa,soulieana,3004885,,204
+19996,Salvia,albicaulis,3886103,,396
+19997,Salvia,aurita,7372122,,396
+19998,Salvia,chamelaeagnea,3881832,,396
+19999,Salvia,disermas,8179998,,396
+20000,Salvia,dolomitica,3903804,,396
+20001,Salvia,lanceolata,7791208,,396
+20002,Salvia,muirii,3895306,,396
+20003,Salvia,namaensis,3895126,,396
+20004,Salvia,repens,7307546,,396
+20005,Salvia,runcinata,3888708,,396
+20006,Salvia,schlechteri,3888159,,396
+20007,Neocussonia,umbellifera,3038863,Schefflera umbellifera,441
+20008,Ledebouria,zebrina,5952279,Scilla zebrina,64
+20009,Searsia,chirindensis,5544393,,251
+20010,Senecio,paniculatus,3108792,,423
+20011,Solanum,panduriforme,2931607,,388
+20012,Suregada,zanzibariensis,3054868,,166
+20013,Vepris,bremekampii,3834676,Toddaliopsis bremekampii,257
+20014,Vitex,rehmannii,3903327,,396

@@ -150,7 +150,7 @@ db_final.to_csv('/home/school/masters/Scripts/SANCDB_Genus_Species_Extract/offic
 """
 
 # making plants ready for the database
-db = pd.read_csv('/home/school/masters/Scripts/SANCDB_Genus_Species_Extract/offical_deduplicated_SANCDB_plants.csv')
+"""db = pd.read_csv('/home/school/masters/Scripts/SANCDB_Genus_Species_Extract/offical_deduplicated_SANCDB_plants.csv')
 families = pd.read_csv('/home/school/masters/Scripts/APG_IV/data-apg4-master/families.csv')
 entry = []
 count = 0
@@ -167,3 +167,5 @@ for genus,species,GBIF_usageKey, family in zip(db['genus'], db['species'], db['u
 
 db_final = pd.DataFrame(entry, columns=['wand_id', 'genus', 'species', 'gbif_usagekey', 'family_id'])
 db_final.to_csv('/home/school/masters/Scripts/SANCDB_Genus_Species_Extract/SANCDB_plants_for_DB.csv', index=False)
+"""
+

@@ -644,9 +644,8 @@ entries =[]
 existing = set()
 
 existing = df['genus'].unique()
-
+count = 0
 for origional_name, genus, species, gbif_key, family_id, gbif_accepted_name in df[['original_name','genus','species','gbif_key','family_id','gbif_accepted_name']].values:
-    count += 1
 
     if species == 'spp.':
         species = 'spp.'
@@ -663,9 +662,11 @@ for origional_name, genus, species, gbif_key, family_id, gbif_accepted_name in d
     name = (genus + ' ' + species).strip()
     if name == origional_name.strip():
         origional_name = ''
-            
-    entries.append([count, genus, species, gbif_key, origional_name, family_id])
+
+    count += 1        
+    entries.append([count,genus, species, gbif_key, origional_name, family_id])
 
 for_db = pd.DataFrame(entries, columns=['plant_id','genus','species','gbif_key','synonyms','family_id'])
 
 for_db.to_csv('/home/school/masters/Scripts/ANPDB/plants_to_send_to_db.csv', index=False)
+
