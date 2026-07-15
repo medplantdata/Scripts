@@ -592,9 +592,80 @@ for  gbif_accepted_name, genus, gbif_key in empty_species[['gbif_accepted_name',
 
 df.to_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv', index=False)"""
 
-# filtering missing species
-df = pd.read_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv')
-empty = df[df['species'].isna()]
+# filtering missing species and then removing them
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/plants_for_db.csv')
+empty_species = df[df['species'].isna()]
 
-for origional_name, gbif_id in empty[['original_name', 'gbif_id']].values:
-    print(origional_name + " " + str((gbif_id)))
+for gbif_key in empty_species['gbif_key']:
+    df.drop(df[df['gbif_key'] == gbif_key].index, inplace=True)
+
+empty_genus = df[df['genus'].isna()]
+
+for gbif_key in empty_genus['gbif_key']:
+    df.drop(df[df['gbif_key'] == gbif_key].index, inplace=True)
+
+df.to_csv('/home/school/masters/Scripts/ANPDB/plants_for_db_no_nans.csv', index=False)"""
+
+# now adding the family id roreign key
+
+"""plants = pd.read_csv('/home/school/masters/Scripts/ANPDB/plants_for_db_no_nans.csv')
+families = pd.read_csv('/home/school/masters/Scripts/APG_IV/data-apg4-master/families.csv')
+
+families.drop(columns=['order_id'],inplace=True)
+family_ids = []
+
+for family in plants['family']:
+    if family not in families['family'].values:
+        family_ids.append(0)
+        print(f"{family} not in the apgiv")
+    else:
+        family_id = families.loc[families['family'] == family, 'family_id'].values[0]
+        family_ids.append(family_id)
+
+plants['family_id'] = family_ids
+plants.to_csv('/home/school/masters/Scripts/ANPDB/plants_for_db_no_nans.csv', index=False)"""
+
+# removing plants that are in families not recognised by the APG IV system
+"""df = pd.read_csv('/home/school/masters/Scripts/ANPDB/plants_for_db_no_nans.csv')
+
+for family_id in df['family_id']:
+    if family_id == 0:
+        df.drop(df[df['family_id'] == family_id].index, inplace=True)
+    
+df.to_csv('/home/school/masters/Scripts/ANPDB/plants_for_db_APG4_families_only.csv', index=False)"""
+
+# making into db format
+
+df= pd.read_csv('/home/school/masters/Scripts/ANPDB/plants_for_db_APG4_families_only.csv')
+
+count = 0
+
+entries =[]
+existing = set()
+
+existing = df['genus'].unique()
+
+for origional_name, genus, species, gbif_key, family_id, gbif_accepted_name in df[['original_name','genus','species','gbif_key','family_id','gbif_accepted_name']].values:
+    count += 1
+
+    if species == 'spp.':
+        species = 'spp.'
+    elif species == 'sp.':
+        species = 'sp.'
+    else:
+        genus = species.split()[0]
+        species = species.split()[1]
+    if species == 'spp.' or species == 'sp.':
+        if genus in existing:
+            print(f"{genus} already exists, skipping {genus} {species}")
+            continue
+
+    name = (genus + ' ' + species).strip()
+    if name == origional_name.strip():
+        origional_name = ''
+            
+    entries.append([count, genus, species, gbif_key, origional_name, family_id])
+
+for_db = pd.DataFrame(entries, columns=['plant_id','genus','species','gbif_key','synonyms','family_id'])
+
+for_db.to_csv('/home/school/masters/Scripts/ANPDB/plants_to_send_to_db.csv', index=False)

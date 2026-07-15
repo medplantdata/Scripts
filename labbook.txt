@@ -19,6 +19,7 @@ TOC:
 29 June -> New website build
 30 June -> New website db connect
 1 July -> Adding compound search to the website
+2 July - Adding compound draw and descriptor ability
 
 
 
@@ -870,5 +871,67 @@ can prolly do the finla info page where the descriptors are calced and the struc
 
 
 2 July - Adding compound draw and descriptor ability
+
+descriptor and drawing ability added
+There are aesthetic issues but otherise is good
+
+
+15 July - adding plants and plant family link to DB
+
+have been working on proposal for last while
+
+Going to remove the weird entries from the plant db that I had to fix maunually while I wait on gary to check them for me
+then last quick quality check then add
+
+Clerodendron fragrans -> Clerodendrum fragrans Vent
+Murraya exotica 933 -> ambigous removed
+Ilex amara 220 -> ambigous removed 
+Bryum rutilans 1333 -> ambigous removed 
+Buphane fischeri 7316092 -> changed Boophone fischeri
+Lignum dalbergiae odoriferae rosewood 2962953 -> very weird excluded
+Anagallis sp. 8330627 -> synonyms to Lysmachia added sp.
+Aplophyllum pedicellatum 7597471 -> I think this is a typo there is a Haplophyllum pedicellatum that is medicinal so using that
+Asarum sp. 7707728 -> is real added sp
+Eriobotrya sp. 3024121 -> is real the synonym is Rhaphiolepis
+Coeloseira pacifica 2663412 -> this is like an algae or something so it was removed
+Launea 4255554 -> exists gave it sp.
+Pimpinella sp. 3027402 -> marked as doubtful on gbif so I removed it
+Urginea sp. 6425216 -> real synonym is drimia
+Jungermannia obovata 126 -> could be multiple things was removed
+Harpephyllum afrum 6 -> another spelling mistake I think so added Harpephyllum caffrum Bernh.
+Befaria glutinosa 7402726 -> couldnt find decent match gbif kept taking to a south american plant removed it
+Terebinthina sp. 7331877 -> listed as doubtful so removed
+Trocholejeunea scandvicensis 2688855 -> removed as I think it is a duplicate of Trocholejeunea sandvicensis
+Nidus vespae 2838904 -> removed it is apparently honeycomb
+Vanillosmopsis sp. 7339037 -> appears to be a synonym of eremanthus
+Crataeva sp. 3871722 -> there is already an entry with a species name for the genus so removing this
+Polypodium hastatum 392 -> synonym for Tectaria incisa Cav.
+Helianthopsis 7338871 -> synonym just needed sp.
+Emblica sp. 7276108 -> synonym just needed sp.
+Porphyra laciniata 106 -> could have been multiple entries so I removed it
+Butyrospermum sp. 7333522 -> synonym needed sp. 
+Lycopodium chinense 245 -> could be many things so was removed
+Decussocarpus spp. 7315457 -> synonym needed sp
+Notopterygium sp. 8174379 -> synonym needed sp
+Asiasarum sp. 7313569 -> synonym needed sp
+Symphoricarpus sp. 7272635 -> synonym needed sp.
+Pachypodanthium sp. 7320087 -> synonym needed sp.
+Philyrea spp. 6880048  -> synonym needed spp
+Melanorrhoea spp. 3190606 -> synonym needed spp
+Rabdosia sp. 3233576 -> synonym need sp. 
+
+all the above entries will be removed and saved to plants_for_db_no_nans
+
+now adding the family foreign key
+
+Ok so the problem now is that there are about 1740 plants that belong to families that are not in the APG4 but that are
+accepted families in the GBIF. the full complete list is in the plants_for_db_no_nans. Im going to export the ones that
+are from legit apg4 families to plants_for_db_APG4_families_only.csv
+
+
+looks like plants are on the I hope everything is good now to add to db
+
+
+
 
 GO CKECK ERROTS FOR THE NPCLASSIFICATION
