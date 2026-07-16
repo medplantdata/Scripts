@@ -20,6 +20,7 @@ TOC:
 30 June -> New website db connect
 1 July -> Adding compound search to the website
 2 July - Adding compound draw and descriptor ability
+15 July - adding ANCDB plants and plant family link with corrected SANCDB plants to DB
 
 
 
@@ -1128,4 +1129,39 @@ I think it is sorted so I will now just send the new anpdb file with correct ID 
 
 As far as I can tell all went well and the things are in correctly all 20014 as expected
 
+16 July - putting the compound plant relatioship into the db
+
+So using the og download filtered to only have plants and the plant and compound csvs that got sent to the database I have 
+encountered a conundrum: Some of the plants from the OG dataset that I am using as a link between the 2 other sets have
+been removed. For example asparagus stipularis has been removed as a synonym for asparagus horridus. Now there are a few
+like that. 
+Okay so I checked a few and it looks like I may have excluded a few of the plants that are accepted. 
+Will need to check properly and see what is cutting here and fix -> see the compound_plant_relationship.py
+40737 is apparently the number of plants I missed. I assume that these are duplicated as well
+Tomorrows problem
+
+now to add the relationships to the db:
+
+CREATE TABLE junction_compound_plant (
+compound_id  INT UNSIGNED NOT NULL,
+plant_id INT UNSIGNED NOT NULL,
+PRIMARY KEY (compound_id, plant_id),
+FOREIGN KEY (compound_id) REFERENCES compounds(compound_id),
+FOREIGN KEY (plant_id) REFERENCES plants(plant_id));
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/compound_plant_relationships.csv'
+INTO TABLE junction_compound_plant
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(compound_id,plant_id);
+
+0 warnings and as far as I can tell all is good with this.
+perplexity suggests adding constraints
+
+want to try add some web func now as well
+
+
 GO CKECK ERROTS FOR THE NPCLASSIFICATION
+find missing plants that were excluded from the ANPDB -> see 16 July
