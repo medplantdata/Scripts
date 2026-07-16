@@ -1162,6 +1162,9 @@ perplexity suggests adding constraints
 
 want to try add some web func now as well
 
+Web func sucessful!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+the plants and the compounds now link to each other on the info pages :)
+
 
 GO CKECK ERROTS FOR THE NPCLASSIFICATION
 find missing plants that were excluded from the ANPDB -> see 16 July
