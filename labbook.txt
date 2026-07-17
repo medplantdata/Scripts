@@ -21,7 +21,7 @@ TOC:
 1 July -> Adding compound search to the website
 2 July - Adding compound draw and descriptor ability
 15 July - adding ANCDB plants and plant family link with corrected SANCDB plants to DB
-
+16 July - putting the compound plant relatioship into the db and website
 
 
 
@@ -1129,7 +1129,7 @@ I think it is sorted so I will now just send the new anpdb file with correct ID 
 
 As far as I can tell all went well and the things are in correctly all 20014 as expected
 
-16 July - putting the compound plant relatioship into the db
+16 July - putting the compound plant relatioship into the db and website
 
 So using the og download filtered to only have plants and the plant and compound csvs that got sent to the database I have 
 encountered a conundrum: Some of the plants from the OG dataset that I am using as a link between the 2 other sets have
@@ -1165,6 +1165,13 @@ want to try add some web func now as well
 Web func sucessful!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 the plants and the compounds now link to each other on the info pages :)
 
+17 July -> 
+Its a friday so I am doing fun website things that I feel like doing :)
+
+first task is adding home buttons -> done for all currently up and running webpages
+
 
 GO CKECK ERROTS FOR THE NPCLASSIFICATION
-find missing plants that were excluded from the ANPDB -> see 16 July
+find missing plants that were excluded from the ANPDB (there are a lot of plants that were in the ANCDB that
+didn't make  it into the DB and that may be due to duplicates and to just things that got removed in general
+but I found a couple entries that probably should have made it so just check again) -> see 16 July
