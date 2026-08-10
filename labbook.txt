@@ -22,6 +22,9 @@ TOC:
 2 July - Adding compound draw and descriptor ability
 15 July - adding ANCDB plants and plant family link with corrected SANCDB plants to DB
 16 July - putting the compound plant relatioship into the db and website
+17 July -> adding home page and help page link
+21 July - making plant graph and starting coconut full download cleaning
+22 July - progress on cid script
 
 
 
@@ -1165,10 +1168,31 @@ want to try add some web func now as well
 Web func sucessful!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 the plants and the compounds now link to each other on the info pages :)
 
-17 July -> 
+17 July -> adding home page and help page link
 Its a friday so I am doing fun website things that I feel like doing :)
 
 first task is adding home buttons -> done for all currently up and running webpages
+noticed that there are compouns missing from the plant entries when I compare to coconut. BUt it was not in the origional 
+ANCDB anyways I see that there is a bulk download of all coconut compouns tho
+
+21 July - making plant graph and starting coconut full download cleaning
+
+idea for plant graph called it -> experimental_plant_graph.php
+
+So I got the full coconut made it manageable, removed items in the db. Unfortunately the download doesnt have cids. to query all the
+cids is going to take about 240 hours :(
+
+22 July - progress on cid script
+So i ran about 40 000 cids (5%) excluding errors and that took slighly less than 24 hours 
+
+24 July - made a cid getter script for wonko
+
+they dont have the pubchempy module tho :( have emailed johann for it
+
+
+have to do module load possibly?????
+to run a python in the server headnode you can just do > python3 filename.py
+
 
 
 GO CKECK ERROTS FOR THE NPCLASSIFICATION
