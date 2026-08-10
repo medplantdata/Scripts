@@ -25,6 +25,7 @@ TOC:
 17 July -> adding home page and help page link
 21 July - making plant graph and starting coconut full download cleaning
 22 July - progress on cid script
+24 July - made a cid getter script for wonko
 
 
 
@@ -1192,6 +1193,17 @@ they dont have the pubchempy module tho :( have emailed johann for it
 
 have to do module load possibly?????
 to run a python in the server headnode you can just do > python3 filename.py
+
+10 Aug - on holiday but moving coconut with cid stuff off lustre, added some stats to the site
+
+CID get script worked but with 101297 that will need to be quickly checked for now all good tho everything is back on wonko
+
+now I want to sort out the git ignore so that I can push to github and sort out the labbook
+
+Added counters that say what the number of each entry is on the site.
+span is better to use that colour as a tag for making something purple
+
+
 
 
 
