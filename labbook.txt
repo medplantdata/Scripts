@@ -26,6 +26,7 @@ TOC:
 21 July - making plant graph and starting coconut full download cleaning
 22 July - progress on cid script
 24 July - made a cid getter script for wonko
+11 Aug - adding adenia petchulii and the cids to the og coconut download
 
 
 
@@ -1203,11 +1204,46 @@ now I want to sort out the git ignore so that I can push to github and sort out 
 Added counters that say what the number of each entry is on the site.
 span is better to use that colour as a tag for making something purple
 
+11 Aug - adding adenia petchulii and the cids to the og coconut download
 
+
+            insert into plants (plant_id, genus, species, synonyms, family_id)
+            values (20015, "Adenia","pechuelii", "Elephant's foot, Natalie",179);
+
+adding cids to the origional coconut download -> coconut_with_cids.py
+
+12 - Aug sorting out the empty name issue for the coconut data full without the ANCDB will have to add that back in
+
+Am going with the logic the shortest name is the best name so am assigning shortest synonym to empty name fields and the iupac where
+synonyms are null
+
+Okay so a lot of the compounds dont have names, synonyms or iupac :(
+I added a few to an online smiles to iupac converter and it said there is no iupac so for those I am assigning the compound_id as a 
+name
+
+The inchi is missing from some of the compounds :(
+
+
+14 Aug - touching up help and adding links from compound IDs to og sites also changing compounds cid column
+
+coconut ID's now link to the coconut page
+tried with cid but then the cids had a .0 at the end which is wrong so:
+
+update compounds
+set cid = left(cid, length(cid)-2)
+where cid is not null;
+
+now links to pubchem from a cid
+
+Changed the output from the descriptors in the compound_info.php it now takes the json and adds it to a JS map with a nicer name
+and prints that
 
 
 
 GO CKECK ERROTS FOR THE NPCLASSIFICATION
+
 find missing plants that were excluded from the ANPDB (there are a lot of plants that were in the ANCDB that
 didn't make  it into the DB and that may be due to duplicates and to just things that got removed in general
 but I found a couple entries that probably should have made it so just check again) -> see 16 July
+
+check the error file for the cid getter

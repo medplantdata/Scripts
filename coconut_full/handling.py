@@ -135,14 +135,14 @@ error_df = pd.DataFrame(err, columns=['standard_inchi', 'error'])
 error_df.to_csv('/home/school/masters/Scripts/coconut_full/errors.csv', index=False)
 df.to_csv('/home/school/masters/Scripts/coconut_full/coconut_with_cids.csv', index=False)
 """
-
+"""
 df = pd.read_csv('/home/school/masters/Scripts/coconut_full/coconut_managebale.csv')
 
 df = df[['coconut_id','standard_inchi','standard_inchi_key','canonical_smiles']]
 
 df.to_csv('/home/school/masters/Scripts/coconut_full/compounds_for_wonko.csv',index=False)
 
-"""import time
+import time
 import pandas as pd
 import pubchempy as pcp
 def get_cid(input,type):
@@ -218,3 +218,72 @@ error_df = pd.DataFrame(err, columns=['standard_inchi', 'error'])
 error_df.to_csv(err_out,index=False)
 prog_df = pd.DataFrame([prog], columns=['Progress'])
 prog_df.to_csv(progress_out, index=False)"""
+
+#wonko got all the cids (not all) so now need to add to the full coconut
+"""cids = pd.read_csv('/home/school/masters/Scripts/coconut_full/coconut_with_cids.csv')
+
+cids.drop(columns=['canonical_smiles','standard_inchi','standard_inchi_key'],inplace=True)
+
+df = pd.read_csv('/home/school/masters/Scripts/coconut_full/coconut_full.csv')
+
+df = pd.merge(df,cids,how='left',left_on='identifier',right_on='coconut_id')
+
+df.to_csv('/home/school/masters/Scripts/coconut_full/coconut_with_cids.csv',index=False)"""
+
+
+# sorting out the empty name feild issue
+df = pd.read_csv('/home/school/masters/Scripts/coconut_full/coconut_with_cids.csv')
+df.drop(columns= ['annotation_level','total_atom_count','heavy_atom_count','molecular_weight','exact_molecular_weight','alogp','topological_polar_surface_area','rotatable_bond_count','hydrogen_bond_acceptors','hydrogen_bond_donors','hydrogen_bond_acceptors_lipinski','hydrogen_bond_donors_lipinski','lipinski_rule_of_five_violations','aromatic_rings_count','formal_charge','fractioncsp3','number_of_minimal_rings','contains_sugar','contains_ring_sugars','contains_linear_sugars','murcko_framework','np_likeness','chemical_class','chemical_sub_class','chemical_super_class','direct_parent_classification','np_classifier_pathway','np_classifier_superclass','np_classifier_class','np_classifier_is_glycoside','organisms','collections'],inplace=True)
+
+def getShortName(row):
+    synonyms = row['synonyms']
+    iupac = row['iupac_name']
+    
+    if pd.isna(synonyms) or not str(synonyms).strip():
+        return str(iupac).strip()
+    names = synonyms.split('|')
+
+    names = [name.strip() for name in names if name.strip()]
+    
+    shortest_name = min(names, key=len)
+    return shortest_name
+
+    
+no_iupac= []
+
+counta = 0
+for idx, row in df.iterrows():
+    if pd.isna(row['name']) and pd.isna(row['synonyms']) and pd.isna(row['iupac_name']):
+        id = row['identifier']
+        smiless = row['canonical_smiles']
+        counta+=1
+        print(counta)
+        no_iupac.append([id,smiless])
+
+    if pd.isna(row['name']):
+        new_name = getShortName(row)
+        df.at[idx, 'name'] = new_name
+
+    
+
+df['compound_id'] = pd.NA
+df.drop(columns=['iupac_name'], inplace=True)
+
+counter = 5401
+for idx, row in df.iterrows():
+    df.at[idx,'compound_id'] = counter
+    counter+=1
+
+
+df = df.rename(columns={'canonical_smiles': 'smiles','standard_inchi': 'inchi', 'standard_inchi_key': 'inchi_key'})
+new_columns_order = ['compound_id','smiles','inchi','inchi_key','name','synonyms','coconut_id','cas','cid']
+
+df = df[new_columns_order]
+
+
+for idx, row in df.iterrows():
+    if pd.isna(row['name']):
+        df.at[idx,'name'] = row['compound_id']
+
+df.to_csv('/home/school/masters/Scripts/coconut_full/coconut_fullexport_for_wonko.csv', index=False)
+print(no_iupac)
