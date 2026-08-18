@@ -1248,10 +1248,39 @@ wcvp_dwca.zip              2026-06-04 15:31   84M  is the WCVP that I downloaded
 so they way they structure the WCVP download is weird. They go all the way down into the infraspecies level. They have some weird 
 columns. I am using the acceptednameusageid column as the disambiguation/desynonym ID. 
 
+It seems like it will be difficult to use this and then I will also have to check the kingdom anyway as some are not plants 
+so I am going to try another way
+
 I have created a csv coconut_plants.csv with the coconut ID an the subsequent organism that is related to it.
 Will try to then put this into the species matching tool on ChecklistBank => https://www.checklistbank.org/tools/name-match
 
 against -> COL26.7 XR 2026-07-17 XR [315834]
+is running while that goes imma try setup my latex for text editing
+
+got the job back gonna parse now and remove the non plants and deduplicate on the origional name from coconut
+
+The file sent had 1 267 087 entires and the one that came back has 1267088 (there are lots of dups still 
+      in theory not just because of plant synonyms but because the same plants are repeated)
+The plants only (not deduplicated) is 937 333
+The plants now with origional name deduplications removed is 45 023
+
+In think I can remove the coconut ID and deduplicate on synonym to add to db. I should aslo check out what is cutting
+with the gbif ID's and maybe add POWO stuff the geolocation data from there will be nice.
+
+done for today tho
+
+19 Aug - adding plant foreign Id's and getting ready for db Export 
+
+
+
+
+
+
+
+
+
+
+
 
 
 GO CKECK ERROTS FOR THE NPCLASSIFICATION

@@ -6,8 +6,8 @@ input_file_path = '/home/school/masters/Scripts/coconut_full/coconut_full.csv'
 error_path = ''
 output_path = ''
 
-
-
+# getting the coconut_id and organism from the coconut_full.csv file to send to the checkilist thingy
+"""
 df = pd.read_csv(input_file_path)
 entries = []
 
@@ -22,8 +22,11 @@ for idx, row in df.iterrows():
 
 coconut_organisms= pd.DataFrame(entries, columns=['coconut_id','scientificName'])
 print('finished plant sep')
-coconut_organisms.to_csv('/home/school/masters/Scripts/coconut_full/coconut_organisms.csv')
+coconut_organisms.to_csv('/home/school/masters/Scripts/coconut_full/coconut_organisms.csv', index=False)
+"""
 
+
+# code below was supposed to check the names against the WCVP but but I decided to do this differently
 """
 seperated_plants_df = pd.DataFrame(entries,columns=['coconut_id','plant_name_from_coconut'])
 plant_df = pd.read_csv(plant_file, sep= '|')
@@ -58,3 +61,32 @@ for idx, row in seperated_plants_df.iterrows():
 
 df_with_accepted_names = pd.DataFrame(entries, columns = ['coconut_id', 'coconut_name', 'accepted_id'])
 """
+# pulling non plantae from coconut plants
+df = pd.read_csv('/home/school/masters/Scripts/coconut_full/checklist_matched_organisms.tsv',sep='\t')
+
+entries = []
+for row in df.itertuples(index=False):
+    if row.kingdom == 'Plantae':
+        entries.append(row)
+
+old_len = len(df)
+formatted = f"{old_len:,}".replace(",", " ")
+print(f"""The file sent had 1 267 087 entires and the one that came back has {old_len} (there are lots of dups still 
+      in theory not just because of plant synonyms but because the same plants are repeated)""")
+
+df_plants = pd.DataFrame(entries, 
+                         columns=['original_coconut_id','original_scientificName','matchType','matchIssues','ID','rank',
+                                  'scientificName','authorship','status','acceptedID','acceptedScientificName',
+                                  'acceptedAuthorship','kingdom','phylum','class','order','family','genus','classification'])
+
+new_len = len(df_plants)
+formatted = f"{new_len:,}".replace(",", " ")
+print(f'The plants only (not deduplicated) is {formatted}')
+
+df_plants.drop_duplicates('original_scientificName',inplace=True)
+
+new_len = len(df_plants)
+formatted = f"{new_len:,}".replace(",", " ")
+print(f'The plants now with origional name deduplications removed is {formatted}')
+
+df_plants.to_csv('/home/school/masters/Scripts/coconut_full/coconut_plants_still_needs_synonym_deduplication.csv', index=False)
