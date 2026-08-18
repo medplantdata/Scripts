@@ -27,6 +27,9 @@ TOC:
 22 July - progress on cid script
 24 July - made a cid getter script for wonko
 11 Aug - adding adenia petchulii and the cids to the og coconut download
+12 - Aug sorting out the empty name issue for the coconut data full without the ANCDB will have to add that back in
+14 Aug - touching up help and adding links from compound IDs to og sites also changing compounds cid column
+18 Aug - Extracting organisms from the Coconut download and downloading the WCVP and sending script to wonko to get the plants back only
 
 
 
@@ -1238,6 +1241,17 @@ now links to pubchem from a cid
 Changed the output from the descriptors in the compound_info.php it now takes the json and adds it to a JS map with a nicer name
 and prints that
 
+18 Aug - Extracting organisms from the Coconut download and downloading the WCVP and sending script to wonko to get the plants back only
+
+wcvp_dwca.zip              2026-06-04 15:31   84M  is the WCVP that I downloaded
+
+so they way they structure the WCVP download is weird. They go all the way down into the infraspecies level. They have some weird 
+columns. I am using the acceptednameusageid column as the disambiguation/desynonym ID. 
+
+I have created a csv coconut_plants.csv with the coconut ID an the subsequent organism that is related to it.
+Will try to then put this into the species matching tool on ChecklistBank => https://www.checklistbank.org/tools/name-match
+
+against -> COL26.7 XR 2026-07-17 XR [315834]
 
 
 GO CKECK ERROTS FOR THE NPCLASSIFICATION
