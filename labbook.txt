@@ -30,7 +30,7 @@ TOC:
 12 - Aug sorting out the empty name issue for the coconut data full without the ANCDB will have to add that back in
 14 Aug - touching up help and adding links from compound IDs to og sites also changing compounds cid column
 18 Aug - Extracting organisms from the Coconut download and downloading the WCVP and sending script to wonko to get the plants back only
-
+19 Aug - quick manual check on the removal of non plants and seperating the errors from the working
 
 
 5 may
@@ -1264,26 +1264,64 @@ The file sent had 1 267 087 entires and the one that came back has 1267088 (ther
 The plants only (not deduplicated) is 937 333
 The plants now with origional name deduplications removed is 45 023
 
+95% of the plants used had no match issues
+
 In think I can remove the coconut ID and deduplicate on synonym to add to db. I should aslo check out what is cutting
 with the gbif ID's and maybe add POWO stuff the geolocation data from there will be nice.
 
 done for today tho
 
-19 Aug - adding plant foreign Id's and getting ready for db Export 
+19 Aug - quick manual check on the removal of non plants and seperating the errors from the working
+
+so today am helping natalie with labwork but hopefully can also assign accepted names using what the GBIF said, then deduplicate 
+on that. I will in the process take a look at the 5% that had a match issue.
+
+I also want to link to the POWO so I can use the location data from there and get the foreign id
+
+It seems the gbif key I used on the african plants thing is deprecated. I will use the new alphanumerical one as gbif taxon
+key and have to fix what is already in the db
+
+First looking at the 5% that had issues with being assigned:
+this is 2092 entries.
+issues are:
+genus with sp./spp. 
+Genus only
+ambigous synonym
+ambigous
+indetermined
+
+issue labels are:
+MatchType: ypes of matches are: <StringArray>
+['variant', 'higherrank', 'ambiguous', 'exact']
+
+MatchIssues:
+[                                                            nan,
+                                                  'INDETERMINED',
+                                                 'MISSING_GENUS',
+                          'PARTIALLY_PARSABLE_NAME;INDETERMINED',
+                                       'PARTIALLY_PARSABLE_NAME',
+                   'SUBSPECIES_ASSIGNED;PARTIALLY_PARSABLE_NAME',
+                         'PARTIALLY_PARSABLE_NAME;MISSING_GENUS',
+                     'INDETERMINED;NOMENCLATURAL_STATUS_INVALID',
+ 'DOUBTFUL_NAME;UNUSUAL_NAME_CHARACTERS;PARTIALLY_PARSABLE_NAME',
+                                'INCONSISTENT_NAME;INDETERMINED']
 
 
+I Think that the strategy here is to pull everything that worked and make a seperate file for all of the weird entries so
+that is what imma do. Im doing this in the coconut_full/coconut_plants/extracting_plants.py directory
 
+the plants that went through checklist without problems are saved as:/home/school/masters/Scripts/coconut_full/coconut_plants/to_be_deduplicated_validated_plants.csv
+the plants with errors are: /home/school/masters/Scripts/coconut_full/coconut_plants/checklist_error_plants.csv
 
+there are 5929 in the error plants
 
-
-
-
-
-
+tomorrow I think I can do the synonymn deduplication and then sort out the error ones.
 
 
 
 GO CKECK ERROTS FOR THE NPCLASSIFICATION
+
+check /home/school/masters/Scripts/coconut_full/coconut_plants/checklist_error_plants.csv 19 Aug
 
 find missing plants that were excluded from the ANPDB (there are a lot of plants that were in the ANCDB that
 didn't make  it into the DB and that may be due to duplicates and to just things that got removed in general
