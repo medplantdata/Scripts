@@ -1,4 +1,6 @@
 .venv/
 /coconut_full/*.csv
 /coconut_full/*.tsv
+/coconut_full/coconut_plants/*.csv
+/coconut_full/coconut_plants/*.tsv
 /wcvp_dwca/

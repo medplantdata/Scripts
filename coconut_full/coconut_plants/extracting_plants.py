@@ -132,3 +132,128 @@ no_df = pd.DataFrame(naughty_names,columns=column_names)
 no_df.to_csv('/home/school/masters/Scripts/coconut_full/coconut_plants/checklist_error_plants.csv',index=False)
 """
 
+# script to count mismatches in scientific names between my checklist and the WCVP checklist (31 Aug)
+"""
+coco_df = pd.read_csv('/home/school/masters/Scripts/coconut_full/coconut_plants/to_be_deduplicated_validated_plants.csv')
+wcvp_df1 = pd.read_csv('/home/school/masters/Scripts/wcvp_dwca/wcvp_taxon.csv', sep='|')
+
+
+wcvp_df1['name'] = None
+
+wcvp_df = wcvp_df1[['scientfiicname','name']].copy()
+wcvp_df1['scientfiicname'] = wcvp_df1['scientfiicname'].str.strip()
+
+
+
+for idx, row in wcvp_df.iterrows():
+    if len(str(row.scientfiicname).split()) > 1:
+        genus = row.scientfiicname.split()[0]
+        species = row.scientfiicname.split()[1]
+        name = f'{genus} {species}'
+        name = name.replace('-', '')
+        wcvp_df.at[idx,'name'] = name
+    
+        
+
+wvcp_set = set(wcvp_df['name'].str.lower())
+
+match_count = 0
+mismatch_count = 0
+
+
+entries = []
+for row in coco_df.itertuples(index=False):
+    name = row.scientificName if pd.isna(row.acceptedScientificName) else row.acceptedScientificName
+
+    name = name.replace('-', '')
+
+    if len(str(name).split()) > 1:
+        genus = name.split()[0]
+        species = name.split()[1]
+        name = f'{genus} {species}'
+
+    if isinstance(name, str):
+        name = name.strip().lower()
+    else:
+        print(f'No name found for row: {row}')
+
+    if name in wvcp_set:
+        match_count+=1
+    else:
+        mismatch_count+=1
+        entries.append([row.originalScientificName, row.acceptedScientificName, row.scientificName])
+
+
+mismatch_df = pd.DataFrame(entries, columns=['original_scientificName', 'accepted_scientificName', 'scientificName'])
+mismatch_df.to_csv('/home/school/masters/Scripts/coconut_full/coconut_plants/plants_not_in_WCVP.csv', index=False)
+print(f'{match_count} matches')
+print(f'{mismatch_count} mismatches')
+"""
+
+#dereplicating the gbif matched plants from coconut then adding names as synonyms for POWO matching (31 Aug)
+
+def clean_name(name):
+    if isinstance(name, str):
+        name = name.strip().lower()
+        name = name.replace('-', '')
+        if len(str(name).split()) > 1:
+            genus = name.split()[0]
+            species = name.split()[1]
+            name = f'{genus} {species}'
+        return name
+    else:
+        return None
+
+gbif = pd.read_csv('/home/school/masters/Scripts/coconut_full/coconut_plants/to_be_deduplicated_validated_plants(matches_to_coconut).csv')
+
+entries = []
+ID_set = set()
+count = 0
+for idx, row in gbif.iterrows():
+    synonyms = ''
+    if not row.ID in ID_set:
+        count+=1
+        ID_set.add(row.ID)
+        if pd.isna(row.acceptedID):
+            name = row.scientificName
+            gbif_taxon_key = row.ID
+            cleaned_name = clean_name(name)
+        else:
+            name = row.acceptedScientificName
+            cleaned_name = clean_name(name)
+            gbif_taxon_key = row.acceptedID
+            synonyms = f'{row.scientificName} ({row.ID})'
+
+        entries.append([count,cleaned_name,name,gbif_taxon_key,synonyms])
+print('deduplication complete')   
+deduplicated_df = pd.DataFrame(entries, columns=['count','cleaned_name','scientificName','gbif_taxon_key','synonyms'])
+
+wcvp = pd.read_csv('/home/school/masters/Scripts/wcvp_dwca/wcvp_taxon.csv', sep='|')
+
+entries = []
+count = 0
+
+for idx, row in wcvp.iterrows():
+    name = clean_name(row.scientfiicname)
+    if name in deduplicated_df['cleaned_name'].values:
+        count += 1
+        gbif_taxon_key = deduplicated_df.loc[deduplicated_df['cleaned_name'] == name, 'gbif_taxon_key'].values[0]
+        synonyms = deduplicated_df.loc[deduplicated_df['cleaned_name'] == name, 'synonyms'].values[0]
+        taxon_id = row.taxonid
+        family = row.family
+        scientific_name = row.scientfiicname
+        scientific_name_authorship = row.scientfiicnameauthorship
+        taxonomic_status = row.taxonomicstatus
+        acceptednameusageid = row.acceptednameusageid
+        parentnameusageid = row.parentnameusageid
+        originalnameusageid = row.originalnameusageid
+        namepublishedin = row.namepublishedin
+        scientificnameid = row.scientificnameid
+        dynamicproperties = row.dynamicproperties
+        references = row.references
+        entries.append([count,gbif_taxon_key,family,scientific_name,scientific_name_authorship,taxonomic_status,acceptednameusageid,parentnameusageid,originalnameusageid,namepublishedin,scientificnameid,dynamicproperties,references])
+        if count % 10000 == 0:
+            print(count)
+        
+df = pd.DataFrame(entries,columns=["count", "gbif_taxon_key", "family", "scientific_name", "scientific_name_authorship", "taxonomic_status", "acceptednameusageid", "parentnameusageid", "originalnameusageid", "namepublishedin", "scientificnameid", "dynamicproperties", "references"])
+df.to_csv('/home/school/masters/Scripts/coconut_full/coconut_plants/dereplicated_powo_matched_plants.csv', index=False)

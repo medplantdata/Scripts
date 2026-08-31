@@ -31,7 +31,7 @@ TOC:
 14 Aug - touching up help and adding links from compound IDs to og sites also changing compounds cid column
 18 Aug - Extracting organisms from the Coconut download and downloading the WCVP and sending script to wonko to get the plants back only
 19 Aug - quick manual check on the removal of non plants and seperating the errors from the working
-
+31 Aug - matching GBIF and POWO
 
 5 may
 Added a orders csv to the thing and discovered that I dont have permission to use the mysql to load from file. Made a python script that converts the csv int a sql command and added data that way.
@@ -1317,6 +1317,88 @@ there are 5929 in the error plants
 
 tomorrow I think I can do the synonymn deduplication and then sort out the error ones.
 
+21 Aug - 
+ended up going to swakopmund yesterday instead of working oopsie
+
+First I want to see how many of the accepted names from the checklist map directly to the WCVP to get an idea how hard the
+matching will be
+
+I am tired and this is not working so I am going to give up for today and work on latex and tydying the labbook
+
+
+31 Aug - matching GBIF and POWO
+
+#coconut
+#plants
+
+File modified: coconut_full/coconut_plants/extracting_plants.py
+File created: coconut_full/coconut_plants/plants_not_in_WCVP.csv, random.py
+File used: coconut_full/coconut_plants/to_be_deduplicated_validated_plants(matches_to_coconut).csv,/home/school/masters/Scripts/wcvp_dwca/wcvp_taxon.csv
+
+
+Plan:
+- See how many plants match betwen GBIF and POWO and see why some dont match
+- Deal with the mismatches 
+- Add POWO and GBIF together where they match with POWO as authority
+
+Done:
+33740 matches
+5354 mismatches
+So lots of matched will make my life easier
+mismatch file has an error with the column name the origional name is actually the accepted one
+There are some issues I see from the mismatch file I think I fix quickly for example some plants from the checklist
+are listed with var and subspecies so I will run the script agan stripping that stuff before doing the ckeck. It
+may also be worth it to strip that stuff in general as most of the origional names dont have that.
+
+Some of the failures were because of hybrids and one failed because the POWO spells belladonna with a hyphen
+for some reason
+
+After excluding the subspecies stuff I got:
+36037 matches
+3057 mismatches
+
+after excluding the - stuff I got:
+36060 matches
+3034 mismatches
+
+I had a meeting with gary and he said that it would be better to use the POWO as the authoratative source for the 
+plant names rather than the GBIF one. 
+
+So now the issues are things like Atropa bella-donna VS atropa belladonna. There are some issues in hyphenation for
+other plants too so I will fix that also quick
+
+Ok so gary said that the GBIF is less reliable than the POWO so I am going to take the checklist file:
+(coconut_full/coconut_plants/to_be_deduplicated_validated_plants(matches_to_coconut).csv)
+and dereplicate it >>>>>>>>>>>>>>>>>>>>>>
+ for later coconut matching of compounds use this file 
+   <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+this dereplicated file can then be the new resource for the plants with the link to powo I will just have to deal with 
+the mismatches
+
+So the code is written to deduplicate but then it iterates through the wcvp and checks that agianst the GBIF
+that feels wrong but also is taking a concrning amount of time so I need to sort that tomorrow
+
+
+1 Sep - 
+
+#coconut
+#plants
+
+Files created:
+Files modified:
+Files used:
+
+Plan:
+- optimize matching script  
+- Match mismatches from yesterday to the POWO directly
+
+
+
+
+
+
+
+
 
 
 GO CKECK ERROTS FOR THE NPCLASSIFICATION
@@ -1327,4 +1409,4 @@ find missing plants that were excluded from the ANPDB (there are a lot of plants
 didn't make  it into the DB and that may be due to duplicates and to just things that got removed in general
 but I found a couple entries that probably should have made it so just check again) -> see 16 July
 
-check the error file for the cid getter
+check the error file for the cid getter 
