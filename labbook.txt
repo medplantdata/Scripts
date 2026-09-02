@@ -32,6 +32,14 @@ TOC:
 18 Aug - Extracting organisms from the Coconut download and downloading the WCVP and sending script to wonko to get the plants back only
 19 Aug - quick manual check on the removal of non plants and seperating the errors from the working
 31 Aug - matching GBIF and POWO
+1 Sep - trying to merge and ending up redoing the accpeted name finding from 18 Aug onwards
+
+
+
+
+
+
+
 
 5 may
 Added a orders csv to the thing and discovered that I dont have permission to use the mysql to load from file. Made a python script that converts the csv int a sql command and added data that way.
@@ -1378,6 +1386,8 @@ the mismatches
 So the code is written to deduplicate but then it iterates through the wcvp and checks that agianst the GBIF
 that feels wrong but also is taking a concrning amount of time so I need to sort that tomorrow
 
+I came back to code some more
+I am going to now try match the OG names to the wcvp
 
 1 Sep - trying to merge and ending up redoing the accpeted name finding from 18 Aug onwards
 
@@ -1386,7 +1396,7 @@ that feels wrong but also is taking a concrning amount of time so I need to sort
 
 Files created:coconut_full/coconut_plants/merged_gbif_wcvp.csv
 Files modified: extracting_plants.py 
-Files used:wcvp_dwca/wcvp_taxon.csv coconut_full/coconut_plants/to_be_deduplicated_validated_plants(matches_to_coconut).csv
+Files used:/home/school/masters/Scripts/coconut_full/coconut_plants/coconut_plants_still_needs_synonym_deduplication.csv, wcvp_dwca/wcvp_taxon.csv, coconut_full/coconut_plants/to_be_deduplicated_validated_plants(matches_to_coconut).csv
 
 Plan:
 - optimize matching script  
@@ -1419,9 +1429,36 @@ that I would need. ie I need to use powo to get the accepted name not gbif.
 
 So I am tired I think I am going to read some papers or work on the ethics or lit review instead of this now
 
+I did not like that either so I am back to take the cocoNut_plansts_still_needs_synonym..csv and am matching names 
+to wcvp
 
-2 Sep - Checking coconut checklisted plants against the wcvp 
+It looks like I have code that matches the coconut gbif stuff to the accepted Id of what it is in the wcvp name
 
+will continue tomorrow
+
+ 
+
+2 Sep - Checking coconut checklisted plants against the wcvp
+
+files used: /home/school/masters/Scripts/coconut_full/coconut_plants/coconut_plants_still_needs_synonym_deduplication.csv wcvp_dwca/wcvp_taxon.csv,
+files modified: coconut_plants/extracting_plants.py,
+files created:/home/school/masters/Scripts/coconut_full/coconut_plants/coconut_plants_matched_wcvp.csv,
+
+plan: 
+- get the coconut plants validated by gbif checklist assigned names and ID's from wcvp
+- sort out the issue with plants classified as variants not having a obvious link to the non variant plant and
+the fact I dont want to go down to variant level
+
+Done:
+
+So I made a thing that gives the wcvp and the gbif ones a cleaned name (stripped and '-' removed) then matches 
+that to each other and there are 2957 mismathces with 202 509 entries in home/school/masters/Scripts/coconut_full/coconut_plants/coconut_plants_matched_wcvp.csv
+the extra entries are probably because the match allows many to many relationships
+
+the next step now is to assign origional names as a synonym (maintain tho for later linking to coconut) and to 
+add the powo stuff and deduplicate
+
+worked on the script but the thing is taking kak ;long to run on my laptop so i am going to try run it on wonko tomorrow
 
 
 
