@@ -450,4 +450,3 @@ for idx, row in matched.iterrows():
         
 matched.to_csv('/home/school/masters/Scripts/coconut_full/coconut_plants/coconut_plants_with_wcvp_data_for_synonyms_and_deduplication', index=False)
      
-

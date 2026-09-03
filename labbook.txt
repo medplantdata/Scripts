@@ -33,6 +33,7 @@ TOC:
 19 Aug - quick manual check on the removal of non plants and seperating the errors from the working
 31 Aug - matching GBIF and POWO
 1 Sep - trying to merge and ending up redoing the accpeted name finding from 18 Aug onwards
+2 Sep - Checking coconut checklisted plants against the wcvp
 
 
 
@@ -1459,6 +1460,147 @@ the next step now is to assign origional names as a synonym (maintain tho for la
 add the powo stuff and deduplicate
 
 worked on the script but the thing is taking kak ;long to run on my laptop so i am going to try run it on wonko tomorrow
+
+3 Sep - running plant script on wonko to match coco_gbif to POWO and finally sorthing the naming of the compounds issue
+
+
+wonko: N_job.sh -> gbif_powo_matcher.py -> prog_gbif_powo_matcher.txt
+
+files used: coconut_full/coconut_with_cids.csv
+files created:coconut_full/getting_coconut_compounds_ready.ipynb
+files modified:coconut_full/getting_coconut_compounds_ready.ipynb
+
+
+
+plan:
+- run the powo accepted name assigner on wonko
+- try make a plan for the compounds to make it nice for the db
+
+
+done:
+So I am running the script on wonko and it is on the short que but it is taking really long. I dont think it should take so long. 
+It killed because it took longer than 30 min which is weird I feel like it should be quicker???????
+I will add a count so I can see how far it is gettin and add it to a longer que
+
+Added it to normal and now it is gonna run for 10 hours but I also put a progress out file that will show me if it is cooking at least
+Looks like its cooking and should finish 
+
+gonna experiment with a jupyter notebook now to try and check out the coconut compounds and see if I can get it right for the mysql. Gonna 
+get rid of the organisms and some of the columns I wont need like the descriptors.
+
+I will have to come back to do the coconut organism match but I think when I do that the crossref drama will happen.
+That checker will be very cool to make a library and see if I can publish for pip or just on github 
+
+for coconut_with_cids.csv
+
+                         column_name  number_of_entries  missing_entries  distinct_entries  
+0                         identifier             738827                0            738827    
+1                   canonical_smiles             738827                0            738827    
+2                     standard_inchi             738827                0            728421    
+3                 standard_inchi_key             738827                0            728421    
+4                               name             738827           375404            353696    
+5                         iupac_name             738827            74593            661590    
+6                   annotation_level             738827                0                 6    
+7                   total_atom_count             738827                0               549    
+8                   heavy_atom_count             738827                0               307    
+9                   molecular_weight             738827                0             50827    
+10            exact_molecular_weight             738827                0             98857    
+11                 molecular_formula             738827                0             98708    
+12                             alogp             738827                0              3919    
+13    topological_polar_surface_area             738827                0             25478    
+14              rotatable_bond_count             738827                0               161    
+15           hydrogen_bond_acceptors             738827                0               108    
+16              hydrogen_bond_donors             738827                0                92    
+17  hydrogen_bond_acceptors_lipinski             738827                0               108    
+18     hydrogen_bond_donors_lipinski             738827                0                92    
+19  lipinski_rule_of_five_violations             738827                0                 5    
+20              aromatic_rings_count             738827                0                26    
+21               qed_drug_likeliness             738827                0                96    
+22                     formal_charge             738827                0                15    
+23                      fractioncsp3             738827                0               100    
+24           number_of_minimal_rings             738827                0                41    
+25              van_der_walls_volume             738827           477739             70538    
+26                    contains_sugar             738827            13940                 2    
+27              contains_ring_sugars             738827                0                 2    
+28            contains_linear_sugars             738827                0                 2    
+29                  murcko_framework             738827            82536            109838    
+30                       np_likeness             738827                0               715    
+31                    chemical_class             738827            80518               460    
+32                chemical_sub_class             738827            77469              1102    
+33              chemical_super_class             738827            77469                23    
+34      direct_parent_classification             738827            77469              2089    
+35             np_classifier_pathway             738827            52271                 7    
+36          np_classifier_superclass             738827           150157                76    
+37               np_classifier_class             738827           182663               679    
+38        np_classifier_is_glycoside             738827               99                 2    
+39                         organisms             738827           465274             87049    
+40                       collections             738827                0             15714    
+41                              dois             738827           497060            109786    
+42                          synonyms             738827           358971            362269    
+43                               cas             738827           686846             50683    
+44                        coconut_id             738827                0            738827    
+45                               cid             738827           101857            622870  
+
+
+
+
+I think the next thing to check is the naming. lots of these compounds dont have a proper or iupac name
+it seems like the coconut people had the same problem. They do claim however in the OG paper that all
+the compounds have a name a claim I wanna check quickfast
+>>>There are 0 entries with no obvious name
+apparently the claim is true so next step is give everything a name
+
+I am gonna keep the coconut nplikeness score because it might be worth it to remove things with low/negative scores
+
+I just realized its probably not necessary to have a name field that is NOT NULL in the db it is probably fine
+to have it so only if the iupac and name is empty that it uses the synonym as the name. The synonyms are stored in A
+weird '|' seperated format so I think the plan is to assign anything without a name and iupac name the first synonym 
+it has and leave the iupac. (The previous strategy was to add the iupac as the name if the name was missing and then if
+both are missinga dd the first synonym but I think only doing the second plan is best the website must ust then use the iupac
+name if it is missing) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
