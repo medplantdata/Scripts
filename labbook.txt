@@ -34,6 +34,7 @@ TOC:
 31 Aug - matching GBIF and POWO
 1 Sep - trying to merge and ending up redoing the accpeted name finding from 18 Aug onwards
 2 Sep - Checking coconut checklisted plants against the wcvp
+3 Sep - running plant script on wonko to match coco_gbif to POWO and getting more iupac names from pubchem where possible
 
 
 
@@ -1461,13 +1462,13 @@ add the powo stuff and deduplicate
 
 worked on the script but the thing is taking kak ;long to run on my laptop so i am going to try run it on wonko tomorrow
 
-3 Sep - running plant script on wonko to match coco_gbif to POWO and finally sorthing the naming of the compounds issue
+3 Sep - running plant script on wonko to match coco_gbif to POWO and getting more iupac names from pubchem where possible
 
 
 wonko: N_job.sh -> gbif_powo_matcher.py -> prog_gbif_powo_matcher.txt
 
 files used: coconut_full/coconut_with_cids.csv
-files created:coconut_full/getting_coconut_compounds_ready.ipynb
+files created:coconut_full/getting_coconut_compounds_ready.ipynb,home/school/masters/Scripts/coconut_full/coconut_compounds_need_iupac_for_wonko.csv
 files modified:coconut_full/getting_coconut_compounds_ready.ipynb
 
 
@@ -1557,12 +1558,45 @@ to have it so only if the iupac and name is empty that it uses the synonym as th
 weird '|' seperated format so I think the plan is to assign anything without a name and iupac name the first synonym 
 it has and leave the iupac. (The previous strategy was to add the iupac as the name if the name was missing and then if
 both are missinga dd the first synonym but I think only doing the second plan is best the website must ust then use the iupac
-name if it is missing) 
+name if it is missing)
+
+Okay so apparently there are none where the iupac and name are empty but I used this random iupac name tool (https://chemai.in/services/smiles_to_inchi_converter.html)
+and there are a couple smiles that have iupac that is not listed 
+
+There are even some that have a iupac on pubchem but not here so I wrote a script that is on wonko now getting a iupac from pubchem
+for compounds with a cid where possible
+
+output files from wonko are in 4 Sep - files created
+
+4 Sep - Checking the files from 3 sep wonko runs
+
+files created: coconut_full/iupac_getter_errors.csv,coconut_full/coconut_now_with_iupac_from_pubchem.csv,coconut_full/coconut_plants/coconut_plants_with_wcvp_data_for_synonyms_and_deduplication.csv
+files modified: coconut_full/getting_coconut_compounds_ready.ipynb
+files used: coconut_full/iupac_getter_errors.csv,coconut_full/coconut_now_with_iupac_from_pubchem.csv
+
+Plan: 
+- check error file and rerun anything that didn't come back with a no iupac error and add it to the now_with_iupac_file
+
+
+done:
+
+
+of the 2537 errors the distribution is this
+                                            error_type  count
+0                                             no iupac   2519
+169                                 retry uncsucessful     15
+215  <urlopen error [Errno -2] Name or service not ...      3
+
+gonna just retry the 18 that didn't come back as no iupac
+
+okay I have to go see linda now so I may not finish today I am up to starting the retryig code.
 
 
 
 
 
+The gbif wvp job is finished and I downlloaded it. ->> tip you have to do it from the local not the server and run sum like this:
+scp nathanc@wonko.bi.up.ac.za:/nlustre/users/nathanc/2_Sep_gbif_powo_match/coconut_plants_with_wcvp_data_for_synonyms_and_deduplication ~/masters/Scripts/coconut_full/coconut_plants
 
 
 
