@@ -35,6 +35,8 @@ TOC:
 1 Sep - trying to merge and ending up redoing the accpeted name finding from 18 Aug onwards
 2 Sep - Checking coconut checklisted plants against the wcvp
 3 Sep - running plant script on wonko to match coco_gbif to POWO and getting more iupac names from pubchem where possible
+4 Sep - Checking the files from 3 sep wonko runs
+7 sep -  sorting the compounds iupac and deduplicating on inchi
 
 
 
@@ -1592,41 +1594,62 @@ gonna just retry the 18 that didn't come back as no iupac
 okay I have to go see linda now so I may not finish today I am up to starting the retryig code.
 
 
+7 sep -  sorting the compounds iupac and deduplicating on inchi
+
+files used: coconut_full/iupac_getter_errors.csv,coconut_full/coconut_now_with_iupac_from_pubchem.csv, /home/school/masters/Scripts/coconut_full/coconut_with_cids.csv
+files created: /coconut_full/coconut_with_pubchem_iupacs.csv,coconut_full/coconut_iupacs_inchi_deduplicated.csv
+files modified: coconut_full/getting_coconut_compounds_ready.ipynb,coconut_full/coconut_now_with_iupac_from_pubchem.csv
+
+plan:
+- sort out iupac gets that failed because of a network error
+
+done:
+now the coconut_now_with_iupac_from_pubchem.csv has all the things that errored because of network
+
+am going to add the iupacs back in and count how many were added 
+
+Numbers for the iupac stuff:
+Total coconut compounds: 738827 
+Number of iupac missinng from origional coconut download: 74593
+Number of iupac in og: 664234
+Number of compounds in coconut og missing their iupac but had a cid: 54988
+Number of new iupacs added from pubchem: 52469 (this was done personally)
+
+
+okay after trying to add the I have discovered that there are now some non unique cids gonna try fix that now
+# Show cid duplicates in df
+df = df.dropna(subset='cid')
+df = df[df.duplicated(subset='cid', keep=False)]
+
+so the db has a few compounds that are basically the same but hsve 2 seperate entries. The DB is not deduplicated fully
+on inchikey crazy stuff
+
+first I will deduplicate the new iupac names file so I can add it to the other compounds 
+above seems sucessful
+
+next I will deduplicate and add only necessary columns to a new file. I will deduplicate on inchi retain all of the coconut
+ids and other data. I will however drop smiles so they can be calculated from scratch
+
+So the deduplicated on inchi coconut is in and we are down to 728 421 from 738 827. (10 406 difference)
+
+8 sep - Checking the file from yesterday and doing nispo
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 The gbif wvp job is finished and I downlloaded it. ->> tip you have to do it from the local not the server and run sum like this:
 scp nathanc@wonko.bi.up.ac.za:/nlustre/users/nathanc/2_Sep_gbif_powo_match/coconut_plants_with_wcvp_data_for_synonyms_and_deduplication ~/masters/Scripts/coconut_full/coconut_plants
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
