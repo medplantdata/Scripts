@@ -37,7 +37,10 @@ TOC:
 3 Sep - running plant script on wonko to match coco_gbif to POWO and getting more iupac names from pubchem where possible
 4 Sep - Checking the files from 3 sep wonko runs
 7 sep -  sorting the compounds iupac and deduplicating on inchi
-
+9 sep - Checking the file from yesterday and doing nispo
+10 sep - Finishing what I was doing yesterday (checking coconut deduplicated and considering nispo)
+11 sep - Calitz Chemical Converter
+14 sep - Checking deduplications and inchi vs smiles
 
 
 
@@ -1632,12 +1635,175 @@ ids and other data. I will however drop smiles so they can be calculated from sc
 
 So the deduplicated on inchi coconut is in and we are down to 728 421 from 738 827. (10 406 difference)
 
-8 sep - Checking the file from yesterday and doing nispo
+9 sep - Checking the file from yesterday and doing nispo
+
+Okay so before they go into the db (I hope) there are only a few more things that need to be done:
+- add smiles and smile variations
+- add nispo iupac names
+- figure out what to do with the compounds that have multiple | seperated thigs and the deduplication required from the 
+combination steps 
+- some compounds have a name and a iupac name that are different but both seem to be in the iupac style???? 
+- remove iupac ~{}
+-look in the iupac column it looks like there are | seperated options???
+
+files used:coconut_full/coconut_iupacs_inchi_deduplicated.csv
+files created:
+files modified:coconut_full/getting_coconut_compounds_ready.ipynb
+
+plan:
+- fix duplicates from the coloums I made '|' seperated during deduplication 
 
 
+am still hazy from flu will come back tomorrow
+
+10 sep - Finishing what I was doing yesterday (checking coconut deduplicated and considering nispo)
+
+files created:molecule_converter_handler.ipynb
+files modified:
+files used:
+
+plan:
+
+done:
+Okay so there is some kak with the way coconut had formated and submitted their iupac names see the first entry for coconut_full/coconut_iupacs_inchi_deduplicated.csv
+it looks like they formatted it to have italisized and superscripts with a ~{} or other convention which makes the iupac "not correct" I cant really tell if it is 
+correct but it is definitely different to the pubchem iupac name. On the website it normalizes the ~{} into some sort of formatting and is absent
 
 
+okay so it looks like iupac naming is a bit of a crock of shit. I used the puchem iupac name, coconut iupac name and a nispo generated name and
+all 3 managed to draw what seems to me as the same structure. 
 
+So as chernechevsky said what is to be done? I will write something that will remove the ~{} things from the strings (https://www.perplexity.ai/search/32b32735-dbe1-4fad-8d13-f6eebea1c312)
+I think the right option here will be to use nispo so that all the iupac names are logically homogenous in their generation
+
+so the other alternative is to just use all of the molfiles from coconut and then generate everything else from that but I am tired and going to 
+try and add some stuff to the website now -> format converter
+format converter wont work because RDkit.js doesnt pull all of the necessary methods and excludes an inchi method so you can oly go from smiles
+to inchi and not back
+
+
+11 sep - Calitz Chemical Converter
+nothing is working I dont know what i am doing giving up for now to try write a python thing I can use to interconvert formats and show image
+of molecule because am very frustrated and tired 
+
+Calitz Chemical Converter is setup and working as streamlit
+
+14 sep - Checking deduplications and inchi VS smiles
+
+files used: coconut_full/coconut_iupacs_inchi_deduplicated.csv, 
+files created: coconut_full/coconut_compounds_cleaned_iupac,coconut_full/compounds_deduplicated_infield.csv
+files modified: coconut_full/getting_coconut_compounds_ready.ipynb
+
+Plan:
+- Check what was up with the deduplication and if deleting smiles was warrented and what to make of the iupacs.
+- Getting rid of the ~{} in the iupac names
+
+Done:
+Okay so there was kak here because it looks like a single inchi can provide for structural variability in the smiles
+this was kinda expected but I was surprised at the variability that a single inchi can have in smiles. 
+IUpac naming is a joke. It has a similar problem where many iupac names can be used for 1 thing and it seems
+worse than for the smiles.
+
+for example of iupac: CNP0372518.1
+both the iupac -> N-{[(3,4-dimethyl-2-oxo-2H-chromen-7-yl)oxy]acetyl}-L-leucine
+and -> (2S)-2-[[2-(3,4-dimethyl-2-oxo-chromen-7-yl)oxyacetyl]amino]-4-methyl-pentanoic acid 
+resolve to the same thing.  I dont actually know how to go about prioritising the names to know
+if one is better. I will 
+
+for smiles I am going to use a couple examples:
+
+Example 1: smiles were probably generated with a different tool and therefore have slightly different strings
+but functionally lead to exactly the same molecule
+(inchiInChI=1S/C16H12N4O2/c1-20-8-17-7-12(20)14-13(15(21)19-16(14)22)10-6-18-11-5-3-2-4-9(10)11/h2-8,18H,1H3,(H,19,21,22)
+coconut_ids: CNP0567193.0 and CNP0182105.0)
+Smiles -> CN1C=NC=C1C1=C(C2=CNC3=CC=CC=C23)C(=O)NC1=O
+          CN1C=NC=C1C1=C(C2=CNC3=CC=CC=C23)C(O)=NC1=O
+                                           ^^^^^^             
+
+Example 2: Smiles encode 2 different images and stereochemical aarangement but both resolve to the exact same inchi in DB and progammatically
+(InChI=1S/C20H24N2O/c1-3-12-10-22-18-9-15-13-6-4-5-7-17(13)21(2)20(15)19(22)8-14(12)16(18)11-23/h3-7,14,16,18-19,23H,8-11H2,1-2H3/b12-3-/t14-,16+,18-,19-/m0/s1
+coconut_ids = CNP0325200.8 and CNP0325200.2)
+Smiles (from coconut) -> C/C=C1/C[N@@]2[C@H]3C[C@@H]1[C@@H](CO)[C@@H]2CC1=C3N(C)C2=CC=CC=C12
+                         C/C=C1/CN2[C@H]3C[C@@H]1[C@@H](CO)[C@@H]2CC1=C3N(C)C2=CC=CC=C12
+
+what is interesting is that when rd kit converts to mol the smiles it draws 2 new ones:
+C/C=C1/C[N@@]2[C@H]3C[C@@H]1[C@@H](CO)[C@@H]2Cc1c3n(C)c2ccccc12
+C/C=C1/CN2[C@H]3C[C@@H]1[C@@H](CO)[C@@H]2Cc1c3n(C)c2ccccc12
+
+Example 3: Smiles describe different protonation states but resolve to exactly the same inchi
+(InChI=1S/C7H9N5O2/c1-12-3-4(10-7(12)13)9-6(8)11-5(3)14-2/h1-2H3,(H3,8,9,10,11,13)
+coconut_id: CNP0591406.0 and CNP0206062.0)
+Smiles -> COC1=NC(=N)NC2=C1N(C)C(O)=N2
+          COC1=NC(N)=NC2=C1N(C)C(=O)N2
+                 ^^^^^          ^^^^^
+Just check out keto-enol tautomerism for this as well it works for this molecule but not all
+
+There may be more but these are what I have noticed.
+
+So what is to be done? For example 1 and 3 I am very happy with deduplication and with recalculating the smile
+the first example this is beneficial for standardisation. the third one I am happy with the deduplication as 
+the protonation state thereafter is pH dependant and I am not convinced storing the same molecule with 3 differernt
+various protonation states is applicable. 
+
+The second example tho is slightly worrying. The Inchi is designed to maintian stereochemistry but it seems that
+an isomeric smile is more explicit. I still think that deduplication on inchi is necessary and beneficial.
+
+For the iupacs I think that pubchem needs to be treated as the authority.
+
+So I got the data cleaned more or less still need to:
+-allocate smiles
+-allocate plants
+-allocate np classifier
+-allocate pubchem iupac as main iupac name
+-allocate plants
+
+I tried to add smiles to the compounds but apparently some of the inchis do not resolve nicely to new molecules.
+
+
+15 sep - Getting smiles and exluding compounds
+
+files modified: coconut_full/getting_coconut_compounds_ready.ipynb,
+files created:coconut_plants/coconut_compounds_made_by_plants_only.csv,
+files used:coconut_plants/checklist_matched_organisms.tsv,
+files on wonko:coconut_plants/coconut_compounds_made_by_plants_only.csv,cleaning_compounds_adding_SMILES.sh, cleaning_coco_adding_smiles.py compounds_deduplicated_infield.csv
+
+Plan:
+- make a csv of all the coconut compounds not from a plant
+- write script to assign rdkit smiles and exclude compounds that have problems 
+- NISPO last few iupac names
+- make comprehensive error files
+- run on wonko 
+
+Done:
+exclusion criteria for coconut:
+I am excluding all compounds that: 
+- are not listed as made by a plant
+- have a NP likeness score that is below -1
+- have an InChi that cannot be read or that cannot be turned into an isomeric SMILES accurately by RDkit (a few of the compounds appear to have InChi's that do not encode stereochemistry properly)
+
+
+Non plant made compound exclusion from coconut:
+    Number of coconut organism relationships: 1 267 088
+    Number of cocont plant relationships 937 333
+    Number of coconut compounds made by a plant 175 364
+
+Writing the script for wonko noe that will remove anything that:
+- does not have a coconutID in coconut_compounds_made_by_plants_only.csv 
+- has a nplikeness score below -1 
+- then uses RD kit to try convert the inchi to smiles and anytime it has a warning it sends that compound to error file
+
+So the script I ran on wonko cleaning_compounds_adding_SMILES.sh, cleaning_coco_adding_smiles.py -> stored in lustre on 15_sep_cleaning_coconut_adding_smiles
+The script:
+- removed compounds not made by plants
+- removed any coconut compounds that had a nplikeness less than -1 (during deduplication some of the compounds ended up with more than one score so I was generous and used the score that was highest)
+- removed any compound that had any kind of error/warning for inchi-> mol or conversion to smiles from that:
+
+>>    There are 174 644 plant compounds 
+>>    There are 174 269 likely np compounds (threshold above -1) 
+>>    There are at the end: 174 269
+>>    There are 32 missing smiles
+
+So this feels like a win because most plant compounds had relatively decent np_likeness and only 32 had error with the inchi_>mol>smiles story
 
 
 
