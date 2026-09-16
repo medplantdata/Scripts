@@ -41,6 +41,7 @@ TOC:
 10 sep - Finishing what I was doing yesterday (checking coconut deduplicated and considering nispo)
 11 sep - Calitz Chemical Converter
 14 sep - Checking deduplications and inchi vs smiles
+15 sep - Getting smiles and exluding compounds
 
 
 
@@ -1806,6 +1807,48 @@ The script:
 So this feels like a win because most plant compounds had relatively decent np_likeness and only 32 had error with the inchi_>mol>smiles story
 
 
+16 sep - Lenetedagggggggg -> checking out the error file and output file from yesterday
+
+files created: coconut_full/cleaned_coconut.csv, /home/school/masters/Scripts/coconut_full/errors_15_sep_cleaning_coconut.csv
+files used: coconut_full/cleaned_coconut.csv, /home/school/masters/Scripts/coconut_full/errors_15_sep_cleaning_coconut.csv
+files modified: coconut_full/getting_coconut_compounds_ready.ipynb
+
+wonko:
+input_file = '/nlustre/users/nathanc/scratch/cleaned_coconut_all_smiles.csv'
+output_file = '/nlustre/users/nathanc/scratch/cleaned_coconut_all_iupac.csv'
+error_file = '/nlustre/users/nathanc/scratch/errors_for_cleaned_coconut_iupac.csv'
+
+plan:
+- check out compounds from error file and if should exclude
+- check output and see if ready for DB
+
+Done:
+
+Ok so some fascinating discoveries have been made just now:
+1. diatomic H is listed twice in coconut and there was an issue drawing the smiles from that
+2. the only compounds which RDkit failed had sulfa groups -> [1,2,3,4,6-pentahydroxy-5-((1-oxido-1,1-dioxo-1-thiamethyl)oxy)-7-((2R,3S,4S)-3,4-dihydroxy-2-hydroxymethylthiolan-1-ium-1-yl)heptane  ] and [InChI=1S/C9H18O9S2/c10-1-7(18-20(15,16)17)5(12)3-19-4-6(13)9(14)8(19)2-11/h5-14H,1-4H2/t5-,6-,7+,8-,9+,19?/m1/s1] and [InChI=1S/C5H13NO4S/c1-6(2,3)4-5-10-11(7,8)9/h4-5H2,1-3H3] 
+3. all the others seem to be small errors and warnings and complaints about assigning H and bond directions
+
+Descision about what to include and exclude:
+1. removing the H2 because I think it is silly it is there 
+2. I think it is valid to keep the rest and I will manually have to add smiles for the weird sulfa drugs
+
+I ignored the warnings and let it do all the smiles now I need to do the 3 manual ones where there was a sufa
+
+Did them and am removing the iso smiles when it is the same as the 2D
+
+using nispo on missing iupac names -> need to send to wonko
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1816,17 +1859,6 @@ So this feels like a win because most plant compounds had relatively decent np_l
 
 The gbif wvp job is finished and I downlloaded it. ->> tip you have to do it from the local not the server and run sum like this:
 scp nathanc@wonko.bi.up.ac.za:/nlustre/users/nathanc/2_Sep_gbif_powo_match/coconut_plants_with_wcvp_data_for_synonyms_and_deduplication ~/masters/Scripts/coconut_full/coconut_plants
-
-
-
-
-
-
-
-
-
-
-
 
 GO CKECK ERROTS FOR THE NPCLASSIFICATION
 
