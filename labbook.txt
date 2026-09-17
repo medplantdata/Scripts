@@ -42,6 +42,7 @@ TOC:
 11 sep - Calitz Chemical Converter
 14 sep - Checking deduplications and inchi vs smiles
 15 sep - Getting smiles and exluding compounds
+16 sep - Lenetedagggggggg -> checking out the error file and output file from yesterday
 
 
 
@@ -1839,14 +1840,128 @@ Did them and am removing the iso smiles when it is the same as the 2D
 
 using nispo on missing iupac names -> need to send to wonko
 
+17 sep - prepping data for wonko
+
+files used: coconut_full/cleaned_coconut_all_iupac.csv
+files created: coconut_full/cleaned_coconut_all_iupac.csv
+files modified: coconut_full/getting_coconut_compounds_ready.ipynb
+
+plan: 
+ - check output and errors from the adding nispo
+ - make stuff DB ready 
+ - add stuff to DB
+
+done:
+error file was empty and the errr output was empty.
+there are 858 empty iupacs which is less than 1% so I am going to take that as a win and move on 
+
+the name field being empty is still weird for me but it seems that all the fields that should be notna are and all the fields that should be distinct are
+
+gonna make it so that all the empty name fields get the synonym if there is only one synonym
+
+also forgot to add an inchi_key I hope my laptop can handle that 
+it did surprisingly easily
+
+there are: 834 compounds that have no name, synonym or iupac
 
 
+Add compounds to DB:
+
+CREATE TABLE compounds (
+compound_id  INT UNSIGNED NOT NULL AUTO_INCREMENT,
+name TEXT NOT NULL,
+inchi TEXT NOT NULL,
+inchi_key CHAR(27) NOT NULL,
+canonical_smiles TEXT NOT NULL,
+isomeric_smiles TEXT,
+iupac MEDIUMTEXT,
+synonyms MEDIUMTEXT,
+collections TEXT,
+dois TEXT,
+coconut_id VARCHAR(100),
+cid VARCHAR(100),
+cas VARCHAR(300),
+PRIMARY KEY (compound_id));
 
 
+LOAD DATA LOCAL INFILE '/localdata/wand_data/full_coconut_for_DB.csv'
+INTO TABLE compounds
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(compound_id, name, inchi, inchi_key, canonical_smiles, isomeric_smiles, iupac, synonyms, collections, dois, coconut_id, cid, cas);
+
+There were warnings I am on the job to try fix:
++---------+------+--------------------------------------------------------------------------------+
+| Level   | Code | Message                                                                        |
++---------+------+--------------------------------------------------------------------------------+
+| Warning | 1265 | Data truncated for column 'cid' at row 4251                                    |
+| Warning | 1262 | Row 4251 was truncated; it contained more data than there were input columns   |
+| Warning | 1265 | Data truncated for column 'cid' at row 9248                                    |
+| Warning | 1262 | Row 9248 was truncated; it contained more data than there were input columns   |
+| Warning | 1262 | Row 12647 was truncated; it contained more data than there were input columns  |
+| Warning | 1265 | Data truncated for column 'cid' at row 19943                                   |
+| Warning | 1262 | Row 19943 was truncated; it contained more data than there were input columns  |
+| Warning | 1262 | Row 23687 was truncated; it contained more data than there were input columns  |
+| Warning | 1265 | Data truncated for column 'cid' at row 39865                                   |
+| Warning | 1262 | Row 39865 was truncated; it contained more data than there were input columns  |
+| Warning | 1262 | Row 59050 was truncated; it contained more data than there were input columns  |
+| Warning | 1262 | Row 61774 was truncated; it contained more data than there were input columns  |
+| Warning | 1265 | Data truncated for column 'coconut_id' at row 75428                            |
+| Warning | 1265 | Data truncated for column 'cid' at row 75428                                   |
+| Warning | 1262 | Row 75428 was truncated; it contained more data than there were input columns  |
+| Warning | 1265 | Data truncated for column 'coconut_id' at row 75481                            |
+| Warning | 1262 | Row 75481 was truncated; it contained more data than there were input columns  |
+| Warning | 1262 | Row 76607 was truncated; it contained more data than there were input columns  |
+| Warning | 1265 | Data truncated for column 'cid' at row 78912                                   |
+| Warning | 1262 | Row 78912 was truncated; it contained more data than there were input columns  |
+| Warning | 1265 | Data truncated for column 'cid' at row 83770                                   |
+| Warning | 1262 | Row 83770 was truncated; it contained more data than there were input columns  |
+| Warning | 1262 | Row 88364 was truncated; it contained more data than there were input columns  |
+| Warning | 1262 | Row 106138 was truncated; it contained more data than there were input columns |
+| Warning | 1265 | Data truncated for column 'coconut_id' at row 130116                           |
+| Warning | 1262 | Row 130116 was truncated; it contained more data than there were input columns |
+| Warning | 1262 | Row 138350 was truncated; it contained more data than there were input columns |
+| Warning | 1265 | Data truncated for column 'dois' at row 150266                                 |
+| Warning | 1265 | Data truncated for column 'cas' at row 160175                                  |
+| Warning | 1262 | Row 160175 was truncated; it contained more data than there were input columns |
+| Warning | 1265 | Data truncated for column 'coconut_id' at row 160827                           |
+| Warning | 1265 | Data truncated for column 'cid' at row 160827                                  |
+| Warning | 1262 | Row 160827 was truncated; it contained more data than there were input columns |
+| Warning | 1265 | Data truncated for column 'cid' at row 172202                                  |
+| Warning | 1262 | Row 172202 was truncated; it contained more data than there were input columns |
++---------+------+--------------------------------------------------------------------------------+
 
 
+changed the thing to what it is above and now it works
+
++---------+------+------------------------------------------------+
+| Level   | Code | Message                                        |
++---------+------+------------------------------------------------+
+| Warning | 1265 | Data truncated for column 'dois' at row 150273 |
++---------+------+------------------------------------------------+
+ just gives this warning that I will just fix manually
 
 
+for some reason this entry has a fat doi that is super long so I am going to just use the dois directly from coconut
+
+UPDATE compounds
+SET dois = '10.1016/j.jep.2010.11.057|10.1021/np100440p|10.1021/np100896w|10.1021/np100923z10.1021/np100874f',
+collections ='knaPsAck|npeIDA|DrugBankNP|ChEBI NPS|Global Natural Products Social Molecular Networking|Specs Natural Products',
+coconut_id = 'CNP0236620.1',
+cid = '222284.0',
+cas = '83-46-5|76772-70-8'
+where compound_id = 150273;
+
+
+UPDATE compounds
+SET cid = REGEXP_REPLACE(cid, '\\.0$', '')
+WHERE cid REGEXP '\\.0$';
+
+
+Now the coconut is in but the website is a bit off so imma try make it netjies again
 
 
 
