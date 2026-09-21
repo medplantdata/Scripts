@@ -333,7 +333,7 @@ df.to_csv('/home/school/masters/Scripts/coconut_full/coconut_plants/dereplicated
 
 """
 # making a smaller version of the wcvp using the coconut checklisted plants (1 Sep)
-def clean_name(name): # cleans the names 
+def clean_name(name): 
     if isinstance(name, str):
         name = name.strip().lower()
         name = name.replace('-', '')

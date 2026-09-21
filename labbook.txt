@@ -43,6 +43,9 @@ TOC:
 14 sep - Checking deduplications and inchi vs smiles
 15 sep - Getting smiles and exluding compounds
 16 sep - Lenetedagggggggg -> checking out the error file and output file from yesterday
+17 sep - prepping coconut compound data adding to wonko and fixing the site
+18 sep - making graphs from the coconut full :))
+
 
 
 
@@ -1840,7 +1843,7 @@ Did them and am removing the iso smiles when it is the same as the 2D
 
 using nispo on missing iupac names -> need to send to wonko
 
-17 sep - prepping data for wonko
+17 sep - prepping coconut compound data adding to wonko and fixing the site
 
 files used: coconut_full/cleaned_coconut_all_iupac.csv
 files created: coconut_full/cleaned_coconut_all_iupac.csv
@@ -1962,6 +1965,102 @@ WHERE cid REGEXP '\\.0$';
 
 
 Now the coconut is in but the website is a bit off so imma try make it netjies again
+managed to get it sorted and now the compounds seem fine the way they are displayed i just need to sort the plant connection stuff
+
+
+18 sep - making graphs from the coconut full :))
+
+files used:
+files created: coconut_full/analysing_coconut.ipynb
+files modified:coconut_full/analysing_coconut.ipynb
+
+Plan:
+- make graphs from coconut
+
+Done:
+
+So I made a pie chart that compares the distribution of source oganisms in coconut. 74% of the organisms listed without duplication are plants.
+This is very weird as there are roughly 738 827 total compounds and only about 175 000 or so made by a plant according to some quick math i did
+the numbers are rough but that is interesting now i need to see what the breakdown is per compound.
+
+I have made more graphs now but something is fishy the methadology will have to be looked at again
+
+
+interesting stuff tho if some of it is correct then that means that most of the organisms on coconut are plants and most of the compounds on there
+are made by a plant
+
+21 sep - prepping plants for DB 
+
+files used: coconut_full/coconut_plants/merged_gbif_wcvp.csv
+files modified: coconut_plants/prepping_plants_for_db.ipynb
+files created: coconut_plants/prepping_plants_for_db.ipynb
+
+wonko: coconut_full/coconut_plants/merged_gbif_wcvp.csv, prep_plants_for_db.py, prep_plants_for_db.sh
+
+Plan:
+
+- make wonko script to take the merged output and assign correct names using accepted ID's with rest as synonyms
+
+Done:
+about 320 entires from the coconut plants dont match to a wcvp name I will need to come back and investigate that
+
+making the wonko script to match accepted names using the merged_gbif_wcvp.csv file. This file was dumped by me because it lost 
+all of the rows that did not match between the wcvp and gbif checlist after cleaning the names up. It does however have all the info
+i need and the previous 2 sep matching effort did not work correctly 
+unfortunately this means I will have to go back and look for any missing plants
+
+so i think now would be a great time to try and write a code snippet that can normalize any data automatically to go into wand
+compounds and plants indiv and bulk
+
+okay so I am feeling vieslik or something today and cant do the above for some reason so I will try get pyodidie working to 
+see if the chemi converter stuff I did can be implemented nicely into wand
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
