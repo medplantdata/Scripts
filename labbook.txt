@@ -2228,8 +2228,9 @@ now adding to the db normalizer
 29 sep - getting the DB normalizer working so I can add the lotus stuff
 
 files modified: /home/school/masters/Scripts/automatic_normalizer.ipynb
-files created:
+files created:lotus/lotus_for_db.csv, coconut_full/comparison.csv,  lotus_cid_getter.py, 29_sep_lotus_cid_getter/lotus_not_in_wand_for_cids.csv
 files used:
+wonko: lotus/lotus_for_db.csv, coconut_full/comparison.csv,  lotus_cid_getter.py
 
 plan:
 - finish DB normalizer
@@ -2240,11 +2241,70 @@ working on the normalizer
 adding the new stuff isnt too deep because then I just need to make a csv with the new stuff that will be added as a 
 load from file but for compounds that are already in the DB it gets a bit more complicated 
 
+I think i figured it by using staging table below is some rough sql I think will go nicely into the DB
+
+sql = f"""
+LOAD DATA LOCAL INFILE '/localdata/wand_data/{output_path.split('/')[-1]}'
+INTO TABLE compounds
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(compound_id, name, inchi, inchi_key, canonical_smiles, isomeric_smiles, iupac, synonyms, collections, dois, coconut_id, cid, cas);
+
+ALTER TABLE compounds
+ADD COLUMN IF NOT EXISTS
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/{staging_table.split('/')[-1]}'
+INTO TABLE compounds
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(compound_id, name,iupac, synonyms);
+
+"""
+
+with open(sql_path, 'w') as f:
+    f.write(sql)
 
 
+Still need to implement this functionality
 
+going to test and run on wonko:
+Extract from wand:
 
+SELECT compound_id, inchi, name, synonyms, iupac 
+FROM compounds
+INTO OUTFILE '/localdata/wand_data/comparison_set.csv'
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY '"'
+LINES TERMINATED BY '\n';
 
+okay so I do not have permission to run the above
+
+will quickly just use python and the DB load file
+
+just realized that I cant use pubchem from wonko because of the wifi restriction but I cant runt the 
+scrtipt from the thing because it is too intensive
+
+will need to get the cids seperately
+
+sent this to wonko: lotus/lotus_for_db.csv, coconut_full/comparison.csv
+
+going to quicky remove all the compounds in the db already then send the rest for cids
+
+Okay so i now have a master cid getter script that could use some tlc but seems to work
+it is getting the cids for the compounds not in the db already so I can use the normalizer
+
+I will need to take the pubchem get out of the normalizer but now I think it is time to go home 
+
+quick reminder of how to pubchem getter it:
+module load python-3.9.5
+module load pubchempy
 
 
 
