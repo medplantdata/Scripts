@@ -45,6 +45,9 @@ TOC:
 16 sep - Lenetedagggggggg -> checking out the error file and output file from yesterday
 17 sep - prepping coconut compound data adding to wonko and fixing the site
 18 sep - making graphs from the coconut full :))
+21 sep - prepping plants for DB
+22 sep - handling plants that came back from wonko that should be standardised to POWO wcvp
+28 sep - extracting compounds from the lotus mongo dump
 
 
 
@@ -1995,7 +1998,7 @@ files used: coconut_full/coconut_plants/merged_gbif_wcvp.csv
 files modified: coconut_plants/prepping_plants_for_db.ipynb
 files created: coconut_plants/prepping_plants_for_db.ipynb
 
-wonko: coconut_full/coconut_plants/merged_gbif_wcvp.csv, prep_plants_for_db.py, prep_plants_for_db.sh
+wonko: coconut_full/coconut_plants/merged_gbif_wcvp.csv, prep_plants_for_db.py, prep_plants_for_db.sh, /nlustre/users/nathanc/scratch/errors_prepping_plants_for_db.csv, /nlustre/users/nathanc/scratch/coconut_plants_for_DB.csv
 
 Plan:
 
@@ -2014,43 +2017,228 @@ compounds and plants indiv and bulk
 
 okay so I am feeling vieslik or something today and cant do the above for some reason so I will try get pyodidie working to 
 see if the chemi converter stuff I did can be implemented nicely into wand
+So it looks like pyodidie is not really a viable option. It does not natively ship whith an import for RDkit so there is going 
+to be drama having to build a rdkit thing to ship with the website. I think streamlit is themost realistic way but that remains
+to be seen.
+
+Sent the stuff to wonko should get back : /nlustre/users/nathanc/scratch/coconut_plants_for_DB.csv and /nlustre/users/nathanc/scratch/errors_prepping_plants_for_db.csv
+
+
+22 sep - handling plants that came back from wonko that should be standardised to POWO wcvp
+
+files created:
+files used:
+files modified:
+
+Plan:
+- See what happened with the coconut plants and hopefully add to database
+
+Done:
+
+The merge file before duplication: 284,276
+The end deduplicated file: 54,453
+The number of errors: 22,888
+The number of entires there should have been (drop_dups on accpeptednameusageid): 54,454
+The number of entires removed by deduplication and errors: 229,823
+
+So I got the merge file used for deduplication by doing an exact match beteween a cleaned version of the coconut name and the wcvp name.
+This means that I excluded all the plants that did not have a nice match. This is a weak way of doing the matching. Then some of the
+plants do not have an accepted usage name ID which seems to be all of the errors. If I deduplicate on coconut name and count missing IDs
+number of plants that missing accepted name usage ID deduplicated: 119
+
+therefore I am missing plants from the merge and then 119 because of the missing usage name id
+
+I made some kak here because it seems like the merge file is waaay bigger than the file it was made from which shouldnt have happened
+I think I need to go back to the drawing board.
+
+There are going to be a lot of missing plants from the thing so I am sommer gonna add what what I have so far matched up to the DB
+then I will come up with some sort of way of automating adding things to the DB so it can be easier next time :)
+
+I am removing the gymnosperms I need to add that to the DB classification backbone and am lazy removing families 
+= ['Cupressaceae',''Pinaceae','Polypodiaceae','Aspleniaceae','Dennstaedtiaceae']
+
+So apparently Petiveriaceae is also not in my APG4 but is here in the wcvp families
+not sure what to do about that will need to speak to gary
+
+gonna work some more on the normalizer
+it is starting to take shape it is just going to be difficult to make it so it can work with adding synonyms and
+adding data to the db I think it will be possible however to make it so it generates an update sql script for that 
+and then a csv that is ready for the DB
+
+ 14. "origin_type"
+
+	Type of data:          Text
+	Contains null values:  False
+	Non-null values:       36454
+	Unique values:         2
+	Longest value:         9 characters
+	Most common values:    Fungus (22995x)
+	                       Bacterium (13459x)
+the above is the stat for NPatlas so they have no plants
+
+
+28 sep - extracting compounds from the lotus mongo dump
+
+files created:/home/school/masters/Scripts/lotus/NPOC2021_raw.lotusUniqueNaturalProduct.json
+files used:
+files modified: 
+
+Plan:
+- turn gross mongodb into useable csv
+
+Done:
+Trying to use the mongodb compass gui to convert to csv was a pain in the ass and took too long so i used this to SELECT the data:
+
+{
+  _id: 1,
+  lotus_id: 1,
+  wikidata_id: 1,
+  smiles: 1,
+  inchi: 1,
+  traditional_name: 1,
+  synonyms: 1,
+  iupac_name: 1,
+  collection: 1,
+  npl_score: 1
+}
+
+then I exported as json to do a json to csv pandas has a nice read_json thing
+seems I was successful at this
+
+I thought this then I realized that I need to first exclude any compound that is not made by a plant. MongoDb is a mess so using AI:
+                    https://www.perplexity.ai/search/9061591d-c26a-449a-b606-c2cae96097f9
+
+                    https://www.perplexity.ai/search/9061591d-c26a-449a-b606-c2cae96097f9
 
 
 
+                    db.compounds.aggregate([
+                      {
+                        $match: {
+                          taxonomyReferenceObjects: {
+                            $exists: true,
+                            $ne: {}
+                          }
+                        }
+                      },
+                      {
+                        $set: {
+                          isPlantAssociated: {
+                            $anyElementTrue: [
+                              {
+                                $map: {
+                                  input: {
+                                    $objectToArray: "$taxonomyReferenceObjects"
+                                  },
+                                  as: "reference",
+                                  in: {
+                                    $anyElementTrue: [
+                                      {
+                                        $map: {
+                                          input: {
+                                            $objectToArray: "$$reference.v"
+                                          },
+                                          as: "source",
+                                          in: {
+                                            $anyElementTrue: [
+                                              {
+                                                $map: {
+                                                  input: {
+                                                    $ifNull: ["$$source.v", []]
+                                                  },
+                                                  as: "taxon",
+                                                  in: {
+                                                    $or: [
+                                                      {
+                                                        $in: [
+                                                          {
+                                                            $toLower: {
+                                                              $ifNull: ["$$taxon.kingdom", ""]
+                                                            }
+                                                          },
+                                                          ["plantae", "viridiplantae"]
+                                                        ]
+                                                      },
+                                                      {
+                                                        $in: [
+                                                          {
+                                                            $toLower: {
+                                                              $ifNull: ["$$taxon.phylum", ""]
+                                                            }
+                                                          },
+                                                          ["tracheophyta", "streptophyta"]
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      {
+                        $match: {
+                          isPlantAssociated: true
+                        }
+                      },
+                      {
+                        $project: {
+                          _id: 1,
+                          lotus_id: 1,
+                          wikidata_id: 1,
+                          smiles: 1,
+                          inchi: 1,
+                          traditional_name: 1,
+                          synonyms: 1,
+                          iupac_name: 1,
+                          collection: 1,
+                          npl_score: 1
+                        }
+                      }
+                    ])
 
 
+Og lotus has 276,518 compounds
+Plant lotus has 192,297 compounds
+Percentage of plant lotus: 69.54%
+The difference is 84,221
 
+okay so now I need to get the lotus into a pipeline ready format.
+This means inchi deduplication time
 
+so lotus is deduplicated on ichi it appears. It also appears like lotus have used
+a lot of the data from coconut as a source for their DB
 
+So it looks like 71667 LOTUS InChIs are missing from Coconut that I added to the DB.
 
+removing all the entries with nplikeness score less than -1
+The old was 192,297 long and now after removing lower than -1 np likeness score it is 191,703
 
+now adding to the db normalizer
 
+29 sep - getting the DB normalizer working so I can add the lotus stuff
 
+files modified: /home/school/masters/Scripts/automatic_normalizer.ipynb
+files created:
+files used:
 
+plan:
+- finish DB normalizer
 
+done:
+working on the normalizer
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+adding the new stuff isnt too deep because then I just need to make a csv with the new stuff that will be added as a 
+load from file but for compounds that are already in the DB it gets a bit more complicated 
 
 
 
