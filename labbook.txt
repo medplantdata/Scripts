@@ -48,7 +48,7 @@ TOC:
 21 sep - prepping plants for DB
 22 sep - handling plants that came back from wonko that should be standardised to POWO wcvp
 28 sep - extracting compounds from the lotus mongo dump
-
+29 sep - getting the DB normalizer working so I can add the lotus stuff
 
 
 
@@ -2305,6 +2305,27 @@ I will need to take the pubchem get out of the normalizer but now I think it is 
 quick reminder of how to pubchem getter it:
 module load python-3.9.5
 module load pubchempy
+
+30 sep - adding plant normalizer while I wait for the cid getter to run
+
+files used:
+files created:
+files modified:
+
+plan:
+- add notes to the compound normalizer
+- do plant normalizer
+
+done:
+I added some stuff to the pubchem cid getter so that it skips compounds with a cid
+
+I am writing a nice description of the compound Normalizer and what it needs there are some aspects that need to be added
+
+
+Been working on the plant normalizer and it is going seemingly well I fell like i am starting to get pandas.
+
+
+
 
 
 
