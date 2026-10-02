@@ -49,7 +49,8 @@ TOC:
 22 sep - handling plants that came back from wonko that should be standardised to POWO wcvp
 28 sep - extracting compounds from the lotus mongo dump
 29 sep - getting the DB normalizer working so I can add the lotus stuff
-
+30 sep - adding plant normalizer while I wait for the cid getter to run
+1 oct - added calitz chemical converter to the website using a streamlit
 
 
 
@@ -2324,11 +2325,43 @@ I am writing a nice description of the compound Normalizer and what it needs the
 
 Been working on the plant normalizer and it is going seemingly well I fell like i am starting to get pandas.
 
+1 oct - added calitz chemical converter to the website using a streamlit
 
+2 oct - CV+datascience thing workshop, fixing CID getter and running lotus cids
 
+files used:
+files modified:
+files created: deduplication.ipynb
 
+wonko:nathanc@wonko:/nlustre/users/nathanc/29_sep_lotus_cid_getter/>ls
+lotus_cid_errors.csv  lotus_cid_getter.py  lotus_cid_getter.sh  lotus_not_in_wand_for_cids.csv  lotus_with_cid.csv
 
+plan:
+- Do CV apply for the data course
+- running the cid getter on wonko
 
+done:
+Johann killed my Job on wonko because it was on head node so apparently pubchempy it will run on any queue
+
+I just need to fix the code because I think it would be better if the script writes to the input file and checks
+if the cid is alreay present because then in situations like this it doesnt do everything again
+
+So now the script takes a file with a cids column and checks to see if there is something in the cid column if there is it 
+skips else it gets the cid. it saves every 1000 entires. This system works because the loaded DF is modified instead of
+building the df up line by line from the origional which would mean if the script is stopped the og file would be missing all the previous
+entries.
+
+This means It can also be run twice if there are a lot of connection error issues
+
+I am also just adding a bit that will make an automatic results file
+
+also changing the progress stuff because now it needs a flush
+
+looks like the cid getter is coooooking
+
+I was doing the smiles deduplicator stuff and adding to the chemi tools and discovered some cool things check the obsidain and the 
+deduplication .ipynb
+I think I have a nice way now see the stuff on the streamlit and obsidain as well for the code for this
 
 
 
