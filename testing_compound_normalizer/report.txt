@@ -1,0 +1,7 @@
+Compounds in starting file: 4
+         New compounds standardised to add to the database: 4
+         Removed compounds: 0
+         Errors: 0
+         Error types:
+         Series([], Name: count, dtype: int64)
+         

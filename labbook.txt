@@ -51,8 +51,10 @@ TOC:
 29 sep - getting the DB normalizer working so I can add the lotus stuff
 30 sep - adding plant normalizer while I wait for the cid getter to run
 1 oct - added calitz chemical converter to the website using a streamlit
-
-
+2 oct - CV+datascience thing workshop, fixing CID getter and running lotus cids
+3 oct - Saturday helping liam in the lab and doing my own things -> lotus cid and deduplicator stuff
+4 oct - lotus cid gettter results
+5 oct - Fixing cid getter and testing normalizer for compounds
 
 
 
@@ -2362,6 +2364,119 @@ looks like the cid getter is coooooking
 I was doing the smiles deduplicator stuff and adding to the chemi tools and discovered some cool things check the obsidain and the 
 deduplication .ipynb
 I think I have a nice way now see the stuff on the streamlit and obsidain as well for the code for this
+
+3 oct - Saturday helping liam in the lab and doing my own things -> lotus cid and deduplicator stuff
+
+files created: see yesterday wonko but aslo renamed the error file to first run or something and first attemmpt at writing the compound checker
+files modified: deduplication.ipynb
+files used:
+
+wonko: inchi_smiles_comparison.py  inchi_smiles_comparison.sh
+ran the code from deduplication.ipynb on wonko 
+reran the lotus getter
+
+Plan:
+- help liam with labwork
+- check lotus cid errors and rerun
+
+done:
+so only 53% of the sent compounds ended up getting a cid 
+so am rerunning the script most of the errors were some sort oof connection error server busy type shhit:
+Total compounds: 71,446
+Compounds returned with cid: 38,312
+Compounds no result: 33,134
+Percent sucess: 53.62%
+Total errors: 9,229
+Messages: error
+PubChem HTTP Error 503 PUGREST.ServerBusy: Too many requests or server too busy           6134
+not input (inchikey)                                                                      2938
+None                                                                                      131
+PubChem HTTP Error 400 PUGREST.BadRequest: Unable to standardize the given structure - perhaps some special characters need to be escaped or data packed in a MIME form? (error: , status: 0, output: )                                                                   20
+PubChem HTTP Error 400 PUGREST.BadRequest: Unable to standardize the given structure - perhaps some special characters need to be escaped or data packed in a MIME form? (error: , status: 400, output: Caught ncbi::CException: Standardization failed, Output Log:, 
+Record 1: Warning: Unable to fix pentavalent nitroso group [Atom1 Charge 0] [Atom2 Charge 0] [Bond Order 2], Record 1: Warning: Detected illegal valence for element "N": 3 sigma bonds, 2 pi bonds, 0 charge, Record 1: Warning: Compound failed verification during 
+"standardize deposited compound", , PubChem Warning; class: Invalid Chemical Structure; label: Structure Standardization Issues; message: Detected illegal valence for element "N": 3 sigma bonds, 2 pi bonds, 0 charge, )                                                3
+PubChem HTTP Error 400 PUGREST.BadRequest: Unable to standardize the given structure - perhaps some special characters need to be escaped or data packed in a MIME form? (error: , status: 400, output: Caught ncbi::CException: 
+Standardization failed, Output Log:, Record 1: Warning: Detected illegal valence for element "N": 3 sigma bonds, 2 pi bonds, 0 charge, Record 1: Warning: Compound failed verification during "standardize deposited compound", , 
+PubChem Warning; class: Invalid Chemical Structure; label: Structure Standardization Issues; message: Detected illegal valence for element "N": 3 sigma bonds, 2 pi bonds, 0 charge, )                                                                                    3
+
+
+some of teh errors involved the inchi being wack and I definitely think there needs to be normalization for that and we need to even see if that can be a 
+criteria for the db checking algorithm
+
+So if we can take the db SMILES one time and then do the following below it will be useful because it will retain the chemical tautomeric diversity while removing redundancy and standarizing the smiles formats 
+a consideration is aslo that rdkit has all these standardizer functions that no one seems to want to explain how they work that might be worth it to do thinngs like exclude metal ions
+- read the smiles and convert to mol -> problems here probably mean that a compound should be disgarded
+- run the cleanup function
+- canonicalize the smile by converting straight back to SMILES (isomeric = True, Canonical = True)
+- deduplicate (.groupby().agg())
+
+
+
+for deduplication notes
+this is where the fun part starts: there will still be tautomeric forms but the charge protonation stuff should be fixed by the cleanup function. The problem is that that means now we may have inchis that dont directly correspond to the SMILES so the inchis may need to be redrawn so
+
+
+Okay so I went through coconut and made a cleandup normalized smiles and then generated the inchi from that and then checked
+they were the same and they mostly were:
+Number of normalized smiles that build to a different inchi (may be due to inchi algo but shouldnt be): 521
+Number of normalized smiles that build to the same inchi: 738306
+Number of normalized smiles that build to no inchi: 4
+Number of non normalizeable smiles:0
+
+am running the cid getter again
+
+4 oct - lotus cid gettter results
+
+Total compounds: 71,446
+Compounds returned with cid: 38,246
+Compounds no result: 33,200
+Percent sucess: 53.53% 
+Total errors: 278 
+
+need to fix the script somehow less compounds have cids now????
+
+5 oct - Fixing cid getter and testing normalizer for compounds
+
+files created:
+files modified: automatic_normalizer.ipynb
+files used:
+
+Plan:
+- check cid getter so lotus compounds are ready
+- test normalizer
+Done: 
+SO yesterday the cid getter ran after me running it a second time but now unfortunately it looks like there are
+even less compound cids than the first time I ran it?? so either the output folder is wrong or the script is not 
+checking if a compound is there already and overwrites or sum.
+
+Found the issue I had the condition backwards it only queried compounds that were notna in the cid field
+
+the compounds are running now nicely (I think)
+
+So on sat 3 oct I learnt that the issue of inchis being different after smiles normalization is small and that it
+is probably best to do the normalization in anycase.
+
+So I think this is the best paradigm for deduplication of compounds:
+- create a mol from the smiles
+- use the rdkit cleanup method on the mol
+- make a canonical RDkit smiles
+- make a new inchi
+- deduplicate on the original smiles 
+
+
+Have added the new smiles deduplication stuff to the compound normailser
+
+
+It still needs a few additions but I want to start testing it so I am gonna make a quick file with a few entries and run the debugger 
+to see the steps and fix accordingly
+
+Treat warnings as errors is too strict unfortunately so I am going to take that out
+
+Okay so the normalizer now runs I just need to sort out a few kinks but I also want to get my application in for the 
+datascience course so imma do that quick
+
+
+
 
 
 
