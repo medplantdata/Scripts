@@ -55,6 +55,7 @@ TOC:
 3 oct - Saturday helping liam in the lab and doing my own things -> lotus cid and deduplicator stuff
 4 oct - lotus cid gettter results
 5 oct - Fixing cid getter and testing normalizer for compounds
+6 oct - checking cids and doing first checks on compound normalizer
 
 
 
@@ -2443,7 +2444,7 @@ files used:
 
 Plan:
 - check cid getter so lotus compounds are ready
-- test normalizer
+- test normalizer + fix normalizer
 Done: 
 SO yesterday the cid getter ran after me running it a second time but now unfortunately it looks like there are
 even less compound cids than the first time I ran it?? so either the output folder is wrong or the script is not 
@@ -2476,6 +2477,84 @@ Okay so the normalizer now runs I just need to sort out a few kinks but I also w
 datascience course so imma do that quick
 
 
+6 oct - checking cids and doing first checks on compound normalizer
+
+files created: lotus_cid_errors.csv, lotus_with_cid.csv, lotus_compounds_and_data_with_cids.csv
+files modified:lotus/handling_lotus_compounds.ipynb, lotus/lotus_compounds_with_plant_source.csv
+files used:
+
+wonko files brought back lotus_cid_errors.csv lotus_with_cid.csv
+
+plan:
+- rerun cid getter 1 last time
+
+Done:
+The cid getter ran and got a suspiciously good yeild:
+Total compounds: 71,446
+Compounds returned with cid: 68,675
+Compounds no result: 2,771
+Percent sucess: 96.12% 
+Total errors: 9,031 
+Messages: error
+PubChem HTTP Error 503 PUGREST.ServerBusy: Too many requests or server too busy 
+
+gonna run 1 last time tho but I think it is good proof of concept for the gid getter script
+
+Total compounds: 71,446
+Compounds returned with cid: 70,788
+Compounds no result: 658
+Percent sucess: 99.08% 
+Total errors: 2,012 
+Messages: error
+None                                                                                                                                                                                                       684
+PubChem HTTP Error 503 PUGREST.ServerBusy: Too many requests or server too busy                                                                                                                            667
+not input (inchikey)                                                                                                                                                                                       658
+PubChem HTTP Error 400 PUGREST.BadRequest: Unable to standardize the given structure - perhaps some special characters need to be escaped or data packed in a MIME form? (error: , status: 0, output: )      3
+
+
+okay so only 684 failed because of connection and I added that server busy to the if that retrys
+667 failed becasue no thing was found until inchikey which was empty for this run but we can ignore that
+
+going to check the bad request ones where the structure was a problem
+not sure what the problem was because those compounds go in calitz chemical converter fine and when i paste the string in pubchem it is fine
+
+I am adding a quick small cid getter for like 1 compound with 1 identifier
+
+it worked now for some reason and it got the cids so adding them to db:
+{'InChI=1S/C39H52O24/c1-11-21(43)26(48)30(52)36(56-11)55-10-19-24(46)28(50)32(54)38(61-19)63-35-29(51)23(45)18(9-40)60-39(35)62-34-25(47)20-16(42)7-15(58-37-31(53)27(49)22(44)12(2)57-37)8-17(20)59-33(34)13-3-5-14(41)6-4-13/h3-8,11-12,18-19,21-24,26-46,48-54H,9-10H2,1-2H3': 163020850, 
+'InChI=1S/C35H64O7/c1-3-4-5-6-7-8-9-10-11-15-21-31(38)33-23-24-34(42-33)32(39)22-16-13-12-14-18-29(36)19-17-20-30(37)26-28-25-27(2)41-35(28)40/h25,27,29-34,36-39H,3-24,26H2,1-2H3': 85111137, 
+'InChI=1S/C10H14O3/c1-7-3-4-8(9(12)5-7)10(2,13)6-11/h3-5,11-13H,6H2,1-2H3': 86142411}
+
+
+cids added successfully
+
+
+now merging the cids onto the existing thing  (/home/school/masters/Scripts/lotus/lotus_compounds_with_plant_source.csv to lotus_compounds_and_data_with_cids.csv)
+
+
+now gonna try run the big thing with interactive node to see
+got tired
+
+7 oct - testing the normalizer
+
+files created: 
+files used:
+files modified:
+
+plan:
+- pass through the normalizer by reading and try add some of the things I need to add
+- try run on interactive
+
+Done:
+managed to get write permission from johann so now i can write things out of the sql database
+
+okay so the issues I kinda want to tackle are the fact that the new compounds will come in with
+possibly a new ID and that the 
+
+pretty big fuckup, the compounds get stored with a smile or inchi or something when it should be with and id
+fixed was not such a fuckup -> i think I almost know what im doing
+
+adding a df format checker
 
 
 
