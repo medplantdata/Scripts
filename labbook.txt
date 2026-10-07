@@ -2537,9 +2537,9 @@ got tired
 
 7 oct - testing the normalizer
 
-files created: 
+files created: testing_compound_normalizer/making_test_sets.ipynb
 files used:
-files modified:
+files modified: automatic_normalizer.ipynb
 
 plan:
 - pass through the normalizer by reading and try add some of the things I need to add
@@ -2556,6 +2556,17 @@ fixed was not such a fuckup -> i think I almost know what im doing
 
 adding a df format checker
 
+changing the paradigm I think the plan is to compare the new compounds against the whole wand. Then I can 
+dynamically check for existing and new columns for alles including the format. will just reduce the size 
+to speed up the script by dropping entries that arent needing to be updated  using the new data 
+looks kinda like I was doing that already :) the second part about droppinguneccessary compounds
+
+
+okay so I think the thing is ready for testing I think the first right idea is to sommer send the coconut to it
+maybe a shortened coconut that is formatted then it tests the new compound stuff and I can send in more coconuts after that
+
+to do this I am going to say wand is a 1 row db with a hand curated row then I am going to send half of coconut with that rough format and see
+(testing_compound_normalizer/making_test_sets.ipynb, )
 
 
 
