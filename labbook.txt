@@ -2537,7 +2537,7 @@ got tired
 
 7 oct - testing the normalizer
 
-files created: testing_compound_normalizer/making_test_sets.ipynb
+files created: testing_compound_normalizer/making_test_sets.ipynb,coconut_full/coconut_for_normalizer.csv, wand_template.csv'
 files used:
 files modified: automatic_normalizer.ipynb
 
@@ -2568,10 +2568,20 @@ maybe a shortened coconut that is formatted then it tests the new compound stuff
 to do this I am going to say wand is a 1 row db with a hand curated row then I am going to send half of coconut with that rough format and see
 (testing_compound_normalizer/making_test_sets.ipynb, )
 
+So after running a few times I have the normalizer more or less going 
+
+interesting problem:
+InChI=1S/C5H13NO4S/c1-6(2,3)4-5-10-11(7,8)9/h4-5H2,1-3H3 is unparseable my rd kit and https://chemtoolshub.com/en/tools/structure-converter/
+see obsidain notes
+
+okay so it seems like things are working more or less so I am gonna try run the whole of coconut that is made by plants
 
 
 
 
+so I ran on the server and it almost worked on the full coconut :)
+
+tired so error fixing is for tomorrow
 
 
 

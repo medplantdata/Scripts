@@ -9,4 +9,5 @@
 /lotus/LOTUSlatest.zip
 /lotus/*.csv
 /lotus/*.json
-
+/testing_compound_normalizer/coconut_test.csv
+/testing_compound_normalizer/wand_test.csv
