@@ -11,3 +11,4 @@
 /lotus/*.json
 /testing_compound_normalizer/coconut_test.csv
 /testing_compound_normalizer/wand_test.csv
+/testing_compound_normalizer/compounds_for_db.csv

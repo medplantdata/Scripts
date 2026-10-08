@@ -56,7 +56,7 @@ TOC:
 4 oct - lotus cid gettter results
 5 oct - Fixing cid getter and testing normalizer for compounds
 6 oct - checking cids and doing first checks on compound normalizer
-
+7 oct - testing the normalizer
 
 
 
@@ -2582,6 +2582,72 @@ okay so it seems like things are working more or less so I am gonna try run the 
 so I ran on the server and it almost worked on the full coconut :)
 
 tired so error fixing is for tomorrow
+
+
+8 oct - normalizer testing and fixing
+
+files used: 
+files created: testing_compound_normalizer/compounds_for_db.csv
+files modified: automatic_normalizer.ipynb,testing_compound_normalizer/making_test_sets.ipynb, coconut_full/coconut_for_normalizer.csv
+
+wonko:  7_oct_normaizer_bigger_set_result_try_2/compounds_for_db.csv
+
+plan:
+- see what went wrong in yesterdays run 
+- fix 
+- try again 
+- while not fully functional
+
+- fix columns
+- fix input checker
+- check deduplication was shap
+- fix staging column names
+- make the names of the duplicated compounds not be pipe seperated
+- remove straight molecular ions 
+
+
+done:
+So the issue was a type error because the wand_template is empty the start Id for the new compounds was NAN and a float I fixed it now gonna rerun
+
+it ran :))))))
+
+Compounds in starting file: 175364
+         Numner of compounds pre-duplication: 175364
+         Number compounds post duplication: 175348
+         New compounds standardised to add to the database: 175348
+         Removed compounds: 16
+         Errors: 0
+         Error types:
+         Series([], Name: error_msg, dtype: int64)
+         Columns in new compounds that were excluded: ['id', 'np_likeness', 'cids', 'norm_inchi']
+
+potential issues:
+ 16 compounds removed but it doesnt say why and there are 0 errors
+
+its weird there were no errors like does that mean my things are too lenient or just that the data is shap 
+
+I need to fix the columns that were excluded (I think it may just be because i forgot to put the n_ or it isnt in wand but I must add the check anyways) 
+and check the new deduplication paradigm
+
+column naming now correct
+I think the input checker is now correct
+I think the staging df column names are now correct
+
+now I need to check the deduplication 7_oct_normaizer_bigger_set_result_try_2/compounds_for_db.csv using this file it is under testing_compound_normalizer/compounds_for_db.csv
+
+okay so the deduplication makes the names pipe seperated I will need to change that
+It seems like most of the compound deduplications have to do with changes in charge
+
+for now I think we can just take the deduplication of the compounds and say it is shap
+
+I also need to make a descision on if metal ions belong in the db
+
+I think i sorted the name problem it is a messy situation because I add the piped names to synonyms then I chose all the first of the pipe 
+names to be the new name then I remove the name from the synonyms in 3 .apply() statements but at least this proves I didnt vibe code an MSC 
+
+remove metals sorted
+
+now I need to make a new coconut_for_normalizer.csv with the correct heading so I can rerun
 
 
 
