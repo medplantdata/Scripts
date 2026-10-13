@@ -2778,10 +2778,10 @@ None
 this is weird right like why does it only get a few new entries each time? 
 I realized it because it does not handle the abovementioned error and retry
 
-13 oct - adding coconut again to db, fixing the website, fixing normalizer
+13 oct - adding coconut again to db after fixing normalizer and properly extracting lotus so can test normalizer
 
-files created:
-files modified:
+files created: lotus/compounds_lotus_plant_only.csv,
+files modified: lotus/handling_lotus_compounds.ipynb,
 files used:
 
 plan:
@@ -2789,6 +2789,8 @@ plan:
 - see if can add formatting to the normalizer so that doesnt happen
 - rerun and add to db again
 - make cids cast and go in as non-decimal
+- add compounds to db
+- reextract lotus
 
 done:
 repaste of error:
@@ -2817,29 +2819,196 @@ it is also rounding the values will need to make it a float
 
 SQL statement changes: need the nplikeness to be float and the name mustnt be not none
 normalizer changes: in theory the compounds should have the same npLikeness when deduplicated but I will build it to throw something in the
-error file 
+error file and take the lowest nplikeness score
+
+now need to fix the doi thing
+
+okay so it seems that the doi thing is jsut a fuckup in general from coconut like it is the same couple of dois reduplicated many times
+
+the normalizer is ready to run again :)
+
+normalizer runa and error tested now adding back to the db
+
+
+              CREATE TABLE compounds (
+              compound_id  INT UNSIGNED NOT NULL AUTO_INCREMENT,
+              smiles TEXT NOT NULL,
+              inchi TEXT NOT NULL,
+              inchi_key CHAR(27) NOT NULL,
+              name TEXT,
+              synonyms MEDIUMTEXT,
+              iupac MEDIUMTEXT,
+              np_likeness INT,
+              dois TEXT,
+              collections TEXT,
+              coconut_id VARCHAR(100),
+              cid VARCHAR(100),
+              cas VARCHAR(300),
+              PRIMARY KEY (compound_id));
+
+              LOAD DATA LOCAL INFILE '/localdata/wand_data/compounds_for_db.csv'
+              INTO TABLE compounds
+              FIELDS TERMINATED BY ','
+              OPTIONALLY ENCLOSED BY '"'
+              ESCAPED BY ''
+              LINES TERMINATED BY '\n'
+              IGNORE 1 LINES
+              (compound_id, smiles, inchi, inchi_key, name, synonyms, iupac, np_likeness, dois, collections, coconut_id, cid, cas);
 
 
 
 
++---------+------+------------------------------------------------+
+| Level   | Code | Message                                        |
++---------+------+------------------------------------------------+
+| Warning | 1265 | Data truncated for column 'dois' at row 150854 |
++---------+------+------------------------------------------------+
+the above was the only errror for the wack doi so I will just fix manually
+
+this doi has mountains of refs so I am just taking the first 10
+
+update compounds 
+set dois = '10.1002/CHIN.200338184|10.1248/CPB.38.342|10.1021/NP50057A031|10.1016/0031-9422(95)00400-2|10.1016/S0031-9422(00)80079-5|10.1055/S-2007-969783|10.1016/S0031-9422(97)80031-3|10.1016/S0031-9422(00)94531-X|10.1021/NP50048A014|10.1055/S-2003-45110'
+where compound_id = 150854;
+
+shap shap awe now in the db time to test lotus
+the issue is that the lotus is in a horrible mongodb format and I need to extract from there. last time I did the issue was that the refs and some other things
+were not extracted properly so I need to reextract plant compounds and in a way the data is useable 
+
+Fuck mongoDB imma AI the data out of there:
+https://www.perplexity.ai/search/46235212-9989-4a7a-944c-0fa0f1efc6d0
+javascript
+// ---------- Database and collection ----------
+const sourceDb = db.getSiblingDB("NPOC2021_raw");
+const collectionName = "lotusUniqueNaturalProduct";
+
+// ---------- CSV columns ----------
+const fields = [
+    "traditional_name"
+    "lotus_id",
+    "wikidata_id",
+    "smiles",
+    "synonyms",
+    "iupac_name",
+    "collection",
+    "npl_score",
+    "xrefs",
+    "taxonomyReferenceObjects",
+    "allTaxa"
+];
+
+const projection = { _id: 0 };
+
+for (const field of fields) {
+    projection[field] = 1;
+}
+
+// ---------- Aggregation pipeline ----------
+const pipeline = [
+    {
+        $addFields: {
+            __taxonomyRecords: {
+                $reduce: {
+                    // Iterate over all reference identifiers.
+                    input: {
+                        $objectToArray: {
+                            $ifNull: ["$taxonomyReferenceObjects", {}]
+                        }
+                    },
+                    initialValue: [],
+                    in: {
+                        $concatArrays: [
+                            "$$value",
+                            {
+                                $reduce: {
+                                    // Iterate over every taxonomy provider.
+                                    input: {
+                                        $objectToArray: "$$this.v"
+                                    },
+                                    initialValue: [],
+                                    in: {
+                                        $concatArrays: [
+                                            "$$value",
+                                            {
+                                                $cond: [
+                                                    { $isArray: "$$this.v" },
+                                                    "$$this.v",
+                                                    []
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+
+    {
+        $match: {
+            __taxonomyRecords: {
+                $elemMatch: {
+                    $or: [
+                        {
+                            kingdom: {
+                                $in: ["Viridiplantae", "Plantae"]
+                            }
+                        },
+                        {
+                            phylum: "Streptophyta"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+
+    {
+        // Keep the original fields, including their complete nested data.
+        // Exclude the temporary __taxonomyRecords field.
+        $project: projection
+    }
+];
+
+// ---------- CSV formatting ----------
+function formatCell(value) {
+    if (value === undefined || value === null) {
+        return "";
+    }
+
+    const text = typeof value === "object"
+        ? EJSON.stringify(value, null, 0, { relaxed: true })
+        : String(value);
+
+    // Escape commas, double quotes, and line breaks.
+    if (/[,"\r\n]/.test(text)) {
+        return '"' + text.replace(/"/g, '""') + '"';
+    }
+
+    return text;
+}
+
+// ---------- Export ----------
+print(fields.join(","));
+
+sourceDb.getCollection(collectionName)
+    .aggregate(pipeline)
+    .forEach(document => {
+        print(
+            fields.map(field => formatCell(document[field])).join(",")
+        );
+    });
 
 
+so after much fighting i discovered that the mongodb dump provided of lotus does not provide synonyms, collections or xrefs.
+So now I am going to tidy what I have to send to wonko for testing the normalizers capabilities atmaking the staging table
 
+lotus went from to 276 518 to 192 297 compounds when selecting for plants using the above script
 
-
-
-
-
-
-The gbif wvp job is finished and I downlloaded it. ->> tip you have to do it from the local not the server and run sum like this:
-scp nathanc@wonko.bi.up.ac.za:/nlustre/users/nathanc/2_Sep_gbif_powo_match/coconut_plants_with_wcvp_data_for_synonyms_and_deduplication ~/masters/Scripts/coconut_full/coconut_plants
-
-GO CKECK ERROTS FOR THE NPCLASSIFICATION
-
-check /home/school/masters/Scripts/coconut_full/coconut_plants/checklist_error_plants.csv 19 Aug
-
-find missing plants that were excluded from the ANPDB (there are a lot of plants that were in the ANCDB that
-didn't make  it into the DB and that may be due to duplicates and to just things that got removed in general
-but I found a couple entries that probably should have made it so just check again) -> see 16 July
-
-check the error file for the cid getter 
+set them for wonko and it is running
+I am not sure if it is going to remove them or not but apparently the new _id columns will be removed according to the output
+have run it through a few times fixing errors
+yohhhhhh crazy shit apparently there are dups in the smiles from wand tryna see wassup 
