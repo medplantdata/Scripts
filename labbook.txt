@@ -57,6 +57,9 @@ TOC:
 5 oct - Fixing cid getter and testing normalizer for compounds
 6 oct - checking cids and doing first checks on compound normalizer
 7 oct - testing the normalizer
+8 oct - normalizer testing and fixing
+9 oct - chill day retrying normalizer
+12 oct - fixing and sorting compound normalizer
 
 
 
@@ -2648,6 +2651,180 @@ names to be the new name then I remove the name from the synonyms in 3 .apply() 
 remove metals sorted
 
 now I need to make a new coconut_for_normalizer.csv with the correct heading so I can rerun
+
+rerunning but I have a tennis match now so will find out tomorrow whats cutting
+
+
+9 oct - chill day retrying normalizer
+
+files modified: 
+- automatic_normalizer.ipynb  
+
+plan: retry normalizer
+
+done:
+
+key error from yesterday
+fixing and rerunning
+
+normalizer run complete
+
+
+12 oct - fixing and sorting compound normalizer, first add of coconut to the db
+
+files modified: testing_compound_normalizer/making_test_sets.ipynb,testing_compound_normalizer/compounds_for_db.csv,PIP stuff/main.py
+files created:PIP stuff/main.py,coconut_full/coconut_for_proper_cid.csv
+files used:
+wonko: 9_oct_compound_normalizer/, 12_oct_compound_normalizer
+
+Plan:
+- check run and make sure is working
+- fix so the report reports error type not whole error
+- check the deduplication
+- add nplikeness to the template file so it will be saved run the compounds again so can add to db
+- fix website
+
+Done:
+okay so it looks like everything went well. The all the removed nps were due to metals and deduplication
+
+ckecking deduplication in: testing_compound_normalizer/making_test_sets.ipynb
+I am deleting the compounds_for_db.csv from the 8th for this
+
+So i think the deduplication is fine it seems to just deduplicate ionic forms as well
+
+I also want to start working on a publishable set of python scripts for pip
+
+so moved most of the stuff the the 12 oct file and that to db file is what I am adding to wand. just gonna sommer add
+to my downloads folder then to wand then delete
+
+need to redo cid getting for the coconut stuff:
+
+CREATE TABLE compounds (
+compound_id  INT UNSIGNED NOT NULL AUTO_INCREMENT,
+smiles TEXT NOT NULL,
+inchi TEXT NOT NULL,
+inchi_key CHAR(27) NOT NULL,
+name TEXT NOT NULL,
+synonyms MEDIUMTEXT,
+iupac MEDIUMTEXT,
+np_likeness INT,
+dois TEXT,
+collections TEXT,
+coconut_id VARCHAR(100),
+cid VARCHAR(100),
+cas VARCHAR(300),
+PRIMARY KEY (compound_id));
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/compounds_for_db.csv'
+INTO TABLE compounds
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(compound_id, smiles, inchi, inchi_key, name, synonyms, iupac, np_likeness, dois, collections, coconut_id, cid, cas);
+
+mysql> show warnings;
++---------+------+-------------------------------------------------------+
+| Level   | Code | Message                                               |
++---------+------+-------------------------------------------------------+
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 14097  |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 45031  |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 49692  |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 53750  |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 59613  |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 81007  |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 88266  |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 90604  |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 110966 |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 149653 |
+| Warning | 1265 | Data truncated for column 'dois' at row 150854        |
++---------+------+-------------------------------------------------------+
+
+
+
+
+cid getter: 
+Total compounds: 175,195
+Compounds returned with cid: 156,946
+Compounds no result: 18,249
+Percent sucess: 89.58% 
+Total errors: 54,751 
+Messages: error
+PubChem HTTP Error 429 Too Many Requests    54309
+None                                          442
+gonna run again
+
+Total compounds: 175,195
+Compounds returned with cid: 157,272
+Compounds no result: 17,923
+Percent sucess: 89.77% 
+Total errors: 53,772 
+Messages: error
+PubChem HTTP Error 429 Too Many Requests    53296
+None     
+
+gonna run it again dunno why it isnt getting more
+
+Total compounds: 175,195
+Compounds returned with cid: 157,604
+Compounds no result: 17,591
+Percent sucess: 89.96% 
+Total errors: 52,773 
+Messages: error
+PubChem HTTP Error 429 Too Many Requests    52298
+None   
+
+this is weird right like why does it only get a few new entries each time? 
+I realized it because it does not handle the abovementioned error and retry
+
+13 oct - adding coconut again to db, fixing the website, fixing normalizer
+
+files created:
+files modified:
+files used:
+
+plan:
+- see why I get errors like above in mysql 
+- see if can add formatting to the normalizer so that doesnt happen
+- rerun and add to db again
+- make cids cast and go in as non-decimal
+
+done:
+repaste of error:
+
++---------+------+-------------------------------------------------------+
+| Level   | Code | Message                                               |
++---------+------+-------------------------------------------------------+
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 14097  |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 45031  |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 49692  |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 53750  |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 59613  |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 81007  |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 88266  |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 90604  |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 110966 |
+| Warning | 1265 | Data truncated for column 'np_likeness' at row 149653 |
+| Warning | 1265 | Data truncated for column 'dois' at row 150854        |
++---------+------+-------------------------------------------------------+
+
+
+
+
+It seems the error is coming from the fact that the np_likeness is int and then some of the np_likeness values are pipe seperated
+it is also rounding the values will need to make it a float
+
+SQL statement changes: need the nplikeness to be float and the name mustnt be not none
+normalizer changes: in theory the compounds should have the same npLikeness when deduplicated but I will build it to throw something in the
+error file 
+
+
+
+
+
+
+
 
 
 
