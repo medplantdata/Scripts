@@ -60,6 +60,7 @@ TOC:
 8 oct - normalizer testing and fixing
 9 oct - chill day retrying normalizer
 12 oct - fixing and sorting compound normalizer
+13 oct - adding coconut again to db after fixing normalizer and properly extracting lotus so can test normalizer
 
 
 
@@ -3012,3 +3013,23 @@ set them for wonko and it is running
 I am not sure if it is going to remove them or not but apparently the new _id columns will be removed according to the output
 have run it through a few times fixing errors
 yohhhhhh crazy shit apparently there are dups in the smiles from wand tryna see wassup 
+
+calling it a day check the output tomorrow it should send the duplicated smiles
+
+14 - Fixing normalizer adding existing and lotus
+
+files created:
+files used:
+files modified:
+
+plan:
+- fix normalizer so it can add the lotus
+- make sure report output and the actual columns removed match
+- fix duplication issue in output of normalizer
+- make smiles a unique column in wanddb
+
+done:
+Okay so there seems to be a problem with the merge where it says that there are duplicated in the wand smiles
+when I asked it to print what was wrong it prints a bunch of false so I think the error is with a pandas thing or sum but im on it
+
+okay so apparently there are 64 duplicated smiles in wand :( 
