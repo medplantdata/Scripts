@@ -3026,10 +3026,67 @@ plan:
 - fix normalizer so it can add the lotus
 - make sure report output and the actual columns removed match
 - fix duplication issue in output of normalizer
-- make smiles a unique column in wanddb
+- fix warnings
 
 done:
 Okay so there seems to be a problem with the merge where it says that there are duplicated in the wand smiles
 when I asked it to print what was wrong it prints a bunch of false so I think the error is with a pandas thing or sum but im on it
 
 okay so apparently there are 64 duplicated smiles in wand :( 
+
+so after rerunning the script it seems that the normalizer does not make a csv with duplicates? gonna try add to db with a unique tag on
+the smiles in the db and see wassup
+
+apparently adding a unique tag to a TEXT is a whole thing so I am just going to ignore that and check with a groupby
+
+CREATE TABLE compounds (
+compound_id  INT UNSIGNED NOT NULL AUTO_INCREMENT,
+smiles TEXT NOT NULL,
+inchi TEXT NOT NULL,
+inchi_key CHAR(27) NOT NULL,
+name TEXT,
+synonyms MEDIUMTEXT,
+iupac MEDIUMTEXT,
+np_likeness INT,
+dois TEXT,
+collections TEXT,
+coconut_id VARCHAR(100),
+cid VARCHAR(100),
+cas VARCHAR(300),
+PRIMARY KEY (compound_id));
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/compounds_for_db.csv'
+INTO TABLE compounds
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(compound_id, smiles, inchi, inchi_key, name, synonyms, iupac, np_likeness, dois, collections, coconut_id, cid, cas);
+
+| Level   | Code | Message                                        |
++---------+------+------------------------------------------------+
+| Warning | 1265 | Data truncated for column 'dois' at row 150854 |
++---------+------+------------------------------------------------+
+
+okay so it seems that the csv itself is free of dups according to python cheching the file on wonko after making it, adding
+duplication checks to the normalizer, checking the csv on data wrangler too there are no dups. The mysql thing is apparently
+not case sensitive and therefore reveals dups because of that.
+
+pandas merge is case insensitive too so I dont know why the 1:1 validation of the merge cliams duplicates. This means the normalizer
+issue is not to do with the new compounds
+
+so it may have been an ordering issue i now normalize then remove metals then deduplicate then seperate the 2
+
+I also misunderstood the error mesage the problem was duplication of the new compounds that were already shown to be in the db (they were
+never deduplicated in the first place)
+
+I think it should work now
+
+it ran!!!!
+
+fixed a couple small formatting things and the report but now I need to fix the staging csv it is messy and basically just ends up with all 
+the new columns to get a nicer table. Still think adding mysql script ability will be nice
+
+I think I have fixed those changes so now the only real thing to do is to add the staging functionality so that this thing can make
+my life easier and I dont have to come up with crazy sql script every time. (I also need to actually test and see if everything worked :))
