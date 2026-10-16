@@ -61,8 +61,8 @@ TOC:
 9 oct - chill day retrying normalizer
 12 oct - fixing and sorting compound normalizer
 13 oct - adding coconut again to db after fixing normalizer and properly extracting lotus so can test normalizer
-
-
+14 - Fixing normalizer adding existing and lotus
+15 oct  - fixing normalizer sorting out lotus
 
 5 may
 Added a orders csv to the thing and discovered that I dont have permission to use the mysql to load from file. Made a python script that converts the csv int a sql command and added data that way.
@@ -3020,7 +3020,9 @@ calling it a day check the output tomorrow it should send the duplicated smiles
 
 files created:
 files used:
-files modified:
+files modified: automatic_normalizer.ipynb
+
+
 
 plan:
 - fix normalizer so it can add the lotus
@@ -3090,3 +3092,298 @@ the new columns to get a nicer table. Still think adding mysql script ability wi
 
 I think I have fixed those changes so now the only real thing to do is to add the staging functionality so that this thing can make
 my life easier and I dont have to come up with crazy sql script every time. (I also need to actually test and see if everything worked :))
+
+
+15 oct  - fixing normalizer sorting out lotus
+
+files used:
+files created: 14_oct_lotus_normalized_check/compounds_for_db.csv, 14_oct_lotus_normalized_check/errors.csv,14_oct_lotus_normalized_check/staging.csv,14_oct_lotus_normalized_check/wand_template.csv, 14_oct_lotus_normalized_check/checking.ipynb
+files modified: 14_oct_lotus_normalized_check/checking.ipynb
+
+plan:
+- check yesterdays outputs to see if it worked
+- add sql query functionality
+- add lotus
+- change cid getter to format cids as string to end this whole cid with .0 at the end thing
+- add cids
+- fix iupac formatting
+
+Done:
+First the coconut full cids are back at  93% found so imma leave well enough alone and not run again:
+Total compounds: 175,195
+Compounds returned with cid: 164,455
+Compounds no result: 10,740
+Percent sucess: 93.87% 
+Total errors: 32,221 
+
+
+now looking at 14_oct_lotus_normalized_check to see if all went to plan and to try build the normalizer sql func
+
+the report:
+Compounds in starting file: 192 297
+Number of compounds pre-duplication: 192 296
+Number compounds post duplication: 192 280
+Compounds folded from dupliction: 16
+New compounds standardised for the database: 74 774
+Compounds already in wand used for updating metadata: 175 195
+Total removed compounds: 117 523
+Errors and compounds in the db already: 117 507
+Error types:
+
+Existing compound    117506
+Metal removal             1
+Name: type, dtype: int64
+
+New wand columns: ['lotus_id', 'wikidata_id']
+Columns in new compounds that were excluded: ['Unnamed: 0', 'id']
+
+
+so the number of existing and the number new compounds and the compounds for metadata add up to more than the total and the error compounds existing
+is different to the compounds for metadata 
+
+okay I think I sorted the report out now 
+
+the id assigner for new compounds seems to work
+
+new compounds for insert seem good now checking the staging
+
+the smiles matching between lotus and coconut seems to have worked for effectively matching same compounds
+
+I forgot that coconut has weird formatting of the iupacs with the ~
+
+Because lotus didnt provide synonyms, collections or dois I cant ckeck that update capability
+
+so far it looks like everything except the ~ in the iupacs is fine so I am going to add the sql stuff now
+
+so I think think there are apparently some legit reasons to have a ~ in a iupac so will have to remove carefully
+using re to remove all ~{} and then replace all the ^{} with ^
+
+rerunning on wonko
+
+ran and fiddled with the sql output so now i guess I just need to try add to wand
+
+trying now very excited to see what happens :)
+
+
+
+the cleaned sql from normalizer:
+ALTER TABLE compounds ADD `lotus_id` VARCHAR(255), 
+                          `wikidata_id` VARCHAR(255);
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/compounds_for_db.csv'INTO TABLE compounds FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"' ESCAPED BY '' LINES TERMINATED BY '\n'
+IGNORE 1 LINES'
+(compound_id, smiles, inchi, inchi_key, name, synonyms, iupac, np_likeness, dois, collections, coconut_id, cid, cas, lotus_id, wikidata_id);
+CREATE TEMPORARY TABLE staging_compounds LIKE compounds;
+ALTER TABLE staging_compounds DROP COLUMN lotus_id; 
+ALTER TABLE staging_compounds DROP COLUMN wikidata_id; 
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/staging.csv'
+INTO TABLE staging_compounds
+        FIELDS TERMINATED BY ',
+                                                        '
+        OPTIONALLY ENCLOSED BY '"'
+        ESCAPED BY ''
+        LINES TERMINATED BY '\n'
+        IGNORE 1 LINES' (compound_id,
+                         name,
+                         synonyms,
+                         iupac,
+                         dois,
+                         collections,
+                         coconut_id,
+                         cid,
+                         cas,
+                         lotus_id,
+                         wikidata_id);
+
+
+UPDATE compounds
+JOIN staging_compounds ON compounds.`compound_id` = staging_compounds.`compound_id`
+SET `name` = staging_compounds.`name`,
+    `synonyms` = stagin g_compounds.`synonyms`,
+    `iupac` = staging_compounds.`iupac`,
+    `dois` = staging_compounds.`dois`,
+    `collections` = staging_compounds.`collections`,
+    `coconut_id` = st aging_compounds.`coconut_id`,
+    `cid` = staging_compounds.`cid`,
+    `cas` = staging_compounds.`cas`,
+    `lotus_id` = staging_compounds.`lotus_id`,
+    `wikidata_id` = staging _compounds.`wikidata_id`;
+
+
+Actually used:
+
+ALTER TABLE compounds 
+ADD `lotus_id` VARCHAR(20), 
+ADD `wikidata_id` VARCHAR(255);
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/compounds_for_db.csv'
+INTO TABLE compounds 
+FIELDS TERMINATED BY ',' 
+OPTIONALLY ENCLOSED BY '"' 
+ESCAPED BY '' 
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(compound_id, smiles, inchi, inchi_key, name, synonyms, iupac, np_likeness, dois, collections, coconut_id, cid, cas, lotus_id, wikidata_id);
+
+if forgot to change the nplikeness in the db to float and there were lots of nplikeness that were nan
+Will have to create table and things from the beginning:
+
+CREATE TABLE compounds (
+compound_id  INT UNSIGNED NOT NULL AUTO_INCREMENT,
+smiles TEXT NOT NULL,
+inchi TEXT NOT NULL,
+inchi_key CHAR(27) NOT NULL,
+name TEXT,
+synonyms MEDIUMTEXT,
+iupac MEDIUMTEXT,
+np_likeness DECIMAL NULL DEFAULT NULL,
+dois TEXT,
+collections TEXT,
+coconut_id VARCHAR(100),
+cid VARCHAR(100),
+cas VARCHAR(300),
+PRIMARY KEY (compound_id));
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/wand_template.csv'
+INTO TABLE compounds
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(compound_id, smiles, inchi, inchi_key, name, synonyms, iupac, @np_likeness, dois, collections, coconut_id, cid, cas)
+SET np_likeness = NULLIF(@np_likeness, '');
+
++---------+------+------------------------------------------------+
+| Level   | Code | Message                                        |
++---------+------+------------------------------------------------+
+| Warning | 1265 | Data truncated for column 'dois' at row 150854 |
++---------+------+------------------------------------------------+
+
+okay so the np_likeness is like a million decimal places so I am adding to the normalizer that it will round to 6 decimals
+
+have to run coconut and lotus through normalizer again::
+
+CREATE TABLE compounds (
+compound_id  INT UNSIGNED NOT NULL AUTO_INCREMENT,
+smiles TEXT NOT NULL,
+inchi TEXT NOT NULL,
+inchi_key CHAR(27) NOT NULL,
+name TEXT,
+synonyms MEDIUMTEXT,
+iupac MEDIUMTEXT,
+np_likeness DECIMAL(11,10) NULL DEFAULT NULL,
+dois TEXT,
+collections TEXT,
+coconut_id VARCHAR(100),
+cid VARCHAR(100),
+cas VARCHAR(300),
+PRIMARY KEY (compound_id));
+
++---------+------+------------------------------------------------+
+| Level   | Code | Message                                        |
++---------+------+------------------------------------------------+
+| Warning | 1265 | Data truncated for column 'dois' at row 150854 |
++---------+------+------------------------------------------------+
+
+ALTER TABLE compounds 
+ADD `lotus_id` VARCHAR(20), 
+ADD `wikidata_id` VARCHAR(255);
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/compounds_for_db.csv'
+INTO TABLE compounds 
+FIELDS TERMINATED BY ',' 
+OPTIONALLY ENCLOSED BY '"' 
+ESCAPED BY '' 
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(compound_id, smiles, inchi, inchi_key, name, synonyms, iupac, @np_likeness, dois, collections, coconut_id, cid, cas, lotus_id, wikidata_id)
+SET np_likeness = NULLIF(@np_likeness, '');
+
++---------+------+--------------------------------------------------+
+| Level   | Code | Message                                          |
++---------+------+--------------------------------------------------+
+| Warning | 1265 | Data truncated for column 'lotus_id' at row 5146 |
++---------+------+--------------------------------------------------+
+
+CREATE TEMPORARY TABLE staging_compounds (
+compound_id  INT UNSIGNED NOT NULL AUTO_INCREMENT,
+name TEXT,
+iupac MEDIUMTEXT,
+collections TEXT,
+dois TEXT,
+synonyms MEDIUMTEXT,
+cas VARCHAR(300),
+coconut_id VARCHAR(100),
+cid VARCHAR(100),
+lotus_id VARCHAR(20),
+wikidata_id VARCHAR(255),
+PRIMARY KEY (compound_id));
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/staging.csv'
+INTO TABLE staging_compounds
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES 
+(compound_id,name,iupac,collections,dois,synonyms,cas,coconut_id,cid,lotus_id,wikidata_id);
+
++---------+------+----------------------------------------------------+
+| Level   | Code | Message                                            |
++---------+------+----------------------------------------------------+
+| Warning | 1265 | Data truncated for column 'lotus_id' at row 9574   |
+| Warning | 1265 | Data truncated for column 'lotus_id' at row 13412  |
+| Warning | 1265 | Data truncated for column 'lotus_id' at row 20932  |
+| Warning | 1265 | Data truncated for column 'lotus_id' at row 30337  |
+| Warning | 1265 | Data truncated for column 'lotus_id' at row 50300  |
+| Warning | 1265 | Data truncated for column 'lotus_id' at row 62479  |
+| Warning | 1265 | Data truncated for column 'lotus_id' at row 62748  |
+| Warning | 1265 | Data truncated for column 'lotus_id' at row 67368  |
+| Warning | 1265 | Data truncated for column 'lotus_id' at row 70313  |
+| Warning | 1265 | Data truncated for column 'lotus_id' at row 78222  |
+| Warning | 1265 | Data truncated for column 'lotus_id' at row 88960  |
+| Warning | 1265 | Data truncated for column 'lotus_id' at row 91275  |
+| Warning | 1265 | Data truncated for column 'lotus_id' at row 91437  |
+| Warning | 1265 | Data truncated for column 'lotus_id' at row 95297  |
+| Warning | 1265 | Data truncated for column 'dois' at row 101063     |
+| Warning | 1265 | Data truncated for column 'lotus_id' at row 103883 |
++---------+------+----------------------------------------------------+
+
+UPDATE compounds
+JOIN staging_compounds ON compounds.`compound_id` = staging_compounds.`compound_id`
+SET compounds.`name` = staging_compounds.`name`,
+compounds.`synonyms` = staging_compounds.`synonyms`,
+compounds.`iupac` = staging_compounds.`iupac`,
+compounds.`dois` = staging_compounds.`dois`,
+compounds.`collections` = staging_compounds.`collections`,
+compounds.`coconut_id` = staging_compounds.`coconut_id`,
+compounds.`cid` = staging_compounds.`cid`,
+compounds.`cas` = staging_compounds.`cas`,
+compounds.`lotus_id` = staging_compounds.`lotus_id`,
+compounds.`wikidata_id` = staging_compounds.`wikidata_id`;
+
+apparently the update went smoothly
+
+Im fucking done with this shit and calling it a day but I rate the errors should be checked and that the sql generator is mostly broken
+
+16 oct - fixing website checking compounds
+
+files created:
+files modified:
+files used:
+
+plan:
+- make website show compounds
+- see what was up with yesterdays error messages
+
+done:
+
+the website compound search is up and running now
+
+not sure what the propblem is with the compounds lotus truncation error like when I look at the columns in the staging table they actaully seem alright?
+
+It is so few I am just going to leave it for now
+
+gonna fiddle with trees now for the plants
