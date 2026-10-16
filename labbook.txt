@@ -3368,10 +3368,10 @@ apparently the update went smoothly
 
 Im fucking done with this shit and calling it a day but I rate the errors should be checked and that the sql generator is mostly broken
 
-16 oct - fixing website checking compounds
+16 oct - fixing website checking compounds and starting tree stuff
 
-files created:
-files modified:
+files created: phygenetics_stuff/Trees, phygenetics_stuff/handling.ipynb
+files modified: phygenetics_stuff/handling.ipynb
 files used:
 
 plan:
@@ -3387,3 +3387,13 @@ not sure what the propblem is with the compounds lotus truncation error like whe
 It is so few I am just going to leave it for now
 
 gonna fiddle with trees now for the plants
+https://zenodo.org/records/10778207
+ "Phylogenomics and the rise of the angiosperms" is my attempted source for this 
+
+gonna try pasrse and see if i can come up with a sql way of storing this stuff. Chose this because it is relatively recent and seems to have all of the
+molecular and time data I will need
+
+
+gonna try make a script that can turn a newick into a hierarchy :)
+
+very complicated stuff it seems
