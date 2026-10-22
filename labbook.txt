@@ -61,8 +61,10 @@ TOC:
 9 oct - chill day retrying normalizer
 12 oct - fixing and sorting compound normalizer
 13 oct - adding coconut again to db after fixing normalizer and properly extracting lotus so can test normalizer
-14 - Fixing normalizer adding existing and lotus
-15 oct  - fixing normalizer sorting out lotus
+14 oct - Fixing normalizer adding existing and lotus
+15 oct - fixing normalizer sorting out lotus
+16 oct - fixing website checking compounds and starting tree stuff
+21 oct - Chosing a phylogenetic tree and working on the plant
 
 5 may
 Added a orders csv to the thing and discovered that I dont have permission to use the mysql to load from file. Made a python script that converts the csv int a sql command and added data that way.
@@ -3397,3 +3399,43 @@ molecular and time data I will need
 gonna try make a script that can turn a newick into a hierarchy :)
 
 very complicated stuff it seems
+
+
+21 oct - Chosing a phylogenetic tree and working on the plant 
+
+
+files used: 
+files created: plant_normalizer.ipynb
+files modified: plant_normalizer.ipynb
+
+Plan:
+- find nice phylogeny
+- figure how put phylogeny into 
+
+Done:
+
+Gary mentioned "Phylogenomics and the rise of the angiosperms" may not actually have enough items
+
+so need better tree
+
+So the next issue is in finding a phylogenetic tree and I am putting those notes in obsidain
+
+perplexity says about my review: https://www.perplexity.ai/search/a75eab44-c70e-406b-a0d4-4a164dded74d
+
+want to improve the plant normalizer now
+
+making sommer a second notebook for the normalizer
+
+small fixes
+
+22 oct - Fixing plant normalizer normalizaaaaaaaa
+
+files used:
+files created:
+files modified: plant_normalizer.ipynb
+
+Plan:
+- make normalizer work
+
+Done:
+
