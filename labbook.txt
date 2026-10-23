@@ -3431,11 +3431,142 @@ small fixes
 22 oct - Fixing plant normalizer normalizaaaaaaaa
 
 files used:
-files created:
+files created:wcvp_dwca/distributions_for_db.csv
 files modified: plant_normalizer.ipynb
 
 Plan:
 - make normalizer work
+- figure what to do with the plants in the db already
+- make families dictionary
+- get locations in
 
 Done:
 
+Okay so I figured out that the distributions do map directly to an entry -> column 0 of distributions and column 0 of
+the taxon in wcvp_dwca
+
+so now the issue is that I had an idea. There are 2 ways I can approach the plants:
+1) Per_plant strategy
+- I add plants as they come in as associated with a natural product
+- The DB will just be a 'medicianl plant DB'
+- Phylogenetic and taxonomic trees will be incomplete based on the fact that only 'medicinally relevant' plants are there
+- This also means that teh DB has an element of uniqueness to it
+
+2) POWO strategy
+- I dump the whole of powo into the DB
+- This will mean that the trees will all be complete
+- The issue is that it feels like it is not unique I am just copying POWO although I will probably include the GBIF stuff
+
+So for now I think the plan is just to do option 1 because then adding the rest of the plants shouldn't be too deep
+
+okay so now I need to decide on how I will handle plants that are in the db already like what columns of new info will there be
+in theory nothing should really have a name that conflicts so for now I am going to generate a table of plant families so I can make that
+a dictionary and then use the family from the dic to make the id in the other column
+
+Okay so the wcvp is also not updated to the new APGV (or any as far as I can tell?) and they use their own 
+taxonomic tree to hold the families
+That tree is what I will have to use so I think because I dont feel like dealing with that now
+
+gonna make the geographic things into a db table to add it
+gonna get the country codes also so can make  amap later
+
+okay so apparently the country codes ar a GeoJSON 
+https://www.perplexity.ai/search/29c2546c-403e-481f-abcd-f4091e1a7666
+
+locations for DB are set
+
+I changed my mind and think now maybe the right way to go is to add the whole of POWO 
+
+I think adding the whole powo will be better 
+in order to reuse code i am checking the powo agianst itself to noramlize it for wand
+
+
+my brain is frazzled but i think it is going well
+
+23 oct - adding POWO to db 
+
+files used: Tree_stuff/treeoflife.4.0.tree, Tree_stuff/treeoflife.4.0.order.tree, Tree_stuff/treeoflife.4.0.family.tree
+files modified: plant_normalizer.ipynb, Tree_stuff/handling.ipynb
+files created: Tree_stuff/treeoflife.4.0.tree,Tree_stuff/treeoflife.4.0.order.tree, Tree_stuff/treeoflife.4.0.family.tree,rWCVP_downloader_script.py
+
+Plan:
+- make the powo adder ready
+- get the backbone stuff figured out
+
+Done:
+Cooooooooking up some code
+
+powo adder is almost done just need to add a report and the backbone stuff then I can do some tests
+
+Working on the kew tree of life now. I am a bit confused because now it seems like it might be phylogenetic based??????
+Okay so I actually cant use the kew tree of life for the taxonomy it is a phylo tree imma open it in the phylo viewer so I can see wassup
+It seems it may have been made phylo (it is missing nodes) but that it doesnt give branch length stuff?? checking now
+
+Okay after lots of messing about there are 458 families in powo/wcvp that are attached to an organism that is listed as accepted I also checked 
+a couple and they were listed on kew as accepted families (but do not link back to the tree) so I think they are probably correct. On the kew tree of life there are 424 families
+I matched the 2 and it seems like all of the mismatches are from families mentioned in the wcvp download(powo) that arent listed in the tree.
+I very strongly suspect that the tree is a phlo one as it is incomplete. It does have confidece values for nodes but no data about the actual
+branch length to use for relationship inferrance. 
+
+So practically speaking the options are now that I choose a different taxonomic backbone as I cannot find a download for what powo is doing or i can 
+scrape/manually add the last few families that arent recognised. 
+
+it seems to me also that there are more orders in the kew tree of life than in the APG4 there are 69 in the tree of life. Despite this one of the orders
+listed for the accpeted family Aspleniaceae is not in the tree either Polypodiales.
+
+This makes the kew tree of life thing not really an option becasue it has more entries than the APG for orders yet simultaneously is missing orders. 
+
+Downloaded the APG IV again from here: https://www.gbif.org/dataset/fa8ab13c-52ed-4754-b838-aeff74c79718/download
+I used the darwin core archive
+
+so the issue here is that this has 446 families while the powo has got 458 families so yeah.
+
+I think the only option now is going to have to be to scrape the POWO website or there is an r package that apparently
+maps the orders and families.
+
+Okay so they make a rWCVP download that has more info than the standard web download including the mappings for families and orders so imma ask perplexity
+to write a script so I can download that
+https://www.perplexity.ai/search/af49e7a5-e800-4d6b-abe8-132fdd3e1496
+https://www.perplexity.ai/search/af49e7a5-e800-4d6b-abe8-132fdd3e1496
+Does not really seem to work what is here above and was not used
+
+According to the paper they wrote the rWCVP automatically will tell you when you download it if it is not up to date: rWCVP: a companion R package for the World Checklist of Vascular Plants
+"To ensure that the most recent version of the WCVP is used, we have provided these data in an auxiliary package, rWCVPdata. This is automatically installed with rWCVP and also includes the WGSRPD botanical countries as simple features (from ‘sf’, Pebesma, 2018). When a user loads rWCVP or uses a function from it for the first time in a session, a warning is displayed if rWCVPdata needs to be installed or updated.
+the github seems severely out of date 
+https://github.com/matildabrown/rWCVP
+https://www.icesi.edu.co/CRAN/web/packages/rWCVP/index.html
+https://nph.onlinelibrary.wiley.com/doi/10.1111/nph.18919
+
+I am going to build the taxonomy using the tree then scrape what is left if that does not work I will resort to the r package stuff as I am not confident
+that it is being kept up to date. 
+
+So i am using pykew to get the ipini to use to get the webpage for the family so I can scrape the order. Apparently I am forbidden access to use the ipini
+I get 403 access denied and the pykew does not seem to work
+
+so now i need to try the r route
+ran as follows in r:
+if (!require(rWCVPdata)) {
+  install.packages("rWCVPdata",
+    repos = c(
+      "https://matildabrown.github.io/drat",
+      "https://cloud.r-project.org"
+    )
+  )
+}
+
+(lots of drama and troubleshooting inbetween)
+
+library(rWCVPdata)
+
+mapping <- rWCVPdata::taxonomic_mapping
+write.csv(mapping, "wcvp_family_order_mapping.csv", row.names = FALSE)
+
+the above does not work apparenty the map is in rWCVP not the rWCVPdata
+
+packageVersion("rWCVPdata")
+citation("rWCVPdata")
+
+This is the 0.5.0 version which is kinda old
+
+I have tried many many things to download this hoe ass fucking thing and it has not worked. Its friday and I think I progressed well with the rest of the 
+stuff so I will worry about the rest monday
