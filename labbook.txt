@@ -64,7 +64,10 @@ TOC:
 14 oct - Fixing normalizer adding existing and lotus
 15 oct - fixing normalizer sorting out lotus
 16 oct - fixing website checking compounds and starting tree stuff
-21 oct - Chosing a phylogenetic tree and working on the plant
+21 oct - Chosing a phylogenetic tree and working on the plant]
+22 oct - Fixing plant normalizer normalizaaaaaaaa
+23 oct - powo adder and trying unsuccessfully to get the rwcvp taxonomic backbone
+
 
 5 may
 Added a orders csv to the thing and discovered that I dont have permission to use the mysql to load from file. Made a python script that converts the csv int a sql command and added data that way.
@@ -3483,7 +3486,7 @@ in order to reuse code i am checking the powo agianst itself to noramlize it for
 
 my brain is frazzled but i think it is going well
 
-23 oct - adding POWO to db 
+23 oct - powo adder and trying unsuccessfully to get the rwcvp taxonomic backbone
 
 files used: Tree_stuff/treeoflife.4.0.tree, Tree_stuff/treeoflife.4.0.order.tree, Tree_stuff/treeoflife.4.0.family.tree
 files modified: plant_normalizer.ipynb, Tree_stuff/handling.ipynb
@@ -3570,3 +3573,97 @@ This is the 0.5.0 version which is kinda old
 
 I have tried many many things to download this hoe ass fucking thing and it has not worked. Its friday and I think I progressed well with the rest of the 
 stuff so I will worry about the rest monday
+
+
+26 oct - POWO normalier things
+
+files created: data-apg4-master(1), 
+files used: Tree_stuff/handling.ipynb
+files modified: plant_normalizer.ipynb
+
+plan:
+- send thing to liam to ask if he can download for me the rWCVP
+- finish POWO db adder excluding making a table for the orders so I can add to DB soon
+
+done:
+
+Okay so I feel like it is happening a lot where I am spinning my gears on things that arent always that important or that are going to make massive differences
+to the actual quality of my masters so I am going to try and be more focused.
+
+POWO is a validated authority on plant accepted naming and has a fat database that is maintained by smarter oaks then me so I think it is good to use it. The
+issue is they do not keep a taxonomic backbone that is easily accessible that eill go up to order level. I spent the whole of friday to get it to work 
+and it did not my last ditch is I will send something to liam to get him to maybe download it for me.
+Otherwise I am going to just do it up to order level for now and try get the whole thing in with the distribution data. That is the plan for now get  things
+to work and then add rest later.
+
+Sent an email to liam to ask if he can get me the rwcvp thing so now I am going to just do powo up to family and add location and then test it
+
+Okay so I am now going to fix the powo adder/normalizer so it can:
+1) take in powo and match syns to the accepted name
+2) make a table of families that the individual plants link to
+3) table of ditributions of the plants
+
+
+okay so I am ready to test my thing but wonko is down
+I tried running things on my laptop but it is not really an option it is taking very long.
+
+I did speak to gary tho and he said that it is okay if the things arent perfect but that I must just know what the imperfections are
+so I think that I can make a judgement call on the backbone and my call is that I will use the APG4 because the 5 isn't really out proper
+and then that can be used to exclude the non-angiosperms
+
+okay so just quickly checking the families in apg vs the powo and there are a few fams in powo not in apg4:
+Zamiaceae
+Cupressaceae
+Podocarpaceae
+Cycadaceae
+Aspleniaceae
+Marattiaceae
+Pteridaceae
+Equisetaceae
+Hymenophyllaceae
+Lycopodiaceae
+Araucariaceae
+Polypodiaceae
+Pinaceae
+Salviniaceae
+Gleicheniaceae
+Selaginellaceae
+Taxaceae
+Gnetaceae
+Ephedraceae
+Gigaspermaceae
+Petiveriaceae
+Cyatheaceae
+Schizaeaceae
+Incertae_sedis
+Viburnaceae
+Dennstaedtiaceae
+Ginkgoaceae
+Welwitschiaceae
+Cephalotaxaceae
+Sciadopityaceae
+Ophioglossaceae
+Psilotaceae
+Isoetaceae
+Osmundaceae
+Dipteridaceae
+Matoniaceae
+Lindsaeaceae
+Marsileaceae
+Saccolomataceae
+Lonchitidaceae
+Cystodiaceae
+Hypodematiaceae
+Tiganophytaceae
+Thismiaceae
+Cochlospermaceae
+Impatiens
+Buddlejaceae
+
+apparently only 7 of these are angiosperms:https://www.perplexity.ai/search/9e01e3b5-6122-4c2c-a30b-51b50717916c
+
+so the normalizer makes a file of immediately acceptable plants and then it makes a one with the families being weird for manual review
+
+gonna try run it on the pc now
+
+debugging on pc a bit now
