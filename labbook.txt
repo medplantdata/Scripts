@@ -67,7 +67,7 @@ TOC:
 21 oct - Chosing a phylogenetic tree and working on the plant]
 22 oct - Fixing plant normalizer normalizaaaaaaaa
 23 oct - powo adder and trying unsuccessfully to get the rwcvp taxonomic backbone
-
+26 oct - POWO normalier things
 
 5 may
 Added a orders csv to the thing and discovered that I dont have permission to use the mysql to load from file. Made a python script that converts the csv int a sql command and added data that way.
@@ -3667,3 +3667,45 @@ so the normalizer makes a file of immediately acceptable plants and then it make
 gonna try run it on the pc now
 
 debugging on pc a bit now
+
+27 oct - testing powo nromalizer adder
+
+files created:
+files modified:
+files used:
+
+plan:
+- make powo normalizer/adder work
+
+done:
+
+coooooooding on the beastly pc at home so can ssh and run script there while wonko down
+
+not particularly motivated and it takes my pc like 30 min to get through the first half of the code so slow day but it looks like its 70% working
+havent had any output yet so not sure if that is right but I think once I get this then I need to look into the target and disease stuff
+
+28 oct - Sorting out the target disease stuff
+
+files created: Theraputic_Target_Database, Theraputic_Target_Database/handling_TTD.ipynb
+files modified: Theraputic_Target_Database/handling_TTD.ipynb,
+files used:
+
+plan:
+OKay so wonko down running the powo thing takes long so imma work on some of the target disease stuff now
+
+found a nice DB: https://ttd.idrblab.cn/ Theraputic Drug Database it has disease target drug link and downloads
+https://www.perplexity.ai/search/b97a4d4b-d89c-4dd8-bb5e-208d7b788ec4
+
+
+looks like I  have the disease-target stuff coconut_iupacs_inchi_deduplicated
+
+now matching to the targets and disease downloads
+
+now extracting targets
+
+now getting disease drug link
+
+cool most of the stuff is sorted now and I have scripts that I can use to actually extract the data and make a normalizer when wonko is back
+
+the db doesnt have disease data specifically but the ICD codes and names are extracted They just need to all be matched to each other to throw out 
+things that are not relevant to neurological disease and to match to the wand compounds
