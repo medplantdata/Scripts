@@ -3709,3 +3709,26 @@ cool most of the stuff is sorted now and I have scripts that I can use to actual
 
 the db doesnt have disease data specifically but the ICD codes and names are extracted They just need to all be matched to each other to throw out 
 things that are not relevant to neurological disease and to match to the wand compounds
+
+29 oct - plant target normaliser
+
+files created:
+files used: Theraputic_Target_Database/handling_TTD.ipynb
+files modified:
+
+plan:
+- make the target and plant normalizer
+- integrate the DNTPD stuff
+- need to decide if the accepted drugs are gonna go in compounds or in a new db
+
+DOne:
+Normalizzzzaazzazaaa
+
+okay so I have added the stuff from the TTD. I now need to cross correlate with the ICD-11 i have a file: /home/school/masters/Scripts/PracticeDB_construction/diseases_with_materialized_paths.csv
+i have no ideas where it comes from but I will need to format tthat as the diseases thing 
+
+then I need to run all the compounds through the wand compounds to match it with compound_id
+
+also need to add the DNTPD stuff thankfully it comes with ttd codes 
+
+okay so the ICD stuff i am using apparently comes from here: https://icd.who.int/browse/releases/mms/en
