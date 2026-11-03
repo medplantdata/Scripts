@@ -68,6 +68,9 @@ TOC:
 22 oct - Fixing plant normalizer normalizaaaaaaaa
 23 oct - powo adder and trying unsuccessfully to get the rwcvp taxonomic backbone
 26 oct - POWO normalier things
+27 oct - testing powo nromalizer adder
+28 oct - Sorting out the target disease stuff
+29 oct - plant target normaliser
 
 5 may
 Added a orders csv to the thing and discovered that I dont have permission to use the mysql to load from file. Made a python script that converts the csv int a sql command and added data that way.
@@ -3732,3 +3735,10 @@ then I need to run all the compounds through the wand compounds to match it with
 also need to add the DNTPD stuff thankfully it comes with ttd codes 
 
 okay so the ICD stuff i am using apparently comes from here: https://icd.who.int/browse/releases/mms/en
+
+
+3 nov - Working on py package
+
+Natalie is around and wonko is down so taking it a bit easier this week
+
+worked on the python package is looking nice
