@@ -3742,3 +3742,26 @@ okay so the ICD stuff i am using apparently comes from here: https://icd.who.int
 Natalie is around and wonko is down so taking it a bit easier this week
 
 worked on the python package is looking nice
+
+
+9 nov - working on the review paper making graphs of the coconut paper
+
+files used: coconut_plants/checklist_matched_organisms.tsv
+files created:
+files modified: coconut_full/analysing_coconut.ipynb,PIP_stuff/rdkit_extra.py
+
+plan:
+- make graphs of source organism distribution for review paper
+
+done:
+
+I got bored and worked on the stuff for the pip module instead. It seems like it is gonna end up being more hassle than it is worth to try publish it in journal
+it will need to be validated for that it cant just be the tool itself
+
+
+
+
+
+
+https://www.perplexity.ai/search/66f27d95-3a46-4b5f-93aa-a08e6091faca
+https://www.perplexity.ai/session/63dca549-1d2c-4e59-80f4-ca9b9427778f
