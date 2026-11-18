@@ -1,0 +1,9 @@
+\contentsline {chapter}{Plagiarism Declaration}{i}{}%
+\contentsline {chapter}{Abbreviations}{ii}{}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{}%
+\contentsline {chapter}{\numberline {2}Literature review}{2}{}%
+\contentsline {subsection}{\numberline {2.0.1}neurological disease}{2}{}%
+\contentsline {chapter}{\numberline {3}Databases in pytochemical drug discovery}{3}{}%
+\contentsline {chapter}{\numberline {4}Wand development}{4}{}%
+\contentsline {chapter}{\numberline {5}Drug discovery}{5}{}%
+\contentsline {chapter}{\numberline {6}Conclusion}{6}{}%

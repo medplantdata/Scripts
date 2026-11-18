@@ -20,6 +20,7 @@ from pyopsin import PyOpsin
 # implement smarts
 # johnson similarity does not reliably distinguish between stereoisomers
 # rename is same compound and is same mol
+# check the ionic forms function I dont know if that is the correct name for it
 
 class compound_comparitor:
 #////////////////////////////////////////////////////////////////////////input type dectector and agnostic input RDkit mol returner and general comparitors
@@ -102,16 +103,16 @@ class compound_comparitor:
         smiles1 = Chem.MolToSmiles(mol1, canonical=True,isomericSmiles=True)
         smiles2 = Chem.MolToSmiles(mol2, canonical=True,isomericSmiles=True)
 
-        if smiles1 == smiles2:
+        if self.is_same_string(smiles1, smiles2):
             return True
         else:
-            False
+            return False
 
     def are_stereoisomers(self, mol1: Chem.Mol, mol2: Chem.Mol) -> bool:
         non_isomeric_smile1 = Chem.MolToSmiles(mol1,isomericSmiles=False, canonical=True)
         non_isomeric_smile2 = Chem.MolToSmiles(mol2,isomericSmiles=False, canonical=True)
 
-        if non_isomeric_smile1 == non_isomeric_smile2:
+        if self.is_same_string(non_isomeric_smile1,non_isomeric_smile2):
             return True
         else:
             return False
@@ -124,11 +125,14 @@ class compound_comparitor:
         tautomer_smiles1 = Chem.MolToSmiles(tautomer1)
         tautomer_smiles2 = Chem.MolToSmiles(tautomer2)
 
-        if tautomer_smiles1 == tautomer_smiles2:
+        if self.is_same_string(tautomer_smiles1,tautomer_smiles2):
             return True
         else:
             return False        
-                
+
+    def are_ionic_forms(self, mol1: Chem.Mol, mol2: Chem.Mol) -> bool:
+        
+    
 #//////////////////////////////////////////////////////////////////////////compound cleaners ie detect multiple fragments and such
     def smiles_can_convert_to_mol(smiles:str,return_mol:bool)-> bool|bool,Chem.Mol:
         mol = Chem.MolFromSmiles(smiles)
@@ -182,7 +186,7 @@ class compound_comparitor:
             return True
         else:
             return False
-            
+
     def check_smiles(self,smiles: str)-> str:
         msg = ''
         # check smiles convertability
@@ -197,7 +201,7 @@ class compound_comparitor:
         # check if multiple fragments
         if self.multiple_fragments(mol):
             msg = msg + '\n' + 'SMILES contain multiple fragments'
-        
+       
 #/////////////////////////////////////////////////////////////////////////smiles comparitor
     def compare_smiles(self,smile1:str, smile2:str) -> str:
         if not smile1.strip() and not smile2.strip():
