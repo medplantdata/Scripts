@@ -3791,6 +3791,8 @@ files created:
 files modifed: plant_normalizer.ipynb
 files used:
 
+wonko 1st successful run results in wonko under 19_nov_powo_normalizer
+
 plan:
 - fix plant normalizer
 
@@ -3799,3 +3801,14 @@ done:
 okay so it ius fixed now??? 
 it ran to completion lets see what the results are
 
+oaky so there was issues with the way it was doing the syns and i found that it was very innefficeint so I removed alot of the sections that call back
+to the original wcvp because the approved is already pulled out then I go back to the wcvp to check for that entires same info which is slow so i removed that 
+
+it is more efficient now and am running and fixing bugs 
+
+There is an issue that the apg4 has 416 families and I get 417 out of the txt file so imma try and figure what is the issue with AI:
+It claims there are 2 errors :(
+  https://www.perplexity.ai/session/05b840e4-aff1-47f3-987e-2565934ef4e1
+
+
+I think the normalizer is working and if the next run goes then the results need to be checked again but then it can go into the db:)
