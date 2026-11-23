@@ -74,6 +74,8 @@ TOC:
 3 nov - Working on py package
 9 nov - working on the review paper making graphs of the coconut paper
 18 nov - Working on plant normalizer (wonko back)
+19 nov - fixing plant normalizer and checking its results
+20 nov - normalizer fixing
 
 5 may
 Added a orders csv to the thing and discovered that I dont have permission to use the mysql to load from file. Made a python script that converts the csv int a sql command and added data that way.
@@ -3812,3 +3814,51 @@ It claims there are 2 errors :(
 
 
 I think the normalizer is working and if the next run goes then the results need to be checked again but then it can go into the db:)
+
+
+20 nov - normalizer fixing
+
+today was yearend function for bif at bakehouse :)
+
+so I have an error where the normalizer makes a distribution junction table where the location ID is a float????? ie has .0 at the end 
+so i tried to cast to int but there are issues with that as there are nan values which should not be possible
+
+I will change to int 64 and run so there is something to analyse on monday
+
+23 nov - Analysing the powo results then either fixing or adding to the DB
+
+files created:
+files modified: plant_normalizer.ipynb
+files used:
+
+files wonko: 20_nov_powo_normalizer
+
+plan:
+- Check the outputs from fridays run on wonko of the normalizer
+- Fix and rerun 
+- add to the db
+
+Done:
+Issues/potential_problems:
+- the ipini of the synonyms isnt saam
+- there are hybrid species where the genus specific epithet seperator from the scientific ID seperates the specific epithet to:
+eg: '× kayae'
+- similar problem with vars and subspecies: eg:'cubense subsp. guantanamense'
+
+I dont think that necessarily is a problem with he species names as that isnt necessarily shown
+I am going to have to fix the issue with the syns missing the ipini
+
+that is fixed but now the ipinis are consistently 1 short and I think the implementation might make problems with matching them
+
+Now the name comes with its ipini and I will do string handling later to make it hyperlink
+
+now just have to deal with the apg mismatch with the powo as some are excluded correctly as nonangiosperms and some however are accepted but need a correct APG fam
+
+I have amended the powo normalizer so it gives me all the plants and families not in a apg families list
+
+Checking for non angiosperms vs angiosperms can theoretically be done now with a script that analyses the whole APG download as that has non accepted families too
+
+gonna look into that implementation
+
+
+okay I have no idea what is cutting there in the taxonomic backbone implementation so imma sommer redo that bit
