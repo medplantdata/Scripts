@@ -76,6 +76,9 @@ TOC:
 18 nov - Working on plant normalizer (wonko back)
 19 nov - fixing plant normalizer and checking its results
 20 nov - normalizer fixing
+23 nov - Analysing the powo results then either fixing or adding to the DB
+
+
 
 5 may
 Added a orders csv to the thing and discovered that I dont have permission to use the mysql to load from file. Made a python script that converts the csv int a sql command and added data that way.
@@ -3831,7 +3834,7 @@ files created:
 files modified: plant_normalizer.ipynb
 files used:
 
-files wonko: 20_nov_powo_normalizer
+files wonko: 20_nov_powo_normalizer, 23_nov_powo_normalizer
 
 plan:
 - Check the outputs from fridays run on wonko of the normalizer
@@ -3862,3 +3865,263 @@ gonna look into that implementation
 
 
 okay I have no idea what is cutting there in the taxonomic backbone implementation so imma sommer redo that bit
+
+oaky so after doing all of that I have discovered that all of the names in powo not in the accepted apg are also not in the 
+apg with synonyms 
+
+there are 44 names the one Impatiens is a mistake the rest are likley a mix of algae and ferns and cycads and such but there are still accepted names of angiosperms
+
+so I can try gbif or AI to fix this but for now since it is only:
+The number of plants in the powo file that were not in the apg families file was (after handling synonyms): 17142 
+The number of plants in the powo file that were in the apg families file was (after handling synonyms): 423392 
+
+I think it is okay if I add them after once I have verified them 
+
+So gonna add to db now
+
+
+CREATE TABLE orders(
+  order_id INT UNSIGNED PRIMARY KEY,
+  name VARCHAR(40),
+  authorship VARCHAR(100)
+);
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/powo_for_db/order.csv'
+INTO TABLE orders
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(order_id,name,authorship);
+
+
+CREATE TABLE families(
+  family_id INT UNSIGNED PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  authorship VARCHAR(100),
+  order_id INT UNSIGNED NOT NULL,
+  CONSTRAINT order_family
+  FOREIGN KEY (order_id)
+  REFERENCES orders(order_id)
+);
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/powo_for_db/family.csv'
+INTO TABLE families
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(family_id,name,authorship,order_id);
+
+CREATE TABLE locations(
+  location_id INT UNSIGNED PRIMARY KEY,
+  location VARCHAR(100) UNIQUE,
+  code VARCHAR(3) UNIQUE
+);
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/powo_for_db/distri_for_db.csv'
+INTO TABLE locations
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(location_id,location,code);
+
+CREATE TABLE plants(
+  plant_id INT UNSIGNED PRIMARY KEY,
+  name VARCHAR(75) NOT NULL,
+  genus VARCHAR(50),
+  species VARCHAR(75),
+  synonyms TEXT,
+  plant_authorship TEXT,
+  published_in TEXT,
+  family_id INT UNSIGNED NOT NULL,
+  powo_id VARCHAR(25),
+  CONSTRAINT plant_family
+  FOREIGN KEY (family_id)
+  REFERENCES families(family_id)  
+);
+
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/powo_for_db/powo_for_db.csv'
+INTO TABLE plants
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(plant_id,name,genus,species,synonyms,plant_authorship,published_in,family_id,powo_id);
+
+CREATE TABLE plant_location(
+  plant_id INT UNSIGNED NOT NULL,
+  location_id INT UNSIGNED NOT NULL,
+  is_introduced BOOL,
+  PRIMARY KEY (plant_id, location_id),
+  CONSTRAINT fk_plant_location
+  FOREIGN KEY (plant_id)
+  REFERENCES plants(plant_id),
+  CONSTRAINT fk_location_plant
+  FOREIGN KEY (location_id)
+  REFERENCES locations(location_id)
+);
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/powo_for_db/distri_junction.csv'
+INTO TABLE plant_location
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(plant_id,location_id,is_introduced);
+
+the last command wouldnt work because the pandas True False NA doesnt match the SQL bool(TinyInt) so had to convert 
+but went home after converting
+
+24 nov - remoivng artificial hybrids continuing with adding powo to wand
+
+files created:
+files modified: plant_normalizer.ipynb
+files used:
+
+wonko: 24_nov_powo_normalizer
+
+plan:
+- exclude hybrids
+- fix the distri jusnction table 
+- make website work with changes
+
+done:
+yesterday converted the format of the is_introduced column so it matched the sql format the issue is that the columns have nan values
+gonna fiiiiix that now
+
+okay missing values were only in the location id column
+
+So i am also realizing that the artificial hybrids all have taxonid that matches the acceptedusageid i think the right call is honestly to 
+sommer exclude the artificial hybrids
+
+artificial hybrid removal done now need to see if can sort the empty location thing 
+
+rerunning the powo thing now with hopefully fixes on wonko
+
+so now the run is done imma send the new files and restart the db addition steps: (after dropping the new tables to redo):
+
+
+CREATE TABLE orders(
+  order_id INT UNSIGNED PRIMARY KEY,
+  name VARCHAR(40),
+  authorship VARCHAR(100)
+);
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/powo_for_db/order.csv'
+INTO TABLE orders
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(order_id,name,authorship);
+
+
+CREATE TABLE families(
+  family_id INT UNSIGNED PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  authorship VARCHAR(100),
+  order_id INT UNSIGNED NOT NULL,
+  CONSTRAINT order_family
+  FOREIGN KEY (order_id)
+  REFERENCES orders(order_id)
+);
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/powo_for_db/family.csv'
+INTO TABLE families
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(family_id,name,authorship,order_id);
+
+CREATE TABLE locations(
+  location_id INT UNSIGNED PRIMARY KEY,
+  location VARCHAR(100) UNIQUE,
+  code VARCHAR(3) UNIQUE
+);
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/powo_for_db/distri_for_db.csv'
+INTO TABLE locations
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(location_id,location,code);
+
+CREATE TABLE plants(
+  plant_id INT UNSIGNED PRIMARY KEY,
+  name VARCHAR(75) NOT NULL,
+  genus VARCHAR(50),
+  species VARCHAR(75),
+  synonyms TEXT,
+  plant_authorship TEXT,
+  published_in TEXT,
+  family_id INT UNSIGNED NOT NULL,
+  powo_id VARCHAR(25),
+  CONSTRAINT plant_family
+  FOREIGN KEY (family_id)
+  REFERENCES families(family_id)  
+);
+
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/powo_for_db/powo_for_db.csv'
+INTO TABLE plants
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(plant_id,name,genus,species,synonyms,plant_authorship,published_in,family_id,powo_id);
+
+CREATE TABLE plant_location(
+  plant_id INT UNSIGNED NOT NULL,
+  location_id INT UNSIGNED NOT NULL,
+  is_introduced BOOL,
+  PRIMARY KEY (plant_id, location_id),
+  CONSTRAINT fk_plant_location
+  FOREIGN KEY (plant_id)
+  REFERENCES plants(plant_id),
+  CONSTRAINT fk_location_plant
+  FOREIGN KEY (location_id)
+  REFERENCES locations(location_id)
+);
+
+LOAD DATA LOCAL INFILE '/localdata/wand_data/powo_for_db/distri_junction.csv'
+INTO TABLE plant_location
+FIELDS TERMINATED BY ','
+OPTIONALLY ENCLOSED BY '"'
+ESCAPED BY ''
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(plant_id,location_id,is_introduced);
+
+mysql> show warnings;
++---------+------+---------------------------------------------------------------+
+| Level   | Code | Message                                                       |
++---------+------+---------------------------------------------------------------+
+| Warning | 1062 | Duplicate entry '308568-348' for key 'plant_location.PRIMARY' |
+| Warning | 1062 | Duplicate entry '308570-348' for key 'plant_location.PRIMARY' |
++---------+------+---------------------------------------------------------------+
+2 rows in set (0.00 sec)
+
+
+so looking much better only 2 warnings for the locations:
+https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77169784-1 it is for this plant and imma sommer ignore
+
+
+tryna fix the website a bit
+
+
+website is mostly functional now 
+gonna go home
